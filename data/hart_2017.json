@@ -1,0 +1,489 @@
+{
+  "paper": {
+    "id": "hart_2017",
+    "title": "Creative foraging: An experimental paradigm for studying exploration and discovery",
+    "authors": [
+      "Hart, Y.",
+      "Mayo, A.E.",
+      "Mayo, R.",
+      "Rozenkrantz, L.",
+      "Tendler, A.",
+      "Alon, U.",
+      "Noy, L."
+    ],
+    "year": 2017,
+    "section": "Introduction"
+  },
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Creative exploration and discovery processes are defined as the search for novel and valuable elements within a set of constraints.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the paper's working definition of the core construct.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 2,
+      "text": "Creative exploration is central for many fields, including art [1], design [2] and science [3].",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance/relevance of the topic across domains.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 3,
+      "text": "More generally, it is an integral part of cognitive development [4,5].",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Extends the importance claim to a further domain.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 4,
+      "text": "Despite progress achieved in understanding creative search processes from different perspectives [6–14], much is still unknown about their underlying dynamics and mechanisms.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 5,
+      "text": "One obstacle for understanding creative exploration is the lack of automated and high-resolution experimental paradigms.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a specific methodological gap underlying [4].",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 6,
+      "text": "For example, one of the most commonly used tests for creativity is the alternate usage task (AUT) [15].",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 5,
+      "note": "Gives a concrete example of the paradigm-gap claim in [5]. Parent: [5] (nostat).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 7,
+      "text": "In the AUT participants are asked to come up with creative uses for common objects (e.g., a ping-pong ball).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 5,
+      "note": "Unpacks how the AUT works; re-parented to [5] (nostat), since original parent [6] is secondary.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 8,
+      "text": "Participants show exploration patterns such as switching between categories of solutions [12].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific empirical finding from prior work, with citation.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 9,
+      "text": "This test is coded manually, a laborious process which limits the extent of feasible studies.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of the AUT.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 10,
+      "text": "The test is difficult to analyze and model because the space of possible solutions is undefined (how many different usages for a ping-pong ball exist?) and has no natural notion of similarity between different solutions.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 9,
+      "note": "Unpacks/elaborates the limitation named in [9]. Parent: [9] (contrast).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 11,
+      "text": "Other common creativity tests share these limitations [16].",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Generalizes the critique from AUT specifically to creativity tests broadly, with citation support.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 12,
+      "text": "More fundamentally, AUT and other common creativity tests record only the discovered solutions and not the intermediate steps leading from one solution to another.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opens a new, deeper line of critique.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 13,
+      "text": "Thus, they do not allow insight into the process of exploration.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Draws out the implication of [12]'s claim. Parent: [12] (contrast).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 14,
+      "text": "Several studies attempted to map the processes leading to creative solutions by recording verbal transcripts of thought processes—the 'think aloud' method [2,17].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific prior research approach with citation.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 15,
+      "text": "However, these methods are difficult to code and quantitatively analyze.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Limitation of the think-aloud method just introduced in [14].",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 16,
+      "text": "Here, we introduce a new paradigm for creative exploration that allows automated tracking of the search process in a space of possibilities that is large yet well-defined.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explicit novelty claim marking the transition to the present work.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 17,
+      "text": "To achieve this, we borrow techniques from the study of human foraging.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the methodological approach/strategy of the current paper.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 18,
+      "text": "In a series of studies Hills, Todd and colleagues used a spatial foraging task and a letter puzzle task to experimentally study human foraging behavior [18–21].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior research findings/methods with citation.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 19,
+      "text": "These experimental foraging tasks employed solution spaces which are finite and well-defined [22].",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Elaborates a property of the tasks introduced in [18]. Parent: [18] (tempstat).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 20,
+      "text": "For example, in the spatial foraging task participants searched for resources on a grid of locations.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Concrete example of the foraging task type; re-parented to [18] (tempstat), since original parent [19] is secondary.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 21,
+      "text": "This task records intermediate steps between solutions and has a clear distance metric, features that allow the foraging behavior to be quantitatively analyzed and mathematically modeled using optimal foraging theory (OFT) [23].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a substantive claim about the paradigm's analytic value, with citation to OFT.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 22,
+      "text": "In order to develop a similar task for creative search, we need to address one key difference between foraging and creative search.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the paper's goal/rationale for adapting the foraging paradigm.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 23,
+      "text": "In the foraging tasks, the goal is to find as many solutions as possible; in creativity tests the goal is two-fold: (i) to find many solutions (fluency) (ii) of high quality (novel and valuable).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 22,
+      "note": "Unpacks the \"key difference\" flagged in [22]. Parent: [22] (contribution).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 24,
+      "text": "In other words, whereas the value of the different solutions in the foraging tasks is constant (for example, all foraged pixels in the spatial foraging task are equally valuable), the distribution of solution values in creativity tests is skewed, with many low-quality solutions (boring or non-feasible) and only a handful of high-quality creative solutions.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 22,
+      "note": "Further unpacks the key difference; re-parented to [22] (contribution), since original parent [23] is secondary.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 25,
+      "text": "We present a paradigm for creative foraging in which players seek solutions that they find interesting and beautiful, embedded within a well-defined search space.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's specific paradigm/contribution.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 26,
+      "text": "The creative foraging game enables high-resolution measurement of creative, intrinsically motivated search in the framework of visual exploration and discovery [24–28].",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Further specifies the purpose/framing of the contribution.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 27,
+      "text": "The creative foraging game is a computer game in which players can move ten adjacent squares to create different shapes (Fig 1).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the method/task structure of the current study.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 28,
+      "text": "There are 36,446 possible shapes (Section A in S1 File).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 27,
+      "note": "Elaborates a specific parameter of the task described in [27]. Parent: [27] (contribution).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 29,
+      "text": "The players are instructed to save shapes that they find interesting and beautiful into a gallery.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 27,
+      "note": "Continues describing task mechanics; re-parented to [27] (contribution), since original parent [28] is secondary.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 30,
+      "text": "The timing of all moves and gallery choices is recorded.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 27,
+      "note": "Continues task description; re-parented to [27] (contribution), since original parent [29] is secondary.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 31,
+      "text": "This setting allows us to observe all intermediate steps as people search a large but finite metric space of different possibilities.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 27,
+      "note": "Synthesizes the preceding task-description sentences ([27]–[30]). Parent: [27] (contribution).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 32,
+      "text": "We present data on 100 participants and interpret the results in the context of OFT according to the following hypotheses:",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces scope (sample) and structure (hypotheses to follow) of the current paper.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 33,
+      "text": "(H1) Participants' trajectories in shape space are composed of distinguishable phases of exploration and exploitation: exploration for new shape categories and exploitation of similar shapes within a category.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a specific hypothesis of the current study.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 34,
+      "text": "(H2) In phases of exploitation people move along optimal (shortest) paths.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a specific hypothesis of the current study.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 35,
+      "text": "Our third hypothesis diverges from the predictions of a naïve version of OFT, in which there is a constant value for any shape collected.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Frames H3 as diverging from a prior theoretical account (naïve OFT).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 36,
+      "text": "The performance metric in naïve OFT is therefore the amount of collected resources.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Unpacks the naïve OFT account referenced in [35]. Parent: [35] (contrast).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 37,
+      "text": "Hence naïve OFT predicts that exploitation of a given patch is terminated due to diminishing returns caused by depletion of the patch.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Continues unpacking the naïve OFT prediction; re-parented to [35] (contrast), since original parent [36] is secondary.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 38,
+      "text": "In contrast, in creative foraging the intrinsic interest 'value' of collected resources is important.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explicitly opposes the naïve OFT account elaborated in [35]–[37].",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 39,
+      "text": "Collection from a given patch may lead to diminishing interest, far before the patch is depleted.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 38,
+      "note": "Extends the contrast claim in [38] into an unevidenced prediction. Parent: [38] (contrast).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 40,
+      "text": "We therefore hypothesize that: (H3) In creative foraging participants leave exploitation phases sooner than predicted by naïve OFT, far before patch depletion.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States H3 formally.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 41,
+      "text": "The next hypothesis concerns the moment when a new category of shapes is discovered.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": 40,
+      "note": "Pure structural announcement of the upcoming topic (H4); makes no independent claim. Parent: [40] (contribution).",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 42,
+      "text": "We suggest that entry points to phases of exploitation can serve as an experimental proxy for creative leaps.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the paper's proposed conceptual move/claim.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 43,
+      "text": "Qualitative descriptions of creative processes suggest that creative leaps often occur in the periphery of a field [29], through a road that is not often taken.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding/characterization from prior cited work.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 44,
+      "text": "In addition, creativity was previously linked to ambiguity [30].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports another prior finding with citation.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 45,
+      "text": "We therefore hypothesize that: (H4) Shapes at the entry points to phases of exploitation are more ambiguous, in the sense that they can lead different players to different categories.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States H4 formally.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 46,
+      "text": "Finally, we hypothesize that (H5) People show individual differences in their search strategies and patterns.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States H5 formally.",
+      "cars_move": null,
+      "cars_step": null
+    },
+    {
+      "id": 47,
+      "text": "In the results section we operationalize these hypotheses in terms of the creative foraging task.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure/plan of the paper going forward.",
+      "cars_move": null,
+      "cars_step": null
+    }
+  ]
+}
