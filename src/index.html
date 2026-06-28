@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StructuralView</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #F5F3EF;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #DDD;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 52px;
+}
+
+.app-title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: #333;
+  white-space: nowrap;
+}
+
+.paper-tabs {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  flex: 1;
+}
+
+.tab {
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .12s, color .12s;
+}
+.tab:hover { background: #F0EDE8; color: #333; }
+.tab.active { background: #222; color: #fff; }
+
+.legend-toggle {
+  padding: 5px 12px;
+  border: 1px solid #CCC;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.legend-toggle:hover { background: #F0EDE8; }
+
+/* ── Layout ──────────────────────────────────────────────── */
+.app-body {
+  display: flex;
+  gap: 0;
+}
+
+/* ── Legend ──────────────────────────────────────────────── */
+.legend {
+  width: 200px;
+  min-width: 200px;
+  padding: 20px 16px;
+  border-right: 1px solid #DDD;
+  background: #fff;
+  position: sticky;
+  top: 52px;
+  height: calc(100vh - 52px);
+  overflow-y: auto;
+  display: none;
+}
+.legend.visible { display: block; }
+
+.legend-section-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 14px 0 6px;
+}
+.legend-section-label:first-child { margin-top: 0; }
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.legend-chip {
+  display: inline-block;
+  width: 28px;
+  height: 18px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.legend-label {
+  font-size: 11px;
+  color: #444;
+}
+
+/* ── Ribbon ──────────────────────────────────────────────── */
+.ribbon {
+  flex: 1;
+  padding: 28px 32px 60px;
+  max-width: 900px;
+}
+
+.paper-meta {
+  margin-bottom: 24px;
+}
+.paper-meta h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+.paper-meta .authors {
+  font-size: 12px;
+  color: #777;
+}
+
+.sentence-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 5px 0;
+  border-radius: 6px;
+  transition: background .08s;
+}
+.sentence-row:hover { background: rgba(0,0,0,.03); }
+.sentence-row.is-secondary { padding-left: 36px; }
+
+.sentence-num {
+  font-size: 10px;
+  color: #BBB;
+  min-width: 24px;
+  text-align: right;
+  padding-top: 4px;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 130px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .03em;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+.tag-chip.is-primary { color: #fff; }
+.tag-chip.is-secondary { color: #444; font-weight: 500; }
+
+.sentence-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.sentence-text {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #222;
+}
+
+.sentence-note {
+  font-size: 11px;
+  color: #999;
+  font-style: italic;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* ── Empty state ─────────────────────────────────────────── */
+.empty {
+  color: #AAA;
+  font-size: 14px;
+  padding: 40px 0;
+}
+</style>
+</head>
+<body>
+
+<header class="app-header">
+  <div class="app-title">StructuralView</div>
+  <nav class="paper-tabs" id="tabs"></nav>
+  <button class="legend-toggle" id="legendToggle">Legend</button>
+</header>
+
+<div class="app-body">
+  <aside class="legend" id="legend"></aside>
+  <main class="ribbon" id="ribbon">
+    <p class="empty">Select a paper above.</p>
+  </main>
+</div>
+
+<script>
+const PAPERS    = [{"paper":{"id":"aswamenakul_2025","title":"Foraging dynamics of Picasso's lifelong artistic creativity","authors":["Aswamenakul, C.","Mallen, E.","Marghetis, T."],"year":2025,"section":"Introduction"},"sentences":[{"id":1,"text":"In extreme cases, individuals dedicate their entire lives to continuous creative output.","tag":"emph","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":2,"text":"Scientists, artists, writers, and other \"hypercreative\" individuals can spend decades in the sustained pursuit of creative breakthrough.","tag":"extension:illustrative","tier":"secondary","parent_id":1,"note":"Elaborates [1]'s claim with the specific populations who exemplify it. Parent: [1] (emph).","cars_move":null,"cars_step":null},{"id":3,"text":"This long-timescale creativity can be likened to a process of foraging, a strategic search for resources — in this case, creative ideas — in an uncertain landscape of possibility.","tag":"framedef","tier":"primary","parent_id":null,"note":"Introduces the foraging metaphor as the paper's core analytical construct.","cars_move":null,"cars_step":null},{"id":4,"text":"Scientists, for instance, forage through a space of potential theories or mechanisms, while visual artists forage through a space of styles, themes, or techniques.","tag":"extension:illustrative","tier":"secondary","parent_id":3,"note":"Illustrates the foraging metaphor from [3] with concrete domain examples, no citation. Parent: [3] (framedef).","cars_move":null,"cars_step":null},{"id":5,"text":"Indeed, human creativity on a much shorter timescale — for instance, solving a puzzle over the course of seconds or minutes — has been characterized as a foraging process [1–4].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-supported claim reporting prior research.","cars_move":null,"cars_step":null},{"id":6,"text":"Much less is known about the dynamics of creativity over the long sweep of an entire career, particularly among those extreme, hypercreative individuals who devote their entire lives to a creative endeavor [5–7].","tag":"nostat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":7,"text":"What strategies might characterize the long-timescale foraging dynamics of lifelong creativity?","tag":"contribution","tier":"primary","parent_id":null,"note":"Announces the guiding research question the study pursues.","cars_move":null,"cars_step":null},{"id":8,"text":"A number of foraging strategies are likely candidates.","tag":"link:opening","tier":"secondary","parent_id":7,"note":"Pure structural announcement, no independent claim. Parent: [7] (contribution).","cars_move":null,"cars_step":null},{"id":9,"text":"One that is widespread across living organisms is Area-Restricted Search [9], in which the foraging individual alternates between periods of widespread, global 'exploration' and periods of intensive, local 'exploitation' of the resources within a particularly resource-dense patch (e.g., seabirds foraging for fish [10]).","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":10,"text":"This alternation between exploration and exploitation has analogs in more abstract forms of search [11].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-supported cross-domain generalization.","cars_move":null,"cars_step":null},{"id":11,"text":"On the timescale of seconds and minutes, for instance, searching in semantic memory (e.g., for names of animals) often resembles Area-Restricted Search, with repeated cycles of exploitation (e.g., retrieving as many barnyard animals as possible) and exploration (i.e., searching for a new subtype of animal, e.g., pets) [2, 3].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-backed domain-level pattern framed as an example; elevated per the rule that such sentences are tempstat even when illustrative in framing.","cars_move":null,"cars_step":null},{"id":12,"text":"Similarly, when musicians improvise, they may trade off repeatedly between exploring widely in the space of possible sounds and exploiting a particular acoustic texture [12].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-backed domain-level pattern, same basis as [11].","cars_move":null,"cars_step":null},{"id":13,"text":"On the longer timescale of months and years, individual reading habits may follow an Area-Restricted Search strategy; indeed, computational analyses of Charles Darwin's reading habits found repeated alternations between exploitation (reading thematically related books) and exploration (switching to new topics) [13].","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":14,"text":"Thus, when humans are foraging for insights or information — whether internally in their memory or externally in books — they sometimes adopt a strategy of Area-Restricted Search.","tag":"link:closing","tier":"secondary","parent_id":13,"note":"Synthesizes the preceding sequence [11]–[13]. Parent: [13] (tempstat).","cars_move":null,"cars_step":null},{"id":15,"text":"While Area-Restricted Search involves cyclical shifts between exploration and exploitation, long-timescale creativity might follow more directional patterns of change.","tag":"contrast","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":16,"text":"Long-timescale creativity, for instance, can involve progressive specialization.","tag":"emph","tier":"primary","parent_id":null,"note":"Asserts the existence of a phenomenon (progressive specialization) as worth attending to.","cars_move":null,"cars_step":null},{"id":17,"text":"Individuals might start with a vast exploration of diverse possibilities (e.g., random trial-and-error exploration of a large range of possibilities) before gradually honing in on a particular style, approach, practice, or idea.","tag":"extension:definitional","tier":"secondary","parent_id":16,"note":"Unpacks the specialization pattern asserted in [16]. Parent: [16] (emph).","cars_move":null,"cars_step":null},{"id":18,"text":"We refer to this process of specialization as Constrictive Search.","tag":"framedef","tier":"primary","parent_id":null,"note":"Names the construct.","cars_move":null,"cars_step":null},{"id":19,"text":"Constrictive Search might be especially common in domains where experts specialize in a narrow subset of all possible techniques or strategies.","tag":"extension:speculative","tier":"secondary","parent_id":18,"note":"Prediction without evidentiary support, per the worked example in the prompt. Parent: [18] (framedef).","cars_move":null,"cars_step":null},{"id":20,"text":"Some scientists and artists, for instance, may begin their careers by searching widely across a large range of topics or styles before constricting to a particular area of expertise.","tag":"extension:illustrative","tier":"secondary","parent_id":18,"note":"Illustrates [19], but since [19] is secondary, this re-parents to the nearest primary above, [18] (framedef), per the subordination rule rather than elevating [19].","cars_move":null,"cars_step":null},{"id":21,"text":"Among scientists and artists who experience a 'hot streak' of sustained success [7], for instance, the hot streak is typically preceded by a period of widespread intellectual or stylistic exploration, followed by a constricted focus on the more narrow set of styles, themes, or topics that dominate their hot streak.","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-supported specific empirical finding.","cars_move":null,"cars_step":null},{"id":22,"text":"More generally, constrictive search is the basis of simulated annealing in optimization [14] or transient diversity in collective problem solving [15, 16].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-supported cross-domain generalization.","cars_move":null,"cars_step":null},{"id":23,"text":"Here we consider whether Constrictive Search may even characterize entire careers.","tag":"contribution","tier":"primary","parent_id":null,"note":"Frames the specific question the present work examines.","cars_move":null,"cars_step":null},{"id":24,"text":"The American painter Jackson Pollock, for instance, experimented with a variety of styles early in his career [17] before narrowing his output to his signature style of fractal 'drip' paintings [18].","tag":"extension:illustrative","tier":"secondary","parent_id":23,"note":"Named individual used as an example with a primary parent ([23], contribution); stays illustrative even with citation, per the explicit rule. Parent: [23] (contribution).","cars_move":null,"cars_step":null},{"id":25,"text":"A third potential foraging strategy in high-level creativity involves starting small — focusing on a limited set of styles, themes, or ideas — and expanding over time as a result of ongoing learning and adaptation.","tag":"emph","tier":"primary","parent_id":null,"note":"Asserts the existence of a third foraging strategy pattern; not a bare topic label.","cars_move":null,"cars_step":null},{"id":26,"text":"We refer to this as Expansive Search.","tag":"framedef","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":27,"text":"Formal models in ecology, for instance, have shown that organisms should increase their home-range — the region in which they forage — when resources become more scarce or random [19].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-supported finding from a related domain, establishing the basis for the analogy.","cars_move":null,"cars_step":null},{"id":28,"text":"This notion of an expanded home-range has analogs in creative domains.","tag":"emph","tier":"primary","parent_id":null,"note":"Asserts that analogs exist (a claim of relevance/existence), not a bare topic label.","cars_move":null,"cars_step":null},{"id":29,"text":"Mathematical discoveries, for instance, are scarce and difficult to foresee; mathematical experts gradually expand their toolbox, cultivating procedural flexibility that allows them to deploy a variety of strategies and techniques [20].","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":30,"text":"Visual artists, similarly, may incorporate new styles, themes, or techniques into their artistic practice, thus unlock new dimensions of possibility and qualitatively expanding the nature of the explored space itself.","tag":"extension:illustrative","tier":"secondary","parent_id":29,"note":"Uncited parallel case extending [29]. Parent [29] is primary, so legal. Parent: [29] (tempstat).","cars_move":null,"cars_step":null},{"id":31,"text":"Here, we investigate the foraging dynamics of artistic creativity of an especially prolific visual artist, Pablo Picasso.","tag":"contribution","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":32,"text":"Picasso is widely considered one of the most influential artists of the 20th century [21–23].","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":33,"text":"Picasso was so prolific that, between his first painting when he was 8 years old until he died at the age of 91, he produced on the order of 50000 works of art [23], averaging more than one new artwork every day of his entire life.","tag":"extension:illustrative","tier":"secondary","parent_id":32,"note":"Citation-backed specific fact substantiating the \"prolific\" characterization rather than introducing a new generalization. Parent: [32] (tempstat).","cars_move":null,"cars_step":null},{"id":34,"text":"Moreover, he's credited with contributing to a number of 20th century artistic developments, including Cubism and Surrealism [21–23].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Distinct citation-supported claim establishing significance (artistic movements).","cars_move":null,"cars_step":null},{"id":35,"text":"As a complement to computational analyses that have zoomed out to identify visual or aesthetic patterns across many artists [24–28], we zoomed in on Picasso's prodigious output — hypercreative in both quantity and innovation — as an opportunity to investigate the dynamics of day-to-day creative foraging over the long sweep of an exceptionally creative career.","tag":"contribution","tier":"primary","parent_id":null,"note":"Positions the study's approach relative to prior work; states what the present work does.","cars_move":null,"cars_step":null},{"id":36,"text":"We leveraged a digital catalogue of Picasso's prodigious output to characterize his long-timescale creative process.","tag":"contribution","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":37,"text":"We embedded images of every painting (N = 5008) into a high-dimensional 'style space' that captures both low-level and high-level stylistic features.","tag":"contribution","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":38,"text":"We then analyzed the trajectory within this style space of Picasso's day-to-day stylistic output over the course of his eight-decade career.","tag":"contribution","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":39,"text":"To characterize this trajectory, we calculated the magnitude of day-to-day stylistic movements (i.e., how much his style changed from day to day) and changes in the direction of this movement (i.e., the cosine similarity of successive movements).","tag":"contribution","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":40,"text":"We then investigate the long-timescale dynamics that emerge from this day-to-day stylistic foraging, including changes over his career in the scope of his stylistic output.","tag":"contribution","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null}]},{"paper":{"id":"hart_2017","title":"Creative foraging: An experimental paradigm for studying exploration and discovery","authors":["Hart, Y.","Mayo, A.E.","Mayo, R.","Rozenkrantz, L.","Tendler, A.","Alon, U.","Noy, L."],"year":2017,"section":"Introduction"},"sentences":[{"id":1,"text":"Creative exploration and discovery processes are defined as the search for novel and valuable elements within a set of constraints.","tag":"framedef","tier":"primary","parent_id":null,"note":"Introduces the paper's working definition of the core construct.","cars_move":null,"cars_step":null},{"id":2,"text":"Creative exploration is central for many fields, including art [1], design [2] and science [3].","tag":"emph","tier":"primary","parent_id":null,"note":"Asserts the significance/relevance of the topic across domains.","cars_move":null,"cars_step":null},{"id":3,"text":"More generally, it is an integral part of cognitive development [4,5].","tag":"emph","tier":"primary","parent_id":null,"note":"Extends the importance claim to a further domain.","cars_move":null,"cars_step":null},{"id":4,"text":"Despite progress achieved in understanding creative search processes from different perspectives [6–14], much is still unknown about their underlying dynamics and mechanisms.","tag":"nostat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":5,"text":"One obstacle for understanding creative exploration is the lack of automated and high-resolution experimental paradigms.","tag":"nostat","tier":"primary","parent_id":null,"note":"Identifies a specific methodological gap underlying [4].","cars_move":null,"cars_step":null},{"id":6,"text":"For example, one of the most commonly used tests for creativity is the alternate usage task (AUT) [15].","tag":"extension:illustrative","tier":"secondary","parent_id":5,"note":"Gives a concrete example of the paradigm-gap claim in [5]. Parent: [5] (nostat).","cars_move":null,"cars_step":null},{"id":7,"text":"In the AUT participants are asked to come up with creative uses for common objects (e.g., a ping-pong ball).","tag":"extension:definitional","tier":"secondary","parent_id":5,"note":"Unpacks how the AUT works; re-parented to [5] (nostat), since original parent [6] is secondary.","cars_move":null,"cars_step":null},{"id":8,"text":"Participants show exploration patterns such as switching between categories of solutions [12].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Reports a specific empirical finding from prior work, with citation.","cars_move":null,"cars_step":null},{"id":9,"text":"This test is coded manually, a laborious process which limits the extent of feasible studies.","tag":"contrast","tier":"primary","parent_id":null,"note":"Introduces a limitation of the AUT.","cars_move":null,"cars_step":null},{"id":10,"text":"The test is difficult to analyze and model because the space of possible solutions is undefined (how many different usages for a ping-pong ball exist?) and has no natural notion of similarity between different solutions.","tag":"extension:definitional","tier":"secondary","parent_id":9,"note":"Unpacks/elaborates the limitation named in [9]. Parent: [9] (contrast).","cars_move":null,"cars_step":null},{"id":11,"text":"Other common creativity tests share these limitations [16].","tag":"contrast","tier":"primary","parent_id":null,"note":"Generalizes the critique from AUT specifically to creativity tests broadly, with citation support.","cars_move":null,"cars_step":null},{"id":12,"text":"More fundamentally, AUT and other common creativity tests record only the discovered solutions and not the intermediate steps leading from one solution to another.","tag":"contrast","tier":"primary","parent_id":null,"note":"Opens a new, deeper line of critique.","cars_move":null,"cars_step":null},{"id":13,"text":"Thus, they do not allow insight into the process of exploration.","tag":"extension:definitional","tier":"secondary","parent_id":12,"note":"Draws out the implication of [12]'s claim. Parent: [12] (contrast).","cars_move":null,"cars_step":null},{"id":14,"text":"Several studies attempted to map the processes leading to creative solutions by recording verbal transcripts of thought processes—the 'think aloud' method [2,17].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Reports a specific prior research approach with citation.","cars_move":null,"cars_step":null},{"id":15,"text":"However, these methods are difficult to code and quantitatively analyze.","tag":"contrast","tier":"primary","parent_id":null,"note":"Limitation of the think-aloud method just introduced in [14].","cars_move":null,"cars_step":null},{"id":16,"text":"Here, we introduce a new paradigm for creative exploration that allows automated tracking of the search process in a space of possibilities that is large yet well-defined.","tag":"novstat","tier":"primary","parent_id":null,"note":"Explicit novelty claim marking the transition to the present work.","cars_move":null,"cars_step":null},{"id":17,"text":"To achieve this, we borrow techniques from the study of human foraging.","tag":"contribution","tier":"primary","parent_id":null,"note":"States the methodological approach/strategy of the current paper.","cars_move":null,"cars_step":null},{"id":18,"text":"In a series of studies Hills, Todd and colleagues used a spatial foraging task and a letter puzzle task to experimentally study human foraging behavior [18–21].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Reports prior research findings/methods with citation.","cars_move":null,"cars_step":null},{"id":19,"text":"These experimental foraging tasks employed solution spaces which are finite and well-defined [22].","tag":"extension:definitional","tier":"secondary","parent_id":18,"note":"Elaborates a property of the tasks introduced in [18]. Parent: [18] (tempstat).","cars_move":null,"cars_step":null},{"id":20,"text":"For example, in the spatial foraging task participants searched for resources on a grid of locations.","tag":"extension:illustrative","tier":"secondary","parent_id":18,"note":"Concrete example of the foraging task type; re-parented to [18] (tempstat), since original parent [19] is secondary.","cars_move":null,"cars_step":null},{"id":21,"text":"This task records intermediate steps between solutions and has a clear distance metric, features that allow the foraging behavior to be quantitatively analyzed and mathematically modeled using optimal foraging theory (OFT) [23].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Reports a substantive claim about the paradigm's analytic value, with citation to OFT.","cars_move":null,"cars_step":null},{"id":22,"text":"In order to develop a similar task for creative search, we need to address one key difference between foraging and creative search.","tag":"contribution","tier":"primary","parent_id":null,"note":"States the paper's goal/rationale for adapting the foraging paradigm.","cars_move":null,"cars_step":null},{"id":23,"text":"In the foraging tasks, the goal is to find as many solutions as possible; in creativity tests the goal is two-fold: (i) to find many solutions (fluency) (ii) of high quality (novel and valuable).","tag":"extension:definitional","tier":"secondary","parent_id":22,"note":"Unpacks the \"key difference\" flagged in [22]. Parent: [22] (contribution).","cars_move":null,"cars_step":null},{"id":24,"text":"In other words, whereas the value of the different solutions in the foraging tasks is constant (for example, all foraged pixels in the spatial foraging task are equally valuable), the distribution of solution values in creativity tests is skewed, with many low-quality solutions (boring or non-feasible) and only a handful of high-quality creative solutions.","tag":"extension:definitional","tier":"secondary","parent_id":22,"note":"Further unpacks the key difference; re-parented to [22] (contribution), since original parent [23] is secondary.","cars_move":null,"cars_step":null},{"id":25,"text":"We present a paradigm for creative foraging in which players seek solutions that they find interesting and beautiful, embedded within a well-defined search space.","tag":"contribution","tier":"primary","parent_id":null,"note":"Announces the paper's specific paradigm/contribution.","cars_move":null,"cars_step":null},{"id":26,"text":"The creative foraging game enables high-resolution measurement of creative, intrinsically motivated search in the framework of visual exploration and discovery [24–28].","tag":"contribution","tier":"primary","parent_id":null,"note":"Further specifies the purpose/framing of the contribution.","cars_move":null,"cars_step":null},{"id":27,"text":"The creative foraging game is a computer game in which players can move ten adjacent squares to create different shapes (Fig 1).","tag":"contribution","tier":"primary","parent_id":null,"note":"Describes the method/task structure of the current study.","cars_move":null,"cars_step":null},{"id":28,"text":"There are 36,446 possible shapes (Section A in S1 File).","tag":"extension:definitional","tier":"secondary","parent_id":27,"note":"Elaborates a specific parameter of the task described in [27]. Parent: [27] (contribution).","cars_move":null,"cars_step":null},{"id":29,"text":"The players are instructed to save shapes that they find interesting and beautiful into a gallery.","tag":"extension:definitional","tier":"secondary","parent_id":27,"note":"Continues describing task mechanics; re-parented to [27] (contribution), since original parent [28] is secondary.","cars_move":null,"cars_step":null},{"id":30,"text":"The timing of all moves and gallery choices is recorded.","tag":"extension:definitional","tier":"secondary","parent_id":27,"note":"Continues task description; re-parented to [27] (contribution), since original parent [29] is secondary.","cars_move":null,"cars_step":null},{"id":31,"text":"This setting allows us to observe all intermediate steps as people search a large but finite metric space of different possibilities.","tag":"link:closing","tier":"secondary","parent_id":27,"note":"Synthesizes the preceding task-description sentences ([27]–[30]). Parent: [27] (contribution).","cars_move":null,"cars_step":null},{"id":32,"text":"We present data on 100 participants and interpret the results in the context of OFT according to the following hypotheses:","tag":"contribution","tier":"primary","parent_id":null,"note":"Announces scope (sample) and structure (hypotheses to follow) of the current paper.","cars_move":null,"cars_step":null},{"id":33,"text":"(H1) Participants' trajectories in shape space are composed of distinguishable phases of exploration and exploitation: exploration for new shape categories and exploitation of similar shapes within a category.","tag":"contribution","tier":"primary","parent_id":null,"note":"States a specific hypothesis of the current study.","cars_move":null,"cars_step":null},{"id":34,"text":"(H2) In phases of exploitation people move along optimal (shortest) paths.","tag":"contribution","tier":"primary","parent_id":null,"note":"States a specific hypothesis of the current study.","cars_move":null,"cars_step":null},{"id":35,"text":"Our third hypothesis diverges from the predictions of a naïve version of OFT, in which there is a constant value for any shape collected.","tag":"contrast","tier":"primary","parent_id":null,"note":"Frames H3 as diverging from a prior theoretical account (naïve OFT).","cars_move":null,"cars_step":null},{"id":36,"text":"The performance metric in naïve OFT is therefore the amount of collected resources.","tag":"extension:definitional","tier":"secondary","parent_id":35,"note":"Unpacks the naïve OFT account referenced in [35]. Parent: [35] (contrast).","cars_move":null,"cars_step":null},{"id":37,"text":"Hence naïve OFT predicts that exploitation of a given patch is terminated due to diminishing returns caused by depletion of the patch.","tag":"extension:definitional","tier":"secondary","parent_id":35,"note":"Continues unpacking the naïve OFT prediction; re-parented to [35] (contrast), since original parent [36] is secondary.","cars_move":null,"cars_step":null},{"id":38,"text":"In contrast, in creative foraging the intrinsic interest 'value' of collected resources is important.","tag":"contrast","tier":"primary","parent_id":null,"note":"Explicitly opposes the naïve OFT account elaborated in [35]–[37].","cars_move":null,"cars_step":null},{"id":39,"text":"Collection from a given patch may lead to diminishing interest, far before the patch is depleted.","tag":"extension:speculative","tier":"secondary","parent_id":38,"note":"Extends the contrast claim in [38] into an unevidenced prediction. Parent: [38] (contrast).","cars_move":null,"cars_step":null},{"id":40,"text":"We therefore hypothesize that: (H3) In creative foraging participants leave exploitation phases sooner than predicted by naïve OFT, far before patch depletion.","tag":"contribution","tier":"primary","parent_id":null,"note":"States H3 formally.","cars_move":null,"cars_step":null},{"id":41,"text":"The next hypothesis concerns the moment when a new category of shapes is discovered.","tag":"link:opening","tier":"secondary","parent_id":40,"note":"Pure structural announcement of the upcoming topic (H4); makes no independent claim. Parent: [40] (contribution).","cars_move":null,"cars_step":null},{"id":42,"text":"We suggest that entry points to phases of exploitation can serve as an experimental proxy for creative leaps.","tag":"contribution","tier":"primary","parent_id":null,"note":"States the paper's proposed conceptual move/claim.","cars_move":null,"cars_step":null},{"id":43,"text":"Qualitative descriptions of creative processes suggest that creative leaps often occur in the periphery of a field [29], through a road that is not often taken.","tag":"tempstat","tier":"primary","parent_id":null,"note":"Reports a finding/characterization from prior cited work.","cars_move":null,"cars_step":null},{"id":44,"text":"In addition, creativity was previously linked to ambiguity [30].","tag":"tempstat","tier":"primary","parent_id":null,"note":"Reports another prior finding with citation.","cars_move":null,"cars_step":null},{"id":45,"text":"We therefore hypothesize that: (H4) Shapes at the entry points to phases of exploitation are more ambiguous, in the sense that they can lead different players to different categories.","tag":"contribution","tier":"primary","parent_id":null,"note":"States H4 formally.","cars_move":null,"cars_step":null},{"id":46,"text":"Finally, we hypothesize that (H5) People show individual differences in their search strategies and patterns.","tag":"contribution","tier":"primary","parent_id":null,"note":"States H5 formally.","cars_move":null,"cars_step":null},{"id":47,"text":"In the results section we operationalize these hypotheses in terms of the creative foraging task.","tag":"contribution","tier":"primary","parent_id":null,"note":"Announces the structure/plan of the paper going forward.","cars_move":null,"cars_step":null}]},{"paper":{"id":"kello_2023","title":"Emergent Mental Lexicon Functions in ChatGPT","authors":["Kello, C.","Bruna, P."],"year":2023,"section":"Introduction"},"sentences":[{"id":1,"text":"LLMs have developed a surprising and impressive ability to perform a wide range of prompted tasks on which they were not directly trained (Wei, Tay, et al., 2022).","tag":"emph","tier":"primary","parent_id":null,"note":"Asserts the existence and significance of a phenomenon to open the paper.","cars_move":null,"cars_step":null},{"id":2,"text":"Training is primarily based on learning sequences through prediction in the context of surrounding tokens (e.g. words), and training data consists of many long sequences of text and symbols culled from various corpora.","tag":"extension:definitional","tier":"secondary","parent_id":1,"note":"Unpacks the mechanism behind [1]. Parent: [1] (emph).","cars_move":null,"cars_step":null},{"id":3,"text":"After training, a prompt can be written to begin a context, and then an LLM like that used in ChatGPT can continue and expand the context by autoregressively predicting and producing subsequent tokens until an end of response is predicted.","tag":"extension:definitional","tier":"secondary","parent_id":1,"note":"Continues unpacking the mechanism; parent [1].","cars_move":null,"cars_step":null},{"id":4,"text":"As a result, LLMs can generalize from their training data to produce responses to prompts that answer questions, perform tasks, solve problems, and generate plausible text and/or numbers given the context (OpenAI, 2023).","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-backed generalization about LLM capability.","cars_move":null,"cars_step":null},{"id":5,"text":"Continuations can be sometimes bizarre, offensive, biased, untruthful, or otherwise unhelpful, so LLM responses are also fine-tuned to be more helpful and appropriate, often through reinforcement learning based on targeted sets of prompts and responses (Ouyang et al., 2022).","tag":"contrast","tier":"primary","parent_id":null,"note":"Qualifies/limits the capability in [4].","cars_move":null,"cars_step":null},{"id":6,"text":"LLM functions assembled from prompts are often referred to as emergent because they are untrained and become available as training corpora and model parameters become larger (Bommasani et al., 2021).","tag":"framedef","tier":"primary","parent_id":null,"note":"Names the \"emergent\" construct used as analytical machinery.","cars_move":null,"cars_step":null},{"id":7,"text":"Fine-tuning plays a role in shaping LLM responses, especially those targeted by human feedback, but this feedback is limited relative to the remarkable breadth and scope of emergent functionality.","tag":"contrast","tier":"primary","parent_id":null,"note":"Qualifies [6] by limiting fine-tuning's role relative to emergence.","cars_move":null,"cars_step":null},{"id":8,"text":"Investigations are underway to understand how LLM functions emerge from transformer networks.","tag":"tempstat","tier":"primary","parent_id":null,"note":"Reports current state of research activity.","cars_move":null,"cars_step":null},{"id":9,"text":"One technique is to prompt them with examples of the desired function so the LLM may generalize by similarity and analogy (Wei, Tay, et al., 2022).","tag":"extension:illustrative","tier":"secondary","parent_id":8,"note":"Example of the investigations in [8]. Parent: [8] (tempstat).","cars_move":null,"cars_step":null},{"id":10,"text":"Such few shot learning protocols can be effective, but functions can also be assembled with no examples, so-called zero shot learning or reasoning (Kojima et al., 2022).","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-backed report of an established distinction (few-shot vs. zero-shot), independent of [9].","cars_move":null,"cars_step":null},{"id":11,"text":"Few and zero shot learning suggests that transformer networks learn general-purpose representations that serve as pre-trained \"building blocks\" ready for on-the-fly assembly directed by prompting (Jiang & Bansal, 2021).","tag":"extension:speculative","tier":"secondary","parent_id":10,"note":"Interpretive extension (\"suggests\") drawn from [10]; parent [10] is primary, so valid. Parent: [10] (tempstat).","cars_move":null,"cars_step":null},{"id":12,"text":"Emergent function stands in contrast with the idea that prompts serve as cues for locating and recalling functions in training data memorized in ChatGPT's weight matrices (Reynolds & McDonell, 2021).","tag":"contrast","tier":"primary","parent_id":null,"note":"Sets emergence against the competing memorization account.","cars_move":null,"cars_step":null},{"id":13,"text":"Indeed, LLMs can memorize sequences from their training data (Carlini et al., 2022), and the function of memorization may be as emergent as any other LLM function (Biderman et al., 2023).","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-backed findings complicating the contrast in [12].","cars_move":null,"cars_step":null},{"id":14,"text":"We aim to test emergence versus memorization as a window into how LLMs may serve as models of human language and cognition.","tag":"contribution","tier":"primary","parent_id":null,"note":"States the paper's overarching aim.","cars_move":null,"cars_step":null},{"id":15,"text":"We investigate the emergence versus memorization hypotheses by prompting ChatGPT with tests of the human mental lexicon, which refers to a person's knowledge of, and facility with, the words of their language, including spelling, sound, meaning, and grammar (Aitchison, 2012).","tag":"contribution","tier":"primary","parent_id":null,"note":"Specifies the method/target construct for [14]'s aim.","cars_move":null,"cars_step":null},{"id":16,"text":"The mental lexicon has long been a testbed for theoretical frameworks of cognition and information processing, most notably in debates between rule-based versus connectionist processing (Coltheart et al., 1993; Smolensky, 1988).","tag":"tempstat","tier":"primary","parent_id":null,"note":"Independent claim about the field's history; not link:opening since it asserts content beyond naming a topic.","cars_move":null,"cars_step":null},{"id":17,"text":"LLMs are founded on connectionist processing, but they offer a different theory of the human mental lexicon, and of human cognition more generally, compared with prior connectionist or rule-based theories.","tag":"contrast","tier":"primary","parent_id":null,"note":"Positions LLMs against the two camps named in [16].","cars_move":null,"cars_step":null},{"id":18,"text":"For instance, the Dual-Route Cascade model (Coltheart et al., 2001) of word and nonword reading posits several rule-based mechanisms for mapping letters to sounds, accessing the stored meanings and sounds of words, and producing sequences of phonemes.","tag":"extension:illustrative","tier":"secondary","parent_id":17,"note":"Concrete example illustrating the rule-based side of [17]'s contrast. Parent: [17] (contrast).","cars_move":null,"cars_step":null},{"id":19,"text":"By contrast, the distributed connectionist (Plaut et al., 1996; Seidenberg & McClelland, 1987) posits learned mappings between the spellings, sounds, and meanings of words.","tag":"extension:illustrative","tier":"secondary","parent_id":17,"note":"Parallel example illustrating the connectionist side; same parent [17]. Parent: [17] (contrast).","cars_move":null,"cars_step":null},{"id":20,"text":"The theories espouse different principles of word and nonword reading, but they make the same implicit assumption that the posited mechanisms and mappings are dedicated functions of sustained structures in the brains and minds of readers.","tag":"tempstat","tier":"primary","parent_id":null,"note":"Asserts a novel generalization (shared implicit assumption) across the illustrated theories, going beyond mere synthesis, so retained as primary rather than link:closing.","cars_move":null,"cars_step":null},{"id":21,"text":"Model outputs can be shaped by task demands and context if enabled by the mechanisms or mappings, but the model architectures cannot reorganize themselves for different purposes under different conditions.","tag":"extension:definitional","tier":"secondary","parent_id":20,"note":"Unpacks \"dedicated functions of sustained structures\" from [20]. Parent: [20] (tempstat).","cars_move":null,"cars_step":null},{"id":22,"text":"Assumptions of dedicated functions and sustained structures are held by most models of language of cognitive functions.","tag":"emph","tier":"primary","parent_id":null,"note":"Asserts the breadth of the assumption defined in [20]/[21].","cars_move":null,"cars_step":null},{"id":23,"text":"LLMs offer a different approach to theorizing about the mental lexicon, and language and cognition in general.","tag":"link:closing","tier":"secondary","parent_id":22,"note":"Synthesizes/transitions out of the dedicated-function discussion; nearest primary parent is [22] (immediately preceding). Parent: [22] (emph).","cars_move":null,"cars_step":null}]},{"paper":{"id":"ryskin_2025","title":"Efficient Audience Design in LLMs","authors":["Ryskin, R.","et al."],"year":2025,"section":"Introduction"},"sentences":[{"id":1,"text":"Human communication is inherently social, requiring speakers to tailor their language to their audience's knowledge and goals (e.g. H. H. Clark & Wilkes-Gibbs, 1986; H. Clark, 1992; Brown-Schmidt, Yoon, & Ryskin, 2015).","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":2,"text":"For example, Isaacs and Clark (1987) showed that, in conversations with listeners who are familiar with New York City (NYC), New Yorkers described pictures of NYC locations succinctly, using landmarks names like \"Citicorp Building.\"","tag":"extension:illustrative","tier":"secondary","parent_id":1,"note":"Parent [1]. Concrete illustration of the prior tempstat claim, explicitly example-marked.","cars_move":null,"cars_step":null},{"id":3,"text":"In contrast, when addressing listeners who were unfamiliar with NYC, they provided longer descriptions, such as \"the building with the slanted roof\" for that same building.","tag":"extension:illustrative","tier":"secondary","parent_id":1,"note":"Re-parents to [1] (nearest primary above), continuing the same Isaacs & Clark illustration begun in [2].","cars_move":null,"cars_step":null},{"id":4,"text":"In addition to relying on knowledge of the idiosyncrasies of their audience, speakers tailor their utterances to their conversation partners by collaboratively developing shared terms over the course of an interaction (e.g., Brennan & Clark, 1996; H. H. Clark & Wilkes-Gibbs, 1986; Hawkins, Frank, & Goodman, 2020).","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":5,"text":"For instance, when referring to an abstract tangram shape in the first round of a communication task, a speaker may use a lengthy utterance to refer to it such as \"uh, it looks like a person with the arms out to the left and head back kind of like they are dancing.\"","tag":"extension:illustrative","tier":"secondary","parent_id":4,"note":"Parent [4].","cars_move":null,"cars_step":null},{"id":6,"text":"The other interlocutor will typically acknowledge that they've understood which referent is intended (e.g., \"Uh, arms out, OK.\").","tag":"extension:illustrative","tier":"secondary","parent_id":4,"note":"Re-parents to [4], skipping [5].","cars_move":null,"cars_step":null},{"id":7,"text":"In a second round, when referring to the same shape, the speaker will be briefer and re-use the previously established terms, as in \"the person with the arms out that is dancing.\"","tag":"extension:illustrative","tier":"secondary","parent_id":4,"note":"Re-parents to [4].","cars_move":null,"cars_step":null},{"id":8,"text":"And by the third round, they may simply say \"the dancer\" and be clearly understood by their conversation partner.","tag":"extension:illustrative","tier":"secondary","parent_id":4,"note":"Re-parents to [4].","cars_move":null,"cars_step":null},{"id":9,"text":"In both forms of audience design, speakers appear to design their utterances with the goal of balancing informativeness — allowing their interlocutor to uniquely identify the referent — and effort — not producing more than is needed (i.e., being brief).","tag":"link:closing","tier":"secondary","parent_id":4,"note":"Synthesizes the two preceding cited phenomena ([1]–[3] and [4]–[8]) without new citation support; re-parents to [4], the nearest primary above.","cars_move":null,"cars_step":null},{"id":10,"text":"Whether this kind of communicative efficiency relies on sophisticated reasoning about the mental states of the interlocutor (H. H. Clark & Marshall, 1981; Hawkins et al., 2022; Heller & Brown-Schmidt, 2023) or can come about from more low-level memorial or alignment mechanisms (Horton & Gerrig, 2005; Pickering & Garrod, 2004) remains an open question.","tag":"nostat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":11,"text":"Communication with Large Language Models (LLMs), such as ChatGPT, appears to bear many of the hallmarks of human-to-human communication.","tag":"emph","tier":"primary","parent_id":null,"note":"Opens new sub-section but carries independent claim of relevance/similarity, so primary per Rule 1.","cars_move":null,"cars_step":null},{"id":12,"text":"Beyond producing fluent, human-sounding utterances, LLMs appear to perform similarly to humans on tests of pragmatic language interpretation, including indirect speech, metaphor, deceit, and humor (Hu, Floyd, Jouravlev, Fedorenko, & Gibson, 2023).","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":13,"text":"In humans, pragmatic understanding has often been thought to rely on reasoning about the mental states of the speaker.","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":14,"text":"Similarly, LLMs succeed on some tasks previously used to test Theory of Mind (ToM) in humans (Strachan et al., 2024).","tag":"tempstat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":15,"text":"However, LLM performance on pragmatic and ToM tasks remains to be fully characterized.","tag":"nostat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":16,"text":"For instance, Jones (2024) found that models, such as GPT-3, demonstrate sensitivity to belief states in the False Belief Task, but minor task modifications can lead to significant performance drops, suggesting that some of the successes of LLMs may reflect reliance on surface-level statistical patterns.","tag":"tempstat","tier":"primary","parent_id":null,"note":"Citation-backed report; internal \"but\" reflects the study's own results, not the author's contrast against prior literature.","cars_move":null,"cars_step":null},{"id":17,"text":"To our knowledge, whether LLMs engage in audience design, either through explicit information about the speaker's knowledge and expertise, or through the coordination of efficient reference over the course of an interaction, has not yet been tested.","tag":"nostat","tier":"primary","parent_id":null,"note":null,"cars_move":null,"cars_step":null},{"id":18,"text":"While LLMs succeed at other linguistic tasks thought to tap social reasoning about the communication partner, and they are trained to maximize the informativeness of their answers, it is unclear whether they are subject to a pressure for least effort, which may be necessary to elicit human-like audience design behavior.","tag":"nostat","tier":"primary","parent_id":null,"note":"\"While\" clause sets up tension, but rhetorical center is the unresolved question, matching nostat over contrast.","cars_move":null,"cars_step":null}]}];
+const COLORS    = {"tempstat": "#4F86C6", "emph": "#D4883A", "contrast": "#C85252", "nostat": "#8960B8", "novstat": "#3FAD72", "contribution": "#2EA898", "framedef": "#B8901E", "extension:speculative": "#D4C4E8", "extension:definitional": "#C0D4E8", "extension:illustrative": "#C0DCC8", "link:opening": "#DDD4C4", "link:closing": "#C4C8D4"};
+const LABELS    = {"tempstat": "tempstat", "emph": "emph", "contrast": "contrast", "nostat": "nostat", "novstat": "novstat", "contribution": "contribution", "framedef": "framedef", "extension:speculative": "ext·speculative", "extension:definitional": "ext·definitional", "extension:illustrative": "ext·illustrative", "link:opening": "link·opening", "link:closing": "link·closing"};
+const PRIMARY   = ["tempstat", "emph", "contrast", "nostat", "novstat", "contribution", "framedef"];
+const SECONDARY = ["extension:speculative", "extension:definitional", "extension:illustrative", "link:opening", "link:closing"];
+
+// ── State ──────────────────────────────────────────────────
+let activePaper = 0;
+let legendOpen  = false;
+
+// ── Init ───────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  buildLegend();
+  buildTabs();
+  renderPaper(0);
+
+  document.getElementById('legendToggle').addEventListener('click', () => {
+    legendOpen = !legendOpen;
+    document.getElementById('legend').classList.toggle('visible', legendOpen);
+  });
+});
+
+// ── Legend ─────────────────────────────────────────────────
+function buildLegend() {
+  const el = document.getElementById('legend');
+  let html = '<div class="legend-section-label">Primary</div>';
+  for (const tag of PRIMARY) {
+    html += legendItem(tag);
+  }
+  html += '<div class="legend-section-label">Secondary</div>';
+  for (const tag of SECONDARY) {
+    html += legendItem(tag);
+  }
+  el.innerHTML = html;
+}
+
+function legendItem(tag) {
+  return `<div class="legend-item">
+    <span class="legend-chip" style="background:${COLORS[tag] || '#CCC'}"></span>
+    <span class="legend-label">${LABELS[tag] || tag}</span>
+  </div>`;
+}
+
+// ── Tabs ───────────────────────────────────────────────────
+function buildTabs() {
+  const nav = document.getElementById('tabs');
+  nav.innerHTML = PAPERS.map((p, i) => {
+    const label = shortTitle(p.paper);
+    return `<button class="tab${i === 0 ? ' active' : ''}"
+              onclick="selectPaper(${i})">${label}</button>`;
+  }).join('');
+}
+
+function shortTitle(meta) {
+  const author = meta.authors ? meta.authors[0].split(',')[0] : meta.id;
+  return `${author} (${meta.year})`;
+}
+
+function selectPaper(i) {
+  activePaper = i;
+  document.querySelectorAll('.tab').forEach((t, j) =>
+    t.classList.toggle('active', i === j));
+  renderPaper(i);
+}
+
+// ── Ribbon ─────────────────────────────────────────────────
+function renderPaper(i) {
+  const paper = PAPERS[i];
+  if (!paper) return;
+  const el = document.getElementById('ribbon');
+
+  const meta = paper.paper;
+  const authStr = meta.authors ? meta.authors.join(', ') : '';
+
+  let html = `<div class="paper-meta">
+    <h2>${esc(meta.title)}</h2>
+    <div class="authors">${esc(authStr)} &middot; ${meta.year}</div>
+  </div>`;
+
+  for (const s of paper.sentences) {
+    html += renderRow(s);
+  }
+
+  el.innerHTML = html;
+}
+
+function renderRow(s) {
+  const tag     = s.tag || 'unknown';
+  const tier    = s.tier || (PRIMARY.includes(tag) ? 'primary' : 'secondary');
+  const color   = COLORS[tag] || '#CCC';
+  const label   = LABELS[tag] || tag;
+  const isSecondary = tier === 'secondary';
+
+  const chipClass = isSecondary ? 'tag-chip is-secondary' : 'tag-chip is-primary';
+  const rowClass  = isSecondary ? 'sentence-row is-secondary' : 'sentence-row';
+
+  const noteHtml = s.note
+    ? `<div class="sentence-note">${esc(s.note)}</div>`
+    : '';
+
+  return `<div class="${rowClass}">
+    <span class="sentence-num">${s.id}</span>
+    <span class="${chipClass}" style="background:${color}">${esc(label)}</span>
+    <div class="sentence-body">
+      <div class="sentence-text">${esc(s.text)}</div>
+      ${noteHtml}
+    </div>
+  </div>`;
+}
+
+function esc(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+</script>
+</body>
+</html>
