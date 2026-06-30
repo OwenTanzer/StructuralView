@@ -1,0 +1,360 @@
+{
+  "paper": {
+    "id": "vaccaro_2024",
+    "title": "vaccaro 2024",
+    "authors": [
+      "Vaccaro"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction opens with a compact **M1→M2→M3** spine, then cycles twice more through gap and niche moves embedded within the findings block. The first cycle (S9–S14) reframes the field's focus on *augmentation* as insufficient, elevating **synergy** as the real target before re-announcing the study corpus. A second micro-cycle (S19–S22) exploits a **prior-research emphasis vs. null finding** contrast to sharpen the paper's contribution. The net effect is a structure that continuously re-earns its niche rather than stating it once.",
+  "structured_arc": "M1 -> M2 -> M3 -> M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        3
+      ],
+      "role": "Establishes the significance and breadth of human–AI systems as a research territory, anchoring the paper in a recognized and consequential phenomenon before any gap is introduced."
+    },
+    {
+      "move": "M2",
+      "span": [
+        4,
+        6
+      ],
+      "role": "Counters the optimistic territory with evidence that human–AI systems often fail to outperform their parts alone, then converts that tension into the paper's central research question."
+    },
+    {
+      "move": "M3",
+      "span": [
+        7,
+        8
+      ],
+      "role": "Announces the meta-analytic study and defines its two focal constructs—synergy and augmentation—giving the reader the conceptual vocabulary needed for the rest of the introduction."
+    },
+    {
+      "move": "M1",
+      "span": [
+        9,
+        10
+      ],
+      "role": "Returns to territory to describe the field's prevailing focus on augmentation, setting the baseline against which the paper's higher standard (synergy) will be contrasted."
+    },
+    {
+      "move": "M2",
+      "span": [
+        11,
+        12
+      ],
+      "role": "Exposes the mismatch between what researchers typically measure and what practitioners actually expect, reframing the gap as a conceptual misalignment around the synergy criterion."
+    },
+    {
+      "move": "M1",
+      "span": [
+        13,
+        13
+      ],
+      "role": "Briefly re-grounds the argument in an emerging body of work on synergy, bridging from the gap back toward the paper's own contribution without reopening the gap."
+    },
+    {
+      "move": "M3",
+      "span": [
+        14,
+        18
+      ],
+      "role": "Re-occupies the niche by describing the meta-analytic corpus, reporting the headline findings on augmentation and the absence of synergy, and pivoting toward the moderator analysis that follows."
+    },
+    {
+      "move": "M1",
+      "span": [
+        19,
+        19
+      ],
+      "role": "Briefly characterizes prior research emphasis on confidence levels and explanations, providing the foil against which the paper's null finding will land as surprising."
+    },
+    {
+      "move": "M3",
+      "span": [
+        20,
+        20
+      ],
+      "role": "Delivers the null finding that neither factor significantly affected human–AI performance, converting the prior-research foil into a contribution claim."
+    },
+    {
+      "move": "M2",
+      "span": [
+        21,
+        21
+      ],
+      "role": "Identifies an under-investigated area—task types and relative human-vs-AI performance—creating a final mini-gap that the very next sentence closes."
+    },
+    {
+      "move": "M3",
+      "span": [
+        22,
+        23
+      ],
+      "role": "Reports the positive moderator findings and closes with a forward-looking contribution claim about designing future human–AI systems for greater synergy."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "People increasingly work with artificial intelligence (AI) tools in fields including medicine, finance and law, as well as in daily activities such as travelling, shopping and communicating.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "These human–AI systems have tremendous potential given the complementary nature of humans and AI—the general intelligence of humans allows us to reason about diverse problems, and the computational power of AI systems allows them to accomplish specific tasks that people find difficult.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and significance of human-AI systems by appealing to complementary potential. No citation; motivating claim establishing relevance rather than reporting a finding.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "A large body of work suggests that integrating human creativity, intuition and contextual understanding with AI's speed, scalability and analytical power can lead to innovative solutions and improved decision-making in areas such as health care, customer service and scientific research.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "However, a growing number of studies reveal that human–AI systems do not necessarily achieve better results than the best of humans or AI alone.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Challenges such as communication barriers, trust issues, ethical concerns and the need for effective coordination between humans and AI systems can hinder the collaborative process.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established findings from prior work (citations [4–9]) about sources of difficulty in human-AI collaboration.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Continues elaborating the gap by cataloguing known barriers; functions as gap-support rather than territory-building."
+    },
+    {
+      "id": 6,
+      "text": "These seemingly contradictory results raise important questions: when do humans and AI complement each other, and by how much?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "To address these issues, we conducted a systematic literature review and meta-analysis in which we quantified synergy in human–AI systems and identified factors that explain its presence (or absence) in different settings.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "We focused on two outcomes: (1) human–AI synergy, where the human–AI group performs better than both the human alone and the AI alone, which is analogous to strong synergy in human groups; and (2) human augmentation, where the human–AI group performs better than the human alone (see Supplementary Information section 1.1 for more details).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and names the two key conceptual constructs — \"human–AI synergy\" and \"human augmentation\" — that serve as the paper's analytical machinery.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "When evaluating human–AI systems, many studies focus on human augmentation.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "M2->M3 cycling: return to territory-review after initial M3 close, setting up the contrast between augmentation and synergy."
+    },
+    {
+      "id": 10,
+      "text": "This measure can serve important purposes in contexts for which full automation cannot happen for legal, ethical or safety reasons and in cases when AI does not align with human values.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 9,
+      "note": "Unpacks and delimits the scope of the human augmentation measure introduced in [9]; defines when the concept applies rather than giving a named illustrative case. Parent [9] is tempstat (primary). ✓",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "But when talking about the potential of human–AI systems, most people implicitly assume that the combined system should be better than either alone; otherwise, they would just use the best of the two.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension between what researchers measure (augmentation) and what is broadly expected of human-AI systems (synergy).",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "They are thus looking for human–AI synergy.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previously tagged extension:definitional with parent contrast [11] — a secondary-parented-by-secondary violation. Elevated to emph: the sentence asserts that synergy is the genuinely relevant target of interest, establishing its importance as an independent rhetorical claim.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Emphasises the unaddressed target (synergy) as the implicit gap; rhetorical function is gap-framing."
+    },
+    {
+      "id": 13,
+      "text": "In light of these considerations, a growing body of work emphasizes evaluating and searching for synergy in human–AI systems.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Brief return to territory framing, bridging back toward the study's own contribution."
+    },
+    {
+      "id": 14,
+      "text": "To evaluate synergy in human–AI systems, we analysed 370 unique effect sizes from 106 different experiments published between January 2020 and June 2023 that included the performance of the human-only, AI-only and human–AI systems.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "On average, we found evidence of human augmentation, meaning that the average human–AI systems performed better than the human alone.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a novel finding of the current study (human augmentation exists on average) as a results preview in the introduction.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "But we did not find human–AI synergy on average, meaning that the average human–AI systems performed worse than at least one of the human alone or the AI alone.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the contrasting novel finding — absence of synergy on average.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "So, in practice, if we consider only the performance dimensions the researchers studied, it would have been better to use either a human alone or an AI system alone rather than the human–AI systems studied.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Previously tagged extension:speculative, but no forward prediction or hypothesis is made. Synthesizes the practical implication of [15]–[16]; parents are novstat (primary). ✓",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "While this overall result may appear discouraging, we also identified specific factors that did or did not contribute to synergy in human–AI systems.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "On the one hand, for example, much of the recent research in human–AI collaboration has focused on using AI systems to help humans make decisions by providing not only suggested decisions but also confidence levels or explanations.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Brief interlaced M1 within M3 block: reviews prior research emphasis to set up the contrasting null finding in sentence 20."
+    },
+    {
+      "id": 20,
+      "text": "But we found that neither of these factors significantly affected the performance of human–AI systems.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims a novel null finding of the current study — a surprising result contradicting common research emphasis.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "On the other hand, little work has investigated the effects of task types and the relative performance of humans alone and AI alone.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Second M2->M3 cycle: brief gap sentence within the M3 findings block, noting an under-investigated area before announcing a positive finding."
+    },
+    {
+      "id": 22,
+      "text": "But we found that both factors significantly affected human–AI performance.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "Our work thus sheds needed light on promising directions for designing future human–AI systems to unlock the potential for greater synergy.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the significance and scope of the paper's contribution in terms of future design implications; closing summative claim for the introduction.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

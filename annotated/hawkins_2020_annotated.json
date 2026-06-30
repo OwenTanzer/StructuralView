@@ -1,0 +1,597 @@
+{
+  "paper": {
+    "id": "hawkins_2020",
+    "title": "hawkins 2020",
+    "authors": [
+      "Hawkins"
+    ],
+    "year": 2020,
+    "section": "Introduction"
+  },
+  "arc_summary": "The paper spends the bulk of its introduction building a thick M1 territory around flexible language use, pragmatic reasoning, and the repeated reference game paradigm before a single **'however' pivot at sentence 24** opens a narrow M2 gap. The M3 occupation is structurally interrupted by **three returns to gap language** (sentences 26–27, 30, 34), each one tethering a new contribution claim to a concrete prior limitation rather than allowing M3 to stand alone. This M2→M3 cycling reveals a paper positioning itself as empirical infrastructure—**the corpus and analyses are motivated limitation-by-limitation**, not declared as a unified theoretical advance. The introduction closes with a broad significance claim that reaches from dyadic microcosm to community-level convention.",
+  "structured_arc": "M1 -> M2 -> M3 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        23
+      ],
+      "role": "Establishes the communicative territory of flexible meaning, pragmatic reasoning, and learning-based adaptation, then anchors these claims in the repeated reference game paradigm and its empirical findings—building the empirical backdrop against which the paper's corpus contribution will be measured."
+    },
+    {
+      "move": "M2",
+      "span": [
+        24,
+        24
+      ],
+      "role": "Opens the central niche with a single 'however' pivot: the rise of formalized computational models demands quantitative precision that the existing qualitative empirical record cannot supply."
+    },
+    {
+      "move": "M3",
+      "span": [
+        25,
+        25
+      ],
+      "role": "Announces the paper's core contribution—a new open corpus plus a suite of analyses—framing the work explicitly as foundational infrastructure for future modeling rather than an argument for any single theory."
+    },
+    {
+      "move": "M2",
+      "span": [
+        26,
+        27
+      ],
+      "role": "Returns to gap language to name the first concrete limitation motivating the corpus: prior studies lacked the sample sizes needed for fine-grained behavioral characterization."
+    },
+    {
+      "move": "M3",
+      "span": [
+        28,
+        29
+      ],
+      "role": "Addresses the sample-size gap directly by citing recent web-based methods and providing an explicit numeric comparison (83 pairs vs. 8) to establish the corpus's scale advantage."
+    },
+    {
+      "move": "M2",
+      "span": [
+        30,
+        30
+      ],
+      "role": "Identifies the second methodological limitation: prior work lacked the NLP tools needed to analyse rich natural language data at scale, situating the current analyses as newly possible."
+    },
+    {
+      "move": "M3",
+      "span": [
+        31,
+        33
+      ],
+      "role": "Maps the two-part analytic structure (syntactic and semantic), previews Section 3's focus on shortening dynamics, and introduces the random corruption model as a concrete theoretical foil against which the syntactic findings will be measured."
+    },
+    {
+      "move": "M2",
+      "span": [
+        34,
+        34
+      ],
+      "role": "Inserts a narrow measurement gap—word counts alone cannot distinguish the random corruption model from cognitively richer accounts—justifying the POS-tagging and syntactic analysis that immediately follows."
+    },
+    {
+      "move": "M3",
+      "span": [
+        35,
+        46
+      ],
+      "role": "Completes the contribution arc: announces the syntactic methods and previews their key findings, introduces the semantic constructs of arbitrariness and stability with their operationalization in GloVe space, previews the semantic results, and closes with a broad significance claim extending the dyadic findings to community-level conventions."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Human language use is remarkably flexible.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "We are able to coax new meanings out of existing words—or even coin new ones—to handle the diverse challenges encountered in everyday communication (Clark, 1983; Davidson, 1986).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "This flexibility is partially explained by de novo pragmatic reasoning, which allows listeners to use context to infer an intended meaning even in cases of ambiguous or non-literal usage (Glucksberg, 2001; Goodman & Frank, 2016; Lascarides & Copestake, 1998).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "However, a rich theoretical thread has suggested that learning mechanisms may also play an important role, allowing speakers and listeners to dynamically adapt their representations of meaning over the course of an interaction (Brennan & Clark, 1996; Delaney-Busch, Morgan, Lau, & Kuperberg, 2019; Pickering & Garrod, 2004).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "The \"however\" signals contrast in content but the sentence reports a cited theoretical tradition rather than asserting a gap or limitation; tempstat is correct.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Surface 'however' contrasts with pragmatics-only view but introduces a cited theoretical tradition, functioning as additional territory rather than gap."
+    },
+    {
+      "id": 5,
+      "text": "Two functional considerations motivate the need for continued learning in communication, even among adults.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes a substantive claim that two real functional motivations exist for continued learning; not a bare topic label, so link:opening is incorrect. This asserts the existence and relevance of these motivations.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "First, just as there is substantial phonetic variability across speakers with different accents (Kleinschmidt, 2019), words may vary in meaning from speaker to speaker.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "This variability is clear for cases like slang, technical lingo, nicknames, or colloquialisms (e.g. Clark, 1998), but it may extend even to more ordinary nouns and adjectives.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "It may be difficult to know at the outset of an interaction exactly which meanings will be shared and which will not, requiring ongoing adaptation.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and significance of a communicative challenge (the difficulty of predicting shared meanings); establishes that the problem is real and worth attending to rather than deriving a testable prediction.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "Second, because we live in a changing environment, we often experience novel entities, events, thoughts, and feelings that we want to talk about but do not already share (literal) words to express.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Both of these obstacles can be overcome using feedback from one's partner to dynamically re-calibrate expectations about meaning.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Parent [9] was previously tagged emph (secondary), violating the subordination rule. Elevated to emph: the sentence asserts the existence and significance of a real mechanism (partner feedback for re-calibration), establishing it as worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "The repeated reference game task has provided a natural and productive paradigm for eliciting behavior under such conditions.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "In this task, pairs of participants are presented with arrays of novel images.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 11,
+      "note": "Parent [11] is tempstat (primary). Begins unpacking the paradigm introduced in [11].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "On each trial, one player (the director) is privately shown a target object and must produce a referring expression allowing their partner (the matcher) to correctly select that object from the array.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 11,
+      "note": "Parent [11] is tempstat (primary); continues defining the paradigm.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "The director is then given feedback at the end of each trial about which object the matcher selected, and the matcher is given feedback about the true target object.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 11,
+      "note": "Parent [11] is tempstat (primary); continues defining the paradigm's feedback structure.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Critically, each object appears as the target multiple times in the trial sequence, allowing the experimenter to examine how referring expressions change as the director and matcher accumulate shared experience.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 11,
+      "note": "Parent [11] is tempstat (primary); defines the key repeated-exposure feature of the paradigm.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "To the extent that the director and matcher converge on an accurate system of stable referring expressions, and these referring expressions differ from the ones that were initially produced, it may be claimed that ad hoc conventions or pacts have formed within the dyad (Hawkins, Goodman, & Goldstone, 2019).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and names \"ad hoc conventions or pacts\" as the theoretical construct used as analytical machinery throughout the paper.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "One of the earliest and most intriguing phenomena observed in this task is that descriptions are dramatically shortened across repetitions: An initial description like 'the one that looks like an upside-down martini glass in a wire stand' may gradually converge to 'martini' by the end (Krauss & Weinheimer, 1964).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "That is, speakers are able to communicate the same referential content much more efficiently over time.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 17,
+      "note": "Parent [17] is tempstat (primary). Restates and unpacks the meaning of the cited finding.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "Subsequent work has established a number of signature properties of this process through careful experimental manipulation.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "First, the extent to which descriptions are shortened is contingent on evidence of understanding from the matcher (Hupet & Chantraine, 1992; Krauss, Garlock, Bricker, & McMahon, 1977; Krauss & Weinheimer, 1966), and it is therefore not easily explained as a mere practice or repetition effect.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "Second, the resulting labels are partner-specific in the sense that they do not transfer if a novel matcher is introduced (Brennan & Hanna, 2009; Metzing & Brennan, 2003; Wilkes-Gibbs & Clark, 1992).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "Third, they are sticky in the sense that they persist through precedent with the same partner even after the referential context changes (Brennan & Clark, 1996) and are readily extended to similar objects (Markman & Makin, 1998).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "These qualitative effects provide an empirical backbone for theories of communication to explain.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and relevance of the prior enumerated findings — they constitute a meaningful empirical backbone. This is emph, not link:closing, because it makes an independent claim about the importance of the findings rather than merely synthesizing them structurally.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "However, as theories are increasingly formalized as computational models making more precise quantitative predictions, setting criteria to distinguish between them will depend critically upon resolving more detailed theoretical questions about the dynamics of adaptation in natural language communication.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension against the sufficiency of existing qualitative findings for the demands of increasingly precise computational theories.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "In this paper, rather than arguing in favor of a particular theory, we release a new, open corpus of repeated reference games and conduct a variety of analyses to address current gaps in measurement and establish a firmer theoretical foundation facilitating future modeling work.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "In particular, we address two methodological challenges that have limited the ability of previous studies to provide a sufficiently fine-grained characterization of behavior.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies specific limitations/gaps in prior work that motivate the current study.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "M2->M3 cycling: returns to gap language after initial M3 claim at sentence 25."
+    },
+    {
+      "id": 27,
+      "text": "First, we need more data.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names the first gap concisely.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "Recent technical developments have allowed interactive multi-player experiments to be run on the web (Hawkins, 2015), boosting sample sizes by an order of magnitude.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "For comparison, seminal work by Clark and Wilkes-Gibbs (1986) used a sample of eight pairs of participants, while our confirmatory sample alone contains 83 pairs.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty/superiority of the current data by explicit contrast with prior seminal work's sample size.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "Second, the computational techniques needed to work with rich natural language data were limited at the time of prior work, but they have become newly tractable, given developments in natural language processing (NLP).",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the second gap/limitation of prior work that has now been resolved.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Return to gap language mid M3 block; continuation of M2->M3 cycling."
+    },
+    {
+      "id": 31,
+      "text": "Our analyses roughly divide into two broad categories, corresponding to the dynamics of syntactic structure and semantic content.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the organizational structure and scope of the analyses.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "Our investigations of syntactic structure in Section 3 focus on the process by which referring expressions are shortened to communicate the same idea more efficiently.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the topic and scope of the first analytic category.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "One particularly simple model, for example, might predict that shortening is purely driven by a random corruption process: at each repetition, each word from the previous repetition's utterance has some probability of being dropped.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a specific candidate theoretical competitor (the random corruption model) as a real and concrete object of analysis; analogous to \"A third potential foraging strategy involves starting small\" in the guidelines. Asserts the existence of this model as worth attending to. Parent [32] is contribution (primary).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "Raw word counts alone are not sufficient for disambiguating this simple model from more cognitively complex proposals.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a limitation of existing measurement (word counts) that motivates finer-grained analysis. Parent [33] is emph (primary).",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Brief return to gap/limitation language within M3 block; M2->M3 cycling."
+    },
+    {
+      "id": 35,
+      "text": "To move beyond word counts, we extracted part-of-speech tags and syntax trees from the text to understand which parts of utterances were being dropped, and in which sequence.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the specific method deployed to address the gap identified in [34].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "In contrast to the predictions of the random corruption model, we find that clauses and modifiers tend to be dropped in clusters, preferentially leaving open-class parts of speech (e.g., an adjective and noun) by the final repetition, and that the choice to shorten an utterance or not depends on sources of listener feedback.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims a novel finding that contrasts with the simple model; previews a key result.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "In Section 4, we examine the semantic content of utterances over the course of this shortening process.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the second category of analyses.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "Our analyses revolve around the theoretical constructs of arbitrariness and stability, which have been central to accounts of convention since Lewis (1969).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces arbitrariness and stability as the theoretical constructs serving as analytical machinery for Section 4.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "Arbitrariness refers to the claim that multiple equally successful solutions exist in the space of possible conventions: There is no single optimal solution that all speakers should objectively use.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 38,
+      "note": "Parent [38] is framedef (primary). Defines the construct of arbitrariness.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "Stability refers to the claim that, once a solution has been found, speakers should not deviate from it.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 38,
+      "note": "Parent [38] is framedef (primary). Defines the construct of stability.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "Our contribution is to operationalize these claims in the high-dimensional space of vector embeddings for referring expressions (i.e., GloVe embeddings).",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty in the operationalization method applied to the constructs.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "By measuring the similarity between referring expressions in this space, we find that signatures of arbitrariness and stability gradually increase over the course of the interaction.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims a novel empirical finding as a preview of results.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "We also clarify the (non-arbitrary) processes shaping which words eventually become conventions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces an additional contribution/aim of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "In particular, we test the prediction that pragmatic pressures to be informative in context lead more discriminative words to conventionalize (Gibson et al., 2017; Kirby, Tamariz, Cornish, & Smith, 2015).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies a hypothesis being tested, with citations to prior work motivating the prediction.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "Taken together, our findings characterize core processes operating within the microcosm of dyadic, natural-language interactions.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Synthesizes the contribution claims of the preceding sentences; wraps up the Introduction's contribution sub-section structurally.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "These processes may ultimately contribute to the adaptive properties of conventions shared across language communities.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previously tagged extension:speculative with parent link:closing (secondary) — subordination violation. Elevated to emph: asserts the broader significance of the processes described for community-level conventions, establishing that they matter beyond the dyadic context. Parent [45] is link:closing; re-parents to nearest primary above, [44] (contribution).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

@@ -1,0 +1,325 @@
+{
+  "paper": {
+    "id": "cropley_2023",
+    "title": "cropley 2023",
+    "authors": [
+      "Cropley"
+    ],
+    "year": 2023,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction uses a **cycling structure** that returns to territory-building twice before closing, each cycle tightening the methodological rationale. The first M1→M2 pivot challenges the prior AI-won't-threaten-creativity consensus; the first M3 announcement is immediately followed by a second M1→M2 cycle that works through the problem of creativity test selection and scoring limitations. **Both M2 niches do different work**: the first destabilizes a field-wide assumption, the second identifies a concrete measurement gap. The final M3 block resolves both gaps simultaneously by nominating the DAT as the study's instrument.",
+  "structured_arc": "M1 -> M2 -> M3 -> M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        4
+      ],
+      "role": "Establishes the prior consensus that AI posed no threat to human soft-skill domains, anchoring the field's received wisdom that the paper will then disrupt."
+    },
+    {
+      "move": "M2",
+      "span": [
+        5,
+        7
+      ],
+      "role": "Introduces ChatGPT as a disruptor of that consensus, cataloguing claims of AI creativity across verbal, visual, and musical domains to show the threat is real and multifaceted."
+    },
+    {
+      "move": "M3",
+      "span": [
+        8,
+        8
+      ],
+      "role": "Announces the paper's core strategy — administering a validated creativity test to AI — framing it as a 'simple' empirical resolution to the debate opened in M2."
+    },
+    {
+      "move": "M1",
+      "span": [
+        9,
+        12
+      ],
+      "role": "Surveys the landscape of creativity tests, characterising variation in scope and media, to build the grounds for the instrument-selection decision that follows."
+    },
+    {
+      "move": "M3",
+      "span": [
+        13,
+        13
+      ],
+      "role": "Makes the first narrow methodological commitment — verbal test over figural — justified directly by ChatGPT's nature as a language model."
+    },
+    {
+      "move": "M2",
+      "span": [
+        14,
+        17
+      ],
+      "role": "Identifies scoring subjectivity as a persistent limitation across creativity tests, undermining the apparent objectivity of both rater-based and divergent-thinking instruments."
+    },
+    {
+      "move": "M1",
+      "span": [
+        18,
+        19
+      ],
+      "role": "Reports recent AI-driven advances in automated scoring and specifically introduces the DAT, repositioning prior work as having already solved the limitation just identified."
+    },
+    {
+      "move": "M3",
+      "span": [
+        20,
+        22
+      ],
+      "role": "Closes the introduction by justifying the DAT as the study's measure, stating the hypothesis and design, and outlining the paper's structure — converting the accumulated argument into a concrete study announcement."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "The rise of Artificial Intelligence (AI), especially the recent emergence of OpenAI's large language model ChatGPT, has reinvigorated the 'future of work' debate.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and relevance of a current phenomenon (ChatGPT's emergence) as the motivating context. Not a finding report — the sentence establishes that something real and important is happening rather than reporting a research result.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Even only recently (e.g., Cropley et al., 2022; Frey & Osborne, 2017) we were reassured that AI would replace humans only in jobs that were characterised by predictable, algorithmic cognitive and physical labour (e.g., bookkeeping, editing) leaving humans free to focus on unpredictable, non-algorithmic cognitive and physical work reliant on soft skills such as emotional intelligence, complex problem solving, and creativity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes prior research consensus with citations about the prior understanding of AI's scope of replacement.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Thus, AI held no fears for us, provided we prepared ourselves appropriately.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Draws an inferential conclusion from [2] without citation or new evidence. Parent [2] is primary (tempstat). ✓ legal.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "This has been the catalyst for a renewed focus on soft skills in education systems around the world (e.g., Succi & Canovi, 2020).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established consequence/trend in the literature with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "However, the emergence of ChatGPT, among a suite of large language models, including 'Bard' and 'Claude', has ignited a new debate, threatening to disrupt the balance between humans and AI central to the notion of the future of work.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension against the prior established position using an explicit \"However,\" signaling that the previous consensus is now under pressure.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Many claims have emerged attributing considerable creative ability to AI (Du Sautoy, 2020).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an existing claim in the literature with citation, characterizing the current state of public/scholarly discourse.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "This includes not just the verbal abilities of ChatGPT (Henriksen et al., 2023), but also the image-generation abilities of DALL-E 2 (Kirkpatrick, 2023), and even artificial musical creativity (Gioti, 2021).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 6,
+      "note": "Provides cited examples illustrating the scope of claims made in [6]. Per definitions, a named case used as an example with a citation and a primary parent stays illustrative. Parent [6] is primary (tempstat). ✓ legal.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "Notwithstanding the considerable misinterpretation, and even misuse, of the term 'creativity' that confounds this debate (Cropley et al., 2019), a simple way to explore this hypothesis – AI is more creative than humans – is to administer a robust, validated and normed creativity test to the AI.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's approach/strategy for addressing the research question. The primary rhetorical work is announcing how the paper will proceed.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "There is a wide variety of tests that examine different facets of the construct 'creativity', from the broad and holistic, to the narrow and focused.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the field regarding creativity measurement instruments.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "M2->M3 cycling: paper returns to territory-building after initial M3 announcement to motivate test selection"
+    },
+    {
+      "id": 10,
+      "text": "The Test of Creative Thinking: Drawing Production (TCT-DP: Urban & Jellen, 1996), for example, examines elements of personality, cognition and creative output.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Per definitions, citation-backed domain-level patterns are tempstat even when framed as examples. This sentence reports what a named instrument does, backed by citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "By comparison, the Alternate Uses Test (AUT: Torrance, 1999), addresses specific elements of creative cognition (i.e., divergent thinking).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Same reasoning as [10]: a cited, named instrument with a described function is a domain-level reported fact, not a bare illustration.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "These tests also use a variety of media, from the figural (the TCT-DP) to the verbal (the AUT).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports another dimension of variation across creativity tests — media type — continuing the characterization of the field.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "The fact that ChatGPT is a large language model AI means that a verbal test is the obvious and salient choice.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Justifies and announces a methodological decision for the current study — the rationale for choosing a verbal test.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "However, a limitation of many creativity tests is scoring, with the majority relying on human raters.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of existing instruments, creating tension that motivates the subsequent methodological choice.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Second M2 niche within cycling structure, identifying a gap in existing measurement tools"
+    },
+    {
+      "id": 15,
+      "text": "Although many tests, such as the TCT-DP, have detailed scoring criteria for use by trained raters, subjectivity cannot be ruled out.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 14,
+      "note": "Unpacks and qualifies what \"relying on human raters\" from [14] means in practice — elaborating the nature of the limitation rather than providing an independent claim or a new example. Parent [14] is primary (contrast). ✓ legal.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "This is reflected in the fact that interrater agreement on the TCT-DP is typically around .90.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 14,
+      "note": "Provides a specific data point as evidence for the subjectivity concern raised in [14]. [15] is secondary so cannot serve as parent; re-parented to [14] (contrast, primary) per the re-parenting rule. ✓ legal.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Divergent thinking tests such as the AUT rely on apparently more objective criteria (e.g., fluency, flexibility, originality), however, these tests are typically slow, and remain vulnerable to subjectivity.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a counterpoint (more objective criteria) and immediately undercuts it with continued limitations — net effect sustains the contrast/limitation argument against existing tests.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "Fortunately, recent advances in AI have addressed these scoring limitations, with machine learning approaches demonstrating a strong capacity to score figural (e.g., Cropley & Marrone, 2022) and written/verbal (Marrone et al., 2022) creativity tests.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports recent research developments that resolve the previously identified limitation, with citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "In particular, Olson et al. (2021) have developed the Divergent Association Task (DAT), using the concept of semantic distance (see Beaty & Johnson, 2021), to create a robust, automated test of verbal divergent thinking that is ideally suited to ChatGPT.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific prior development (the DAT) with citation. The primary rhetorical work is reporting what Olson et al. did.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "Insofar as semantic distance is an acceptable proxy for divergent thinking (Olson et al., 2021 show strong correlations between the DAT and both flexibility and originality on the AUT) and noting that divergent thinking is an important, but not sole, indicator of creativity (e.g., Plucker, Makel & Qian, 2019; Runco & Acar, 2019) the DAT is used here as a valid proxy of creativity.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces and justifies the methodological choice to use the DAT as the study's measure of creativity.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "Therefore, to explore the hypothesis that ChatGPT is more creative than humans, two versions of the model (GPT3.5 and GPT4) were given the DAT with results compared to the human norms reported by Olson et al. (2021).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explicitly announces the study's design, hypothesis, and procedure — a core contribution/purpose statement.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "The method used to conduct this study, the results obtained, and a discussion of these are set out in the following sections.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure/organization of the remainder of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

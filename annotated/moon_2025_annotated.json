@@ -1,0 +1,644 @@
+{
+  "paper": {
+    "id": "moon_2025",
+    "title": "moon 2025",
+    "authors": [
+      "Moon"
+    ],
+    "year": 2025,
+    "section": "Introduction"
+  },
+  "arc_summary": "This introduction uses an unusual **early M3 announcement** (S6) to telegraph the paper's purpose before returning to extended M1/M2 territory-building — a rhetorical move that anchors the reader before the literature review unfolds. The M1 block accumulates a systematic body of evidence across S1–S16 and S24–S36, bracketing an M2 paradox-framing zone (S17–S23) that names the homogenization gap. **The literature review doubles as gap evidence**: each contrast pair (individual improvement / collective homogenization) tightens the M2 niche rather than simply surveying the field. M3 (S38–S51) is fully developed, introducing the **diversity-growth-rate metric**, justifying it against prior static approaches, and detailing a three-study design — leaving no structural loose ends.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        4
+      ],
+      "role": "Establishes the broad territory of creativity and generative AI, positioning LLMs as a distinctive and versatile force in creative domains before any tension is introduced."
+    },
+    {
+      "move": "M2",
+      "span": [
+        5,
+        5
+      ],
+      "role": "Introduces the core individual-vs.-collective tension for the first time, planting the central paradox that will drive the paper's niche claim."
+    },
+    {
+      "move": "M3",
+      "span": [
+        6,
+        6
+      ],
+      "role": "Early purpose announcement — signals the paper's quantification goal before the literature review resumes, anchoring the reader to the study's aim amid the extended territory-building ahead."
+    },
+    {
+      "move": "M1",
+      "span": [
+        7,
+        16
+      ],
+      "role": "Surveys the LLM-vs.-human creativity literature in depth, compiling both supportive and limiting empirical findings to establish what is known about individual-level creative performance."
+    },
+    {
+      "move": "M2",
+      "span": [
+        17,
+        23
+      ],
+      "role": "Formally names and theorizes the homogenization gap, invoking algorithmic monoculture as a framework and articulating why individual enhancement and collective diversity can diverge — carving the unresolved niche."
+    },
+    {
+      "move": "M1",
+      "span": [
+        24,
+        36
+      ],
+      "role": "Marshals specific prior studies that each reproduce the individual-enhancement/collective-homogenization contrast, converting the literature review into cumulative evidence for the gap while simultaneously showing the gap remains unquantified."
+    },
+    {
+      "move": "M2",
+      "span": [
+        37,
+        37
+      ],
+      "role": "Closes the literature synthesis by characterizing prior support as only 'initial,' explicitly signaling that the quantification gap remains open and justifying the paper's intervention."
+    },
+    {
+      "move": "M3",
+      "span": [
+        38,
+        51
+      ],
+      "role": "Announces and justifies the diversity-growth-rate metric, positions it against prior static approaches, and details the three-study design, measurement approach, and methodological rationale — completing a fully developed occupancy of the niche."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Creativity centers on generating new ideas, driving individual problem-solving, and societal progress.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opening claim about creativity backed by multiple citations; reports established understanding of the field.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "The recent advent of generative Artificial Intelligence (AI) systems has significantly changed how people perceive and engage in creative processes.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a field-level development with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "These technologies are being used to assist human involvement in various creative areas once believed to be exclusive to human capabilities, including painting (e.g., DALL-E and Mid Journey), musical composition (e.g., Jukebox), and even video production (e.g., Sora).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Provides concrete examples illustrating the prior claim about AI changing creative processes. Parent [2] is tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "Among these generative AI systems, Large Language Models (LLMs), such as ChatGPT, stand out for their versatility in supporting various creative processes.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a comparative finding about LLMs relative to other AI systems, with citation.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "While LLMs might be able to produce content that is as good as or even more creative than content generated by humans, their widespread use risks reducing the collective diversity of creative outputs.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a tension — LLM quality vs. homogenization risk — that frames the paper's central problem.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "First M2 sentence; introduces the core tension/gap that the paper addresses"
+    },
+    {
+      "id": 6,
+      "text": "In the present research, we aimed to quantify this homogenizing effect of LLMs on collective diversity in creative outputs.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the purpose of the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Early M3 announcement before extended M1/M2 review resumes; M2->M3 cycling pattern begins here"
+    },
+    {
+      "id": 7,
+      "text": "How do LLMs such as ChatGPT compare to humans as creative entities?",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Rhetorical question that opens the sub-section reviewing LLM-vs-human creativity literature; no independent claim, purely structural.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Returns to M1 territory-establishment after early M3 statement; M2->M3 cycle returns to M1 review"
+    },
+    {
+      "id": 8,
+      "text": "Emerging research suggests that LLMs can not only match but also outperform people, at least on a few established measures of creativity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes the current state of research on LLM creative performance.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "GPT models have been shown to outperform humans on the Alternative Uses Task (AUT; Guilford, 1967)—one of the most widely-used measures of creativity—although the most creative humans still outperformed GPT-3.5 and GPT-4.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports specific prior findings with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "However, on the Torrance Tests of Creative Thinking (TTCT; Torrance, 1966), a widely used measure of divergent thinking, GPT-4 scored in the top 1% for originality and fluency, suggesting that in some cases, AI performance can reach the height of exceptionally creative humans.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports additional specific prior findings; the \"however\" here introduces a contrasting data point within the literature summary rather than a limitation of prior work.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Moreover, GPT-4 outperformed 85.3% of humans in making remote associations in the Divergent Association Task (DAT; Olson et al., 2021) and exceeded 96% of humans when adopting the greedy search strategy.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports additional quantitative findings from prior research.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Beyond lab tasks, LLMs can generate creative outputs comparable to human-written texts, including creative ideas, stories, poetry, motivational messages, and persuasive political messages.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes a broader set of findings extending LLM performance beyond controlled lab tasks.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Unsurprisingly, when humans and AI work together, the output is often more creative than when humans work alone.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding about human-AI collaboration.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "In a creative writing task, for example, a GPT-3 powered system helped untrained crowd workers to write better by improving grammar and introducing new ideas compared to writing without AI assistance.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 13,
+      "note": "Provides a specific example illustrating the prior claim about human-AI collaboration. Parent [13] is tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "However, research also indicates that LLMs do not perform as well as humans in convergent thinking.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation or counterpoint to the general narrative of LLM creative superiority.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Contrast within M1 territory review; reports a known limitation of LLMs rather than naming an unresolved gap"
+    },
+    {
+      "id": 16,
+      "text": "For example, Claude 3.5 Sonnet showed worse performance in an abstract reasoning task (i.e., the New York Times Connections game) compared to both human novices and human experts.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Provides a specific empirical example illustrating the prior contrast claim. Parent [15] is contrast (primary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Even in cases where LLMs can match human performance in creative tasks and promote the creativity of individuals, these AI systems may still hamper the collective diversity of human ideas.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the central paradox — individual enhancement vs. collective homogenization — opening the next sub-section.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "M2 re-entry; formally names the unresolved gap (collective homogenization) that the paper will address"
+    },
+    {
+      "id": 18,
+      "text": "On the surface, it seems that enhancing the creativity of each person should also boost the creativity of the group.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and relevance of a naive intuition (that individual and collective creativity move together) that the paper will challenge; establishes something as worth attending to rather than speculating from a prior claim.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "It is also possible, however, that the widespread use of AI may have a homogenizing effect on creative ideas, wherein the diversity of new ideas and perspectives diminishes across a group of people who use the same AI model.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and significance of the homogenization phenomenon as a real possibility worth attending to; introduces the core concern of the paper.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "This possibility is consistent with the idea of algorithmic monoculture, which suggests that the consistent use of a single prevailing AI system, such as ChatGPT, to conduct various tasks that used to be conducted by many different people can result in increased homogeneity of outcomes.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the theoretical construct of \"algorithmic monoculture\" as analytical machinery for the paper's argument, with citation.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "LLMs are designed to rely on probability distributions; consequently, the outputs of LLMs tend to lack surprise or novelty, as these models are fundamentally trained to conform to existing data distributions that are biased in favor of predominant cultural ideas.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a structural/mechanistic property of LLMs grounded in prior literature with citations.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "LLMs can thus exclude a variety of unique perspectives from different people.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a consequence of LLM design as a real phenomenon worth attending to (\"can thus exclude\"); not speculative hedging but a positive claim about what LLMs do. Parent [21] is tempstat.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "In short, using LLMs may lead to better outcomes for individual creators but at the cost of these outcomes becoming more similar across creators.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 22,
+      "note": "Synthesizes the paradox argument developed across [17]–[22]; wraps up the sub-section's reasoning. Parent [22] is now emph (primary), so subordination chain is valid.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Several studies provide initial support for the paradox of AI-driven homogenization in the creative process.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces that empirical evidence exists for the paradox; summarizes the state of prior literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to M1 territory review; compiles prior evidence that supports but does not yet resolve the gap"
+    },
+    {
+      "id": 25,
+      "text": "For example, compared to those who wrote alone, writers exposed to GPT-4 generated ideas produced better and more enjoyable stories, as evaluated by independent raters.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific prior empirical finding with citation; a named empirical result rather than a bare illustrative example.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "These LLM-inspired stories were, however, more similar to each other than stories written by humans alone.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the homogenization finding that contrasts with the individual quality improvement from the same study.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Similarly, individuals using the fine-tuned InstructGPT model—which employed instruction tuning with Reinforcement Learning guided by Human Feedback (RLHF)—produced short essays that were more similar in terms of lexical and content diversity than those written without any LLM support.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports another prior empirical finding with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "In another study, people generated more ideas when using GPT-3.5 than when using the Oblique Strategies deck, a non-AI tool consisting of prompt cards designed to stimulate creative thinking.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior empirical finding.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "However, ideas generated with GPT-3.5 were more semantically similar to each other than those produced with Oblique Strategies.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the homogenization finding contrasting with the quantity advantage shown in the prior sentence.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "Moreover, in a seven-day lab experiment followed by a 30-day follow-up, college students using ChatGPT, compared to those who did not, generated more creative responses to Alternative-Use-Tasks (AUTs) and problem-solving tasks as evaluated by independent raters.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior empirical finding.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "However, this enhancement came at the cost of homogenization across different individuals: ChatGPT-assisted content lacked the diversity of human-only responses.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the homogenization cost contrasting with the individual enhancement finding.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "Furthermore, students who initially relied on ChatGPT continued to produce less diverse, AI-like content even in the absence of ChatGPT, while their individual creativity reverted to baseline levels.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an additional finding from the same study about lasting effects on diversity.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "Moreover, in a task that required creative problem-solving by finding innovative uses for everyday objects (i.e., MACGYVER), individual GPT-4 responses exhibited generally comparable performance to individual humans.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior empirical finding from another study.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "However, at the group level, GPT-4's responses were more homogeneous, limiting the benefits of aggregating multiple responses.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the group-level homogenization finding contrasting with the individual performance result.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "In contrast, collective humans generated responses more diverse and varied more in accuracy across tasks, as individual differences in familiarity and competence contributed to a broader range of solutions.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the contrasting human collective finding from the same study.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "As a result, humans collectively outperformed GPT-4, underscoring the advantage of human collective creativity over AI-generated solutions.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an empirical result from cited prior work (humans outperforming GPT-4); this is a finding from the literature, not the authors' own synthesis, so tempstat is correct rather than link:closing.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "In sum, this literature lends initial support to the paradox of LLMs promoting individual creativity while simultaneously reducing diversity in creative outputs across different people.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 36,
+      "note": "Synthesizes and closes the entire prior literature review sub-section. Parent [36] is now tempstat (primary), so subordination chain is valid.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Closing synthesis frames the literature as 'initial support' only, implying the gap remains unquantified — a M2 gap-indicating function"
+    },
+    {
+      "id": 38,
+      "text": "In the present study, we develop a novel metric—the diversity growth rate—to quantify the homogenizing effect of LLMs.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty of the metric introduced in the current work.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "This metric dynamically captures the extent to which each additional creative output contributes to collective diversity, with a lower diversity growth rate indicating a stronger homogenizing effect.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Defines and unpacks the new construct \"diversity growth rate\" introduced in the prior sentence, establishing it as analytical machinery. Parent [38] is novstat (primary).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "Going beyond prior approaches that primarily compared collective diversity statically between groups with a fixed number of outputs, our diversity growth rate tracks how collective diversity evolves and saturates as more creative outputs are introduced.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explicitly positions the current approach against prior static approaches, asserting its advancement.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "The present research thus provides a new tool to quantify AI homogenization with broad applications for research and practice.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the scope and practical significance of the current paper's contribution.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "Across three preregistered studies, we analyzed 2,200 college admissions essays and compared the diversity of ideas in essays written by actual college applicants with those generated by GPT-4.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the method and scope of the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "We were thus able to examine the homogenizing effects of GPT-4 in the context of real-world creative outputs rather than a controlled lab task, showcasing its potential to quantify AI homogenization across a wide variety of domains.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the scope advantage and broader applicability of the study design.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "In Study 1, we aimed to establish a baseline comparison between human-written and GPT-4 generated college admissions essays.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the purpose and scope of Study 1.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "In Study 2, we aimed to replicate the findings of Study 1 while examining whether the homogenizing effect of GPT-4 would persist after enhancing the creativity of the output via prompt and parameter modifications.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the purpose and scope of Study 2.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "In Study 3, we aimed to replicate the findings in a much larger sample of 1,600 essays and to expand our findings by enhancing the AI output via Chain-of-Thought (CoT) prompt engineering.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the purpose and scope of Study 3.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "We adopted the CoT prompting as a state-of-the-art approach to enhancing the creativity and diversity of GPT-4 essays.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established status of CoT prompting in the literature, justifying its use.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "To contextualize the effects, we also examined whether diversifying the racial and ethnic backgrounds of human authors would increase the diversity growth rate.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces an additional analytical objective of Study 3.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "Across all experiments, we quantified the diversity of ideas using semantic distance, which measures the degree of proximity between the meanings of words.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the measurement approach used throughout the studies.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 50,
+      "text": "Semantic distance has emerged as a valid and reliable method for assessing creativity by capturing the originality and novelty of semantic associations.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established validity and reliability of the semantic distance method with citation support.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "Specifically, semantic distance captures the integration of diverse and potentially novel concepts and ideas in written content, reflecting a greater level of the divergent thinking aspect of creativity.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 50,
+      "note": "Unpacks and specifies what semantic distance captures, elaborating on the prior tempstat claim. Parent [50] is tempstat (primary).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

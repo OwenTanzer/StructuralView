@@ -1,0 +1,992 @@
+{
+  "paper": {
+    "id": "jones_2024",
+    "title": "jones 2024",
+    "authors": [
+      "Jones"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction is structured around a **thesis-first gambit**: the dissertation's central purpose is announced at s7, well before the niche is formally carved, embedding M3 inside the opening M1 territory. The arc then cycles—returning to M1 to survey competing theories of ToM origins, with two brief **M2 counter-moments** (s10, s14) identifying disagreement and a quantification gap—before the main M3 block (s23–s48) fully occupies the niche with research questions, methods, and chapter roadmap. A substantial **M1 tail** follows (s49–s79), functioning as a structured literature review that was roadmapped within M3 rather than preceding it, inverting the conventional CARS sequence.",
+  "structured_arc": "M1 -> M3 -> M1 -> M2 -> M1 -> M2 -> M1 -> M3 -> M1 -> M3 -> M1 -> M2 -> M1 -> M2 -> M1",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        6
+      ],
+      "role": "Establishes the research territory through Aristotle, unpacking the political/social ambiguity to foreground the three themes—origin, uniqueness, and language—that will organize the dissertation's research questions."
+    },
+    {
+      "move": "M3",
+      "span": [
+        7,
+        7
+      ],
+      "role": "Issues a thesis-first purpose announcement before the niche is carved, signaling that the dissertation proceeds from a settled research agenda rather than from a literature gap; rhetorically positions the author as questioner rather than gap-filler."
+    },
+    {
+      "move": "M1",
+      "span": [
+        8,
+        9
+      ],
+      "role": "Resumes territory-building by asserting the civilizational importance of cooperative capacities and anchoring them in the established ToM literature, re-grounding the reader in the disciplinary context after the early purpose statement."
+    },
+    {
+      "move": "M2",
+      "span": [
+        10,
+        10
+      ],
+      "role": "Introduces the first crack in the territory: despite consensus on importance, origins remain contested—pivoting from what is agreed to what is not, and opening the space the dissertation will enter."
+    },
+    {
+      "move": "M1",
+      "span": [
+        11,
+        13
+      ],
+      "role": "Surveys the three competing theoretical positions (nativist, interactionist, language-based) and unpacks their mechanistic implications, providing the conceptual landscape that makes the quantification gap in s14 meaningful."
+    },
+    {
+      "move": "M2",
+      "span": [
+        14,
+        14
+      ],
+      "role": "Pinpoints the specific gap the dissertation targets: existing work cannot quantify the relative contributions of different mechanisms—the precise problem that using LLMs as a methodological probe is designed to address."
+    },
+    {
+      "move": "M1",
+      "span": [
+        15,
+        22
+      ],
+      "role": "Establishes LLMs as a new sub-territory, defining them and developing the dual framing of opportunity (testing language-sufficiency) and threat (to human uniqueness), setting up the conceptual stakes for the main M3 block."
+    },
+    {
+      "move": "M3",
+      "span": [
+        23,
+        48
+      ],
+      "role": "The main niche-occupying movement: announces two research questions, distinguishes them methodologically (aggregate vs. item-level), maps the analytical approach across Chapters 1–5, and roadmaps the remaining introduction sections—fully claiming the territory opened by s14."
+    },
+    {
+      "move": "M1",
+      "span": [
+        49,
+        49
+      ],
+      "role": "Surfaces the skeptical objection that LLMs cannot display intelligence at all, creating the counterpoint that the immediately following M3 response (s50) must defuse before the literature review can proceed on stable footing."
+    },
+    {
+      "move": "M3",
+      "span": [
+        50,
+        63
+      ],
+      "role": "Responds to the skeptical objection, works out the dissertation's implications for the ToM coherence debate, and establishes the working definition of ToM—consolidating theoretical commitments that license the subsequent background review."
+    },
+    {
+      "move": "M1",
+      "span": [
+        64,
+        68
+      ],
+      "role": "Opens the Section 0.1.1 background review by surveying biological and experience-driven accounts of ToM origins and reporting neuroimaging evidence, building the empirical landscape within which the dissertation's language-sufficiency argument is situated."
+    },
+    {
+      "move": "M2",
+      "span": [
+        69,
+        70
+      ],
+      "role": "Challenges the inferential force of neuroimaging evidence for nativist accounts, arguing that functional specialization is compatible with experience-driven development—narrowing interpretive space within the background review to favor the language-based position."
+    },
+    {
+      "move": "M1",
+      "span": [
+        71,
+        79
+      ],
+      "role": "Closes the background review by accumulating empirical evidence—print-reading analogy, blind-participant findings, training studies, orphanage comparisons, twin data—that collectively supports experience-driven accounts and sets the evidential backdrop for the dissertation's language-sufficiency test."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Aristotle's famous remark is often translated: 'Man is by nature a political animal'.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Opens the Introduction by anchoring the discussion in a historical quotation; no independent primary claim.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "But the term πολιτικὸν is ambiguous; πόλις—from which it derives—means city, and Aristotle goes on to contrast the 'political man' to a citiless one: solitary and isolated.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established philological fact about the Greek term. Previously extension:definitional with a secondary parent ([1] link:opening); elevated to tempstat to resolve the subordination violation.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Aristotle argues that the reason human beings are more 'political' than other animals is that we alone possess the power of speech.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports Aristotle's historical theoretical claim.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "The remark is perhaps better rendered: 'Man is, by nature, a social animal.'",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 3,
+      "note": "Offers a re-translation clarifying the claim in [3] tempstat. —",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Aristotle's comments suggest a longstanding fascination with social intelligence as a characteristic part of human nature.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the historical significance and depth of the topic of social intelligence.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Moreover, they point to a curiosity about its origin, an anxiety about its uniqueness, and the intuition that language plays a role in its development.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts significance by naming the key themes the dissertation addresses; independent claim about what Aristotle's comments point toward.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "In this dissertation I address a set of questions that are closely related to these themes by asking how much information about human social intelligence is contained in language, and how well that information can be exploited by Large Language Models.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose and scope of the dissertation.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Early M3 purpose announcement embedded in M1 opening block; M1 resumes after this sentence."
+    },
+    {
+      "id": 8,
+      "text": "Many of the great achievements of our species—from cathedrals to computers—rely necessarily on our capacity to communicate, cooperate, and coordinate (Tomasello, 2014).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and scope of human social capacities with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Return to M1 territory-building after early M3 announcement."
+    },
+    {
+      "id": 9,
+      "text": "These capacities are thought to be underpinned by our ability to reason about the mental states of others—often referred to collectively as mentalizing or theory of mind (Apperly, 2012).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established theoretical framing linking social capacities to ToM.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Despite broad consensus about the importance of social intelligence, there continues to be widespread disagreement about its origins and basis.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension against the consensus just stated.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Some theories argue that we owe our mentalizing abilities to a genetic endowment: a biological module for reasoning about others' minds (Bedny, Pascual-Leone, & Saxe, 2009).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the biological/nativist theoretical position.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to M1 to survey competing prior theories following M2 contrast; interlaced M1/M2."
+    },
+    {
+      "id": 12,
+      "text": "Others have suggested that social intelligence is learned through interaction with others (Hughes et al., 2005) or through experience with language itself (de Villiers & de Villiers, 2014).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports alternative experience-driven theoretical positions.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "The first position suggests that mentalizing might be uniquely human, or require certain kinds of cognitive architectures, while the second and third suggest that it could be learned from sufficient exposure to data.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Unpacks the implications of the positions laid out in [12] tempstat. —",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "It seems likely that some combination of mechanisms contribute to our ability to reason about others' minds, but existing work has not been able to quantify the contribution of different components.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the unresolved gap: inability to quantify the contribution of different mechanisms.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "The advent of Large Language Models (LLMs) both promises opportunities to investigate our social intelligence, and threatens claims to its uniqueness.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the dual significance of LLMs for the dissertation's core concerns.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Returns to M1 to establish the LLM sub-territory before final M3 block."
+    },
+    {
+      "id": 16,
+      "text": "LLMs are statistical models of the distribution of words in language, which produce estimates of the probability of a given sequence of words.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Defines LLMs as introduced in [15] emph. —",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Recent progress has led to models that generate superficially humanlike text (OpenAI, 2023) and achieve parity with humans on a wide range of behavioral measures (Chang & Bergen, 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports recent empirical findings about LLM capabilities.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "On one hand, LLMs provide an opportunity to measure the sufficiency of language-based theories of social competence.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the research value of LLMs as a tool.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "LLMs represent an operationalization of these theories in that they learn solely from distributional language statistics, without any kind of social interaction or innate biological endowment.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Elaborates what it means for LLMs to operationalize language-based theories; parent [18] emph. —",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "To the extent that LLMs can mimic human social behavior, it suggests that statistical learning and language data are—in principle—sufficient to produce the same behavior in humans.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 19,
+      "note": "Derives a conditional hypothesis from [18] emph (re-parented, skipping secondary [19]); no new evidence. —",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "On the other hand, LLMs represent a threat to the uniqueness of this longstanding hallmark of humanity.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of LLMs as a challenge to human uniqueness.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "As they are increasingly deployed as conversational agents that interact with humans in the wild, their capabilities for social reasoning become important objects of study in themselves.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the practical importance of studying LLM social capabilities.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "In this dissertation I address two questions that tackle the challenge and opportunity that LLMs present.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure of the dissertation's two research questions.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Main M3 block begins here."
+    },
+    {
+      "id": 24,
+      "text": "In the first, I ask to what extent LLMs are capable of social intelligence.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the first research question.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "In the second, I ask whether the distributional information learned by LLMs is sufficient to explain social intelligence in humans.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the second research question.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "These questions are closely related but importantly distinct.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a substantive relationship between the two questions, introducing a distinction that the following sentences unpack; goes beyond bare structural announcement.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "LLMs might reach high performance on measures of mentalizing through quite different means than human comprehenders.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 26,
+      "note": "Extends the contrast in [26] into a speculative claim about mechanism; parent [26] contrast. —",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "The first type of question focuses on whether models, at an aggregate level, achieve performance that is comparable to humans.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 26,
+      "note": "Unpacks the first research question; parent [26] contrast. —",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "The second type is focused more granularly at an item level, to investigate whether humans and LLMs could plausibly be using the same kinds of mechanisms to generate their responses.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 26,
+      "note": "Unpacks the second research question; re-parented to [26] contrast (primary), skipping secondary [28]. —",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "In Chapters 1 & 2, I investigate these questions by comparing human and language model performance on a range of tasks developed to measure theory of mind in humans.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the method and scope of Chapters 1 & 2.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "I evaluate LLM capabilities by asking whether we see the same kinds of effects of experimental variables on LLM responses as we do in human responses.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the analytical approach within Chapters 1 & 2.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "In addition, I compare LLMs' aggregate accuracy in each task to human accuracy, to ask whether LLMs show comparable evidence for mentalizing capacities that humans do.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Adds a second analytical method for Chapters 1 & 2.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "To address the sufficiency question, I use LLM predictions as a control variable, to ask whether they are able to explain the variance in human responses that would ordinarily be attributed to mentalizing capacities.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the approach to the sufficiency question.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "To the extent that LLM predictions account for experimental effects in humans, it suggests that this apparent evidence of mentalizing could in fact be explained by sensitivity to distributional language statistics.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "States a conditional interpretive implication of [33] contribution; no new evidence. —",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "In Chapters 3, 4, & 5, I investigate these questions through the lens of the Turing test: a measure of whether a machine can deceive a human interrogator into thinking that it is human.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the scope and method of Chapters 3–5.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "At one level, the Turing test represents a demanding test of a particular kind of interactive social intelligence.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and nature of the Turing test as a measure.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "While static NLP benchmarks and psychology experiments allow us to distil specific components of social reasoning, the Turing test requires models to actually perform social interaction: presenting a consistent and plausible personality, inferring pragmatic implicatures, and tracking common ground across a multi-turn conversation.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a contrast between static benchmarks and the Turing test, motivating the latter's added value.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "At the same time, the test allows us to ask a variety of other questions that are relevant for understanding social intelligence and LLMs: are humans capable of identifying other humans?",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts additional value and scope of the Turing test as a research framework.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "What kinds of strategies and reasons do human participants come up with for demarcating humanity?",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 38,
+      "note": "Illustrates the secondary questions the Turing test enables; parent [38] emph. —",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "Do LLMs and humans fail or succeed for the same reasons?",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 38,
+      "note": "Another illustrative question; re-parented to [38] emph (primary), skipping secondary [39]. —",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "Chapter 3 contains a brief motivation of the Turing test as a measure of social intelligence.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the content of Chapter 3.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "In Chapter 4, I present the results of a large-scale online Turing test where we compare a wide variety of approaches.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the content of Chapter 4.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "Chapter 5 reports on a confirmatory study where we ask in a more controlled way whether GPT-4 passes the Turing test.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the content of Chapter 5.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "In the remainder of the introduction, I review relevant background literature and address some preliminary theoretical questions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure of the remainder of the Introduction.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "In Section 0.1, I review literature on social intelligence and theory of mind in humans.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the content of Section 0.1.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "I evaluate different theories of the origins and basis of human social intelligence, and motivate the scope of the studies included in this dissertation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Further specifies what Section 0.1 does.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "In Section 0.2. I review Large Language Models: their history, mechanisms, and aspects of their training and architecture that are especially relevant to the questions discussed here.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the content of Section 0.2.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "Finally, In Section 0.3. I discuss several theoretical issues that are pertinent to discussions of any kind of intelligence in language models.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the content of Section 0.3.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "Some researchers have argued that LLMs are not the kinds of things that could be said to display any kind of intelligence, either because of their mechanisms, lack of grounding, or lack of communicative intent.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an existing position in the literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Return to M1 territory-building within the extended background review announced in M3/3D."
+    },
+    {
+      "id": 50,
+      "text": "I briefly review these arguments, and provide justifications for investigating these abilities in LLMs.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the author's plan for engaging with [49]. --- **Section 0.1 Social Intelligence**",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "Social intelligence is a broad term that encompasses various cognitive and behavioral capacities that allow an individual to navigate their social world, including communicating with others, anticipating behaviour, and maintaining interpersonal relationships (Kihlstrom & Cantor, 2000).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines the construct of \"social intelligence\" as analytical machinery for the dissertation.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Extended M1 background review section begins here."
+    },
+    {
+      "id": 52,
+      "text": "Some researchers argue that these capacities are underpinned by the ability to represent and reason about others' mental states: often referred to as Theory of Mind (ToM), mentalizing, or mindreading (Apperly, 2012).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the theoretical claim linking ToM to social intelligence.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 53,
+      "text": "ToM has been studied using a variety of instruments in adults (O'Grady, Kliesch, Smith, & Scott-Phillips, 2015), children (Wellman, Cross, & Watson, 2001), and non-human animals (Premack & Woodruff, 1978).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the breadth of prior research on ToM measurement.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 54,
+      "text": "Following Dennett (1978), the ability to attribute beliefs to others has been taken as paradigmatic of ToM.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established theoretical framing of belief attribution as central to ToM.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 55,
+      "text": "The false belief task measures this ability by dissociating beliefs from reality, and asking whether participants can make predictions about a character's behavior that rely on representing their beliefs even when they are false (Wimmer & Perner, 1983).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Defines the false belief task introduced via [54] tempstat. —",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 56,
+      "text": "A much wider set of abilities and instruments have been included under the umbrella of ToM (Beaudoin, Leblanc, Gagner, & Beauchamp, 2020), including recognizing emotions (Dodell-Feder, Lincoln, Coulson, & Hooker, 2013), intentions (Trott & Bergen, 2018), and non-literal communication (Happé, 1994).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the breadth of the ToM construct as established in the literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 57,
+      "text": "The extent to which theory of mind is a unitary construct or merely a helpful label for a constellation of related abilities is itself a subject of debate.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a contested issue about the coherence of the ToM construct.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Brief M2 niche within extended background review; interlaced M1/M2."
+    },
+    {
+      "id": 58,
+      "text": "Hayward and Homer (2017) found that performance across several tasks purporting to measure ToM was only weakly correlated, and Gernsbacher and Yergeau (2019) argue that poor convergent validity across tasks suggests that a single factor cannot be responsible for performance at all of them.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports empirical findings supporting the skeptical view introduced in [57].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 59,
+      "text": "The topic of this dissertation interacts with this debate in two interrelated ways.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the relevance of the dissertation to the ToM coherence debate; goes beyond a bare structural announcement by making a substantive relational claim. Previously link:opening, corrected to resolve the subordination violation at [60].",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Local M3 step justifying the dissertation's approach relative to the ToM coherence debate."
+    },
+    {
+      "id": 60,
+      "text": "If ToM is not a coherent construct, the question of whether LLMs exhibit ToM-consistent behavior may not be a well-posed one.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 59,
+      "note": "Derives a conditional implication of the coherence debate; parent [59] emph (now primary). —",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 61,
+      "text": "At the same time, the extent to which statistical language models explain human behavior at these tasks could be informative about the question of whether these tasks index a dedicated mentalizing ability, or more general cognitive capacities.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the relevance of the dissertation's approach to the broader ToM coherence debate; independent primary claim.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 62,
+      "text": "If LLMs can account for human behavior on ToM tasks with only general statistical learning and language input, this would provide support for the idea that ToM is not necessarily a distinct ability, but could emerge from more general cognitive capacities.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 61,
+      "note": "States a conditional implication of LLM success for ToM theory; parent [61] emph. —",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 63,
+      "text": "In the remainder of this dissertation, I use ToM to refer to this constellation of abilities—recognizing and reasoning about mental states—without committing to the stronger claim that this is a unitary construct.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Establishes the specific working definition of ToM used throughout the dissertation. --- **Section 0.1.1 Origins of Theory of Mind**",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 64,
+      "text": "A large portion of research into theory of mind concerns its origins: how it develops across the lifespan and whether it is shared with other animals.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Opens the subsection; purely announces the topic of origins research without making an independent claim about significance or findings.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Subsection 0.1.1 opens with extended M1 background review."
+    },
+    {
+      "id": 65,
+      "text": "Biological accounts suggest that ToM relies on a dedicated evolved capacity (Fodor, 1992), subserved by a collection of specific brain regions sometimes called the ToM network (Theriault, Waytz, Heiphetz, & Young, 2020).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the biological/nativist position on ToM origins.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 66,
+      "text": "Alternative accounts stress the role of exposure to certain kinds of experiences in the development of ToM, such as social interaction (Meltzoff, 2007).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the experience-driven alternative to the biological account.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 67,
+      "text": "Among experience-driven accounts, some theorists argue for the particular importance of language as both a motivation and framework to reason about others' mental states (de Villiers & de Villiers, 2014).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific sub-position within experience-driven accounts.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 68,
+      "text": "In support of biological accounts, several studies have identified selective activation of specific brain regions when processing stimuli that relate to other people's beliefs, including the temporoparietal junction (TPJ), medial pre-frontal cortex (MPFC), precuneus (PC), and anterior superior temporal sulcus (aSTS) (Gallagher et al., 2000; Saxe, Carey, & Kanwisher, 2004; Saxe & Kanwisher, 2003).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports neuroimaging findings supporting biological accounts.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 69,
+      "text": "In itself, however, functional specificity of these regions is not evidence that these processes are owed to a biological endowment.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of the neuroimaging evidence just cited.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Brief M2 counter-claim within extended M1 review; interlaced M1/M2."
+    },
+    {
+      "id": 70,
+      "text": "This kind of anatomical specialization could emerge as part of a developmental process that relies on particular typical input.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 69,
+      "note": "Offers an alternative interpretation of anatomical findings consistent with experience-driven accounts; parent [69] contrast. —",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 71,
+      "text": "C. M. Heyes and Frith (2014) make an analogy to print reading, which is also subserved by dedicated cortical areas, but depends on particular kinds of input and shows cultural variability.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a cross-domain analogy used to support the experience-driven interpretation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to M1 reporting of prior work within the background review."
+    },
+    {
+      "id": 72,
+      "text": "Bedny et al. (2009) provide stronger evidence for the insensitivity of functional organization to developmental input by recording brain activity of congenitally blind individuals while they listened to stories about mental states.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports empirical evidence on the robustness of ToM neural organization.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 73,
+      "text": "Several theories stress the role of visual input in developing ToM, especially those that frame mentalizing as a kind of simulation of another agent's behavior (Baron-Cohen & Cross, 1992).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a class of theories predicting visual input matters for ToM development.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 74,
+      "text": "In contrast to the predictions of these accounts, however, Bedny et al. found that blind participants' brains showed selective activity in the same regions that are implicated in sighted individuals.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports empirical findings that contradict the visual-input theories cited in [73].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Contrast used rhetorically to report a specific finding, not to carve out the paper's own niche; remains M1."
+    },
+    {
+      "id": 75,
+      "text": "The authors conclude that the ToM network appears to develop normally in the absence of visual input, but speculate that other kinds of input (including language and social interaction), may still be necessary.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the authors' conclusions and speculations from the Bedny et al. study.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 76,
+      "text": "A variety of studies support the idea that particular experiences influence the development of ToM (Meltzoff, 2007).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the general finding that experience matters for ToM development.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 77,
+      "text": "In a training study, Slaughter and Gopnik (1996) found that children who practiced reporting on their own or others beliefs or desires improved at a false belief task versus a control group, suggesting that the conceptual developments underlying belief sensitivity rely on being exposed to relevant evidence.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific empirical study supporting experience-driven accounts.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 78,
+      "text": "Yagmurlu, Berument, and Celimli (2005) found that children raised at home outperformed children raised in orphanages at ToM tasks— controlling for verbal and nonverbal intelligence—suggesting that social interaction with adults is crucial for ToM development.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports another empirical study on social interaction's role in ToM development.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 79,
+      "text": "Finally, in a longitudinal twin study, Hughes et al. (2005) found that ToM performance of monozygotic twins was no more correlated than that of dizygotic twins.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a key empirical finding on genetic vs. environmental contributions to ToM.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

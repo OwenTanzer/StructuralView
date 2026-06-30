@@ -1,0 +1,513 @@
+{
+  "paper": {
+    "id": "abney_2014",
+    "title": "abney 2014",
+    "authors": [
+      "Abney"
+    ],
+    "year": 2014,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction builds its case through a **double territory pass**: an initial M1 block reviews behavioral matching and the interactive alignment model, then M2 identifies the limits of direct matching, and a second M1 block reestablishes territory around distributional matching and power laws before M3 claims the niche. This structure is strategic — the **return to M1 is not repetition but reframing**, positioning power law distributions as a richer, already-grounded theoretical space. The **M3 block is unusually dense**, packing novel findings, method description, concept naming, theoretical lineage, and comparative goals into nine sentences. The paper's central contribution, **\"complexity matching,\"** is introduced as a formal term only after its empirical evidence and borrowed theoretical ancestry are both in place.",
+  "structured_arc": "M1 -> M2 -> M1 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        13
+      ],
+      "role": "Establishes the research territory by reviewing the interactive alignment model and cataloguing empirical support for behavioral matching across linguistic levels, framing the domain as active and contested enough to warrant further investigation."
+    },
+    {
+      "move": "M2",
+      "span": [
+        14,
+        21
+      ],
+      "role": "Pivots from the established literature to its limits: direct behavioral matching is constrained by the individuality of contributions, and the irregular complexity of natural conversation raises an open question about whether more indirect, generalized forms of matching exist."
+    },
+    {
+      "move": "M1",
+      "span": [
+        22,
+        33
+      ],
+      "role": "Re-enters territory-building to introduce and ground distributional matching and power laws as an established conceptual space, positioning the paper's forthcoming empirical contribution within a theoretically prepared framework rather than as an unsupported novelty claim."
+    },
+    {
+      "move": "M3",
+      "span": [
+        34,
+        42
+      ],
+      "role": "Occupies the niche by announcing the new power law finding, formally naming 'complexity matching,' describing the dataset and methods, grounding the term in statistical mechanics, and specifying the comparative aims of the study."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Conversation is a complex coordination of human behavior (Shockley, Richardson, & Dale, 2009).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Interlocutors need to attend to each other flexibly and continuously over the course of conversation so that they know what to say and when to say it in order to satisfy their conversational goals.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and complexity of conversational demands without citation; establishes why this topic matters.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "One prominent model of dyadic conversation is Pickering and Garrod's (2004) interactive alignment model.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "The model emphasizes the importance of aligning different linguistic representations and holds that interlocutors match representations at different linguistic levels.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 3,
+      "note": "Unpacks the content of the model introduced in [3].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "There are numerous schemes for dividing linguistic processing into levels, but Pickering and Garrod (2004) discussed six: phonetic, phonological, lexical, syntactic, semantic, and situational.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "In support of this model, a range of studies has shown that interlocutors match speech behaviors at various scales of linguistic structure.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Interlocutors have been shown to match productions of phonemes (Pardo, 2006), speech pauses (Cappella & Planalp, 1981), syntactic structures (Bock, 1986), and descriptive utterances (Garrod & Anderson, 1987).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides specific cited examples of the claim made in [6]; citation-backed but these are illustrations of the domain-level pattern in [6], not independent cross-domain generalizations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "In these cases, there are direct correspondences between particular instances of behaviors, such as mimicking individual utterances, syntactic phrasings, accented words, and so on.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 6,
+      "note": "Characterizes the nature of the behavioral matching described in [6]–[7]; parent is [6] (primary tempstat).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "We use the term behavioral matching to refer to these phenomena alternately known as alignment, entrainment, convergence, and synchronization (Louwerse, Dale, Bard, & Jeuniaux, 2012).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and names \"behavioral matching\" as the terminological/conceptual object the paper will use as analytical machinery.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "A growing body of literature supports the existence of behavioral matching, but the specifics and interpretation are matters of debate.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Sentence pivots toward gap-signaling in its second clause but primarily characterizes the state of literature; assigned M1 as a review of prior research that sets up M2."
+    },
+    {
+      "id": 11,
+      "text": "Some argue that behavioral matching and related processes are integral to dyadic interactions (Pickering & Garrod, 2004), while others emphasize the role of behavioral matching in facilitating mutual comprehension (Brennan & Clark, 1996; Brennan & Hanna, 2009).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Others argue that principles and processes of perception and action give rise to behavioral matching (Richardson, Marsh, Isenhower, Goodman, & Schmidt, 2007; Sebanz, Bekkering, & Knoblich, 2006).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Still others contend that human communication is a general framework for situated action in which interlocutors maximize detection and sensitivity to others (Suchman, 2007).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "These ongoing debates have been useful and informative because they suggest that behavioral matching plays some role in establishing common ground and, more generally, facilitating communication.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previously tagged link:closing, which created an illegal secondary→secondary parent chain with [15] contrast. This sentence makes an independent claim about what the literature suggests and is citation-grounded in spirit; tempstat is correct and allows [15] to be a valid contrast child.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "However, opportunities for behavioral matching in natural conversation are limited because interlocutors do not simply mirror each other's behaviors.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the key limitation against prior work; parent is [14] (tempstat).",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Each person makes unique, individual contributions to dyadic interactions, and effective communication necessitates that interlocutors share common ground and coordinate behaviors (cf. Healey, Purver, & Howes, 2014; Mills, 2014).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Elaborates and grounds the limitation stated in [15]; parent is [15] (primary contrast).",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Thus many aspects of conversational behavior may be expressed by more indirect, subtle forms of coordination.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previously extension:speculative with secondary parent [16] — illegal. Reassigned to emph: the sentence asserts the existence and significance of indirect coordination forms as a phenomenon worth attending to, functioning independently to motivate the paper's contribution.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "Even turn-taking is more complex than synchronization or syncopation.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence of complexity beyond simple behavioral matching; independently emphasizes the significance of the problem.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "Turns often do not alternate cleanly and evenly (Stivers et al., 2009), and interlocutors often speak and gesture simultaneously during periods of so-called 'back channeling' (McClave, 2000).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Supports [18] with cited evidence; functions as tempstat because it reports cited findings rather than extending speculatively.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "The irregular, complex nature of dyadic interaction raises the question of whether behavioral matching may be generalized to more indirect forms of matching.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the open question that motivates the paper.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "That is, the drive to establish common ground and facilitate communication may be addressed through other means that can be viewed as extensions of behavioral matching.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previously extension:speculative. Reassigned to emph: the sentence independently asserts the existence and relevance of an extension space beyond behavioral matching, establishing that something real and important is at stake; this framing motivates the framedef that follows.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "One natural extension is distributional matching—the idea that behaviors may match at the level of statistical, ensemble characterizations, rather than the level of particular behavioral acts.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines \"distributional matching\" as a new conceptual object the paper will use.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Return to territory-building after M2 gap-statement; introduces the conceptual framework that grounds the new contribution. Interlaced M1 re-entry."
+    },
+    {
+      "id": 23,
+      "text": "For instance, mean speech rates may converge during conversations (Webb, 1969), or two interlocutors may converge in their proportions of slang expressions, without directly matching each other slang for slang.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 22,
+      "note": "Provides examples of distributional matching introduced in [22]; parent is [22] (primary framedef).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "The concept of distributional matching is consistent with Pickering and Garrod's (2004) interactive alignment model.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Relates the new concept to existing theory with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "Perhaps the best example comes from the well-known phenomenon of syntactic priming (Bock, 1986; Pickering & Branigan, 1998, 1999), in which hearing or seeing the usage of a given syntactic form (e.g., active vs. passive) increases the likelihood that speakers will use it themselves.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "Syntactic priming can arise from behavioral matching or distributional matching.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "In the latter case, the probability distributions over syntactic forms may converge between interlocutors (see Jaeger & Snider, 2008).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates the distributional matching version of syntactic priming; parent is [26] (primary tempstat).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "The hypothesis of distributional matching takes on a new dimension when the distributions being matched follow power law functions (Clauset, Shalizi, & Newman, 2009).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of a specific extension — power law distributions — as a new and important dimension; establishes something worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "A power law function expresses one variable as a nonlinear function of another variable raised to a power, f(x) ∼ xα.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 28,
+      "note": "Defines the mathematical concept introduced in [28]; parent is [28] (primary emph).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "The heterogeneities and irregularities of language behaviors are reflected in many different power laws.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "For instance, power law relations are found in frequencies of word usage (Zipf, 1949), frequencies of n-grams in text corpora (Kello & Beltz, 2009), frequencies of syntactic links to words (Ferrer-i-Cancho, Solé, & Köhler, 2004), correlations and burstiness across vowels/consonants, letters, words, and topics (Altmann, Cristadoro, & Degli Esposti, 2012), and spectral density of fluctuations in music and human speech (Voss & Clarke, 1978).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 30,
+      "note": "Lists cited examples of power laws in language, illustrating [30]; parent is [30] (primary tempstat).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "We provide an illustrative example in the next section, but suffice it to say here that these power laws reflect the heterogeneity of language in terms of variability across a wide range of measurement scales.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces upcoming content and characterizes the scope of the concept; structural and scope-setting function.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "They correspond to the irregularity of language in terms of rough stochastic patterns, unlike the highly regular fractals (i.e., power laws) of snowflakes and Mandelbrot sets.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previously extension:definitional. Reassigned to tempstat: the sentence makes an independent substantive claim characterizing a known property of language power laws by contrast with regular fractals — this is a domain-level characterization of established knowledge, not merely a definition of something introduced in [32].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "In the present study, we find evidence for a new power law distribution in conversational speech signals.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty of a specific empirical finding.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "The power law is hypothesized to reflect hierarchical clustering and levels of linguistic information in conversational speech (Grosjean, Grosjean, & Lane, 1979), akin to levels proposed for the interactive alignment model.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the theoretical hypothesis grounding the study's approach.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "The speech data come from dyadic conversations designed to be either affiliative or argumentative (Paxton & Dale, 2013), and the speech signals are analyzed in terms of their temporal dynamics, as captured by acoustic onset events and subsequent periods of acoustic energy.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the data and analytic approach of the present study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "The power law in event clustering is measured by the Allan Factor (AF) function, which computes coefficients of variation across multiple timescales.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the measurement method used in the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "We find that AF functions measured from interlocutor speech signals converge in dyadic conversations, particularly for affiliative conversations and not argumentative conversations.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims a novel finding of the current study.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "We call this convergence complexity matching as a special case of distributional matching when distributions are power laws.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Formally introduces and names \"complexity matching\" — the paper's central conceptual contribution.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "The term comes from studies in statistical mechanics (West, Geneston, & Grigolini, 2008) showing maximal information exchange between coupled complex systems that individually produce similar power laws.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Cites the theoretical origin and empirical basis of the borrowed term.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "We test whether conversational speech signals exhibit the conditions predicted from statistical mechanics on the approach that complexity matching can provide a unique angle into naturalistic conversation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the purpose and rationale of the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "We compare behavioral and complexity matching to test whether they make distinct contributions toward explaining dyadic interaction, and whether complexity matching yields useful evidence beyond behavioral matching.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the comparative design and goals of the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

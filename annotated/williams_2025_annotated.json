@@ -1,0 +1,564 @@
+{
+  "paper": {
+    "id": "williams_2025",
+    "title": "williams 2025",
+    "authors": [
+      "Williams"
+    ],
+    "year": 2025,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction front-loads its **M2 gap** (observational opacity of collective creativity) and resolves it immediately with a **M3 model-system announcement** (free jazz), before cycling back into extended M1 territory to justify that choice. A second M3 block then installs the **foraging framework**, triggering another long M1 review of Lévy flights and Area Restricted Search — with a brief M2 interjection marking their indistinguishability. The arc closes with a tight M3 triple-punch announcing dataset, method, and research question. The paper's rhetorical bet is that two rounds of extended background-building earn the right to the foraging hypothesis.",
+  "structured_arc": "M1 -> M2 -> M3 -> M1 -> M3 -> M1 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        2
+      ],
+      "role": "Establishes collective innovation as a broadly significant, species-defining phenomenon, priming the reader to care about the gap that follows."
+    },
+    {
+      "move": "M2",
+      "span": [
+        3,
+        5
+      ],
+      "role": "Identifies the opacity of the creative process as the specific scientific barrier blocking progress on collective innovation — the problem the whole paper answers."
+    },
+    {
+      "move": "M3",
+      "span": [
+        6,
+        6
+      ],
+      "role": "Makes an early, compact niche-occupation move by naming free jazz as the paper's solution to the observability problem, before background justification is provided."
+    },
+    {
+      "move": "M1",
+      "span": [
+        7,
+        15
+      ],
+      "role": "Builds post-hoc justification for the free-jazz model system by establishing its properties — real-time visibility, true collectivity, mutual adaptation — as field-accepted facts."
+    },
+    {
+      "move": "M3",
+      "span": [
+        16,
+        20
+      ],
+      "role": "Installs foraging as the paper's central analytical framework, anchors it in prior individual-creativity literature, and maps its terms onto the musical domain."
+    },
+    {
+      "move": "M1",
+      "span": [
+        21,
+        33
+      ],
+      "role": "Reviews the empirical and conceptual landscape of foraging theory — Lévy flights and Area Restricted Search — giving readers the background needed to evaluate the paper's discriminating test."
+    },
+    {
+      "move": "M2",
+      "span": [
+        34,
+        34
+      ],
+      "role": "Marks the key unresolved problem within the foraging literature: that Lévy flights and ARS produce superficially indistinguishable trajectories, motivating the paper's discriminating analytical approach."
+    },
+    {
+      "move": "M1",
+      "span": [
+        35,
+        39
+      ],
+      "role": "Resolves the M2 tension by identifying temporal clustering of large steps as the distinguishing empirical signature between the two strategies — the handle the paper will use."
+    },
+    {
+      "move": "M3",
+      "span": [
+        40,
+        43
+      ],
+      "role": "Closes the introduction with a concrete three-step niche occupation: announcing the corpus, the operationalization method, and the research question tested."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Collective innovation is a cornerstone of our species' global success [1,2].",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the fundamental importance and significance of collective innovation.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "This capacity is manifest in activities as varied as technological invention [3], crisis problem solving [4], scientific collaboration [5], and even interpersonal conversation [6], all of which require the coordination of creative behaviors distributed among multiple actors.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates the breadth of collective innovation established in [1]; parent is emph.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Understanding the moment-to-moment dynamics of collective innovation remains a grand challenge.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies an unresolved problem in the field.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "One major stumbling block to the scientific study of collective innovation is the inherent opacity of the creative process: while creative products like scientific publications or rehearsed musical performances are visible as the public 'frontstage' of innovation, the crucial 'backstage' of real-time collaborative creation often remains hidden [7].",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a specific limitation — opacity of the creative process — that blocks scientific progress.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "The opacity of the creative process has severely limited our understanding of the fine-grained dynamics of real-world collective innovation.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Synthesizes the consequence of the limitation introduced in [4]; parent is contrast (primary). Chain is valid.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "To penetrate this observational barrier, we turned to an unusual group of creative professionals notorious for engaging publicly in the process of collective innovation: free jazz musicians.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's approach and choice of model system in response to the identified gap.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Improvising musicians must coordinate continuously, make constant decisions on the timescale of milliseconds, and select their moment-to-moment activity from a huge space of acoustic possibility [9].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established characteristics of musical improvisation with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Post-M3 return to territory; M2->M3 cycling — extended M1 block justifying the model system"
+    },
+    {
+      "id": 8,
+      "text": "In stark contrast to domains where the creative process is hidden behind its product, in musical improvisation the process of creation is the publicly observable product.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Draws a direct contrast between improvisation and other creative domains to argue for its utility as a research window.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "This immediacy distinguishes it from, say, musical composition or scientific research, where creative products like musical scores or scientific publications are the polished outcomes of often protracted and private generative processes.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates the contrast made in [8] with concrete examples; parent is contrast (primary).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Crucially, among improvisational practices, free jazz is especially well suited for studying truly collective creativity.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the particular significance and suitability of free jazz; independent positive claim about the object of study.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Unlike genres that focus on individual soloists with harmonic or rhythmic accompaniment, in free jazz all ensemble members participate simultaneously in the improvisational process [10, 11].",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a contrast between free jazz and other improvisational genres to support the claim in [10].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Free jazz ensembles perform without established leaders, preexisting musical scores, predetermined chord changes, planned solo intervals, established harmonies, or canonical musical phrases.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Defines what free jazz performance entails, unpacking the collective nature asserted in [10]–[11]; parent is contrast (primary).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Instead, they make it up on the fly, collectively creating novel sounds as they navigate a space of possible sounds that is largely unconstrained [12].",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Continues definitional unpacking of free jazz; parent is contrast (primary) at [11], re-parenting past [12] (secondary) is valid.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "Likewise, collaboratively improvising musicians rapidly and mutually adapt to their improvising partners to create optimal musical performances [13, 14].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established finding about mutual adaptation in improvising musicians, with citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Collective free jazz improvisation thus provides a unique real-world laboratory for studying the unscripted, fine-grained, moment-to-moment dynamics of collective innovation in vivo.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from link:closing. The sentence makes an independent positive claim about the significance and uniqueness of free jazz as a research system — this is emph, not mere synthesis. \"Unique real-world laboratory\" asserts real-world relevance and importance of the phenomenon.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Here, to quantify the fine-grained dynamics of collective innovation, we analyze the improvisational process as a kind of foraging, a search for rewards in an uncertain landscape.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the foraging framework as the central analytical metaphor; creates a new conceptual object for the paper's argument.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Second M3 occupation; announces the foraging framework as the paper's central analytical approach"
+    },
+    {
+      "id": 17,
+      "text": "More mundane forms of individual creativity have been characterized as foraging processes, including searching through semantic memory [15], creating interesting visual patterns [16, 17, 18], and solving insight puzzles [19].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior work applying foraging frameworks to individual creativity, providing empirical grounding for the framework introduced in [16].",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "Similarly, free improvisation can be thought of as a collective foraging process, in which musical ensembles must move through an abstract space of sonic possibility with the goal of discovering sounds that are novel, interesting, or otherwise rewarding.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Extends and specifies the foraging framework to the collective/musical domain; continues framework-building.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "From this perspective, locations within the sonic space correspond to complex sounds produced by the musical ensemble, which could be sounds that the musicians have produced before (analogous to locations that a foraging organism has visited previously) or entirely novel sounds that have never been created (analogous to locations that a foraging organism has yet to visit).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Defines the terms of the foraging metaphor by mapping sonic locations onto foraging concepts; parent is framedef (primary) at [18].",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "Below, we explain how computational methods can formalize this foraging perspective on musical improvisation (Fig. 1, A-C).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces what the paper will do — formalize the framework computationally.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "What foraging strategies might musical ensembles use to improvise?",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Opens the foraging strategies sub-section; purely structural announcement with no independent claim.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Post-M3 return to territory reviewing foraging literature; M2->M3 cycling — extended M1 block"
+    },
+    {
+      "id": 22,
+      "text": "Across a wide range of environmental conditions where resources cluster together in patches, a highly effective foraging strategy is to move through the space using a Lévy flight random walk [20].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established finding from behavioral ecology about Lévy flights, with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "In a Lévy flight, the length of each step is drawn randomly from a heavy-tailed distribution, with frequent small steps and infrequent large steps [21].",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 22,
+      "note": "Defines the Lévy flight mechanism introduced in [22]; parent is tempstat (primary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Despite their randomness and lack of any plan or memory, Lévy flights can generate search trajectories that appear patchy, with extended periods spent within local regions, interspersed with large jumps to new regions.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from tempstat. No citation is present. The sentence asserts the significance of a known property of Lévy flights — that apparent patchiness can emerge from randomness — establishing this as a real and notable phenomenon. Without citation, tempstat is not appropriate; emph fits as an assertion of a phenomenon's existence and relevance.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "The spatial foraging behavior of a wide variety of organisms has been characterized as Lévy flights, including albatrosses [22], sharks [23], mussels [24], deer [25], humans [26, 27, 28], and even entire sports teams [29], although subsequent reanalyses have cast doubt on some of these claims [30, 31].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the broad empirical literature documenting Lévy flights across species, including caveats from reanalyses.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "While a random walk may seem an overly simplistic account of collective innovation, random walks have been used to model a range of high-level cognitive processes, including decision making [32, 33], memory retrieval [34], individual creativity [35], curiosity [36], and even scientific productivity [37], and some have argued that they are optimal in a wide range of conditions [20].",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Acknowledges a potential objection (random walk seems simplistic) but rebuts it with citation-backed evidence; concessive-then-rebuttal structure.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "In the context of improvised music, novel and interesting sounds are distributed unevenly and unpredictably throughout the space of sonic possibility, so musicians could perform an abstract form of a Lévy flight to increase their odds of encountering particularly novel or interesting sounds.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Applies Lévy flight logic speculatively to musical improvisation as a hypothesis without new evidence; parent is contrast (primary) at [26].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "Alternatively, instead of moving randomly as in a Lévy flight, foragers may respond strategically to resource encounters [38].",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces Area Restricted Search as an alternative to Lévy flight; \"Alternatively\" marks the contrast explicitly.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "In Area Restricted Search, for instance, resource encounters prompt the forager to search nearby, thus 'exploiting' the local region.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 28,
+      "note": "Defines the Area Restricted Search mechanism introduced in [28]; parent is contrast (primary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "As resource encounters become less frequent, the organism becomes more likely to abandon that region to 'explore' widely for a new patch of clustered rewards.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 28,
+      "note": "Continues defining Area Restricted Search, describing the explore phase; re-parents to contrast (primary) at [28], skipping [29] (secondary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "Much like Lévy flights, Area-Restricted Search has been documented widely in the natural world [38], including in ladybugs foraging for aphids [39], seabirds foraging for fish [40], and humans foraging for mushrooms [41].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the empirical literature documenting Area Restricted Search across species.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "Since resources are often clustered spatially, Area Restricted Search can generate patchy trajectories that resemble those of a Lévy flight.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the known consequence of Area Restricted Search in patchy environments, establishing the problem of distinguishing the two strategies.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "After encountering an interesting sound, for instance, improvising musicians may decide collectively to persist in exploiting the similar sounds within a sonic patch or 'soundworld,' only switching to explore for a new soundworld when they have exhausted the current soundworld's novelty or interest.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Applies ARS framework speculatively to musical improvisation; also introduces the term \"soundworld\" informally. Parent is tempstat (primary) at [32]. Chain is valid.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "As accounts of foraging, Lévy flights and Area Restricted Search are difficult to distinguish because both can generate search patterns that are patchy, with periods of sustained search within a focal region punctuated by leaps to a new region.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the key tension: the two strategies produce superficially similar patterns, making them hard to distinguish.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M2 within extended M1 block; names what is not yet resolvable between the two foraging accounts"
+    },
+    {
+      "id": 35,
+      "text": "A key difference, however, is the role of memory in the transition between patches [42, 43].",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the distinguishing feature that resolves the tension raised in [34]; \"however\" marks the contrast explicitly.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "In a Lévy flight, the organism does not adjust its behavior on the basis of recent resource encounters; it just draws randomly from a heavy-tailed distribution of steps.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Unpacks the memory-less nature of Lévy flights as part of the distinguishing contrast; parent is contrast (primary) at [35].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "An organism engaged in Area Restricted Search, by contrast, will transition from exploring to exploiting when it encounters a new resource, and it may then persist in exploiting that region based on the memory of that resource encounter.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Unpacks the memory-based nature of Area Restricted Search; re-parents to contrast (primary) at [35], skipping [36] (secondary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "Area-Restricted Search and Lévy flights are thus distinguished by whether or not the organism adjusts its foraging behavior before and after a resource encounter.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Synthesizes the distinguishing criterion established in [35]–[37]; closes the comparison sub-section. Parent is contrast (primary) at [35].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "As a consequence, when an organism uses Area Restricted Search to forage in a patchy landscape, large exploratory steps should cluster together temporally within periods of sustained exploration; in a Lévy flight, by contrast, the temporal distribution of large steps is random.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:speculative. Previous parent [38] was link:closing (secondary), violating the subordination rule. Elevated to primary. The sentence asserts the existence of a specific, identifiable distinguishing pattern — temporal clustering of large steps — as a real phenomenon with empirical consequences. This is emph: asserting that something real and important exists (the clustering pattern) that the paper will exploit.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "Using a corpus of audio recordings of professional musicians engaged in collective improvisation — a model system for the fine-grained study of in vivo collective innovation — we investigated the foraging strategies adopted collectively as the ensembles engaged in free improvisation (Fig. 1, A, D).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the study's empirical approach, dataset, and research question.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Final M3 occupation; third return to niche occupation after extended M1 background review"
+    },
+    {
+      "id": 41,
+      "text": "We converted each track (N = 75, ranging from 1 min. to over 40 min.) into a trajectory through a space of sonic possibility by embedding consecutive moments in a high-dimensional 'sonic space' (Fig. 1B, E).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the specific method used to operationalize the foraging framework.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "We quantified the dynamics of these trajectories by analyzing the moment-to-moment movements through this sonic space (Fig. 1C, F).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the analytic approach applied to the trajectories.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "We then asked whether the dynamics of collective improvisation instantiate classic foraging strategies from behavioral ecology.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the research question directly tested in the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

@@ -1,0 +1,712 @@
+{
+  "paper": {
+    "id": "manning_2024",
+    "title": "manning 2024",
+    "authors": [
+      "Manning"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction opens with an **inverted M2→M1 interleave**: the gap precedes the territory, forcing readers to register a deficiency before the field is even established. A massive **M3 block (sentences 8–48)** then dominates — announcing the system, methodology, and full results — before cycling back through **M1→M2→M1** (sentences 49–53) to retroactively justify why LLMs are appropriate for this task. The paper closes with a clean **final M3** contribution claim and roadmap. This late-justification cycling is the defining structural quirk: the 'why LLMs' argument follows, not precedes, the 'what we found' argument.",
+  "structured_arc": "M2 -> M1 -> M2 -> M1 -> M3 -> M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M2",
+      "span": [
+        1,
+        1
+      ],
+      "role": "Opens by naming an asymmetry in the literature — testing is underserved relative to estimation — before any territory is established, creating immediate reader buy-in to the problem."
+    },
+    {
+      "move": "M1",
+      "span": [
+        2,
+        3
+      ],
+      "role": "Establishes the emerging territory of automated hypothesis generation, situating the paper within a field that is actively changing."
+    },
+    {
+      "move": "M2",
+      "span": [
+        4,
+        4
+      ],
+      "role": "Reintroduces the gap: even with automated hypothesis generation, testing remains unsolved — sharpening the niche the paper will occupy."
+    },
+    {
+      "move": "M1",
+      "span": [
+        5,
+        7
+      ],
+      "role": "Builds out the territory of LLM-based simulation as an established and promising approach, licensing the paper's combination of simulation and hypothesis generation."
+    },
+    {
+      "move": "M3",
+      "span": [
+        8,
+        30
+      ],
+      "role": "Occupies the niche in full: announces the paper's purpose, introduces the SCM-based system, describes the four experimental scenarios and their methodologies, and reports empirical findings including the benchmark-validating auction results."
+    },
+    {
+      "move": "M2",
+      "span": [
+        31,
+        32
+      ],
+      "role": "Inserts a mid-findings gap question — whether simulation adds anything over direct LLM querying — pivoting to a second empirical contribution without leaving M3's findings frame."
+    },
+    {
+      "move": "M3",
+      "span": [
+        33,
+        48
+      ],
+      "role": "Resolves the gap question empirically: introduces the predict-yi and predict-β̂ tasks, reports quantitative results showing that direct elicitation is poor while simulation-informed prediction is substantially better."
+    },
+    {
+      "move": "M1",
+      "span": [
+        49,
+        51
+      ],
+      "role": "Retroactively grounds the paper's approach in territory: LLMs contain latent human behavioral information because of how they are trained, providing post-hoc scientific justification for using them as subjects."
+    },
+    {
+      "move": "M2",
+      "span": [
+        52,
+        52
+      ],
+      "role": "Concedes LLM limitations as human proxies while pivoting to a growing body of validating evidence — a concessive move that strengthens rather than undermines the paper's positioning."
+    },
+    {
+      "move": "M1",
+      "span": [
+        53,
+        53
+      ],
+      "role": "Asserts the centrality and power of automated LLM exploration as a tool for social science insight, bridging the late justification block back into a final contribution claim."
+    },
+    {
+      "move": "M3",
+      "span": [
+        54,
+        55
+      ],
+      "role": "Closes with an explicit novelty claim — a full end-to-end automated social science system — and announces the paper's structure, completing the occupation of the niche."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "There is much work on efficiently estimating econometric models of human behavior but comparatively little work on efficiently generating and testing those models to estimate.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opens by positing an asymmetry in the literature — much work on one side, little on the other. Establishes the gap via contrast.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "M1-absent opening; gap indicated before territory is established."
+    },
+    {
+      "id": 2,
+      "text": "Previously, developing such models and hypotheses to test was exclusively a human task.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the prior state of the field as an established fact.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Interlaced M1/M2; territory established after opening gap sentence."
+    },
+    {
+      "id": 3,
+      "text": "This is changing as researchers have begun to explore automated hypothesis generation through the use of machine learning.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an emerging trend in the field with citation support (footnote 1).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "But even with novel machine-generated hypotheses, there is still the problem of testing.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a residual limitation against the prior tempstat — automated hypothesis generation doesn't solve the testing problem.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2; returns to gap language after brief territory."
+    },
+    {
+      "id": 5,
+      "text": "A potential solution is simulation.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and relevance of simulation as a candidate solution. This introduces a real approach worth attending to, fitting emph rather than extension:speculative, which requires a conditional prediction extending a prior claim.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Bridges gap back to territory by introducing simulation as a known approach."
+    },
+    {
+      "id": 6,
+      "text": "Researchers have shown that Large Language Models (LLM) can simulate humans as experimental subjects with surprising degrees of realism.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding from the literature with citation support (footnote 2).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "To the extent that these simulation results carry over to human subjects in out-of-sample tasks, they provide another option for testing (Horton, 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Carries a citation (Horton, 2023); per the citation = primary rule, this is tempstat regardless of the conditional framing. It asserts a cross-domain claim with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "In this paper, we combine these ideas—automated hypothesis generation and automated in silico hypothesis testing—by using LLMs for both purposes.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the core approach and purpose of the current paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "We demonstrate that such automation is possible.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a specific goal/claim of the paper — demonstrating feasibility of the approach.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "We evaluate the approach by comparing results to a setting where the real-world predictions are well known and test to see if an LLM can be used to generate information that it cannot access through direct elicitation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the evaluation strategy for the paper's approach.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "The key innovation in our approach is the use of structural causal models to organize the research process.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty for a specific feature of the current work.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Structural causal models are mathematical representations of cause and effect (Pearl, 2009b; Wright, 1934) and have long offered a language for expressing hypotheses.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established knowledge about SCMs with citations.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Provides background justification for the SCM-based innovation claimed in sentence 11."
+    },
+    {
+      "id": 13,
+      "text": "What is novel in our paper is the use of these models as a blueprint for the design of agents and experiments.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Distinguishes the paper's specific contribution from prior uses of SCMs.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "In short, each explanatory variable describes something about a person or scenario that has to vary for the effect to be identified, so the system 'knows' it needs to generate agents or scenarios that vary on that dimension—a straightforward transition from stated theory to experimental design and data generation.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Unpacks and elaborates the blueprint mechanism claimed in [13], a primary novstat. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Furthermore, the structural causal model offers a pre-specified plan for estimation (Haavelmo, 1943, 1944; Jöreskog, 1970).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Cites established work to support an additional property of SCMs relevant to the paper's approach.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Continues justification for SCM-based approach within M3."
+    },
+    {
+      "id": 16,
+      "text": "We built an open-source computational system implementing this structural causal model-based approach.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the artifact produced by the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "The system can automatically generate hypotheses, design experiments, run those experiments on independent LLM-powered agents, and analyze the results.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 16,
+      "note": "Elaborates the capabilities of the system introduced in [16], a primary contribution. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "We use this system to explore several social scenarios: (1) two people bargaining over a mug, (2) a bail hearing for tax fraud, (3) a lawyer interviewing for a job, and (4) an open ascending price auction with private values for a piece of art.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the scope and content of the paper's demonstrations.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "We allow the system to propose the hypotheses for the first two scenarios and then run the experimental simulations without intervention.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the methodology used in two of the four scenarios.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "For (3) and (4), we demonstrate the system's ability to accommodate human input at any point by selecting the hypotheses ourselves and editing some of the agents, but otherwise, we allow the system to proceed autonomously.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the methodology for the remaining two scenarios and highlights an additional feature of the system.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "Though yet to be optimized for novelty, the system formulates and tests multiple falsifiable hypotheses—from which it generates several findings.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Characterizes the system's output and frames the results to follow.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "The probability of a deal increased as the seller's sentimental attachment to the mug decreased, and both the buyer's and the seller's reservation prices mattered.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding from the bargaining scenario experiment.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "A remorseful defendant was granted lower bail but was not so fortunate if his criminal history was extensive.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding from the bail hearing scenario.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "However, the judge's case count before the hearing—which was hypothesized to matter—did not affect the final bail amount.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a null finding from the bail hearing scenario, notable because it falsifies a hypothesis.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "The candidate passing the bar exam was the only important factor in her getting the job.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding from the lawyer interview scenario.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "Neither the candidate's height nor the interviewer's friendliness affected the outcome.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports null findings from the lawyer interview scenario.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "The auction scenario is particularly illuminating.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance/importance of the auction scenario — makes a content claim (\"particularly illuminating\") rather than merely naming a topic. Not a bare structural announcement, so link:opening is incorrect; emph fits.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "An increase in the bidders' reservation prices caused an increase in the clearing price, a clearing price that is always close to the second-highest reservation amongst the bidders.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the key empirical finding from the auction simulation.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "These simulation results closely match the theory (Maskin and Riley, 1985) and what has been observed empirically (Athey et al., 2011).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Validates the simulation results by citing established theoretical and empirical benchmarks.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Provides validation of findings within M3."
+    },
+    {
+      "id": 30,
+      "text": "None of the findings from the system's experiments are 'counterintuitive,' but it is important to emphasize they were the result of empiricism, not just model introspection.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a tension: the results look unremarkable, but the method (empiricism vs. introspection) is what matters. The rhetorical move is contrastive — pushing back against a potential dismissal of the results.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "However, this does raise the question of whether the simulations are even necessary.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies an open question raised by the results — whether simulations add value beyond direct LLM querying.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "M2->M3 cycling; returns to gap/question language after extended M3 findings block."
+    },
+    {
+      "id": 32,
+      "text": "Instead of simulation, could an LLM simply do a 'thought experiment' about the proposed in silico experiment and achieve the same insight?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Independently identifies an open question/gap as a specific testable research question. Stands as a primary sentence in its own right rather than extending [31] speculatively.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "To test this idea, we describe the experiments that will be simulated and ask the LLM to predict the results—both the path estimates and point predictions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the design of an additional empirical test within the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Second M3 block following M2 cycling."
+    },
+    {
+      "id": 34,
+      "text": "The path estimates being the coefficients in the linear structural causal model.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 33,
+      "note": "Defines terminology introduced in [33], a primary contribution. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "To make this concrete, suppose we had the simple linear model y = Xβ to describe some scenario, and we ran an experiment to estimate β̂.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 33,
+      "note": "Introduces formal notation and sets up the definitional framework for the tasks described in [33]. This is notational/definitional setup rather than an illustrative example. Parent is [33], a primary contribution. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "We describe the scenario and the experiment to the LLM and ask it to independently predict yi given a particular Xi (a 'predict-yi' task).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Defines the predict-yi task. Parent is [33], a primary contribution. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "Separately, we ask it to predict β̂ (a 'predict-β̂' task).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Defines the second task. Parent is [33], a primary contribution. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "Later, we examine how the LLM does on the predict-yi task when it has access to the fitted structural causal model (i.e., β̂).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces a third analytical component of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "In the predict-yi task, we prompt the LLM to predict the outcome yi given each possible combination of the Xi's from the auction experiment.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes a specific methodological step in the predict-yi task.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "Direct elicitation of the predictions for yi in the auction experiment is wildly inaccurate.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a key finding about LLM direct elicitation performance.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "The predictions are even further from the theory than the empirical results.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 40,
+      "note": "Further characterizes/unpacks the meaning of \"wildly inaccurate\" from [40], a primary contribution. Not an illustrative example but an elaboration of degree. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "In the predict-β̂ task, the LLM is asked to predict the fitted structural causal model's path estimates for all four experiments, provided with contextual information about each scenario.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the second task's design.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "On average, the LLM predicts the path estimates are 13.2 times larger than the experimental results.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific quantitative finding from the predict-β̂ task.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "Its predictions are overestimates for 10 out of 12 of the paths, although they are generally in the correct direction.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Further unpacks/characterizes the finding in [43], a primary contribution — adding directional nuance to the overestimation finding. Not an example; extension:definitional fits. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "We repeat the predict-yi task, but this time, we provide the LLM with the experimental path estimates.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a third task/condition.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "For each Xi, we fit the structural causal model using all but the ith observation and then ask the LLM to predict yi given Xi and this fitted model.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 45,
+      "note": "Defines the predict-yi|β̂−i task introduced in [45], a primary contribution. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "In this 'predict-yi|β̂−i' task, the predictions are far better than in the predict-yi task without the fitted model.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the key finding from the third task.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "The mean squared error is six times lower, and the predictions are much closer to those made by the theory, but they are still further from the theory than they are to the simulations.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Quantifies and unpacks the finding in [47], a primary contribution — elaborating what \"far better\" means numerically. Not an illustrative example; extension:definitional fits. Legal parent chain.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "We design and implement an approach to automated social science because LLMs possess latent information about human behavior that can be systematically explored and extracted (Burns et al., 2023; Scherrer et al., 2024).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the motivating premise of the work — that LLMs contain latent information worth extracting — with citation support. Functions to establish significance/relevance of the approach.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Late M1 cycle; re-establishes motivating territory after extended M3 findings block."
+    },
+    {
+      "id": 50,
+      "text": "These models are trained to predict the next token in a sequence of text from a massive human-generated corpus.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 49,
+      "note": "Explains the mechanism behind the claim in [49], a primary emph. Legal parent chain.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "From this straightforward objective, the models develop a remarkably sophisticated model of the world, at least as captured in text (Bubeck et al., 2023; Gurnee and Tegmark, 2023; Patel and Pavlick, 2021).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports cited findings about LLM world model capabilities.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 52,
+      "text": "And while there are many situations where LLMs are imperfect proxies for humans (Cheng et al., 2023; Santurkar et al., 2023), there is also a growing body of work demonstrating that experiments with LLMs as subjects can predict human behavior in never-before-seen tasks (Binz and Schulz, 2023a; Li et al., 2024).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Acknowledges limitations of LLMs as human proxies while pivoting to supporting evidence — a two-sided tempstat with a contrastive structure that ultimately supports the paper's motivation.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Counter-claiming/concessive move acknowledging limitations before final M3; interlaced late M2 within cycling structure."
+    },
+    {
+      "id": 53,
+      "text": "Rapid and automated exploration of these models' behavior could be a powerful tool to efficiently generate new insights about humans.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the potential significance and value of the approach being proposed.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Centrality claim bridging back to final M3 contribution statement."
+    },
+    {
+      "id": 54,
+      "text": "Our contribution is to demonstrate that it is possible to create such a tool: a system that can simulate the entire social scientific process without human input at any step.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explicitly claims the paper's contribution and novelty.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Final M3 occupation following late M1/M2 cycling block."
+    },
+    {
+      "id": 55,
+      "text": "The remainder of this paper is structured as follows: Section 2 provides an overview of the system. Section 3 provides some results generated using our system. Section 4 explores an LLM's capacity to predict the results in Section 3. Section 5 discusses the advantages of using SCMs over other methods for studying causal relationships in simulations of social interactions. The paper concludes in Section 6.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

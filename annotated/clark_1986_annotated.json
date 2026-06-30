@@ -1,0 +1,1002 @@
+{
+  "paper": {
+    "id": "clark_1986",
+    "title": "clark 1986",
+    "authors": [
+      "Clark"
+    ],
+    "year": 1986,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction is structured as a tight **M1→M2→M3** arc, but M3 is unusually expansive: after announcing the collaborative model, Clark devotes the majority of the introduction to justifying and instantiating it. The **literary model critique** (sentences 31–43) and the **three-reasons contrast** (sentences 44–51) serve as extended warrant for the premise announced in M3, not as a new niche-carving move. Eight example classes then function as principal findings, making M3 do double duty as both announcement and evidence. The result is an introduction that effectively contains the first section of the paper.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        4
+      ],
+      "role": "Establishes conversation as the primary site of language use and frames the central question about speaking and understanding, positioning it as a legitimate and important research focus."
+    },
+    {
+      "move": "M2",
+      "span": [
+        5,
+        5
+      ],
+      "role": "Plants an early gap signal — psychologists have neglected the central question — creating initial tension before the literature review proper begins."
+    },
+    {
+      "move": "M1",
+      "span": [
+        6,
+        18
+      ],
+      "role": "Reviews the philosophical tradition (Grice, illocutionary acts, implicature) and the sociological tradition (turn-taking, back-channel responses, repair) as the two bodies of prior work that have addressed the coordination question, culminating in a synthesis of their shared concern."
+    },
+    {
+      "move": "M2",
+      "span": [
+        19,
+        22
+      ],
+      "role": "Identifies the incompatibility between the philosophical idealization of complete utterances and the sociological evidence of incomplete ones, then crystallizes this as an open, unresolved question demanding a new resolution."
+    },
+    {
+      "move": "M3",
+      "span": [
+        23,
+        30
+      ],
+      "role": "Announces the paper's purpose (a resolution via collaborative reference), delimits scope to speaker's reference, states the foundational collaborative premise, justifies the goal's significance, and maps the article's four-section structure."
+    },
+    {
+      "move": "M3",
+      "span": [
+        31,
+        85
+      ],
+      "role": "Provides extended justification for the collaborative model by critiquing the literary model's four idealizations, presenting three reasons conversation differs from writing, and instantiating the collaborative model with eight attested example classes — functioning simultaneously as warrant, principal findings, and evidence for the announced contribution."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Conversation is the fundamental site of language use.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the primacy and significance of conversation as a phenomenon worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "For many people, even for whole societies, it is the only site, and it is the primary one for children acquiring language.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 1,
+      "note": "Illustrates the scope of the claim in [1] (primary parent: [1] emph).",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "From this perspective other arenas of language use—novels, newspapers, lectures, street signs, rituals—are derivative or secondary.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes an independent cross-domain claim about the status of non-conversational language use that the field operates with; has independent rhetorical force as a field-level assertion.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "How, then, do speaking and understanding work in conversation?",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and centrality of a key question; establishes it as real and worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "For psychologists this ought to be a central question, but surprisingly, it has not been.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension between what ought to be the case and what actually is — a limitation of the field.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Early gap indicator embedded in otherwise M1 territory; interlaced M1/M2 opening."
+    },
+    {
+      "id": 6,
+      "text": "The main attempts to answer it have come instead from philosophy and sociology.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the literature on who has addressed this question.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Among philosophers the study of conversation grew out of an analysis of what speakers mean and what listeners understand them to mean.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the origin and content of the philosophical tradition on conversation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "The idea was that, when speakers utter sentences, they do so with certain intentions toward their addressees.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 7,
+      "note": "Unpacks the philosophical tradition introduced in [7] (primary parent: [7] tempstat).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "They assert, request, promise, and perform other illocutionary acts, and their interlocutors are expected to recognize these intentions (Austin, 1962; Grice, 1957, 1968; Schiffer, 1972; Searle, 1969).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Cites specific philosophical work supporting the claim about illocutionary acts.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "In 1967 Grice argued that, for this scheme to work, people in conversation must be cooperative.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific prior finding/argument by Grice.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Speakers must try to 'make their contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which [they] are engaged (Grice, 1975, p. 45).'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Provides the specific content of Grice's cooperative principle as quoted evidence (primary parent: [10] tempstat).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Only then can their partners go beyond what is 'said' to infer what is conversationally 'implicated' (Grice, 1975, 1978).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the consequence of Gricean cooperation — implicature — with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Among sociologists the issue has been how people direct the course of conversation and repair its inherent troubles.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the sociological tradition's focus, parallel to [7] for philosophy.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "As this work has shown, people in conversation manage who is to talk at which times through an intricate system of turn taking (Sacks, Schegloff, & Jefferson, 1974).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific finding from the sociological tradition with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Further, when one person speaks, the others not only listen but let the speaker know they are understanding—with head nods, yes's, uh huh's, and other so-called back channel responses (Duncan, 1973; Goodwin, 1981; Schegloff, 1981; Yngve, 1970).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports another established finding — back-channel responses — with multiple citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "When listeners don't understand, or when other troubles arise, they can interrupt for correction or clarification (Schegloff, Jefferson, & Sacks, 1977).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports another documented conversational phenomenon with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "The participants also have techniques for initiating, guiding, and terminating conversations and the topics within them (Schegloff, 1968; Schegloff & Sacks, 1973).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports additional findings from the sociological tradition with citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "In both traditions a central issue is coordination: How do the participants in a conversation coordinate on the content and timing of what is meant and understood?",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Synthesizes the two traditions reviewed and identifies their shared concern; wraps up the prior review sequence.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "The issue, however, cannot be resolved within either tradition alone.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation — neither tradition alone can resolve the coordination problem.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "In the first tradition conversation is idealized as a succession of illocutionary acts—assertions, questions, promises—each uttered and understood clearly and completely (Gazdar, 1979; Kamp, 1981; Stalnaker, 1978).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the idealization operative in the philosophical tradition, with citations.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Reports prior assumption in order to challenge it; serves counter-claiming function within M2."
+    },
+    {
+      "id": 21,
+      "text": "Yet from the second tradition we know that many utterances remain incomplete and only partly understood until corrected or amplified in further exchanges.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension between the philosophical idealization and the sociological findings.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "How are these two views to be reconciled?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the unresolved tension as an open problem requiring resolution.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "In this paper we propose a resolution for an essential use of language: how people in conversation coordinate in the making of a definite reference.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose and scope of the current paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Our concern is not with semantic reference, but with speaker's reference—not, for example, with what the phrase the clown with the red nose means, but with what the speaker does in referring, say, to a clown as part of an assertion that the clown is funny (Donnellan, 1978; Kripke, 1977; Searle, 1969).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the scope of the paper's focus — speaker's reference vs. semantic reference — with supporting citations.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "Our premise is that making such a reference is a collaborative process requiring actions by both speakers and interlocutors.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the paper's foundational premise and theoretical stance.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "To some it may appear self-evident that the process is collaborative, but it is one thing to assume it is and quite another to understand why it is and how it works.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and non-triviality of the paper's goal.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "The goal here is important, since, if conversation is fundamental, its processes are likely to underlie or shape those in other uses of language as well.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the broader importance of the paper's goal by connecting it to the primacy of conversation established earlier.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "In the first section of this paper, then, we offer evidence for the premise itself and outline what we will call a collaborative model for the process of reference.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the paper's structure — first section content — and introduces the name of the model.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "In the second and third sections we describe an experiment on referring and use it to corroborate and fill in details of the model.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues describing the paper's structure — second and third sections.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "In the final section we return to the general issue of coordination and note problems still to be resolved.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Completes the paper structure announcement — final section content.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "Traditionally, philosophers, linguists, and psychologists have presupposed what might be called a literary model of definite reference.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established (if tacit) assumption in the prior literature, introducing the concept to be critiqued.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Begins extended justification section supporting the announced collaborative model by critiquing the literary model."
+    },
+    {
+      "id": 32,
+      "text": "Speakers refer as if they were writing to distant readers.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names and characterizes the \"literary model\" as a conceptual framework the paper will critique.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "When Elizabeth selects the noun phrase the clown with a red nose in talking to Sam, the assumption is that she intends it to enable him to identify the clown uniquely.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Illustrates the literary model with a concrete example (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "She satisfies her intentions by issuing the noun phrase.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Elaborates a specific property of the literary model (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "Her act of referring is cotemporal with that noun phrase, beginning with the and ending with nose.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Further defines the temporal scope of reference under the literary model (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "Further, she retains complete responsibility and control over the course of this process.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Adds another defining property of the literary model — speaker's sole control (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "Sam hears the definite description as if he were reading it and, if successful, infers the identity of the referent.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Completes the characterization of the listener's role in the literary model (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "But his actions have no bearing on hers in this reference.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "States the key property of the literary model regarding the listener's non-influence (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "The literary model makes these tacit idealizations.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Opens the enumeration of the literary model's assumptions; purely structural.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "(1) The reference is expressed linguistically with one of three standard types of noun phrase—a proper noun (e.g., Napoleon, King George), a definite description (this year, the man with the moustache), or a pronoun (he, this, they).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 39,
+      "note": "First enumerated idealization of the literary model (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "(2) The speaker uses the noun phrase intending the addressee to be able to identify the referent uniquely against their common ground.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Second idealization of the literary model (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "(3) The speaker satisfies her intention simply by the issuing of that noun phrase.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Third idealization (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "And (4) the course of the process is controlled by the speaker alone.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Fourth idealization — completes the enumeration of literary model assumptions (primary parent: [32] framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "A conversational model of the process, however, ought to look quite different for three reasons.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the contrast between the literary model and what a conversational model should look like.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Contrast here serves to justify the paper's collaborative model, not to open a new niche."
+    },
+    {
+      "id": 45,
+      "text": "First, in conversation unlike writing, speakers have limited time for planning and revision.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the first reason a conversational model differs — time pressure.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "They need to overcome this limitation, and in doing so they may exploit techniques possible only in conversational settings.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence of conversational-only techniques as a real phenomenon.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "Second, speech is evanescent.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the second distinguishing feature of conversation — the temporal fleetingness of speech.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "The listener has to attend to, hear, and try to understand an utterance at virtually the same time it is being issued.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 47,
+      "note": "Unpacks what \"evanescent\" means for the listener's processing demands (primary parent: [47] emph).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "That requires a type of process synchronization not found in reading.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence of a real distinguishing phenomenon (synchronization demand).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 50,
+      "text": "And third, listeners in conversations aren't mute or invisible during an utterance.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the third distinguishing feature — listener visibility and activity during the speaker's turn.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "Speakers may alter what they say midcourse based on what addressees say and do.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a real phenomenon — midcourse speaker adjustment — that is the paper's core claim.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Pre-announces a principal finding/claim of the paper."
+    },
+    {
+      "id": 52,
+      "text": "Indeed, once we look at actual conversations, we find that the four idealizations of the literary model are very wide of the mark.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts that empirical evidence contradicts the literary model's idealizations.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Pre-announces principal finding by summarizing the empirical result before presenting examples."
+    },
+    {
+      "id": 53,
+      "text": "To see this, let us turn to eight types of examples that fail on one or more of these assumptions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure of the upcoming evidence — eight types of examples.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 54,
+      "text": "Self-corrected noun phrases.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Sub-header introducing the first example type; purely structural.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 55,
+      "text": "Consider this attested utterance: She was giving me all the people that were gone this year I mean this quarter y'know (from Schegloff et al., 1977, p. 364, in simplified notation).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Cites an attested example from prior work to illustrate the phenomenon.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 56,
+      "text": "The speaker began the referential process by uttering all the people that were gone this year, but corrected the last two words to this quarter in what Schegloff et al. (1977) called a self-initiated repair.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes and labels the phenomenon using prior work's terminology; citation-backed.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 57,
+      "text": "The referential process, clearly, isn't cotemporal with one particular noun phrase, since two noun phrases were uttered in succession.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Uses this example to introduce tension with the literary model's idealizations.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 58,
+      "text": "It is more naturally described as a process in which the speaker decided midcourse to repair the initial noun phrase, indicated her change with I mean, and then uttered this quarter (see Levelt, 1983).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts how the process is more naturally described — an independent positive claim about the nature of the process with citation.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 59,
+      "text": "The process began with all the people and was completed with y'know.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 58,
+      "note": "Provides a specific illustrative detail about the process scope in this example (primary parent: [58] emph).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 60,
+      "text": "Expanded noun phrases.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Sub-header introducing the second example type.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 61,
+      "text": "Although the first noun phrase a speaker utters may be technically correct, he or she may still judge it insufficient and change course, as here (from Cohen, 1985):",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the second phenomenon with a citation to prior work.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 62,
+      "text": "S began with the spout.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 61,
+      "note": "Begins analysis of the cited example (primary parent: [61] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 63,
+      "text": "But when he saw that it was insufficient for J to pick out the referent, he expanded on it with the parenthetical noun phrase.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 61,
+      "note": "Continues analysis of the example (primary parent: [61] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 64,
+      "text": "Ordinarily, parenthetical phrases are nonrestrictive—not needed for identifying the referent.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the conventional linguistic status of parenthetical phrases.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 65,
+      "text": "Here, the parenthetical phrase was deemed necessary, and S changed course midutterance to add it.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Contrasts the example's use of the parenthetical with its ordinary function, highlighting deviation from the literary model.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 66,
+      "text": "Episodic noun phrases.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Sub-header introducing the third example type.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 67,
+      "text": "For similar reasons, once S completed the other large tube, he judged that to be insufficient as well and added the restrictive phrase with the round top under a separate intonation contour, as part of a new tone group.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 65,
+      "note": "Illustrates the episodic noun phrase phenomenon (primary parent: [65] contrast).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 68,
+      "text": "He produced a single noun phrase, but intonationally, he divided it into two information units.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 65,
+      "note": "Defines the key characteristic of episodic noun phrases (primary parent: [65] contrast).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 69,
+      "text": "We will call this an episodic noun phrase, and it is another nonstandard type.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names \"episodic noun phrase\" as a new conceptual category the paper introduces.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 70,
+      "text": "Other-corrected noun phrases.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Sub-header introducing the fourth example type.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 71,
+      "text": "The process becomes more complicated when the addressee makes the repair, as with A's reference to Monday in this example (from Schegloff et al., 1977, p. 369):",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the other-corrected phenomenon with citation.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 72,
+      "text": "A initiated the referential process by uttering Monday.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 71,
+      "note": "Begins analysis of the cited example (primary parent: [71] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 73,
+      "text": "Uncertain of the intended referent, B offered a correction, which A accepted, all before B proceeded.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 71,
+      "note": "Continues analysis of the example (primary parent: [71] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 74,
+      "text": "The process took place over several turns and was participated in by both A and B.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 71,
+      "note": "Draws out the key implication of the example — collaborative, multi-turn nature (primary parent: [71] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 75,
+      "text": "In the four cases so far, then, the speakers changed the course of their reference after uttering an initial noun phrase.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Synthesizes the first four example types.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 76,
+      "text": "They did so in reaction to both their own and their addressee's judgments of inadequacy or error.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 71,
+      "note": "Characterizes the mechanism driving the changes in the first four cases (primary parent: [71] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 77,
+      "text": "But speakers are not merely reactive.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a contrast — shifting from reactive to proactive speaker behavior.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 78,
+      "text": "At other times they bring addressees into the referential process by the very design of their utterance.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence of a proactive form of addressee involvement in the referential process.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 79,
+      "text": "Consider the next four classes of examples.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Structural announcement of the next set of examples.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 80,
+      "text": "Trial noun phrases.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Sub-header introducing the fifth example type.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 81,
+      "text": "Some noun phrases are uttered with a rising intonation, or try marker (Sacks & Schegloff, 1979), imposed on them, as in this example (from Cohen, 1985):",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the trial noun phrase phenomenon with citations to prior work.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 82,
+      "text": "With the small blue cap we talked about before? S asks J to say whether or not he has understood S's reference.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 81,
+      "note": "Analyzes the cited example, explaining the function of the try marker (primary parent: [81] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 83,
+      "text": "The process begins when S utters this phrase and ends only with J's yeah.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 81,
+      "note": "Specifies the temporal scope of the referential process in this example (primary parent: [81] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 84,
+      "text": "If J hadn't understood, the process would have continued as here (from Sacks & Schegloff, 1979):",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 81,
+      "note": "Extends the illustration with a further example (primary parent: [81] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 85,
+      "text": "When A received no reply to Fords? she offered the expanded noun phrase Mrs. Holmes Ford? and then went to the cellist? before B implicated that she had identified the referent.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 81,
+      "note": "Describes the sequence of events in the Sacks & Schegloff example (primary parent: [81] tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

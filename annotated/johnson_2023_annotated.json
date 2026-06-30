@@ -1,0 +1,1355 @@
+{
+  "paper": {
+    "id": "johnson_2023",
+    "title": "johnson 2023",
+    "authors": [
+      "Johnson"
+    ],
+    "year": 2023,
+    "section": "Introduction"
+  },
+  "arc_summary": "The arc is dominated by an **extended M1** that runs in two long sweeps -- distributional semantic models (LSA, CBOW, GloVe, BERT), then creativity theory (associative theory, dual-process, MTCA) -- with brief M2 critiques (LSA's implausibility, context-independence, Mednick predating the network view) embedded as the review proceeds. The gap is stated lightly twice rather than once decisively: an early **'no automated tool' aside** (s4-5) and a later **'no standardized way' for narratives** (s82). The paper's rhetorical signature is a **front-loaded M3**: purpose and the DSI construct are announced at s9-10 before most of the territory is even built. The final quarter is sustained M3 -- a worked example, formal definition, operationalization, and a careful **differentiation of DSI from Hoffman and Johns** that does the gap-justification work the thin M2 left undone.",
+  "structured_arc": "M1 -> M2 -> M1 -> M3 -> M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        3
+      ],
+      "role": "Opens with paired rhetorical questions framing creativity-in-writing as a tractable scientific problem, then asserts that humans can agree on its components -- staking out the topic's legitimacy."
+    },
+    {
+      "move": "M2",
+      "span": [
+        4,
+        5
+      ],
+      "role": "An early, lightweight gap aside: human scoring is subjective and costly, and no automated tool yet exists for narrative creativity."
+    },
+    {
+      "move": "M1",
+      "span": [
+        6,
+        25
+      ],
+      "role": "Returns to significance and launches the first major territory sweep -- distributional semantics theory, word embeddings, and the early LSA model -- establishing technical groundwork."
+    },
+    {
+      "move": "M2",
+      "span": [
+        26,
+        27
+      ],
+      "role": "Brief embedded critique of LSA: cognitively implausible and weakly correlated with human judgments."
+    },
+    {
+      "move": "M1",
+      "span": [
+        28,
+        34
+      ],
+      "role": "Resumes the model review with predict and hybrid models (CBOW, GloVe), tracking their improving alignment with human judgment."
+    },
+    {
+      "move": "M2",
+      "span": [
+        35,
+        37
+      ],
+      "role": "Identifies a shared limitation across LSA/CBOW/GloVe -- context-independence and poor polysemy handling -- setting up BERT as the resolution."
+    },
+    {
+      "move": "M1",
+      "span": [
+        38,
+        68
+      ],
+      "role": "The longest territory block: BERT and transformers as the context-dependent solution, then a pivot into half a century of creativity theory (associative theory, network science, dual-process models, MTCA)."
+    },
+    {
+      "move": "M2",
+      "span": [
+        69,
+        69
+      ],
+      "role": "Opportunity-framing pivot: claims an opening to expand creativity theory via distributional semantics, transitioning toward the contribution."
+    },
+    {
+      "move": "M3",
+      "span": [
+        70,
+        70
+      ],
+      "role": "Justifies the approach -- distributional semantics offers a framework to test classic and new creativity theories."
+    },
+    {
+      "move": "M1",
+      "span": [
+        71,
+        79
+      ],
+      "role": "Returns to prior research showing distributional models already work for word-association and AUT creativity scoring, building the empirical runway for the narrative extension."
+    },
+    {
+      "move": "M3",
+      "span": [
+        80,
+        81
+      ],
+      "role": "Announces the core contribution -- extending these methods to narrative text -- with a brief significance note on narratives' real-world stakes."
+    },
+    {
+      "move": "M2",
+      "span": [
+        82,
+        82
+      ],
+      "role": "Restates the operative gap sharply: no standardized way to detect creativity in narrative texts."
+    },
+    {
+      "move": "M3",
+      "span": [
+        83,
+        112
+      ],
+      "role": "Sustained occupation: justifies the approach, walks a worked example, formally defines and names DSI, proposes its operationalization, differentiates it from Hoffman's and Johns' related constructs, and previews preliminary validity evidence."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Is identifying creativity in writing ineffable in nature, leaving it out of science's reach?",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Rhetorical question asserting the significance of a problem; establishes that the question of tractability of creativity-in-writing identification is real and worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Or are there defining characteristics that reliably distinguish highly creative texts?",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues the rhetorical framing, asserting the possibility of a scientifically tractable phenomenon worth pursuing.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "There is mounting evidence that humans can agree on some of creativity's key components in narratives.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "However, rating hundreds or thousands of narratives is inherently subjective and incurs significant labor costs, which poses a major challenge to scientific progress and real-world application.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Given the limitations of human scoring, researchers are increasingly exploring whether creativity assessment can be automated—yet such tools do not yet exist to assess the creativity of narrative texts.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a specific gap: automated tools for narrative creativity assessment do not yet exist.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Developing a reliable and automated metric that captures creativity in narrative text has potentially far-reaching and consequential implications.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Returns to significance framing after gap statement; extends territory before formal M3 announcement."
+    },
+    {
+      "id": 7,
+      "text": "Creativity is among the most valuable attributes in the US workforce, and consequently, automated assessment of creativity is a top priority.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "The primary function is asserting significance and importance; the citations support this significance claim rather than reporting a finding. Corrected from tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "Identifying the key components of creativity in narratives interests a broad array of researchers and practitioners including psychologists and linguists, as well as employers, educators, creative writers, and other practitioners.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the breadth of relevance and significance of the topic.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "The goals of the current paper are to (1) develop a new conceptualization of one component of creativity in narratives by integrating creativity theory and distributional semantics theory, (2) examine the psychometric properties of this new construct across diverse narrative texts and diverse participants, and (3) maximize accessibility by providing a tutorial and access to automated assessment of this construct with an open-source web application.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "The new construct is termed divergent semantic integration (DSI).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names and introduces the central theoretical construct the paper creates and deploys as analytical machinery.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "It is the extent to which a narrative connects divergent ideas.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Parent [10] is framedef (primary). Unpacks the definition of DSI.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "The core principle of distributional semantics theory is that 'you shall know a word by the company it keeps.'",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established principle of an existing theory. Corrected from framedef — framedef is reserved for constructs the current paper introduces; this reports an existing framework.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Returns to M1 territory-building after initial M3 announcement; extended M1 block establishing distributional semantics framework."
+    },
+    {
+      "id": 13,
+      "text": "Thus, words that tend to occur in the same contexts have similar meaning.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Parent [12] is tempstat (primary). Unpacks the quoted principle.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "For example, the words teacher and educator often co-occur with the words student, classroom, and school, and consequently have similar meaning according to distributional semantics theory.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Parent [12] is tempstat (primary). Illustrates the principle stated in [12].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "A word's distribution or co-occurrence with other words across a large corpus (i.e., body of text) determines its meaning.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Parent [12] is tempstat (primary). Further elaborates the distributional semantics principle.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "By exploiting the statistical regularities in word co-occurrence patterns in large corpora, each word can be represented by a high-dimensional numerical vector.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "These numerical word representations are referred to as word vectors or word embeddings.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 16,
+      "note": "Parent [16] is tempstat (primary). Defines the technical term introduced in [16].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "While these values do not have symbolic meaning themselves, they can be used to derive semantic similarity between words and texts.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "Leveraging semantic similarity from these models has opened an exciting new frontier of research in psychological science and beyond, including in attitudes and emotions, cultural similarities and differences, creativity, and more.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "The way in which a distributional semantic model captures the statistical regularities in word co-occurrence patterns has important implications for how well its output (e.g., word embeddings) aligns with human judgments and for its plausibility as a model of human cognition.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of model architecture choices; sets up the comparative review of models that follows.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "One of the first distributional semantic models employed latent semantic analysis (LSA; Landauer & Dumais, 1997).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "LSA is a count model because it begins with a large word–document matrix and a frequency count of each word in each document.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 21,
+      "note": "Parent [21] is tempstat (primary). Defines LSA as a count model.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "Context is defined as a document, where a document could be a news article or textbook chapter.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 21,
+      "note": "Parent [21] is tempstat (primary). Further defines how LSA operationalizes context.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "The matrix then undergoes a number of mathematical transformations including singular value decomposition to generate a smaller number of latent dimensions (e.g., 300).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 21,
+      "note": "Parent [21] is tempstat (primary). Continues the technical description of LSA's architecture.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "This dimensionality reduction step is what allows global or indirect relations between words to be represented, even if the words did not co-occur directly in the documents.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established property of LSA's dimensionality reduction.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "While remaining one of the most commonly utilized models, LSA's plausibility as a model of human cognition is low, as it does not allow for incremental learning and requires an enormous word–document matrix of word counts as a starting point, far exceeding human memory capabilities.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Counter-claim against LSA within the comparative model review; brief M2 embedded in M1 territory."
+    },
+    {
+      "id": 27,
+      "text": "LSA often shows the lowest correlation with human judgments of semantic relatedness in comparison with other models.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "Another class of models, referred to as predict models, attempt to predict a missing target word given its surrounding context, which could be 2–10 words or more.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to territory review after critique of LSA."
+    },
+    {
+      "id": 29,
+      "text": "Among the most popular predict models is the continuous bag-of-words model (CBOW; Mikolov et al., 2013), which is considered a feed-forward neural network model because a sliding window (e.g., five words to the left and five words to the right of a masked word) moves through a corpus from beginning to end.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "CBOW consists of an input layer, output layer, and hidden layers.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Parent [29] is tempstat (primary). Describes CBOW's architecture.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "The weights of the model are updated iteratively to minimize the error between the target's output and network's output.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Parent [29] is tempstat (primary). Continues the architectural description.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "CBOW has been quite successful at predicting human judgments of semantic relatedness and is considered more plausible as a model of human cognition than LSA, given its iterative error-reduction learning mechanism.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "A high-performing hybrid model with count and predict model properties, called Global Vectors (GloVe; Pennington et al., 2014), starts with a word-by-word co-occurrence matrix but tries to predict the co-occurrence values using a regression model similar to the stochastic gradient descent used in CBOW.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "It performs comparably to or better than CBOW in its prediction of human relatedness judgments and seems particularly sensitive to higher-order or indirect semantic relationships between words.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "One of the main limitations of LSA, CBOW, and GloVe is that the word embeddings they output are context-independent.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a shared limitation of the three previously reviewed models.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Indicates a shared gap/limitation across multiple reviewed models."
+    },
+    {
+      "id": 36,
+      "text": "This means these models have identical representations for homonyms (e.g., 'bank') regardless of the context in which they are used.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Parent [35] is contrast (primary). Unpacks what \"context-independent\" means.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "In addition, context-independent word embeddings do a poor job representing polysemy, that is, the difference in word meaning across different contexts.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Parent [35] is contrast (primary). Further elaborates the limitation.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "Taking a leap forward, language models, such as Google's Bidirectional Encoder Representations from Transformers (BERT; Devlin et al., 2019) or the Generative Pre-Trained Transformer 3 (GPT-3; Open AI), use multiple layers of attention and position information to generate context-dependent word embeddings.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to prior research review; BERT presented as the solution to the gap just noted."
+    },
+    {
+      "id": 39,
+      "text": "For example, BERT generates two different word embeddings for the word bank, depending on whether it is in a sentence discussing a 'river bank' or 'robbing a bank.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 38,
+      "note": "Parent [38] is tempstat (primary). Illustrates context-dependence with a concrete example.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "BERT's superior sensitivity to context is due, in part, to its 'self-attention' mechanism, which allows each word's representation to influence the others in a sentence, to decide how much weight should be given to each word.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "That way, in a sentence about a 'river bank,' the word river can heavily weight the representation of the word bank to disambiguate bank's representation.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 40,
+      "note": "Parent [40] is tempstat (primary). Illustrates the self-attention mechanism.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "The self-attention mechanism, along with BERT's sheer complexity with 340 million parameters (i.e., BERT-large), enables highly nuanced estimates of word representations that reflect the richness of contextual meaning arising from syntax, word order, and word choice, distinguishing it from LSA, CBOW, and GloVe models that either de-emphasize or ignore these text elements.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "Consequently, BERT and other transformer-based models outperform models that generate context-independent word embeddings in their agreement with humans in question answering, sentence completion, and entity recognition.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "Like the other models, BERT does not represent a process model of human cognition, but it is among the best distributional semantic models to date at capturing complex language understanding including nuanced semantic meaning (i.e., polysemy) and syntactic information such as determiners, objects of verbs, and coreferents.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "Psychologists have been studying creativity for over half a century.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Opens new sub-domain of territory review: creativity theory."
+    },
+    {
+      "id": 46,
+      "text": "Several theories have been proposed to explain the cognitive systems that support creative thinking.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "Among the most durable theories in the literature is the associative theory proposed by Mednick (1962), published 60 years ago in Psychological Review.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "According to associative theory, creativity involves making connections between remote concepts stored in memory, and individual differences in creativity can be attributed to variation in the strength of associations between concepts.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 47,
+      "note": "Parent [47] is tempstat (primary). Defines the content of associative theory.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "Thus, a less creative person has strong associations between common connections (e.g., table–chair), and weak associations between uncommon connections (e.g., table–splendid).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 47,
+      "note": "Parent [47] is tempstat (primary). Continues elaborating associative theory with a concrete illustration of the construct.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 50,
+      "text": "With a more creative person, in contrast, common and uncommon connections are of similar strength, which presumably makes it easier for them to overcome dominant associations (e.g., table–chair) in favor of more efficiently connecting remote associations (e.g., table–splendid).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 47,
+      "note": "Parent [47] is tempstat (primary). Completes the contrastive characterization of associative theory.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "Mednick referred to these associative profiles in terms of hierarchies, with steep hierarchies characterizing less creative individuals and flat hierarchies marking more creative people.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 47,
+      "note": "Parent [47] is tempstat (primary). Introduces Mednick's hierarchy terminology as part of the theory definition.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 52,
+      "text": "Despite its popularity, direct evidence for associative theory was lacking for many years, due in part to methodological challenges in modeling human memory.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Indicates a historical gap in evidence for associative theory."
+    },
+    {
+      "id": 53,
+      "text": "More recently, computational methods have been applied to test classic assumptions of associative theory.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to territory review with recent developments addressing gap noted in s52."
+    },
+    {
+      "id": 54,
+      "text": "Network science is increasingly used to model the organization of concepts in semantic memory, providing a means to quantify the strength of semantic associations in individual participants.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 55,
+      "text": "Kenett and colleagues have shown that, compared with less creative individuals, highly creative individuals—people who perform well on psychometric tests of creativity—show semantic networks that are more densely connected, with high connectivity between concepts, shorter path distances, and less rigidity/structure.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 56,
+      "text": "This network organization is consistent with some predictions of associative theory regarding individual differences in creativity.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 55,
+      "note": "Parent [55] is tempstat (primary). Synthesizes the Kenett findings in relation to associative theory.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 57,
+      "text": "Notably, however, the notion of semantic memory as a network was only later proposed by Collins and Loftus (1975), and Mednick's (1962) theory predates this now widely accepted view—highlighting the need to update this classical creativity theory with contemporary advances, particularly in light of theoretical developments in semantic memory as a dynamic system.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a temporal tension: Mednick's theory predates the network view it is now being tested against, motivating theoretical updating.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Gap: classical theory needs updating in light of contemporary advances."
+    },
+    {
+      "id": 58,
+      "text": "Indeed, several theories of the creative process have been advanced over the years, including the Geneplore (generate-explore) model, Blind Variation and Selective Retention (BVSR), and the dual pathway to creativity model, among others.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to territory review; surveys additional creativity theories."
+    },
+    {
+      "id": 59,
+      "text": "Key to most theories is that creative thinking involves at least two steps: a generative step and an evaluative step.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 60,
+      "text": "During idea generation, candidate ideas are explored via spontaneous associative processes; during idea evaluation, such candidates are scrutinized for their utility/appropriateness and elaborated upon accordingly to meet specific creative goals.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 59,
+      "note": "Parent [59] is tempstat (primary). Elaborates the two-step framework.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 61,
+      "text": "These creativity theories broadly map onto dual-process models of human cognition via type 1 (spontaneous/automatic) and type 2 (deliberative/controlled) processes.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 62,
+      "text": "Empirical support for dual process theories of creativity has come primarily from studies of individual differences, demonstrating contributions of associative and controlled cognitive abilities to performance on creative thinking tasks.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 63,
+      "text": "Individual differences research has benefited from advances in theories that can accommodate both associative and controlled cognitive abilities.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 64,
+      "text": "Regarding controlled abilities, Nusbaum and Silvia (2011) provided an earlier demonstration that individual creative ability, assessed via performance on divergent thinking tasks, is related to individual differences in executive control (e.g., goal-directed switching between conceptual categories).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 65,
+      "text": "Several studies have since provided additional evidence for the contribution of individual differences in cognitive control to creative performance, extending classical findings on the role of intelligence in creativity with mechanistic insight into why intelligence predicts performance on creative thinking tasks.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 66,
+      "text": "These findings have informed recent theoretical developments on individual differences in creative ability, such as the minimal theory of creative ability (MTCA), which proposes that two cognitive abilities are essential for optimal creative performance: intelligence (i.e., domain-general cognitive ability) and expertise (i.e., domain-specific knowledge).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 67,
+      "text": "MTCA can explain a range of findings in the creativity literature through its minimalist framework, accommodating both general cognitive abilities (e.g., memory, reasoning) and sources of expert knowledge (e.g., writing short stories, teaching plot development) in explaining individual differences in creative performance (e.g., creative writing).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 66,
+      "note": "Parent [66] is tempstat (primary). Elaborates on MTCA's explanatory scope.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 68,
+      "text": "Other theories have recently been proposed to conceptualize individual differences in creativity, with a focus on understanding people's ability to connect remote concepts to form new and valuable ideas and products across domains.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 69,
+      "text": "We see an opportunity to expand creativity theories by leveraging recent advances in distributional semantics.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty/opportunity for the current work's approach.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "Question-raising/opportunity framing that transitions from M1 territory to M3 occupation."
+    },
+    {
+      "id": 70,
+      "text": "Distributional semantics theory provides both a theoretical and computational framework for testing classical theories of creativity (e.g., associative theory) that have proved challenging to rigorously evaluate, as well as to test new theories on the role of semantics in creative thinking.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and value of combining these two frameworks; not a reported finding but an assertion of relevance and potential.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Presents justification for the approach announced in s69."
+    },
+    {
+      "id": 71,
+      "text": "Indeed, an increasing number of studies have begun to deploy distributional semantic models to study associative cognition and its contribution to explaining individual creativity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to territory review; prior work deploying distributional semantics for creativity."
+    },
+    {
+      "id": 72,
+      "text": "Gray et al. (2019) and others (Beaty et al., 2021) have used distributional semantic models to model performance on chain free-association tasks, using an approach called 'forward flow' to quantify how far people travel in semantic space when generating free associations.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 73,
+      "text": "Psychometric evaluation of distributional semantic models, applied to the forward flow task, has shown correlations with other measures of creativity (e.g., creative achievement and divergent thinking), pointing to their construct validity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 74,
+      "text": "Notably, Beaty et al. (2021) found that forward flow (assessed via distributional semantic models) predicts divergent thinking ability above and beyond general intelligence, supporting the view that associative abilities are a unique predictor of creative performance that is nonredundant with general cognitive ability.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 75,
+      "text": "When applied to simple word association tasks, distributional semantic models have thus far allowed researchers to test the role of free association ability in creative thinking.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 74,
+      "note": "Parent [74] is tempstat (primary). Synthesizes the forward-flow / word-association sub-section before pivoting to the AUT.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 76,
+      "text": "Distributional semantic models have also been used to automate the scoring of verbal creativity tasks, such as the classical alternate uses task (AUT) of divergent thinking (i.e., generating creative uses for objects).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 77,
+      "text": "The AUT and other tests of creative thinking have historically required time-consuming and subjective scoring methods that can negatively impact their psychometric properties (e.g., via rater fatigue and disagreements on what constitutes a creative idea).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 78,
+      "text": "In a recent paper, Beaty and Johnson (2021) found that distributional semantic models yielded strongly positive correlations with human creativity ratings on the AUT (cf. Dumas et al., 2020) and other word association tasks, alongside convergent validity with other creativity measures (e.g., creative achievement).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 79,
+      "text": "This work has demonstrated that distributional semantic models can be a powerful tool for automating creativity assessment, thus significantly contributing to psychometric creativity research by accelerating and standardizing the arduous process of human creativity evaluation.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 78,
+      "note": "Parent [78] is tempstat (primary). Synthesizes the AUT/word-association work before transitioning to the narrative gap.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 80,
+      "text": "In the present research, we aim to extend these promising findings by applying distributional semantic models to more complex, ecologically valid measures of verbal creativity: narrative text.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Second M3 announcement; M2->M3 cycle as M2 gap follows at s82."
+    },
+    {
+      "id": 81,
+      "text": "Narratives are pervasive in everyday life, and they are often applied in high-stakes contexts, from job applications to college admissions essays.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and prevalence of narratives as a domain of study.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Brief return to significance framing within M3 context."
+    },
+    {
+      "id": 82,
+      "text": "Yet there is currently no standardized way of detecting creativity in such texts.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the specific gap motivating the extension to narratives.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "M2->M3 cycle: returns to gap language after s80 M3 announcement."
+    },
+    {
+      "id": 83,
+      "text": "Distributional semantic models offer a means to address this critical issue while providing a computational window into the cognitive processes involved in narrative creativity.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the value and relevance of the proposed approach for addressing the gap.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 84,
+      "text": "To write a creative short story, for example, writers must retrieve remotely associated concepts from semantic memory, connect them to create a cohesive and compelling storyline, and elaborate the story, among other processes.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 83,
+      "note": "Parent [83] is emph (primary). Illustrates what narrative creativity involves, grounding the relevance of distributional semantics.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 85,
+      "text": "Distributional semantic models are well positioned to capture a writer's ability to retrieve remotely associated concepts and integrate them in a story.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the suitability and value of the tool for the task.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 86,
+      "text": "As a concrete example, consider that someone is prompted to write a creative story about sending a letter.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Opens a worked example illustrating DSI.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 87,
+      "text": "If they write about sending a letter to their mother about the grandkids from the post office, then they've covered the idea of letter, grandmother, family, and post office.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Continues the worked example; re-parented to [85] to avoid secondary-parents-secondary violation.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 88,
+      "text": "Distributional semantic models will generate a word embedding for each of those words.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Continues the worked example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 89,
+      "text": "None of these ideas is particularly original and would frequently occur together in the same context, so each word embedding would be relatively similar and exhibit high semantic similarity.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Continues the worked example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 90,
+      "text": "Critically, generating these words in this particular story indicates that the writer did not effectively integrate divergent ideas in semantic space.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Draws the implication within the worked example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 91,
+      "text": "In contrast, if someone writes about a grandmother sending a digital letter over sub-light-speed channels to an alien species to prevent re-instigating a war over species subjugation, then the ideas of grandmother, letter, digital, alien, speed of light, space, war, and subjugation are covered.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Introduces the contrasting creative story in the worked example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 92,
+      "text": "These ideas are more original and varied, and will rarely occur in the same context.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Continues the contrasting example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 93,
+      "text": "Consequently, each word embedding from this story will be quite different and exhibit low semantic similarity between each other.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Continues the contrasting example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 94,
+      "text": "Generating these words indicates that the writer was much more creative, integrating divergent ideas in semantic space.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Draws the implication within the contrasting example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 95,
+      "text": "Put simply, these two stories differ in the extent to which they connect divergent ideas.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 85,
+      "note": "Parent [85] is emph (primary). Synthesizes the worked example; re-parented to [85] to avoid secondary-parents-secondary violation.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 96,
+      "text": "As the former example highlights, integrating creativity theory and distributional semantics allowed for a novel conceptualization of how creativity may be captured in narratives.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty for the conceptualization emerging from the integration of the two theories.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 97,
+      "text": "We term this construct divergent semantic integration (DSI) because it represents the degree to which a text integrates divergent ideas from divergent contexts.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Formally names and defines DSI as the paper's central analytical construct.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 98,
+      "text": "A major advantage of deriving the DSI construct from distributional semantics is that it allows for a precise quantitative operationalization.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of the computational grounding of DSI.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 99,
+      "text": "We propose that averaging the semantic distances (converse of semantic similarity) between all words in a story parsimoniously captures the distance between ideas and, consequently, DSI.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Proposes the specific operationalization method for DSI.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 100,
+      "text": "It also provides complete coverage of the story's content.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts an additional advantage of the proposed operationalization.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 101,
+      "text": "In accordance with the aforementioned story example about a grandmother writing a digital letter to an alien species, each word in the story is rarely used in the same context, so computing the semantic distance between each word will result in high semantic distance values, and a high DSI score.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 100,
+      "note": "Parent [100] is emph (primary). Reconnects the operationalization to the earlier worked example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 102,
+      "text": "DSI is distinguishable from but related to various definitions and operationalizations of semantic diversity or semantic distinctiveness.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a contrast between DSI and prior related constructs in the literature.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Differentiating DSI from prior constructs serves to justify the novelty and specificity of the current contribution."
+    },
+    {
+      "id": 103,
+      "text": "For example, Hoffman et al. (2013) proposed a new measure of semantic diversity with the primary goal of capturing a new lexical characteristic of words.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 104,
+      "text": "Hoffman et al. (2013) proposed measuring the degree to which a single word has diverse interpretations depending on the contexts in which it is used (i.e., polysemy).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 103,
+      "note": "Parent [103] is tempstat (primary). Defines Hoffman et al.'s measure.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 105,
+      "text": "Note that this differs from the goal in the current paper, which is to capture the degree to which an entire narrative integrates semantically divergent ideas.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 106,
+      "text": "Hoffman et al. (2013) quantified semantic diversity of a target word by using LSA to generate context embeddings that contained 1000 words and then computed the average of the cosine semantic distance between all contexts in which a word appeared.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 107,
+      "text": "While it is an innovative approach, current evidence suggests that LSA may not generate reliable compositional context embeddings, and Cevoli et al. (2021) demonstrated that Hoffman's et al.'s (2013) measure of semantic diversity did not reliably capture the degree to which a word is polysemous.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 108,
+      "text": "Developing a closely related construct, Johns (2021) generated novel measures of contextual diversity that used word-context similarity in a distributional semantic model to ensure that a word's contextual diversity score reflects the diversity of contexts in which the word appears.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 109,
+      "text": "Johns' measures of contextual diversity exhibit an advantage in the prediction of lexical decision reaction time and accuracy.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 110,
+      "text": "These instantiations of contextual diversity are distinguishable from the DSI construct, because Johns' (2021) primary goal was to develop a lexical characteristic of a single word that reflects the diversity of contexts in which it typically occurs, whereas DSI is designed to capture the degree to which a text connects divergent ideas in a full narrative.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 111,
+      "text": "There is some preliminary validity evidence for using the distance between ideas to capture creativity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Pre-announces preliminary supporting findings for the DSI approach."
+    },
+    {
+      "id": 112,
+      "text": "Using a creative word association task, Johnson et al. (2021) showed that the average semantic distance between each creative idea a participant generated was correlated with human perceptions of both creativity and idea diversity, i.e., the diversity of contexts from which ideas are generated.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

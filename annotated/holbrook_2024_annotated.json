@@ -1,0 +1,563 @@
+{
+  "paper": {
+    "id": "holbrook_2024",
+    "title": "holbrook 2024",
+    "authors": [
+      "Holbrook"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction makes a **direct M1 → M3 leap**, skipping M2 entirely — a move that signals grant proposal conventions over journal norms. Six sentences of territory-building establish AI mentalizing as significant and feasible, then sentence 7 pivots immediately to purpose without ever articulating a gap. The bulk of the text is an unusually **extended M3** that sequences methodology, multi-year experimental design, team qualifications, and budget across 42 sentences. Two embedded **tempstat returns** (S9, S33) within M3 serve as local justifications for methodological choices rather than reopening the territory.",
+  "structured_arc": "M1 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        6
+      ],
+      "role": "Establishes the significance and readiness of the AI mentalizing territory by asserting broad societal relevance, citing prior research calls, reporting empirical findings on over-reliance, and framing performance and trust as the key outcomes at stake."
+    },
+    {
+      "move": "M3",
+      "span": [
+        7,
+        48
+      ],
+      "role": "Occupies the niche by announcing the project's purpose and then exhaustively detailing the mentalizing model architecture, measurement instruments, task paradigms, year-by-year experimental plan, team qualifications, and budget — the full argumentative weight of a grant proposal."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Artificially intelligent agents are under active development as resources to enhance decision-making in diverse domains spanning navigation, investment, the creative arts, healthcare, warfare, and beyond.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and broad relevance of AI agents; establishes significance of the topic area.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "To facilitate human-machine teaming with artificial agents, researchers have called for the engineering of mentalizing to enable agents to model their human interactants' mental states on the basis of observable data [1].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior research calls and establishes an existing concept with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Artificial mentalizing promises to promote effective partnership with agents by increasing their capacity to infer and adaptively respond to humans' cognitive states, including intentions, effort and emotions.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and promise of artificial mentalizing; establishes why the topic matters.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "Of particular interest, prior findings of human over-reliance on agents suggest a tendency to down-regulate cognitive effort they might otherwise have engaged to respond to task challenges.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior finding about human over-reliance on agents.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Agents equipped with the capacity to detect deficits in human cognitive effort can be programmed to react correctively, thereby increasing their human partner's engagement and improving team performance.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Changed from extension:speculative. Makes a confident, non-hedged assertion about what mentalizing agents can do; functions as a significance/capability claim rather than a hedged speculation. Stands independently as an emph claim.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "In addition to enhancing performance, mentalizing is also anticipated to increase trust in and rapport with agents as social companions [2].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an anticipated effect from the literature with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "The goal of this project is to assess the impact of artificial mentalizing on performance and relational trust.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Direct statement of the project's purpose and scope.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "M2-absent: no explicit gap statement precedes this purpose announcement; the paper moves directly from M1 territory-building to M3 occupation."
+    },
+    {
+      "id": 8,
+      "text": "Our project will begin with the development of a novel mentalizing model based on relaying multimodal situational and psychophysiological data to a Large Language Model (LLM).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the method and approach of the current project.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "LLMs have already been demonstrated to possess mentalizing-like capacities comparable to those of humans when provided linguistic descriptions [3].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior empirical finding about LLM mentalizing capacities with citation.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Prior literature cited here functions as justification for the LLM-based methodological choice within M3, not as territory-establishment."
+    },
+    {
+      "id": 10,
+      "text": "and may well exceed human abilities if additionally equipped with real-time physiological data.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 9,
+      "note": "Extends the prior cited finding into a speculative prediction without new citation; parent [9] is primary (tempstat). Chain is legal.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Cognitive effort will be assessed according to correlated shifts in cerebral blood flow measured using functional near-infrared spectroscopy (fNIRS) [4, 5], with three spot EEG electrodes, as shown in Figure 1, incorporated to assess engagement.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the methodological approach for measuring cognitive effort in the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Workload and engagement will be relayed in real time using a machine learning classifier.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues describing the technical method of the project.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "The psychophysiological inputs will also include participant gaze fixations, heart-rate variability, electrodermal activity, pupil dilation, bodily movement, and affective speech to infer participants' attentional foci and emotions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Further specifies the methodological inputs for the mentalizing model.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "This mentalizing model will initially be tested using a joint task in which a target is concealed within panoramic images containing diverse, emotionally evocative distracter video stimuli.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the task paradigm to be used in the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "The imagery will be presented using an augmented reality (AR) display such that gaze fixations on particular stimuli will be readily detectable via eyetracking.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Further describes the technical setup of the experimental method.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "The mentalizing inferences will trigger contingent responses.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes a key functional feature of the mentalizing system in the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "For example, the robot might comment on participants' interest in a particular scene (e.g., a crying child), and/or on a semantically associated emotion (e.g., \"That's sad, isn't it?\").",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 16,
+      "note": "Provides a concrete example of contingent responses; parent [16] is primary (contribution). Chain is legal.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "The robot may also respond in ways that support teamwork, such as acknowledging when participants appear distracted and encouraging them to try to help accomplish their task, or providing reassurance to participants who appear anxious or to have stopped trying (e.g., \"Don't worry, we've got this\"; \"Are you still looking? I need your help.\")",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 16,
+      "note": "Further illustrates contingent robot responses. Re-parented to [16] (primary) rather than [17] (secondary), per subordination rule allowing skipping of intermediate secondary sentences.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "The robot will not know where the target stimuli are located, but will rather search the visual scene alongside the human using its own image classification capacity and a random fixation sequence, such that its assistance as a partner will primarily derive from its capacity to influence the human via its mentalizing ability.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes a key design feature of the robot's role in the experimental paradigm.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "Performance will be measured according to whether and how long it takes the team to find the target stimuli; relational trust will be assessed via self-report.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the dependent variables and measurement approach.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "The primary robot platform will be Ameca, an interactive humanoid capable of sophisticated linguistic, facial and bodily expression [6].",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the robot platform to be used in the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "Ameca utilizes an LLM approach to spoken interaction, but may be programmed to produce specified responses to eliciting events, thereby permitting experimental control and consistency across study sessions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes relevant technical features of the robot platform as they pertain to the study design.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "We will also explore the impact of mentalizing when implemented in physically nonanthropomorphic mobile robots deployed in field studies outside the lab.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces an additional planned component of the research.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "In the virtual reality (VR) study, we will maximize immersion and realism by incorporating embodied movement using an omnidirectional treadmill [7], haptic feedback when touching simulated objects, olfactory input (e.g., the fragrance of grass when near simulated grass) [8], and mild pain correspondent to simulated injury via transcutaneous electrical nerve stimulation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes methodological features of a planned VR study component.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "Dr. Holbrook's lab is currently equipped with almost all of the hardware and software required for this project.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts practical viability/readiness of the project; functions as a significance/feasibility claim establishing that the work can be done. Emph is the closest fit as it asserts something real and worth attending to about the project's capacity.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "The complementary expertise of the investigators will serve project aims.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the relevance and adequacy of the research team's qualifications.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Dr. Holbrook has extensive experience conducting psychological experiments centered upon trust, mentalizing and social appraisal; Dr. Wagner possesses the expertise to oversee development of the mentalizing model as well as novel human-robot interaction (HRI) study paradigms; Dr. Hirshfield has pioneered the use of fNIRS to measure and model cognitive effort and emotion in contexts of human-machine interaction.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 26,
+      "note": "Elaborates the specific expertise of each investigator, illustrating the claim in [26] (primary: emph). Chain is legal.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "In Year 1, we will develop our mentalizing model by iteratively conducting studies comparing its predictions to the self-reports and actual performance of human subjects in the HRI task involving searching for target stimuli hidden among emotionally evocative imagery.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the Year 1 research plan and its structure.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "The model will be validated to accurately infer level of cognitive effort, attentional foci, and emotional responses to the stimuli in this task.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the validation goal for Year 1.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "As the model grows more accurate, the task will be elaborated with additional stimuli to generalize functionality.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the iterative development plan for Year 1.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "In Year 2, we will conduct three HRI experiments testing the effects of artificial mentalizing.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the Year 2 research plan.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "The first experiment will consist of a one-shot encounter in which the robot is either equipped with the mentalizing model and programmed to respond contingently to participants' shifting levels of cognitive effort, attentional foci, and emotional states, or, in a between-subjects design, with a version of the model programmed to generate inappropriate responses (i.e., signaling that the robot is unable to accurately infer mental states).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the design of the first Year 2 experiment.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "Time invested working with agents has also been hypothesized to enhance trust and affiliation [9].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior hypothesis from the literature with citation, used to motivate the second experiment.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Prior literature cited here functions as justification for the longitudinal design of the second experiment within M3, not as new M1 territory-building."
+    },
+    {
+      "id": 34,
+      "text": "Accordingly, the second experiment will introduce a longitudinal design to compare the impact of mentalizing versus mere time spent interacting on the development of relational trust and affiliation over a series of four study sessions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the second Year 2 experiment design, motivated by the prior tempstat.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "Both studies will use the Year 1 task paradigm in which participants team with the robot to identify hidden target stimuli; alternate distracter stimuli and target locations will be utilized across the different sessions of the longitudinal experiment.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes shared methodological features of the first two Year 2 experiments.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "In the third experiment, the generalizability and ecological validity of the findings obtained previously will be tested in a mobile robot field study using AR and fNIRS/EEG equipment capable of being used wirelessly while walking outside.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the third Year 2 experiment and its purpose.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "AR will permit us to superimpose visual stimuli over real-world environments as participants cooperate with the mobile robots to pursue a navigation task conceptually patterned after the previous lab-based target-location paradigm, now utilizing evocative distracter stimuli to mask subtle arrows hidden in the vicinity directing the human-robot team to a series of destinations.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the specific design of the field study paradigm.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "Performance will be measured according to whether and how long it takes the human to find the target arrows, and the relative circuitousness of their routes (to be recorded by the mobile robot).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies dependent variables for the field study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "Relational trust will be measured both using self-report, as before, and also according to human willingness to walk over to places the robot indicates a potential arrow may be, as opposed to pursuing their own search vectors.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies trust measurement approach for the field study, including a novel behavioral measure.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "In Year 3, we will test the impact of mentalizing on performance and relational trust using an ecologically valid, longitudinal design.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the Year 3 research plan.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "The final experiment will employ VR to model human-robot teaming in a paradigm conceptually extending the prior target-identification task to a plausible real-world context.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the Year 3 VR experiment design.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "Over a period of four weekly sessions, participants will simulate working with a robot as a student worker assigned to assess potentially threatening individuals (Non-Player Characters [NPCs]) as they move through a public event.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the specific scenario and procedure of the Year 3 VR experiment.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "Potential threats will be directed away from the entrance line to simulated security personnel for further assessment.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues describing the Year 3 VR task scenario.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "Mirroring the use of emotionally evocative distracter imagery in the preceding target-identification paradigms, in this VR environment, we will seed attention-garnering (but task-irrelevant) people, vehicles, animals, and noises.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes a methodological feature of the Year 3 VR environment and its conceptual connection to earlier paradigms.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "In place of the target stimuli used previously, participants and their robot partners will be trained to move through the crowd looking for indications of weapons or particular extremist symbols (e.g., on clothing or as tattoos).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the target stimuli and task procedure for the Year 3 experiment.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "In a between-subjects manipulation, as before, the robot either will mentalize and respond to their human partners contingently, or not (in the control condition).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the between-subjects design of the Year 3 experiment.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "Performance will be measured in terms of the number of threats correctly identified; relational trust will be assessed in terms of self-report and willingness to walk over to places the robot indicates a potential threat may be.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the dependent variables for Year 3.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "ROM is estimated to be ~$850K over three years.",
+      "tag": "new_tag_needed",
+      "tier": "unknown",
+      "parent_id": null,
+      "note": "Budget/cost statement typical of grant proposals. Does not fit any tag: not a significance claim, prior finding, gap, novelty claim, contribution description, or framing device. It is purely administrative/financial information outside the rhetorical vocabulary of the tag system.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": "Administrative/budgetary closing statement; assigned 3D as the nearest terminal step within M3, as it closes the proposal rather than announcing purpose, justification, or findings."
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

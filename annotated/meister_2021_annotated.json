@@ -1,0 +1,186 @@
+{
+  "paper": {
+    "id": "meister_2021",
+    "title": "meister 2021",
+    "authors": [
+      "Meister"
+    ],
+    "year": 2021,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction commits three sentences to establishing the probing literature before a **single-sentence niche** (S4) flags scope restriction as the gap. The **M3 block dominates** (S5–S13), doing triple work: announcing the research question, justifying the macro-level framework against standard probing, and previewing findings. The extended justification sub-block (S7–S10) is the structural center of gravity, positioning the empirical-baseline approach as epistemically superior. The arc is **clean and asymmetric** — brief M1, minimal M2, long M3 — signaling a paper confident in its niche and focused on selling its framework.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        3
+      ],
+      "role": "Establishes the research territory by tracing a causal chain: model improvements prompted new evaluation practices, which gave rise to the probing literature — framing the field's trajectory as the backdrop for the paper's intervention."
+    },
+    {
+      "move": "M2",
+      "span": [
+        4,
+        4
+      ],
+      "role": "Opens a niche by identifying the scope limitation of existing probing work — its restriction to sentence-level phenomena — creating the opening for a macro-level alternative."
+    },
+    {
+      "move": "M3",
+      "span": [
+        5,
+        13
+      ],
+      "role": "Occupies the niche across three sub-phases: announces the study's purpose and sharpens the central research question (S5–S6), justifies the macro-level empirical framework and argues for its epistemic advantages over standard probing (S7–S10), then anchors the occupation with a concrete methodological description, key findings preview, and a closing significance claim (S11–S13)."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Neural language models have become shockingly good at modeling natural language data in recent years.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Thus, to test just how well neural language models capture language NLP researchers have started to look beyond standard evaluation metrics such as perplexity, endeavoring to understand which underlying attributes of human language these models are learning.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the field's evaluative practices in response to model improvements.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "To this end, a nascent literature has emerged that focuses on probing language models, i.e., determining whether models encode linguistic phenomena.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "For the most part, these works have been limited to analyses of sentence-level phenomenon, such as subject–verb agreement and garden path effects among a myriad of other properties.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of prior probing work — scope restricted to sentence-level phenomena.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "In this work, we attempt to understand which macro-level phenomena of human language today's language models reflect.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the scope and purpose of the present paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "That is, we pose the question: Do neural language models exhibit the statistical tendencies of human language?",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Sharpens the research question driving the paper; narrows and elaborates the contribution announced in [5].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Phenomena that can be measured at this level provide an alternate view of a model's comprehension; for example, rather than exploring whether morphological agreement is captured, we look at whether our models learn the trends across a corpus as a whole, e.g., the token rank–frequency (Zipf's) relationship.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the value and significance of macro-level statistical phenomena as a lens on model comprehension; the example is embedded but the sentence's primary job is emphatic.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "In comparison to standard probing techniques, this framework does not require we know a priori how linguistic phenomena should manifest themselves.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Positions the proposed framework favorably against existing probing approaches by identifying a limitation of the latter.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Contrast used within M3 to justify the framework rather than to establish a niche; rhetorical function is justification of the announced approach."
+    },
+    {
+      "id": 9,
+      "text": "That is, when there is no law stating the theoretical tendencies of an attribute of natural language or we have reason to believe our language domain does not follow such a law, we can use the statistical tendencies present in empirical data as our baseline.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 8,
+      "note": "Unpacks the practical meaning of the contrast claim in [8]; parent [8] is primary (contrast). Chain is legal.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "This characteristic both allows us to assess a model's fit to highly corpus-dependent distributions—like the length distribution—and mitigates the biases introduced by our own preconceptions regarding properties of natural language.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and dual benefit of the empirical baseline approach; functions as an independent primary claim about the value of this framework property.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "More concretely, our paper describes an experimental design and accompanying hypothesis tests to determine precisely whether text generated from language models follows the same empirical trends as human language.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the concrete methodological contribution of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Our experiments reveal that adherence to natural language tendencies varies widely with both model architecture and generation strategy, e.g., Fig. 1 shows varying degrees of adherence to the empirical type–token relationship, an artifact that perplexity alone could not reveal.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previews the key experimental findings; functions as a results-announcement within the Introduction that supports the paper's contribution claim.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Our findings suggest this framework is a valuable tool for gaining a deeper understanding of where today's language models are succeeding and failing at capturing human language.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and value of the proposed framework based on the findings previewed in [12].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

@@ -1,0 +1,686 @@
+{
+  "paper": {
+    "id": "isaacs_1987",
+    "title": "isaacs 1987",
+    "authors": [
+      "Isaacs"
+    ],
+    "year": 1987,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction opens with a single M1 sentence before immediately pivoting to M2, using the doctor-patient scenario to build the problem of expertise discrepancy rather than citing a gap in the literature. **The M2-to-M3 transition at sentence 7 is unusually sharp**, compressing what might otherwise be a multi-sentence gap statement into a one-sentence purpose announcement. The bulk of the introduction is an extended M3 that does double duty: it presents the collaborative theory framework *and* describes the study design, with a brief **M2 re-entry at sentence 38** (the open empirical question) to re-motivate the methodology. The introduction closes with a sustained theoretical elaboration of \"perspective,\" treating the conceptual apparatus as itself a contribution rather than mere scaffolding.",
+  "structured_arc": "M1 -> M2 -> M3 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        1
+      ],
+      "role": "Anchors the paper in the established literature on common ground, lending theoretical legitimacy before the problem is introduced."
+    },
+    {
+      "move": "M2",
+      "span": [
+        2,
+        6
+      ],
+      "role": "Constructs the central problem — unequal expertise undermines common ground — through an extended doctor-patient illustration rather than a citation-based gap claim, making the problem vivid and motivating before any theory is introduced."
+    },
+    {
+      "move": "M3",
+      "span": [
+        7,
+        37
+      ],
+      "role": "Announces the paper's purpose, introduces the collaborative theory of reference as its analytical framework, and elaborates all three processes (assessing, supplying, acquiring expertise) with hypothetical illustrations, constituting the paper's primary theoretical contribution."
+    },
+    {
+      "move": "M2",
+      "span": [
+        38,
+        38
+      ],
+      "role": "Re-opens the empirical gap with a direct question about whether the three proposed processes actually occur, pivoting from theoretical elaboration to the need for an empirical study."
+    },
+    {
+      "move": "M3",
+      "span": [
+        39,
+        57
+      ],
+      "role": "Describes the study design, specifies the expertise domain (New York City landmarks and proper names), and develops the construct of perspective — extending the theoretical contribution while grounding it in the study's logic."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "For success in conversation, people must continually appeal to their common ground—their mutual knowledge, beliefs, and assumptions (Clark, 1985; Clark & Carlson, 1981; Clark & Marshall, 1981; Cohen, 1978; Gazdar, 1979; Stalnaker, 1978).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "The problem is that the participants in a conversation inevitably know different amounts about any topic under discussion.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a tension against the prior claim about common ground.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "As a result, they have to start at the level of the least knowledgeable person among them and build from there.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Derives a behavioral consequence from [2] without citation; speculative elaboration of the contrast.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "Doctors, for example, ordinarily assume their patients know little anatomy, pathology, and pharmacology, so they believe they must use lay terminology, such as heart attack instead of myocardial infarction, and couch their explanations in a form that nonphysicians can understand.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Re-parented to [2] (contrast) by skip rule; illustrates the expert-novice asymmetry.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Yet the moment they discover their patient is also a doctor, they realize they can adjust their terminology and explanations to fit the broader common ground.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Re-parented to [2] (contrast) by skip rule; continues the doctor illustration showing adjustment.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Even when discrepancies in expertise are not as great, people have to adjust.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the generality of the adjustment phenomenon; establishes it as real and worth attending to.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "In this article, we examine a proposal about how people in conversation deal with discrepancies in expertise.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose and scope of the current paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "The proposal we consider is concerned with the making of definite references in conversation, as characterized by the collaborative theory of reference (Clark & Wilkes-Gibbs, 1986).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the collaborative theory of reference as the paper's analytical framework.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "The theory, briefly, is that when speakers make such a reference, they try to establish with their partners the mutual belief that their partners have understood the reference to a criterion sufficient for current purposes.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 8,
+      "note": "Unpacks the content of the framework introduced in [8].",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "That requires a collaborative process, as illustrated here in A's reference to Monday (simplified from Schegloff, Jefferson, & Sacks, 1977, p. 369):",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 8,
+      "note": "Re-parented to [8] (framedef) by skip rule; signals and introduces an illustration of the collaborative process.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "A initiated the referential process by presenting the noun phrase Monday, but A and B didn't consider the process complete until they mutually accepted that B had understood A's reference.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 8,
+      "note": "Re-parented to [8] (framedef) by skip rule; unpacks the mechanics of the exchange in terms of the theory.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "To reach that acceptance, they took several turns: B asked A to clarify which Monday he meant, A did so, and then B continued.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 8,
+      "note": "Re-parented to [8] (framedef) by skip rule; describes turn-by-turn process in the example.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Two people usually reach mutual acceptance simply by allowing the next contribution to proceed uninterrupted.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a general finding about conversational practice; independent empirical claim.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "Other times they need several turns, as A and B did here.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Contrasts with [13] using the prior example; subordinate to [13] (tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Discrepancies in expertise should influence the process in predictable ways.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the relevance and significance of expertise discrepancies for the referential process.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Suppose Dr. Cohen presupposes that her patient Mr. Baker is also a physician and says, 'Contract your deltoid.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Opens a hypothetical scenario illustrating the claim in [15]; parent is [15] (emph).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "If she is right about his knowledge, Baker will accept her reference and comply.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Re-parented to [15] (emph) by skip rule; continues the hypothetical scenario.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "If not, he might ask, 'Uh, my deltoid?' to which she might respond, 'Oh, raise your arm out to the side.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Re-parented to [15] (emph) by skip rule; continues the hypothetical showing repair.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "If instead Cohen presupposes that Baker is not a physician, then she should begin, 'Raise your arm out to the side,'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Re-parented to [15] (emph) by skip rule; explores the alternative assumption in the hypothetical.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "If she is right, Baker will simply comply.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Re-parented to [15] (emph) by skip rule; continues the hypothetical scenario.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "If not, he might add, 'Oh, right, contract my deltoid.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Re-parented to [15] (emph) by skip rule; continues the hypothetical scenario.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "That is, as they complete the referential process, not only can they discover who is expert and who is not, but they also may supply or acquire a bit of expertise (the technical term deltoid).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Draws the key claim from the hypothetical: the referential process enables expertise exchange; asserts significance of the phenomenon.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "Our proposal is that experts and novices accommodate to discrepancies in expertise in the very process of collaborating to complete a reference.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the paper's central proposal directly.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Their accommodation divides into three processes—assessing, supplying, and acquiring expertise.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names and introduces the three-part conceptual framework structuring the paper's argument.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "1. Assessing expertise: Any two people in conversation must assess each other's expertise on the topic they are talking about.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names and defines the first process of the three-part framework.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "One method Cohen might use, for example, is to ask Baker, 'Are you a doctor?' (see Schegloff, 1972).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides an example of one assessment method; parent is [25] (framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Yet a person's primary source, we suppose, is the expertise their partner displays in passing as they collaborate in their references.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 25,
+      "note": "Re-parented to [25] (framedef) by skip rule; proposes the authors' preferred account of assessment; marked as supposition.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "Cohen could judge Baker to be a novice when he asks, 'What's my deltoid?' but to be an expert when he adds, 'Oh, right, contract my deltoid.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 25,
+      "note": "Re-parented to [25] (framedef) by skip rule; illustrates the speculative claim about in-passing assessment.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "2. Supplying expertise: Experts who realize they are talking to novices should often fill in the needed expertise.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names and introduces the second process of the three-part framework.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "If Cohen expects to refer several times to Baker's deltoids, it may be reasonable for her to try to broaden their common ground so that eventually she can refer to it as your deltoid.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Extends the supplying expertise concept with hypothetical reasoning; parent is [29] (framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "One way to do this is to select a noun phrase appropriate to the current common ground, but to add information instructive to her addressee, as in your deltoid—the muscle you contract when you raise your arm out to the side.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Re-parented to [29] (framedef) by skip rule; illustrates the mechanism of supplying expertise.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "Experts who are addressees may expand on the noun phrases used by novice speakers and thereby acquaint them with information useful for more efficient noun phrases.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Re-parented to [29] (framedef) by skip rule; extends the supplying expertise concept to expert-as-addressee configuration.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "If Baker complains of the muscle that hurts when he lifts his arm, Cohen might respond, 'Yeah, your deltoid.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Re-parented to [29] (framedef) by skip rule; illustrates the addressee-as-expert scenario.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "Thereafter Baker can use my deltoid.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Re-parented to [29] (framedef) by skip rule; continues the illustration showing downstream efficiency benefit.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "3. Acquiring expertise: Novices who realize they are talking to experts should try to fill the gaps in their knowledge.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names and introduces the third process of the three-part framework.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "They may try to elicit information from their addressees.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Speculates about one mechanism of expertise acquisition; parent is [35] (framedef).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "They can also pick up incidental information that experts present in the course of their references.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Re-parented to [35] (framedef) by skip rule; speculates about a second acquisition mechanism.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "Do people assess, supply, and acquire expertise in the process of referring, and if so, how?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Frames the open empirical question motivating the study.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "M2->M3 cycle: brief return to gap language (open question) after extended M3 framework presentation, before final M3 study announcement."
+    },
+    {
+      "id": 39,
+      "text": "To investigate this question, we used a variation of a task pioneered by Krauss and Glucksberg (1969; Krauss & Weinheimer, 1964, 1966, 1967; Glucksberg, Krauss, & Higgins, 1975).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the method used in the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "The area of expertise we chose was knowledge of New York City.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the domain of the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "We asked New Yorkers to describe picture postcards of 16 New York City landmarks to non-New Yorkers, and vice versa, and we compared their references to those of pairs of New Yorkers and pairs of non-New Yorkers talking about the same postcards.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the study design and comparisons made.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "The primary piece of expertise we examined was knowledge of proper names.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the primary dependent measure of interest.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "Initially, most New Yorkers know, for example, that the Citicorp Building is called the Citicorp Building, and most non-New Yorkers do not.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and nature of the expert-novice asymmetry in the chosen domain; establishes why proper names are a meaningful index.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "The name Citicorp is information that experts can supply the novices, that novices can acquire from experts, and that both can exploit in assessing their partner's expertise.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the theoretical relevance of proper names to all three framework processes; connects domain choice to the paper's conceptual machinery.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "Note that to learn that a particular building is called Citicorp is not simply to learn the proper name Citicorp.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance of a nuance about what proper-name learning involves; establishes depth of the expertise concept.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "One has to learn what features distinguish the Citicorp Building from other buildings, and that it is the building with these features that bears the name Citicorp.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 45,
+      "note": "Unpacks and elaborates the claim in [45] about the nature of proper-name knowledge; parent is [45] (emph).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "Non-New Yorkers, in referring to a postcard of the building, may focus on pictured features that are in reality incidental to the building's identity, whereas New Yorkers should bring out those features of the building that are truly characteristic.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 45,
+      "note": "Re-parented to [45] (emph) by skip rule; derives a predicted behavioral difference from the prior claim.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "So part of learning a proper name is learning the most apt way of characterizing its referent.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 45,
+      "note": "Re-parented to [45] (emph) by skip rule; wraps up the sub-section on what proper-name learning entails.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "Another part of this expertise is what we will call perspective.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and names a new conceptual construct — \"perspective\" — as an additional dimension of expertise the paper will analyze.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 50,
+      "text": "When people become experts on a topic, not only do they know more than novices, but their understanding of it changes (for a review, see Chi, Glaser, & Rees, 1982).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Cites prior literature on expert-novice differences in knowledge structure.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "They can adopt more abstract perspectives on the topic and organize their knowledge more on structural properties and less on surface features.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 50,
+      "note": "Elaborates the nature of expert knowledge change introduced in [50]; parent is [50] (tempstat).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 52,
+      "text": "Most New Yorkers know the Citicorp's distinctive slanted roof, what happens there, its neighboring buildings, and what it looks like from other directions, whereas most non-New Yorkers don't.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 50,
+      "note": "Re-parented to [50] (tempstat) by skip rule; illustrates the expert-novice knowledge difference in the paper's domain.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 53,
+      "text": "So when a New Yorker views a postcard of it, he or she is likely to 'see through' the picture and think directly of the building, its characteristic features, and its surroundings.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 50,
+      "note": "Re-parented to [50] (tempstat) by skip rule; derives a predicted perceptual/cognitive consequence from the domain-specific knowledge difference.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 54,
+      "text": "A non-New Yorker viewing the same postcard is more likely to focus on the picture itself—the angle of regard, the clouds, its other features.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 50,
+      "note": "Re-parented to [50] (tempstat) by skip rule; continues the contrasting prediction about novice perspective.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 55,
+      "text": "The expert attends more to the pictured building, and the novice to the building's picture.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 50,
+      "note": "Re-parented to [50] (tempstat) by skip rule; synthesizes the expert/novice perspective contrast.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 56,
+      "text": "A New Yorker might say, 'It [meaning the building] is the Citicorp Building,' and a non-New Yorker, 'It [meaning the postcard] is the shot of the building with the slanted roof.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 50,
+      "note": "Re-parented to [50] (tempstat) by skip rule; provides a concrete linguistic illustration of the perspective difference.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 57,
+      "text": "New Yorkers should also be more likely to point out features that are obscure or absent in the postcards themselves.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 50,
+      "note": "Re-parented to [50] (tempstat) by skip rule; extends the prediction about expert perspective to an additional behavioral consequence.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

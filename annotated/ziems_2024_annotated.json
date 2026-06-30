@@ -1,0 +1,474 @@
+{
+  "paper": {
+    "id": "ziems_2024",
+    "title": "ziems 2024",
+    "authors": [
+      "Ziems"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction uses a fractured M1→M3→M2→M1→M3 arc rather than a clean linear progression, with an early M3 purpose statement (S6) interrupting the territory before the niche is established. **M2 is unusually compressed**—five sentences (7–12) identify the constraints of current CSS methods and position LLMs as the solution—sandwiched between two M1 blocks and the final M3 occupation. The extended M3 block (S15–S37) is the rhetorical center of gravity, enumerating four formal RQs, a detailed pipeline description, and pre-announced findings keyed to each RQ. This structure reflects a paper confident enough in its contribution to announce purpose before fully justifying need.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        5
+      ],
+      "role": "Establishes the research territory by situating CSS historically and asserting LLMs as a potentially paradigm-shifting tool, motivating the paper's central inquiry."
+    },
+    {
+      "move": "M3",
+      "span": [
+        6,
+        6
+      ],
+      "role": "Prematurely announces the paper's purpose before the niche is established, signaling authorial confidence in the contribution and framing what follows as elaboration rather than build-up."
+    },
+    {
+      "move": "M2",
+      "span": [
+        7,
+        12
+      ],
+      "role": "Establishes the niche by cataloguing the limitations of supervised and unsupervised CSS methods and identifying data constraints as the key gap that LLMs could resolve."
+    },
+    {
+      "move": "M1",
+      "span": [
+        13,
+        13
+      ],
+      "role": "Bolsters the territory claim by reporting prior evidence of LLM capabilities across domains, providing empirical grounding for the gap-bridging claim that follows."
+    },
+    {
+      "move": "M2",
+      "span": [
+        14,
+        14
+      ],
+      "role": "Sharpens the niche by specifying the conditional payoff—if LLMs work zero-shot, CSS scope expands—directly motivating the primary research question."
+    },
+    {
+      "move": "M3",
+      "span": [
+        15,
+        37
+      ],
+      "role": "Occupies the niche by formally stating four research questions, describing the evaluation pipeline and paper structure, and pre-announcing key findings for each RQ, functioning as a detailed roadmap for the entire paper."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "The most surprising scientific changes tend to arrive, not from accumulated facts and discoveries, but from the invention of new tools and methodologies that trigger 'paradigm shifts' (Kuhn 1962).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opens the introduction with a broad claim asserting the importance of tool-driven paradigm shifts, motivating the paper's central question about LLMs as transformative tools.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Computational social science (CSS) (Lazer et al. 2020) was born from the immense growth of human data traces on the Web and the rapid acceleration of computational resources for processing this data.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the historical origin of CSS as an established fact with citation.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "These developments allowed researchers to study language and behavior at an unprecedented scale (Lazer et al. 2009), with both global and fine-grained observations (Golder and Macy 2014).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior findings about what CSS enabled, with citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "From the early days of content dictionaries (Stone, Dunphy, and Smith 1966), statistical text analysis facilitated CSS research by providing structure to non-numeric data.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the historical trajectory of computational methods in CSS with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Now, large language models (LLMs) may be poised to change the CSS landscape by providing such capabilities without custom training data.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the potential significance of LLMs for CSS — the central motivating claim. The hedged \"may be poised\" signals an assertion of relevance rather than a confirmed finding.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Transition sentence bridging M1 territory to M3 purpose; retained in M1 as centrality/relevance claim about LLMs."
+    },
+    {
+      "id": 6,
+      "text": "The goal of this work is to assess the degree to which LLMs can transform CSS.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Directly states the purpose of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Early M3 announcement before the M2 niche is fully elaborated; the introduction then returns to territory/gap before the extended M3 block."
+    },
+    {
+      "id": 7,
+      "text": "Solid computational approaches are needed to help analyze textual data and to understand a variety of social phenomena across academic disciplines.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and relevance of computational approaches for CSS — establishes need.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "M2->M3 cycling: after early 3A in sentence 6, the introduction returns to gap/need language."
+    },
+    {
+      "id": 8,
+      "text": "Current CSS methodologies typically use supervised text classification and generation in order to scale up manual labeling efforts to unseen texts (also called coding in the social sciences).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the current state of CSS methods.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "Reliable supervised methods typically demand an extensive amount of human-annotated training data.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established constraint of supervised methods in CSS.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Alternatively, unsupervised methods can run 'for free,' but the resulting output can be uninterpretable.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a tension/tradeoff against the supervised approach described in [9].",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "In the status quo, data resources constrain the theories and subjects CSS can be applied to.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a gap/problem in the current state — data constraints limit CSS scope.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "LLMs have the potential to remove these constraints.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and relevance of LLMs as a solution to the identified gap in [11].",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "Frames the gap resolution as an open potential, bridging M2 and M3."
+    },
+    {
+      "id": 13,
+      "text": "Recent LLMs have demonstrated the striking ability to reliably classify text, summarize documents, answer questions, and generate interpretable explanations in a variety of domains, even exceeding human performance without the need for supervision (Bang et al. 2023; Qin et al. 2023; Zhuo et al. 2023; Goyal, Li, and Durrett 2022).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior findings about LLM capabilities across domains with multiple citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Interlaced M1: reports prior work on LLM capabilities to further establish the territory before the final M3 block."
+    },
+    {
+      "id": 14,
+      "text": "If LLMs can similarly provide reliable labels and summary codes through zero-shot prompting, CSS research can be broadened to a wider range of hypotheses than current tools and data resources support.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of LLMs' potential for CSS — establishes that the research question is worth pursuing. Functions independently to motivate the study rather than merely extending [13] speculatively.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Zero-shot viability in this space is our primary research question.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the primary research question of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "To effectively harness the power of LLMs, behavioral researchers should understand the pros and cons of different modeling decisions (model-selection), as well as how these decisions intersect with their fields of specialization (domain-utility) and downstream use-cases (functionality).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the scope of the paper's investigation by naming the specific analytical dimensions (model-selection, domain-utility, functionality) that correspond to RQ2–RQ4.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "By evaluating LLMs on an extensive suite of CSS tasks, this work provides researchers a roadmap with answers to the following research questions:",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's approach and its practical output for researchers.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "(RQ1) Viability: Are LLMs able to augment the human annotation pipeline?",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the first formal research question addressed by the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "Can they match or exceed the reliability of human annotation?",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Unpacks and specifies what \"viability\" means in RQ1 stated in [18]. No independent primary rhetorical function; parent [18] is contribution (primary), satisfying the subordination rule.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "(RQ2) Model-Selection: How do different aspects of LLMs (e.g., model size, pretraining) affect their performances on CSS tasks?",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States RQ2.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "(RQ3) Domain-Utility: Are zero-shot LLMs specially adapted for better results in some fields of science rather than others?",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States RQ3.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "(RQ4) Functionality: Are zero-shot LLMs equipped to assist with labeling tasks (classification) or summary-explanatory tasks (generation), or both?",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States RQ4.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "The research pipeline in Figure 1 allows us to answer these questions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Points to the paper's methodological structure as the means of addressing the RQs.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "First, we survey the social science literature to understand where LLMs could serve as analytical tools (Section 2).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes paper structure and method — first step of the pipeline.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "Then we operationalize each use-case with a set of representative tasks (Section 3).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues describing paper structure — second step.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "Specifically, classification and parsing methods can help researchers code for linguistic, psychological, and cultural categories (Section 3.1–Section 3.3) while generative models can explain underlying constructs (e.g., figurative language, emotional reactions, hate speech, and misinformation), and restructure text according to established theories like cognitive behavioral therapy (Section 3.4).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Elaborates the scope and structure of tasks covered in the paper.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "With a final evaluation suite of 24 tasks, we test the zero-shot performance of 13 language models with differing architectures, sizes, pre-training, and fine-tuning paradigms (Section 5, Section 6).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the scale and design of the evaluation component of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "This allows us to suggest actionable steps for social scientists interested in co-opting LLMs for research (Section 7).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the practical output and downstream implication of the paper's evaluation.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "Specifically, we suggest a blended supervised-unsupervised scheme for human–AI partnered labeling and content analysis.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the paper's concrete recommendation more precisely than [28].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "Concretely, our analysis reveals that, except in minority cases, prompted LLMs do not match or exceed the performance of carefully fine-tuned classifiers, and the best LLM performance is often too low to entirely replace human annotation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previews the paper's own key finding about LLM classification limits — a summary of results stated in the introduction as a roadmap.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "However, LLMs can achieve fair levels of agreement with humans on labeling tasks (RQ1).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previews the positive finding addressing RQ1, contrasting with [30].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "These results are not limited to a subset of academic fields, but rather span the social sciences across a range of conversation, utterance, and document-level classification tasks (RQ2).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previews the finding addressing RQ2.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "Furthermore, the benefits of LLMs are compounded as models scale up (RQ3).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previews the finding addressing RQ3.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "This suggests that LLMs can augment the annotation process through iterative joint-labeling, significantly speeding up and improving text analysis in the social sciences.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 33,
+      "note": "Extends the RQ3 finding in [33] into a broader practical implication without additional evidence presented at this point. Parent [33] is contribution (primary), satisfying the subordination rule.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "Importantly, some LLMs can also generate informative explanations for social science constructs.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previews a key finding about generation tasks (RQ4).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "Leading models can achieve parity with the quality of dataset references, and can even exceed them in terms of relevance, coherence, faithfulness, and fluency.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Provides additional detail on the generation finding previewed in [35].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "Humans prefer model outputs 50% of the time, suggesting that human–AI collaboration will extend beyond labeling tasks to the joint coding of new constructs, analyses, and summaries.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previews the empirical result on human preference and its implication for the paper's conclusions about human-AI collaboration.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

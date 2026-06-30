@@ -1,0 +1,242 @@
+{
+  "paper": {
+    "id": "ryskin_2025",
+    "title": "Efficient Audience Design in LLMs",
+    "authors": [
+      "Ryskin, R.",
+      "et al."
+    ],
+    "year": 2025,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction builds a long M1 foundation across two distinct sub-blocks — human audience design (S1–S10) and LLM communicative competence (S11–S14) — before pivoting to M2. **The LLM sub-block is the rhetorical bridge**: by establishing that LLMs resemble humans on pragmatics and ToM, the paper earns the right to ask whether they also exhibit audience design. **The gap is then staged in three steps**: a broad characterization deficit (S15), a concrete fragility finding that substantiates it (S16), and a sharp, explicitly scoped unstudied-gap claim (S17). The introduction closes with a mechanistic question about least-effort pressure (S18), leaving M3 entirely absent.",
+  "structured_arc": "M1 -> M2",
+  "prompt_version": "v0.5",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        10
+      ],
+      "role": "Establishes human audience design as a well-documented phenomenon via two concrete paradigms (NYC landmarks and tangram reduction), then synthesizes them under an informativeness-effort tradeoff and closes with an open mechanistic question — grounding the paper's later efficiency framing in existing human-communication research."
+    },
+    {
+      "move": "M1",
+      "span": [
+        11,
+        14
+      ],
+      "role": "Opens a second territory on LLMs, claiming they share hallmarks of human communication and citing specific successes on pragmatics and Theory of Mind tasks — constructing the warrant that LLMs are plausible candidates for audience design before the gap is named."
+    },
+    {
+      "move": "M2",
+      "span": [
+        15,
+        18
+      ],
+      "role": "Names the gap in LLM audience-design research: first broadly (performance not fully characterized), then concretely (fragility evidence from Jones 2024), then precisely (audience design untested), and finally mechanistically (least-effort pressure unexamined) — escalating specificity to frame the paper's exact niche."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Human communication is inherently social, requiring speakers to tailor their language to their audience's knowledge and goals (e.g. H. H. Clark & Wilkes-Gibbs, 1986; H. Clark, 1992; Brown-Schmidt, Yoon, & Ryskin, 2015).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "For example, Isaacs and Clark (1987) showed that, in conversations with listeners who are familiar with New York City (NYC), New Yorkers described pictures of NYC locations succinctly, using landmarks names like \"Citicorp Building.\"",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 1,
+      "note": "Parent [1]. Concrete illustration of the prior tempstat claim, explicitly example-marked.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move from parent [1]; step shifts to 1C since this sentence reports what a specific study (Isaacs & Clark) found, rather than a field-level generalization."
+    },
+    {
+      "id": 3,
+      "text": "In contrast, when addressing listeners who were unfamiliar with NYC, they provided longer descriptions, such as \"the building with the slanted roof\" for that same building.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 1,
+      "note": "Re-parents to [1] (nearest primary above), continuing the same Isaacs & Clark illustration begun in [2].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Continues the Isaacs & Clark illustration from [2]; 'In contrast' is internal to the study's own results, not a contrast against the paper's territory, so this stays M1/1C rather than M2."
+    },
+    {
+      "id": 4,
+      "text": "In addition to relying on knowledge of the idiosyncrasies of their audience, speakers tailor their utterances to their conversation partners by collaboratively developing shared terms over the course of an interaction (e.g., Brennan & Clark, 1996; H. H. Clark & Wilkes-Gibbs, 1986; Hawkins, Frank, & Goodman, 2020).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "For instance, when referring to an abstract tangram shape in the first round of a communication task, a speaker may use a lengthy utterance to refer to it such as \"uh, it looks like a person with the arms out to the left and head back kind of like they are dancing.\"",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Parent [4].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move from parent [4]; step is 1C as this reports findings from the tangram referential-communication paradigm."
+    },
+    {
+      "id": 6,
+      "text": "The other interlocutor will typically acknowledge that they've understood which referent is intended (e.g., \"Uh, arms out, OK.\").",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Re-parents to [4], skipping [5].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move/step from parent [4], continuing the tangram illustration."
+    },
+    {
+      "id": 7,
+      "text": "In a second round, when referring to the same shape, the speaker will be briefer and re-use the previously established terms, as in \"the person with the arms out that is dancing.\"",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Re-parents to [4].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move/step from parent [4], continuing the tangram illustration."
+    },
+    {
+      "id": 8,
+      "text": "And by the third round, they may simply say \"the dancer\" and be clearly understood by their conversation partner.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Re-parents to [4].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move/step from parent [4], concluding the tangram illustration."
+    },
+    {
+      "id": 9,
+      "text": "In both forms of audience design, speakers appear to design their utterances with the goal of balancing informativeness — allowing their interlocutor to uniquely identify the referent — and effort — not producing more than is needed (i.e., being brief).",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Synthesizes the two preceding cited phenomena ([1]–[3] and [4]–[8]) without new citation support; re-parents to [4], the nearest primary above.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Inherits M1 from parent [4]; step reassigned to 1B (rather than 1C) since this sentence makes a field-level synthesizing generalization across both illustrations, not a report of one specific study."
+    },
+    {
+      "id": 10,
+      "text": "Whether this kind of communicative efficiency relies on sophisticated reasoning about the mental states of the interlocutor (H. H. Clark & Marshall, 1981; Hawkins et al., 2022; Heller & Brown-Schmidt, 2023) or can come about from more low-level memorial or alignment mechanisms (Horton & Gerrig, 2005; Pickering & Garrod, 2004) remains an open question.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Tagged nostat (typically M2), but rhetorically this open question concerns the mechanism underlying human audience design -- a question the paper does not go on to occupy. Functions as a coda generalization closing the human-communication territory rather than the niche the paper will fill, so kept in M1 as a field-level statement of the unresolved theoretical landscape."
+    },
+    {
+      "id": 11,
+      "text": "Communication with Large Language Models (LLMs), such as ChatGPT, appears to bear many of the hallmarks of human-to-human communication.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opens new sub-section but carries independent claim of relevance/similarity, so primary per Rule 1.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Pivot sentence opening a second M1 sub-block on LLMs; emph tag and broad 'this is relevant/similar' framing match Step 1A (claiming centrality)."
+    },
+    {
+      "id": 12,
+      "text": "Beyond producing fluent, human-sounding utterances, LLMs appear to perform similarly to humans on tests of pragmatic language interpretation, including indirect speech, metaphor, deceit, and humor (Hu, Floyd, Jouravlev, Fedorenko, & Gibson, 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Reports the finding of a specific cited study (Hu et al., 2023); subject is the study's result, matching 1C."
+    },
+    {
+      "id": 13,
+      "text": "In humans, pragmatic understanding has often been thought to rely on reasoning about the mental states of the speaker.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Field-level generalization about human pragmatics (no single study cited), matching 1B; sets up the parallel drawn in [14]."
+    },
+    {
+      "id": 14,
+      "text": "Similarly, LLMs succeed on some tasks previously used to test Theory of Mind (ToM) in humans (Strachan et al., 2024).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Reports a specific study's finding (Strachan et al., 2024), matching 1C."
+    },
+    {
+      "id": 15,
+      "text": "However, LLM performance on pragmatic and ToM tasks remains to be fully characterized.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "First clear gap statement of the introduction; nostat plus 'remains to be fully characterized' names what is unknown, opening Move 2."
+    },
+    {
+      "id": 16,
+      "text": "For instance, Jones (2024) found that models, such as GPT-3, demonstrate sensitivity to belief states in the False Belief Task, but minor task modifications can lead to significant performance drops, suggesting that some of the successes of LLMs may reflect reliance on surface-level statistical patterns.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Citation-backed report; internal \"but\" reflects the study's own results, not the author's contrast against prior literature.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Tagged tempstat (typically M1), but functions here as substantiating evidence for the gap just raised in [15]. Kept in M2/2B since its rhetorical job is to deepen the gap, not generalize about the field."
+    },
+    {
+      "id": 17,
+      "text": "To our knowledge, whether LLMs engage in audience design, either through explicit information about the speaker's knowledge and expertise, or through the coordination of efficient reference over the course of an interaction, has not yet been tested.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Explicit, sharply-scoped gap statement ('has not yet been tested') -- the paper's specific niche."
+    },
+    {
+      "id": 18,
+      "text": "While LLMs succeed at other linguistic tasks thought to tap social reasoning about the communication partner, and they are trained to maximize the informativeness of their answers, it is unclear whether they are subject to a pressure for least effort, which may be necessary to elicit human-like audience design behavior.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "\"While\" clause sets up tension, but rhetorical center is the unresolved question, matching nostat over contrast.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "Frames the gap from [17] as an open question about mechanism (least-effort pressure), matching Step 2C. Introduction ends here with no M3 (Step 3A) present in this excerpt."
+    }
+  ],
+  "gloss_version": "v0.3"
+}

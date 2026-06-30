@@ -1,0 +1,974 @@
+{
+  "paper": {
+    "id": "abdurahman_2024",
+    "title": "abdurahman 2024",
+    "authors": [
+      "Abdurahman"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction's rhetorical strategy is **defensive positioning**: an unusually long M1 (18 sentences) builds credibility with the very technology it will critique before a sharp **'however' pivot** at sentence 19 launches the cautionary niche. The first M3 cluster (24–28) is a brief, hedge-framed purpose announcement that immediately dissolves back into a dense **M1→M2 cycling block** (29–59), where territory review and gap critique are interlaced to build the empirical case. The final M3 (60–81) is unusually results-heavy for an introduction, presenting quantitative findings directly — the paper essentially argues *through* data rather than merely announcing it.",
+  "structured_arc": "M1 -> M2 -> M3 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        18
+      ],
+      "role": "Establishes the research territory of technological innovation in psychology, traces the historical and technical lineage of LLMs, and documents the rapid surge of LLM-related psychological research — constructing the field's optimism before the paper's cautionary turn."
+    },
+    {
+      "move": "M2",
+      "span": [
+        19,
+        23
+      ],
+      "role": "Introduces the paper's central cautionary niche via a historical analogy (fMRI misuse) and articulates the normative obligation for critical scrutiny before adopting new technologies — framing the gap as an ethical and epistemic risk, not merely a technical one."
+    },
+    {
+      "move": "M3",
+      "span": [
+        24,
+        28
+      ],
+      "role": "Issues a scope-limiting hedge to pre-empt misreading, then announces the paper's purpose (contextualizing opportunities and limitations), its normative stance (caution over unchecked application), and a roadmap for what follows — a brief but structurally necessary anchor before the paper re-enters critique territory."
+    },
+    {
+      "move": "M1",
+      "span": [
+        29,
+        32
+      ],
+      "role": "Reviews prior claims that LLM outputs are 'human-like' and documents the argument for replacing human participants with LLMs — restoring the territory of optimistic prior work that the subsequent M2 block will systematically dismantle."
+    },
+    {
+      "move": "M2",
+      "span": [
+        33,
+        59
+      ],
+      "role": "Develops three specific, substantiated limitations of LLMs as human participant substitutes — WEIRD bias and cross-cultural failure, lack of meaningful response variance, and data contamination — using cited evidence, technical elaboration, and the coined term 'GPTology' to frame the gap as deep and structural rather than merely technical."
+    },
+    {
+      "move": "M3",
+      "span": [
+        60,
+        72
+      ],
+      "role": "Presents the paper's own empirical demonstrations — MFQ-2 variance analysis, cross-domain replication across 43 countries, and demographic divergence data — making the introduction unusually results-heavy and grounding the cautionary argument in the authors' own findings rather than citations alone."
+    },
+    {
+      "move": "M2",
+      "span": [
+        73,
+        74
+      ],
+      "role": "Opens a third limitation (failure to replicate nomological networks) by citing a specific prior claim the authors will now empirically refute — a targeted gap statement that sets up the final empirical contribution."
+    },
+    {
+      "move": "M3",
+      "span": [
+        75,
+        81
+      ],
+      "role": "Reports the nomological network finding, synthesizes all four cautionary arguments into the paper's core position statement, and closes with a balanced hedge — affirming LLM research value while fixing its proper supplementary (not substitutive) role in psychological science."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Technological innovations have enabled social and behavioral scientists to gather diverse forms of data about human psychology, paving the way for significant breakthroughs in psychological science and neighboring fields.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "These advancements have played a pivotal role in expanding our understanding of psychological processes.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 1,
+      "note": "Unpacks the significance of the advancements named in [1] rather than providing a concrete case; definitional elaboration of the prior claim.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "The development of neuroimaging (e.g. fMRI), online survey platforms (e.g. Mechanical Turk), and eye-tracking technology are just a few examples that have revolutionized psychological research in the last few decades.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides concrete named examples of the technological innovations referenced in [1]–[2].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "The digital revolution and emergence of 'big data' facilitated the establishment of new fields such as computational social science.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "More recently, there has been a notable paradigm shift in artificial intelligence (AI) with the emergence of large language models (LLMs): neural networks characterized by their deep layers and extensive scale, typically consisting of billions to over a hundred trillion parameters and trained on vast text datasets, enabling an unprecedented ability to understand, generate, and translate human language with remarkable subtlety and complexity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a recent field-level development (emergence of LLMs) while embedding a technical characterization; the primary rhetorical work is reporting the paradigm shift.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "These AI models are trained on extensive collections of unlabeled text using self-supervised or semi-supervised learning methods, contributing to their remarkable language understanding and generation capacity.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Elaborates on how LLMs function, extending the technical characterization begun in [5].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "This new technology has been argued to possess the capacity to transform social science research.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior cited claim about LLMs' transformative potential.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "Language models have advanced significantly through interdisciplinary collaboration, including contributions from psychology, which laid the foundation for modern language modeling.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the historical development of language models and psychology's foundational role.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "For example, inspired by the psychology of feedback and learning mechanisms, McClelland and Rumelhart explored connectionist models demonstrating the potential of neural networks, and Rumelhart et al. introduced key algorithms like backpropagation.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides cited historical examples illustrating the interdisciplinary contributions claimed in [8].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Building upon these developments and motivated by theories in working memory and cognitive processes, Elman introduced recurrent neural networks, enabling researchers to model sequential data in language models.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 8,
+      "note": "Continues the historical illustration of psychology's contributions to language modeling; re-parents to [8] (nearest primary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "The availability of large textual corpora, increased computing power, and advancements in deep-learning techniques have recently contributed to the progress and refinement of language models.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Notably, the Transformers architecture, which enables understanding of intricate relationships between different input components in a remarkably efficient and precise manner substantially improved natural language understanding and generation capabilities.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific technical development and its documented impact.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Subsequently, LLMs, like ChatGPT, based on different versions of Generative Pre-trained Transformer (GPT), have had sizable implications in various domains, powering applications such as human-sounding chatbots and language translation systems.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the downstream impact and applications of LLMs across domains.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "Their success lies in their impressive language generation capabilities and public accessibility, which has permeated research in various fields from medicine to politics.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 13,
+      "note": "Provides concrete instantiation of LLM success — names specific fields (medicine, politics) as cases of the permeation described in [13]; illustrative rather than definitional.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Studying how LLMs operate offers promising opportunities to gain previously inaccessible insights into cognition as a whole, and perhaps even human cognition.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and promise of studying LLMs — establishing relevance rather than reporting a finding.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Additionally, these models' capabilities in text analysis and generation could possibly be harnessed by researchers as an easy-to-use method for analyzing textual data, such as coding texts for mental health assessment.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts another dimension of LLMs' potential relevance to psychological research practice.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "There has recently been a rapid string of psychological research output related to and facilitated by these models.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the literature — a surge of recent psychological research involving LLMs.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "In particular, ChatGPT has been employed in a range of social and behavioral applications, from hate-speech classification to sentiment analysis, often with promising results.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides specific examples of the research output characterized in [17].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "However, drawing parallels with the turbulent integration of previous technological innovations into psychological research suggests that the hurried or negligent implementation of LLMs in psychology could give rise to unintended consequences.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Pivots from optimistic framing to cautionary argument; introduces the key tension the paper addresses.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "For example, when fMRI techniques first appeared, some researchers began haphazardly applying these techniques, resulting in many nonsensical, but statistically significant neural correlates: a phenomenon cleverly illustrated in an fMRI of post-mortem Atlantic Salmon, where the fish displayed apparent significant brain activity during the experiment despite being deceased, and a study on the high likelihood of finding spurious correlations in fMRI research due to statistical misapplications.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides the historical analogy illustrating the risk claim made in [19].",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "These two episodes now serve as a lesson for psychology students and researchers more broadly: that new technologies should be cautiously integrated into psychological research.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes an independent normative assertion about how new technologies should be treated — asserts the importance and significance of cautious integration; previous tag (extension:illustrative) violated the subordination rule since [20] is also secondary.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "Specifically, integrating LLMs in the psychological research pipeline, such as in substitution for human participants, necessitates critically examining its limitations.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and necessity of critically examining LLM limitations — moves from historical analogy to direct present-day claim.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "Researchers should not simply ask themselves how they can use a new technology; they need to also ask themselves whether and why they should do so.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a normative principle about researchers' obligations — emphasizes the significance of a critical orientation.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "By no means do we uniformly cast doubt on the usefulness of LLMs in psychological research.",
+      "tag": "new_tag_needed",
+      "tier": "unknown",
+      "parent_id": null,
+      "note": "Rhetorical hedge/disclaimer that pre-empts misreading of the paper's argument. No existing tag captures this scope-limiting, perspective-qualifying function.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Scope-limiting hedge preceding purpose announcement; functions as justification framing for M3."
+    },
+    {
+      "id": 25,
+      "text": "Instead, we aim to contextualize current and future opportunities that LLMs may offer psychological research and suggest possible ways to navigate their limitations.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the purpose and scope of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "While acknowledging their potential utility to improve psychological science, we advise caution regarding the unchecked application of LLMs, at least in their current state, in psychological studies.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Articulates the paper's normative stance and frames its contribution.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "To prevent issues like nonsensical, but statistically significant correlations, it is essential to approach LLMs with caution, keeping in mind similar challenges the field has faced in recent decades (e.g. the credibility revolution).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance of cautious LLM adoption by linking present risks to known methodological challenges.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "The following section provides an overview of the downsides of the hurried use of LLMs in psychology, and how it could negatively affect psychological findings if not applied critically and cautiously.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure and content of the next section — roadmap statement.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "Many studies of state-of-the-art LLMs have concluded that their outputs are highly 'human-like'.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding from prior literature about LLM outputs being characterized as human-like.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "M2->M3 cycle: paper returns to territory review after initial M3 close."
+    },
+    {
+      "id": 30,
+      "text": "For instance, Webb et al. examined the analogical reasoning abilities of ChatGPT and found that it had developed an emergent capacity for zero-shot reasoning, allowing it to solve a wide range of analogy problems without explicit training.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides a specific cited example illustrating the general claim about human-like outputs in [29].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "Some have argued that if LLMs, such as ChatGPT, can indeed produce human-like responses to common measures in psychological science (e.g. judgments of actions, endorsements of values, perceptions of social issues), they might as well, at some point in the future, replace the human subject pool.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a position held by some researchers in the literature — the argument for LLMs replacing human participants.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "For example, based on a substantive correlation between moral judgments made by humans and a language model (GPT-3.5), Dillion et al. asked whether LLMs can replace human participants in psychological research.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 31,
+      "note": "Provides a specific cited example of the position described in [31].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "While they do acknowledge limitations of the 'AI as human participants' position (which is typically supported by showing an LLM-human correlation in some psychological domain), such as their issues with representing different populations, capturing variability in human responses, and oversimplifying complex judgments and behaviors, it is important to stress the ethical and epistemic risks associated with this practice.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension by arguing that acknowledged limitations in the literature are insufficient — escalates the critique beyond what prior authors themselves acknowledged.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "Similarly, Ref. (29) warns against the anthropomorphism of AI systems, noting that such tendencies can mislead us into expecting human-like performance from systems that operate on fundamentally different principles.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a cited warning from the literature about anthropomorphism of AI systems.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "This caution is crucial as we consider the implications of deploying LLMs in roles traditionally reserved for human participants.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance/relevance of the caution reported in [34] for the present context.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "First, research using LLMs to simulate human participants needs to pay more attention to the substantial cross-cultural variation in cognitive processes—including moral judgments—around the globe and develop robust ways to mimic them using synthetic agents.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a gap — existing research using LLMs to simulate humans has not adequately addressed cross-cultural variation.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "Models like GPT have been trained chiefly on WEIRD (Western, Educated, Industrialized, Rich, Democratic) people's textual data primarily in English, perpetuating the English-centricity of psychology, hindering efforts to take linguistic diversity seriously.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established characterization of LLM training data and its consequences, with citations.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "Hence, these models may struggle with accurately representing diverse populations (see a discussion of LLMs inherently struggling to represent identity groups due to their training procedures in Wang et al.).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Cites Wang et al. directly; per Rule 3, citation-backed claims are tempstat regardless of their inferential framing.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "For example, ChatGPT has shown gender biases favoring male perspectives and narratives, cultural biases toward American perspectives or majority populations in general, and political biases favoring liberal, environmental, and left-libertarian viewpoints.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports specific documented biases in ChatGPT with multiple citations — substantiated prior findings.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "These biases also extend to personality, morality, and stereotypes.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Carries its own citations reporting documented findings in additional domains; citation-backed prior findings are tempstat regardless of position relative to [39].",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "Generally, these models' outputs reflect a WEIRD psychology such that the AI-human link substantially weakens as we collect 'human' data from less WEIRD populations.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding from the literature (with citation) about how AI-human correlations weaken with less WEIRD samples.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "In other words, the high AI-human correlation does not replicate when the human sample is less WEIRD.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Restates and clarifies the finding in [41] in plainer terms — definitional unpacking of the same claim.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "This is especially concerning because the WEIRD-people problem was originally devised as an awareness-raising rhetorical device to push researchers away from heavily relying on WEIRD human research participants (e.g. undergraduate students in North America).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the original purpose and context of the WEIRD critique with citation.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "Substituting human participants with LLM outputs would, therefore, be a step backward.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Uses the WEIRD context to argue that LLM substitution contradicts the field's stated progress goals — introduces a critical tension.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "Ignoring human diversity in psychology, amplified by the convenience of online samples like MTurk, has already led psychology research to be tunnel-visioned toward an extremely thin slice of human diversity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established problem in the field regarding narrow sampling, with citation.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "GPTology will constitute a move toward an even more myopic and less generalizable discipline.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Deploys the term \"GPTology\" as a named conceptual object in the argument and makes a claim about its consequences — creates and uses analytical machinery.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "Second, LLMs seem to have a 'correct answer' bias.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding from the literature (with citations) about a specific limitation of LLMs.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "Specifically, LLMs fail to produce much variance in their answers to psychology survey questions: even if these questions pertain to topics—like moral judgment—for which there is no actual correct answer, and for which human answers would have diversity-of-thought.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 47,
+      "note": "Unpacks and elaborates on the \"correct answer bias\" described in [47].",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "Simulating human diversity-of-thought using LLMs might generally be nontrivial.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 47,
+      "note": "Draws a speculative inference without new evidence; re-parents to [47] (nearest primary above secondary chain).",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 50,
+      "text": "For example, simply prompting an LLM to respond to a question multiple times and then measuring the response variance, a common strategy in the social sciences, does not equate to meaningful variance that can be compared with humans.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 47,
+      "note": "Provides a specific example of the nontrivial problem; re-parents to [47] (nearest primary), skipping intervening secondary sentences.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "Generative language models, such as ChatGPT, compute a probability distribution over possible next words to produce an output sequence in an autoregressive manner.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes an independent, field-established factual claim about how LLMs function; elevated from extension:definitional to resolve subordination violation — [50] is secondary and cannot parent another secondary.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 52,
+      "text": "Specifically, the probability of a word being predicted next is given as P(zi) = ezi/T / Σezk/T, where zi represents the logit value associated with a potential output word wi given an input sequence {w1, . . . , wi−1}, which is, i.e. the model's internal representation of the word after processing it.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 51,
+      "note": "Provides a mathematical formalization of the token prediction process described in [51]; parent [51] is now tempstat ✓.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 53,
+      "text": "The 'temperature' parameter (T) expresses whether the model chooses the most likely word according to the distribution (T → 0), expressing deterministic behavior, or samples the words according to the distribution (T → 1), supposedly expressing more creative nondeterministic behavior.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 51,
+      "note": "Defines the temperature parameter as part of the technical explanation in [51]; re-parents to [51] (nearest primary), skipping [52] which is secondary.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 54,
+      "text": "However, the output variance when repeating the same prompt using a temperature of 1 then simply reflects the output probability over the response options and therefore how sure the model is about its response, which itself is affected by the correct answer bias observed by Park et al. and others.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a tension — despite apparent creativity implied by temperature=1, variance still reflects the correct-answer bias. Parent is [51] (nearest primary above secondary chain).",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 55,
+      "text": "Conceptually, this is akin to repeatedly asking a question to the same participant instead of different participants.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 54,
+      "note": "Provides an analogy illustrating the conceptual problem identified in [54]; parent [54] is contrast (primary) ✓.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 56,
+      "text": "However, psychologists are usually interested in studying variance across participants to make inferences about behavioral patterns and the robustness of psychological phenomena (see discussion of LLM outputs resembling group averages instead of individual differences).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a disciplinary norm that contrasts with what LLMs actually provide.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 57,
+      "text": "Thus, researchers using LLMs to study human behavior need to move beyond methods that simulate single responses—such as merely predicting group averages or simulating an individual's response across various tasks—and instead develop robust methods to emulate the complexity of human samples.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a gap/need in the current methodological landscape — existing methods are insufficient and new approaches are needed.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 58,
+      "text": "Furthermore, LLMs are trained on vast amounts of data, which can contain many of the items and tasks used in psychological experiments, thus leading the model to rely on its memory instead of making inferences, exacerbating the problem above.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a known property of LLM training (data contamination) and its implication, supported by citation.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 59,
+      "text": "To get unbiased evaluations of human-like LLM behavior, researchers need to make sure that their tasks are not part of the model's training data or adjust the models not to affect the outcome of their experiments, such as by 'unlearning' data from an LLM.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a methodological gap and requirement not yet adequately addressed by the field.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 60,
+      "text": "To showcase how these issues concretely manifest, we analyze LLM responses in the domain of human morality, highlighting how simple prompting strategies fail to capture human response patterns and particularly human variance.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces a specific empirical study the current paper conducts.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 61,
+      "text": "We designed a prompt and gave the Moral Foundations Questionnaire-2 (MFQ-2) to GPT-3.5 1,000 times.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the specific method used in the study announced in [60].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 62,
+      "text": "The MFQ-2 is a new measure published in 2023, and its items are unlikely to exist verbatim in the corpora on which GPT was trained; hence, it does not have the problem of extensively appearing in the training corpora.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Justifies the choice of measure by explaining why the MFQ-2 avoids the training data contamination problem — elaboration supporting the methodological choice in [61].",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 63,
+      "text": "We then compared GPT's responses to the distributions of a culturally diverse sample of humans from 19 populations.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the comparative component of the study's method.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 64,
+      "text": "As can be seen in Fig. 1(a), GPT produces substantially smaller variance in six moral domains (i.e. care, equality, proportionality, loyalty, authority, and purity) compared with actual human populations (all Ps < 0.001).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a key empirical result of the current paper, presented in the Introduction as evidence for the main argument.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 65,
+      "text": "GPT-3.5's variance was 43–121 times smaller than human data in different moral domains, even when using parameter settings for maximum variability in generated responses.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides the quantitative magnitude of the finding in [64], instantiating the general result with specific numbers.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 66,
+      "text": "Our results, in line with recent evaluations of strategies to induce demographic variance in LLM outputs and other emerging works, indicate that arguments such as that 'silicon sampling allows researchers to simulate a diverse population of participants,' could be premature and that the so-called 'silicon sampling,' at least currently, fails in mimicking a diverse population of humans: a finding which is consistent with that of Atari et al.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Synthesizes the paper's empirical results with prior literature — a core finding and argument of the current work.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 67,
+      "text": "To show that this phenomenon is robust across domains, we extended this analysis of GPT vs. human responses to a broad range of self-report measures, with participants from over 43 countries and spanning various psychological domains, such as personality, cognition, political orientation, and emotions: Big Five Inventory (N = 3,924), Need for Closure (N = 315), Need for Cognition (N = 900), Right-wing authoritarianism Scale (N = 1,020), Emphasizing–Systemizing Scale (N = 3,141), Rational–Experiential Inventory Scale (N = 1,456).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the extension of the study's methodology to additional domains and samples.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 68,
+      "text": "Across these psychological constructs, we consistently found that ChatGPT responses generally showed significantly less variance across all measures (see Table S20 for an overview of variance differences across all surveys) and differed significantly between various demographics.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the key finding of the extended analysis described in [67].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 69,
+      "text": "For example, when responding to personality surveys, ChatGPT was significantly more agreeable than politically liberal individuals (d = −0.230, P < 0.001, 95% CI [−0.369, −0.091]), conservatives (d = −0.403, P < 0.001, 95% CI [−0.550, −0.257]), and moderates (d = −0.285, P < 0.001, 95% CI [−0.424, −0.145]) as shown in Fig. 2.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 68,
+      "note": "Provides a specific quantitative example illustrating the general finding in [68]; parent [68] is contribution (primary) ✓.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 70,
+      "text": "Beyond personality dimensions, ChatGPT, for example, also endorsed significantly less right-wing authoritarianism than male participants (d = 0.44, P < .001, 95% CI [0.24, 0.65]), White participants (d = 0.35, P < 0.001, 95% CI [0.16, 0.54]), and younger participants (18–24; d = 0.49, P < 0.001, 95% CI [0.24, 0.74]), but significantly more than explicitly liberal participants (d = −0.23, P = 0.003, 95% CI [−0.39, −0.07]) as shown in Fig. 3.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 68,
+      "note": "Continues illustrating demographic divergence across additional constructs; re-parents to [68] (nearest primary), skipping [69] which is secondary.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 71,
+      "text": "Differences of this kind and strength were observed across all surveys and demographic groups.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 68,
+      "note": "Wraps up the series of empirical illustrations in [68]–[70]; re-parents to [68] (nearest primary), skipping intervening secondary sentences. Subordination violation from original resolved.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 72,
+      "text": "See the Supplementary Materials for a detailed summary of all demographic differences, across a variety of psychological constructs.",
+      "tag": "new_tag_needed",
+      "tier": "unknown",
+      "parent_id": null,
+      "note": "A reader-direction/navigational pointer to supplementary materials with no substantive rhetorical work; no existing tag captures this function.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 73,
+      "text": "Third, we are skeptical that GPT responses can make nomological networks in well-established theoretical frameworks.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a third critical limitation of LLMs, challenging claims about their utility as human participant substitutes.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "M2->M3 cycle: paper returns to gap/critique language after M3 findings block."
+    },
+    {
+      "id": 74,
+      "text": "Dillion et al. mention that 'researchers can give LLMs different questions and see if they act as expected within a nomological net (e.g. form a reliable scale).'",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific claim from a cited prior paper about a proposed validation strategy for LLMs.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 75,
+      "text": "To demonstrate how GPT constructs a moral psychological nomological network, we looked at inter-correlations between moral domains (Fig. 1(b)) and the network of moral domains based on partial correlations (Fig. 1(c)) in a diverse human sample (N = 3,902) and 1,000 GPT queries.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes another empirical analysis conducted by the authors to test the claim in [74].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 76,
+      "text": "As shown in Fig. 1(b) and (c), the networks of moral values are substantially different, indicating that GPT struggles to produce previously established nomological networks.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the finding of the analysis described in [75].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 77,
+      "text": "In sum, probing LLMs can be a fruitful direction for future research.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the positive value/significance of studying LLMs — a positive qualification before the cautionary summary.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 78,
+      "text": "However, we caution against the replacement of human participants with LLMs, because (i) synthetic AI-simulated sampling would ignore psychological and linguistic diversity that the field desperately needs in order to investigate beyond WEIRD psychology; (ii) LLMs often fail to show meaningful variance (or diversity) in their judgments; (iii) the outputs of current LLMs do not seem to replicate previously established nomological networks; and (iv) reliance on LLMs may foster epistemic complacency and illusions of understanding, potentially resulting in scientific monocultures that suppress diverse methods, curtail innovation, and increase vulnerability to errors.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Synthesizes the paper's empirical and conceptual arguments into the paper's core position statement against replacing human participants.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 79,
+      "text": "Overall, probing the psychology of LLMs is scientifically meaningful and practically important.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reasserts the positive significance of LLM research as counterbalance to the cautions expressed.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 80,
+      "text": "However, it should not replace the scientific study of Homo sapiens but rather supplement it.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the paper's central normative tension — LLMs as supplement not replacement.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 81,
+      "text": "Of course, these limitations do not imply that all uses of LLMs should be avoided in psychological research.",
+      "tag": "new_tag_needed",
+      "tier": "unknown",
+      "parent_id": null,
+      "note": "Rhetorical hedge/disclaimer qualifying the scope of the prior cautionary argument; no existing tag captures this scope-limiting function.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

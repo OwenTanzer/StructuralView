@@ -1,0 +1,554 @@
+{
+  "paper": {
+    "id": "duenezguzman_2024",
+    "title": "duenezguzman 2024",
+    "authors": [
+      "Duenezguzman"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction is built on a persistent **interlacing of M1 territory and M2 gap** sentences, cycling through four distinct limitation zones (static datasets, RL convergence, self-generated data degradation, exploration-exploitation trade-off) before committing to M3. **Two M3 announcements** anchor the argument: an early thesis at sentence 15 and a fuller construct-naming block from sentences 27–32. The paper's central move is reframing antagonism as synergy — **exploration-exploitation becomes 'compounding innovation'** — before a brief M2 return (sentences 33, 35) sharpens the remaining gap and cues the final structural announcement.",
+  "structured_arc": "M1 -> M2 -> M1 -> M2 -> M3 -> M1 -> M2 -> M1 -> M2 -> M3 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        2
+      ],
+      "role": "Establishes the scaling thesis as the foundational principle of modern AI, anchoring the entire introduction in a widely accepted empirical lesson."
+    },
+    {
+      "move": "M2",
+      "span": [
+        3,
+        6
+      ],
+      "role": "Identifies the structural limitation of static, exogenous datasets and asserts the necessity of self-generated data, opening the first gap the paper will address."
+    },
+    {
+      "move": "M1",
+      "span": [
+        7,
+        9
+      ],
+      "role": "Introduces reinforcement learning as the existing solution to self-generated data, building up the expectation of dramatic RL results to set up an immediate contrast."
+    },
+    {
+      "move": "M2",
+      "span": [
+        10,
+        10
+      ],
+      "role": "Deflates the RL expectation with a single contrastive pivot, signalling that the anticipated scaling gains do not materialise."
+    },
+    {
+      "move": "M1",
+      "span": [
+        11,
+        13
+      ],
+      "role": "Documents two concrete failure modes (RL convergence and NLP self-training) to substantiate the gap, while also surveying the current wave of self-generated data research."
+    },
+    {
+      "move": "M2",
+      "span": [
+        14,
+        14
+      ],
+      "role": "Pins down a specific degradation mechanism in self-generated NLP training, sharpening the gap immediately before the first thesis announcement."
+    },
+    {
+      "move": "M3",
+      "span": [
+        15,
+        15
+      ],
+      "role": "Delivers a first, compressed thesis announcement — multi-scale, multi-agent self-organisation as the path beyond the data-degradation constraint — planting the paper's flag early before cycling back."
+    },
+    {
+      "move": "M1",
+      "span": [
+        16,
+        17
+      ],
+      "role": "Resumes territory review by characterising when RL amplification works well, establishing the boundary condition that makes the next gap concrete."
+    },
+    {
+      "move": "M2",
+      "span": [
+        18,
+        19
+      ],
+      "role": "Introduces the large-state-space failure mode — novel behaviours cannot be discovered by chance — and mechanistically unpacks why no learning gradient is available."
+    },
+    {
+      "move": "M1",
+      "span": [
+        20,
+        25
+      ],
+      "role": "Surveys the landscape of existing solutions (adaptive environments, intrinsic motivation, curiosity models) to show the field's best responses to the exploration problem, setting up the residual gap."
+    },
+    {
+      "move": "M2",
+      "span": [
+        26,
+        26
+      ],
+      "role": "Identifies the pernicious residual problem that all prior approaches leave unsolved: the direction of exploration still requires external designer decisions."
+    },
+    {
+      "move": "M3",
+      "span": [
+        27,
+        32
+      ],
+      "role": "Names and defines the paper's central construct — compounding innovation — situates it in biological evolution and human cultural history, and reframes exploration-exploitation from trade-off to synergy."
+    },
+    {
+      "move": "M2",
+      "span": [
+        33,
+        33
+      ],
+      "role": "Poses the rhetorical question of whether biological compounding innovation can be replicated artificially, briefly reopening the gap to motivate the paper's empirical and design programme."
+    },
+    {
+      "move": "M3",
+      "span": [
+        34,
+        34
+      ],
+      "role": "Advances multi-agent systems as a candidate path to ongoing learning, pivoting back toward the paper's positive contribution."
+    },
+    {
+      "move": "M2",
+      "span": [
+        35,
+        35
+      ],
+      "role": "Concedes that current multi-agent algorithms still fail at compounding innovation, preserving the niche just before the closing structural announcement."
+    },
+    {
+      "move": "M3",
+      "span": [
+        36,
+        37
+      ],
+      "role": "Announces the paper's organisational plan — three biologically-grounded social structures — and previews the first (collective living), signalling how the argument will unfold."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "A key lesson in artificial intelligence (AI) history is that the extent to which intelligent behaviour emerges in learning systems scales with the size of the dataset used for training.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Current large models are trained on vast datasets and obtain human-level performance on a wide variety of tasks, especially in natural language, but increasingly in multi-modal domains.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Though large, these training datasets are exogenous to the models they train; consequently, their learning is dependent upon, and limited to, relationships in the data.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a structural limitation of the current paradigm — datasets are static and external.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Interlaced M1/M2: contrast sentence immediately follows territory-establishing sentences"
+    },
+    {
+      "id": 4,
+      "text": "There may be limits to what can be achieved by training on any such static dataset, even if it is very large.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of a fundamental limitation; establishes it as real and worth attending to.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "For example, an algorithm trained on all of human knowledge before the performance of the double-slit experiment which catalysed the development of quantum physics would have no way of predicting the outcome in advance.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Concrete illustration of the limitation claimed in [4], which is a primary (emph) parent.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "To overcome this, algorithms need to generate their own data.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a necessary condition for progress; establishes its importance as motivation for the paper's direction.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Reinforcement learning (RL) algorithms do this.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established property of RL systems.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Interlaced M1/M2: returns to territory after gap framing"
+    },
+    {
+      "id": 8,
+      "text": "They learn by interacting with their environment and observing new states reached through their own behaviour, in effect generating continually-growing datasets for themselves.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 7,
+      "note": "Defines how RL achieves self-generated data, unpacking [7] (tempstat parent). Legal chain.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "RL agents running in simulation can generate data indefinitely, so if their cognitive abilities scale with dataset size, you would expect dramatic results from this approach.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and expected power of RL's data-generation capacity; functions as a primary claim establishing why this approach matters. Corrected from extension:speculative — [8] was a secondary parent, which is illegal.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "However, this is not what typically happens.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension against the expectation set up in [9].",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Interlaced M1/M2: counter-claim against prior territory sentence"
+    },
+    {
+      "id": 11,
+      "text": "In small and stationary worlds, RL agents converge to behaviours that repeatedly execute the same actions in the same states, generating no new data.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established finding about RL convergence behavior.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Interlaced M1/M2: backs up the contrast in [10] with a documented finding"
+    },
+    {
+      "id": 12,
+      "text": "When this happens their learning stagnates.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 11,
+      "note": "States the consequence of the convergence described in [11] (tempstat parent). Legal chain.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "In natural language processing, a wave of research is seeing performance improvement from models generating their own training data in sophisticated ways.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a current trend in the NLP literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "However, naively training a model on data generated by itself tends to remove the tails of the distribution, degrading the data stream produced and thus limiting subsequent learning.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation/failure mode of the self-generated data approach described in [13].",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: gap identified immediately after territory claim"
+    },
+    {
+      "id": 15,
+      "text": "In this article, we argue that next-level intelligent systems may move beyond this constraint by continually generating novel data in self-organising multi-scale, multi-agent interactions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the thesis and purpose of the current paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "First M3 announcement; followed by cycling back to M1/M2"
+    },
+    {
+      "id": 16,
+      "text": "RL algorithms strengthen rewarding actions even if they are rarely emitted, effectively amplifying the most profitable available behaviour.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established property of RL algorithms.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "M2→M3 cycling: returns to territory after first M3 announcement"
+    },
+    {
+      "id": 17,
+      "text": "This works well if the initial behaviour distribution covers all relevant states.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a known boundary condition of RL — an established technical fact about when the approach succeeds, not speculation. Corrected from extension:speculative.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "However, when the world is large enough that the initial behaviour distribution covers only a relatively tiny subspace, an intelligent agent must invent wholly new behaviours which they are extraordinarily unlikely to produce by accident.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the limitation that applies when the state space is large, contrasting with [17].",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: gap contrasting with prior territory sentence"
+    },
+    {
+      "id": 19,
+      "text": "The agent's data stream may change through its actions, but the waiting time until a complex rewarding behaviour is emitted by chance may be so long that no learning gradient is available, thus such changes do not motivate further exploration.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Elaborates mechanistically on the limitation described in [18] (contrast parent). Legal chain.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "One way to improve exploration in RL algorithms is to have the environment adapt to the agent.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established approach in the literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Interlaced M1/M2: reviews prior work addressing the gap"
+    },
+    {
+      "id": 21,
+      "text": "Another is to make exploration an explicit part of the goal.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports another established approach; parallel to [20].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "In intrinsic motivation models, the latter is achieved by incorporating models of curiosity that seek novel states or via agents that generate their own intrinsic goals.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports specific implementations of the approach mentioned in [21].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "However, this leads to a trade-off: computation must be balanced between seeking new goals (exploration), and improving behaviours on existing goals (exploitation).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of the intrinsic motivation approach — the exploration-exploitation trade-off.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: gap identified against prior territory"
+    },
+    {
+      "id": 24,
+      "text": "Substantial research effort has been devoted to balancing this trade-off, and some bounds are known.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes the state of prior research on the exploration-exploitation trade-off.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Interlaced M1/M2: territory review of prior work on the gap"
+    },
+    {
+      "id": 25,
+      "text": "Some approaches attempt to evade this trade-off, for example by focusing on the intrinsic goals where they make most progress.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an existing class of approaches that try to sidestep the trade-off.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "But a pernicious difficulty remains: even if the designer can avoid the exploration-exploitation trade-off, they must still decide the direction of exploration.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a residual problem not solved by existing approaches; a gap/limitation claim against [25].",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: residual gap after survey of prior work"
+    },
+    {
+      "id": 27,
+      "text": "By contrast, in the view we develop here, exploration and exploitation become synergistic rather than antagonistic.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the paper's alternative framework in contrast to the prior literature.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Second M3 block following M2→M3 cycling"
+    },
+    {
+      "id": 28,
+      "text": "Exploitation drives exploration in the appropriate direction as innovation builds upon prior innovation.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Unpacks the synergistic relationship claimed in [27] (contribution parent). Legal chain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "We call this effect compounding innovation.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and names the central theoretical construct the paper will use.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "Mechanistically, compounding innovation occurs when exploitation continuously generates new data that creates opportunities for learning: exploration by exploitation.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Defines the mechanism underlying the construct named in [29] (framedef parent). Legal chain.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "We argue compounding innovation arises in biological evolution because the environment continually changes with innovation due to specific types of interactions between biological units.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a core argument of the paper about the biological basis of compounding innovation.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "These interactions gave rise to human cultural evolution—the process that generated the data on which our most intelligent algorithms have trained.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes a cross-domain claim linking biological interactions to cultural evolution and AI training data; treated as tempstat per Rule 3 (cross-domain generalization).",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "Can we create analogous interactions in artificial learning systems?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from new_tag_needed. The rhetorical question identifies an open, unresolved problem the paper is motivated to address — the core function of nostat. Rhetorical question form does not exclude the tag.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "Brief return to M2 gap-framing via rhetorical question after M3 claims; part of M2→M3 cycling"
+    },
+    {
+      "id": 34,
+      "text": "In a multi-agent system, the behaviour of any one agent influences the data streams of others, suggesting a possible path to ongoing learning.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and relevance of multi-agent systems as a potential solution; establishes a phenomenon worth attending to.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "Yet contemporary multi-agent algorithms still fail at compounding innovation.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a gap/limitation — current multi-agent approaches do not yet achieve compounding innovation.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Final M2 gap before closing M3 structural announcement"
+    },
+    {
+      "id": 36,
+      "text": "Here, we consider three broad forms of social structure that arise in biological systems, each characterised by distinct types of social interaction that may contribute to compounding innovation in different ways.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the organizational scope and structure of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Final M3 block; announces paper structure"
+    },
+    {
+      "id": 37,
+      "text": "First, we discuss the implications of 'collective living': how competition between agents creates novel data by disrupting local equilibria, often generating naturally emergent sequences of learning opportunities that stimulate behavioural innovation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the first major topic/section and its argument; part of the paper's structural plan introduced in [36].",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

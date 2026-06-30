@@ -1,0 +1,202 @@
+{
+  "paper": {
+    "id": "caucheteux_2023",
+    "title": "caucheteux 2023",
+    "authors": [
+      "Caucheteux"
+    ],
+    "year": 2023,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction builds credibility for deep language models as brain proxies (S1–3) before pivoting hard on a **persistent gap** between model and human language processing (S4–6). The niche is constructed in two moves: first via **predictive coding theory** as an explanatory framework (S7), then via a brief return to prior territory (S8) before a sharpened gap statement (S9–10) — an interlaced M1/M2 structure that isolates exactly what is unknown. The paper then occupies that niche cleanly, announcing the study design, the enhancement strategy, and a **hierarchical cortical finding** that validates predictive coding theory empirically (S11–13).",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        3
+      ],
+      "role": "Establishes the research territory by documenting recent progress in deep language models and their brain alignment, culminating in the key finding that predictive training drives brain-like computation — setting up the contrast to follow."
+    },
+    {
+      "move": "M2",
+      "span": [
+        4,
+        7
+      ],
+      "role": "Counters the optimistic territory review by cataloguing model failures relative to human cognition, then introduces predictive coding theory as the explanatory lens that reframes those failures as a researchable question about timescale and representational depth."
+    },
+    {
+      "move": "M1",
+      "span": [
+        8,
+        8
+      ],
+      "role": "Briefly re-enters the territory to acknowledge prior brain-prediction work, providing a baseline that the subsequent gap statement (S9–10) will directly undercut."
+    },
+    {
+      "move": "M2",
+      "span": [
+        9,
+        10
+      ],
+      "role": "Sharpens the niche by contrasting prior surprisal-based approaches with their fundamental limitation — reduction to a single token probability — and stating the resulting unknown: the nature and temporal scope of predicted representations."
+    },
+    {
+      "move": "M3",
+      "span": [
+        11,
+        13
+      ],
+      "role": "Occupies the niche in three steps: announcing the large-scale fMRI study design, describing the analytic strategy of enhanced multi-level predictions, and pre-announcing the hierarchical cortical finding that validates predictive coding theory."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "In less than three years, deep learning has made considerable progress in text generation, translation and completion thanks to algorithms trained with a simple objective: predicting words from their nearby context.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Remarkably, the activations of these models have been shown to linearly map onto human brain responses to speech and text.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Additionally, this mapping primarily depends on the algorithms' ability to predict future words, hence suggesting that this objective suffices to make them converge to brain-like computations.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "The speculative framing is part of the cited finding, not the authors' own speculation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "Yet, a gap persists between humans and these algorithms: in spite of considerable training data, current language models are challenged by long story generation, summarization and coherent dialogue and information retrieval; they fail to capture several syntactic constructs and semantics properties and their linguistic understanding is superficial.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "For instance, they tend to incorrectly assign the verb to the subject in nested phrases like 'the keys that the man holds ARE here'.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Concrete example of the limitation stated in [4], which is the primary parent.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Similarly, when text generation is optimized on next-word prediction only, deep language models generate bland, incoherent sequences or get stuck in repetitive loops.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:illustrative. This is a cited empirical claim and cannot have a secondary-tagged sentence ([5]) as its direct parent. It independently reports a finding about model behavior, making tempstat appropriate.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Continues counter-claim block despite tempstat tag; rhetorically functions as additional evidence for the gap between models and human cognition."
+    },
+    {
+      "id": 7,
+      "text": "Predictive coding theory offers a potential explanation to these shortcomings; while deep language models are mostly tuned to predict the very next word, this framework suggests that the human brain makes predictions over multiple timescales and levels of representations across the cortical hierarchy (Fig. 1a).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces predictive coding theory as the analytical framework the paper will deploy.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "Frames the shortcoming as an open explanatory question via predictive coding theory; functions as question-raising in the niche."
+    },
+    {
+      "id": 8,
+      "text": "Previous work already evidenced speech predictions in the brain by correlating word or phonetic surprisal, that is, the extent to which a word or phone is expected, with functional magnetic resonance imaging (fMRI), electroencephalography, magnetoencephalography and electrocorticography.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Brief return to territory review before a sharper gap statement; interlaced M1 within M2 block."
+    },
+    {
+      "id": 9,
+      "text": "However, such surprisal estimates derive from models trained to predict the very next word or phoneme and reduce down their output to a single number, that is, the probability of the next token.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Consequently, the nature of the predicted representations and their temporal scope are largely unknown.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "In this study, we address these issues by analysing the brain signals of 304 individuals listening to short stories while their brain activity is recorded with fMRI.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "After confirming that deep language algorithms linearly map onto brain activity, we show that enhancing these models with long-range and multi-level predictions improves such brain mapping.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Critically, and in line with predictive coding theory, our results reveal a hierarchical organization of language predictions in the cortex, in which the highest areas predict the most distant and highest-level representations.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

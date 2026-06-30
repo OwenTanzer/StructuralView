@@ -1,0 +1,367 @@
+{
+  "paper": {
+    "id": "clark_1991",
+    "title": "clark 1991",
+    "authors": [
+      "Clark"
+    ],
+    "year": 1991,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction is dominated by extended M1 territory-building that does double duty: it both reviews established ground (common ground, coordination) and progressively installs **grounding** as the paper's central construct. **M2 is minimal and implicit** — sentences 20–23 gesture at situational variability and importance rather than announcing a gap in the literature. The pivot to **M3 is crisp and well-bounded**, naming two focal factors (purpose, medium) then providing a two-step structural roadmap.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        9
+      ],
+      "role": "Establishes joint action and coordination as the foundational phenomenon, introduces the content/process distinction, and anchors common ground as the prerequisite for all collective action."
+    },
+    {
+      "move": "M1",
+      "span": [
+        10,
+        19
+      ],
+      "role": "Narrows the territory to communication as the primary collective activity, applies the content/process framework to language, and formally names and defines 'grounding' as the key theoretical construct via citations."
+    },
+    {
+      "move": "M2",
+      "span": [
+        20,
+        23
+      ],
+      "role": "Signals that grounding varies systematically across situations (implicit gap) and asserts its fundamental importance, jointly motivating the comparative inquiry without citing a literature gap."
+    },
+    {
+      "move": "M3",
+      "span": [
+        24,
+        26
+      ],
+      "role": "Announces the chapter's investigative scope and names the two focal factors — purpose and medium — that will organize the analysis."
+    },
+    {
+      "move": "M3",
+      "span": [
+        27,
+        28
+      ],
+      "role": "Provides the structural roadmap, signaling the chapter's two-phase organization: grounding in face-to-face conversation first, then variation across purposes and media."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "It takes two people working together to play a duet, shake hands, play chess, waltz, teach, or make love.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opens by asserting the fundamental reality of joint action as a phenomenon worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "To succeed, the two of them have to coordinate both the content and process of what they are doing.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a core claim about joint action — that it requires dual coordination — establishing the significance of the phenomenon.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Alan and Barbara, on the piano, must come to play the same Mozart duet.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Concrete illustration of content coordination from the prior sentence.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "This is coordination of content.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names a conceptual distinction the paper will use as analytical machinery.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "They must also synchronize their entrances and exits, coordinate how loudly to play forte and pianissimo, and otherwise adjust to each other's tempo and dynamics.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates process coordination using the same piano example; re-parents to sentence 2 (emph, primary), skipping sentence 4 (framedef, primary also valid).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "This is coordination of process.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names the second term of the content/process distinction introduced in sentence 2.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "They cannot even begin to coordinate on content without assuming a vast amount of shared information or common ground—that is, mutual knowledge, mutual beliefs, and mutual assumptions (Clark & Carlson, 1982; Clark & Marshall, 1981; Lewis, 1969; Schelling, 1960).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established theoretical claim (with multiple citations) that coordination requires common ground.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "And to coordinate on process, they need to update their common ground moment by moment.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes a direct positive assertion about what process coordination requires; not a speculation but a claim about necessity. Parent is sentence 7 (tempstat).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "All collective actions are built on common ground and its accumulation.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Broad assertion of the importance and universality of common ground across all collective action.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Communication, of course, is a collective activity of the first order.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the primacy and significance of communication as a collective activity, anchoring the pivot from joint action generally to communication specifically.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "When Alan speaks to Barbara, he must do more than merely plan and issue utterances, and she must do more than just listen and understand.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts that communication involves more than the classical speaker/hearer model captures — establishing the significance of the gap the paper will address.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "They have to coordinate on content (Grice, 1975, 1978).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims with citation support that communication requires content coordination.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "When Alan refers to 'my dogs,' the two of them must reach the mutual belief that he is referring to his feet.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates content coordination in communication with a concrete example. Parent is sentence 12 (tempstat, primary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "They must also coordinate on process.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts that process coordination is also required in communication, extending the content/process framework to the communication domain.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Speech is evanescent, and so Alan must try to speak only when he thinks Barbara is attending to, hearing, and trying to understand what he is saying, and she must guide him by giving him evidence that she is doing just this.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates process coordination in speech with the Alan/Barbara scenario. Parent is sentence 14 (emph, primary).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Accomplishing this, once again, requires the two of them to keep track of their common ground and its moment-by-moment changes.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes a direct positive assertion about what accomplishing process coordination requires; asserts a claim about the phenomenon rather than merely synthesizing. Parent is sentence 14 (emph, primary).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "In communication, common ground cannot be properly updated without a process we shall call grounding (see Clark & Schaefer, 1987, 1989; Clark & Wilkes-Gibbs, 1986; Isaacs & Clark, 1987).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names the central theoretical construct \"grounding\" and anchors it with citations. This is the paper's key conceptual object.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "In conversation, for example, the participants try to establish that what has been said has been understood.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates what grounding involves in the conversational context. Parent is sentence 17 (framedef, primary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "In our terminology, they try to ground what has been said—that is, make it part of their common ground.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Unpacks and defines the term \"grounding\" introduced in sentence 17. Parent is sentence 17 (framedef, primary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "But how they do this changes a great deal from one situation to the next.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the variability of grounding across situations as a real and significant phenomenon, motivating the paper's comparative agenda.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Implicit gap-indication: signals that understanding situational variation in grounding is an open problem. M2 opens here."
+    },
+    {
+      "id": 21,
+      "text": "Grounding takes one shape in face-to-face conversation but another in personal letters.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates the situational variability of grounding claimed in sentence 20. Parent is sentence 20 (emph, primary).",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "It takes one shape in casual gossip but another in calls to directory assistance.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Continues illustrating the variability of grounding across communicative contexts. Re-parents to sentence 20 (emph, primary), skipping sentence 21 (secondary).",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "Grounding is so basic to communication—indeed, to all collective actions—that it is important to understand how it works.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the fundamental importance and significance of grounding, motivating the paper's inquiry.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "Raises the implicit question of how grounding works, completing the niche before M3 occupies it."
+    },
+    {
+      "id": 24,
+      "text": "In this chapter we take up two main factors that shape it.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the scope and structure of the paper's investigation.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "One is purpose—what the two people are trying to accomplish in their communication.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the first factor (purpose) that the chapter will examine.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "The other is the medium of communication—the techniques available in the medium for accomplishing that purpose, and what it costs to use them.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the second factor (medium) that the chapter will examine.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "We begin by briefly describing grounding as it appears in casual face-to-face conversation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structural organization — the starting point of the chapter's argument.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "We then consider how it gets shaped by other purposes and in other media.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the subsequent scope of the chapter, completing the roadmap.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

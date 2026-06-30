@@ -1,0 +1,1091 @@
+{
+  "paper": {
+    "id": "brennan_1996",
+    "title": "brennan 1996",
+    "authors": [
+      "Brennan"
+    ],
+    "year": 1996,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction opens with a **tight M1→M2→M3 pivot** in just six sentences, establishing ahistoricity as the shared blind spot of all current theories before immediately announcing the paper's corrective argument. It then executes an unusually **extended M1/M2 cycling block** (sentences 7–34) that surveys ahistorical factors while repeatedly surfacing their inadequacy, keeping the niche visible throughout the review. From sentence 35 onward, the paper shifts into **M3 territory-building**, presenting its experimental paradigm and four-factor framework — but this M3 is heavily interlaced with fresh M2 gap moves targeting each prior account in turn (recency, then recency+frequency). The result is a **layered argumentative structure** where each new factor the authors introduce is preceded by a gap that only their framework can fill.",
+  "structured_arc": "M1 -> M2 -> M3 -> M1 -> M2 -> M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        4
+      ],
+      "role": "Establishes the research territory by characterising the field of reference production and surveying the two dominant classes of theoretical account (minimally-informative vs. over-informative theories)."
+    },
+    {
+      "move": "M2",
+      "span": [
+        5,
+        5
+      ],
+      "role": "Identifies the single shared limiting assumption — ahistoricity — that unites all existing theories, creating the niche the paper will occupy."
+    },
+    {
+      "move": "M3",
+      "span": [
+        6,
+        6
+      ],
+      "role": "Announces the paper's central argument (speakers exploit past and potential interaction) and its experimental purpose, directly occupying the niche just opened."
+    },
+    {
+      "move": "M1",
+      "span": [
+        7,
+        14
+      ],
+      "role": "Returns to territory review, introducing the principle of contrast and the two best-supported ahistorical factors (informativeness and Gricean quantity) with concrete examples, building the empirical baseline the paper will later challenge."
+    },
+    {
+      "move": "M2",
+      "span": [
+        15,
+        15
+      ],
+      "role": "Inserts a brief gap moment signalling that informativeness alone is insufficient, pivoting the review toward additional complicating factors."
+    },
+    {
+      "move": "M1",
+      "span": [
+        16,
+        23
+      ],
+      "role": "Extends the territory review to cover lexical availability and perceptual salience as further ahistorical factors, populating the theoretical landscape the paper's historical model must ultimately supersede."
+    },
+    {
+      "move": "M2",
+      "span": [
+        24,
+        27
+      ],
+      "role": "Names the residual problem that ahistorical accounts cannot solve — the high and systematic variability in speakers' lexical choices — and quantifies its extent with two empirical demonstrations."
+    },
+    {
+      "move": "M1",
+      "span": [
+        28,
+        30
+      ],
+      "role": "Establishes centrality by articulating two motivations (practical and theoretical) for understanding lexical variability, framing the research problem as broadly significant before returning to the gap."
+    },
+    {
+      "move": "M2",
+      "span": [
+        31,
+        31
+      ],
+      "role": "Restates the core limiting assumption of all reviewed accounts — no past or future interaction — as a named structural gap, echoing sentence 5 and preparing the transition to historical models."
+    },
+    {
+      "move": "M1",
+      "span": [
+        32,
+        33
+      ],
+      "role": "Reports established findings on lexical entrainment in conversation, introducing the historical literature that will anchor the paper's framework."
+    },
+    {
+      "move": "M2",
+      "span": [
+        34,
+        34
+      ],
+      "role": "Sets up the open empirical question by asserting that historical and ahistorical models make divergent predictions, framing the A/B/C paradigm as the instrument for adjudicating between them."
+    },
+    {
+      "move": "M3",
+      "span": [
+        35,
+        40
+      ],
+      "role": "Presents the paper's own experimental paradigm (A/B/C trial structure) in detail, occupying the niche by introducing the specific apparatus through which the theoretical distinctions will be tested."
+    },
+    {
+      "move": "M2",
+      "span": [
+        41,
+        44
+      ],
+      "role": "Poses the key unresolved question (what will the director do in C trials?) and derives the contrasting predictions of ahistorical and historical models, making the gap concrete and testable within the paper's own paradigm."
+    },
+    {
+      "move": "M1",
+      "span": [
+        45,
+        45
+      ],
+      "role": "Reports the ahistorical model's specific prediction for C trials, giving the baseline against which the paper's historical account will be measured."
+    },
+    {
+      "move": "M2",
+      "span": [
+        46,
+        46
+      ],
+      "role": "Introduces the historical model's contrasting prediction, framing overinformativeness in C trials as the phenomenon demanding explanation."
+    },
+    {
+      "move": "M3",
+      "span": [
+        47,
+        48
+      ],
+      "role": "Announces the paper's four-factor framework and introduces the first factor (recency), beginning the systematic construction of the historical model that constitutes the paper's theoretical contribution."
+    },
+    {
+      "move": "M1",
+      "span": [
+        49,
+        54
+      ],
+      "role": "Reviews Garrod and Anderson's output/input coordination principle and its a priori advantages, positioning prior work as a partial precursor to the paper's recency factor before identifying its limits."
+    },
+    {
+      "move": "M2",
+      "span": [
+        55,
+        58
+      ],
+      "role": "Identifies two specific limitations of the recency-only account — it cannot explain initial reference or accommodate the observed evolution of description schemes — motivating the need for additional factors."
+    },
+    {
+      "move": "M1",
+      "span": [
+        59,
+        62
+      ],
+      "role": "Reports prior authors' own modifications to the output/input principle, acknowledging the state of the art before showing that even these modifications leave a residual gap."
+    },
+    {
+      "move": "M2",
+      "span": [
+        63,
+        64
+      ],
+      "role": "Identifies the residual limitation of even the modified recency account within the paper's own paradigm, directly setting up the need for the frequency-of-use factor."
+    },
+    {
+      "move": "M3",
+      "span": [
+        65,
+        72
+      ],
+      "role": "Introduces, names, and elaborates the second factor (frequency of use), deriving its novel predictions for A/B/C trial behavior and distinguishing it from recency — the core theoretical innovation of this section."
+    },
+    {
+      "move": "M2",
+      "span": [
+        73,
+        73
+      ],
+      "role": "Identifies the limitation of recency and frequency of use taken together — they cannot account for partner-sensitivity — opening the niche for the remaining two factors."
+    },
+    {
+      "move": "M1",
+      "span": [
+        74,
+        74
+      ],
+      "role": "Reports empirical evidence that partner interaction (not just precedent) shapes reference shortening, grounding the gap in established findings."
+    },
+    {
+      "move": "M3",
+      "span": [
+        75,
+        80
+      ],
+      "role": "Announces what a complete historical model must include (adaptability to partner feedback), names the next two factors (provisionality and partner specificity), and grounds them in the collaborative view of language use — extending the paper's framework toward its full four-factor account."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "When speakers refer to an object, as with the loafer, one of their goals is to get their addressees to identify the object.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opens the paper by asserting the existence and significance of a core phenomenon in reference production.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Current theories of reference differ on how they manage that.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Characterizes the state of the field.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "By some theories, speakers design each referring expression with enough information, but no more than enough, to distinguish the referent from its surroundings.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports one class of existing theoretical account.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "By other theories, speakers may include more information than necessary.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a contrasting class of existing theoretical account.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Both of these types of theories are ahistorical: They assume that speakers design references without regard to past or potential interaction with addressees.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a tension — both theory types share a limiting assumption (ahistoricity) that the paper will argue against.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "In this article, we argue that speakers exploit both past and potential interactions, and we test several alternatives for how they do that.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's argument and purpose.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Labels reflect conceptualizations.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Bolded section header in original text; announces the sub-section topic without making an independent claim.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "M2->M3 cycling: returns to M1 territory review after initial M3 announcement"
+    },
+    {
+      "id": 8,
+      "text": "According to the principle of contrast (E. V. Clark, 1987), all forms of language contrast in meaning, and there are no true synonyms (see also Bolinger, 1977; H. H. Clark & Clark, 1979; Levelt, 1989).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established theoretical principle from the literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "So when speakers refer to the loafer, they are conceptualizing an object, for current purposes, as a loafer, not merely as a piece of clothing, shoe, or casual shoe (Brown, 1958a, 1958b).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Applies the principle of contrast to a concrete example; subordinate to [8].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "How do speakers choose and mark the particular conceptualization they use?",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Rhetorical question that opens the topic sequence on ahistorical factors; no gap is identified, no finding reported — purely organizational.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Let us first consider three ahistorical factors: informativeness, lexical availability, and perceptual salience.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Structural announcement introducing the ahistorical factors sequence; no independent claim.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "The best known proposal is that speakers simply design their referring expressions to distinguish a referent from a set of alternatives (Brown, 1958b; Olson, 1970): They choose the most concise expression that will enable their addressees to pick out the referent uniquely.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the dominant established proposal in the reference literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "By Grice's (1975) maxim of quantity, for example, speakers try to provide enough information (\"Make your contribution as informative as is required\") but without providing too much (\"Do not make your contribution more informative than is required\"; Grice, 1975, p. 26; see also Horn, 1984; Levinson, 1983).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports Grice's maxim as a specific theoretical account.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "So if they want to refer to a brown loafer in a set consisting of the loafer, a sneaker, and a high-heeled shoe, they should not use the shoe, which is not informative enough, or the brown loafer, which is more informative than required, but rather the loafer.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 13,
+      "note": "Provides a concrete example illustrating the Gricean maxim; subordinate to [13].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Informativeness, however, may be overridden by other factors.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension against the informativeness account.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Interlaced M1/M2: brief gap moment within extended territory review"
+    },
+    {
+      "id": 16,
+      "text": "One such factor is lexical availability—how easy it is to conceptualize a thing in one way and to retrieve and produce a corresponding label.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines \"lexical availability\" as a named factor used in the paper's framework.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "For many objects, the most available labels are basic-level nouns—dog, for example, as opposed to animal or terrier (Cruse, 1977; Murphy & Smith, 1982; Rosch, Mervis, Gray, Johnson, & Boyes-Braem, 1976).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established findings about basic-level terms and lexical availability.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "When the alternatives consist of a terrier, a bicycle, and a hammer, by Grice's (1975) maxim of quantity speakers should refer to the terrier as the animal.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 17,
+      "note": "Illustrates the conflict between informativeness and availability with a concrete example; subordinate to [17].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "In fact, they are more likely to choose dog even though it is more informative than required.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an empirical finding that speakers violate Gricean informativeness in favor of basic-level terms.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "Another factor that can override informativeness is perceptual salience.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces \"perceptual salience\" as another named factor in the paper's analytical framework.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "Sometimes speakers describe what is salient about an object (e.g., small black terrier) rather than just those features that will distinguish it from its neighbors (Ford & Olson, 1975; Mangold & Pobel, 1988).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports findings supporting the role of perceptual salience in referential choice.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "When the set of alternative objects is large, speakers may be overinformative if they begin their references before they have taken in the entire array (Deutsch & Pechmann, 1982; Pechmann, 1989).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports empirical findings about overinformativeness in large arrays.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "According to one account of lexical choice (Cruse, 1977), the most common term that is also informative enough should be considered to be unmarked; all other terms are marked.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports Cruse's theoretical account of markedness in lexical choice.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Even in light of informativeness, availability, and salience, there is still a great deal of variability in speakers' lexical choices.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of ahistorical accounts — they cannot fully explain observed variability.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: gap named explicitly after extended territory review"
+    },
+    {
+      "id": 25,
+      "text": "The problem is that most objects can be conceptualized in indefinitely many ways.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the scope and significance of the conceptualization variability problem.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "In one study, when people had to label an action to be carried out by a computer, the likelihood that any two people would use the same label, conceptualizing the action in the same way, was only 7-18% (Furnas, Landauer, Gomez, & Dumais, 1987).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific empirical finding illustrating the extent of lexical variability.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "In another study, pairs of people in conversation referred to the same abstract geometric form variously as \"the rice bag,\" \"the whale,\" \"the complacent one,\" \"the stretched-out stop sign,\" and \"the baby in a straitjacket\" (Schober & Clark, 1989, p. 217).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports another empirical finding demonstrating lexical variability in referring.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "We would like to understand variability and consistency in lexical choices for at least two reasons.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Structural announcement that two motivations will follow; no independent rhetorical claim.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Centrality claim framing: motivates why the phenomenon matters"
+    },
+    {
+      "id": 29,
+      "text": "First, predicting lexical choices should improve speech recognition by machines (Brennan, Ries, Rubman, & Lee, 1996).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the practical significance of understanding lexical choice.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "Second, if lexical choices reflect conceptual coordination in conversation (H. H. Clark & Wilkes-Gibbs, 1986; Garrod & Anderson, 1987), then they should tell us not only about individual processes of language use, but also about distributed ones.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts broader theoretical significance of the research topic.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "The factors described so far account for \"one-shot\" referring; the tacit assumption is that there is no past or future interaction between speakers and addressees.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a fundamental limitation of ahistorical accounts — they presuppose no interaction history.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Return to M2 gap: identifies shared limiting assumption of reviewed accounts"
+    },
+    {
+      "id": 32,
+      "text": "In conversation—the primary site of language use—it is known that people design their referring expressions on the basis of their past references to the same objects (Carroll, 1980; H. H. Clark & Wilkes-Gibbs, 1986; Krauss, 1987; Krauss & Weinheimer, 1964, 1966; Schober & Clark, 1989).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established findings that conversational reference is shaped by history.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "With repeated references to objects, they tend to reuse the same terms as they coordinate their perspectives, a phenomenon that Garrod and Anderson (1987) have labeled lexical entrainment.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established phenomenon of lexical entrainment and its label from prior literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "Historical models differ from ahistorical models in their predictions about lexical choices.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a substantive difference between historical and ahistorical models — a genuine claim, not merely a topic announcement.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "Question-raising: sets up the open question to be resolved by the paper's experimental paradigm"
+    },
+    {
+      "id": 35,
+      "text": "Suppose there are two sets of 12 cards, Set A and Set B, with a picture of a common object on each card.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the paper's own experimental paradigm via a hypothetical scenario used to explain theoretical distinctions.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "M2->M3 cycling: paper occupies the niche by presenting its paradigm"
+    },
+    {
+      "id": 36,
+      "text": "Both sets include the same loafer; this is the only shoe in Set A, whereas Set B has a high-heeled shoe and a sneaker as well.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Elaborates the experimental scenario introduced in [35].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "Now suppose two people, a director and a matcher, are asked to talk about these objects one set at a time.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Continues elaborating the experimental scenario introduced in [35].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "And in doing that, the director refers first to all the objects in Set A, then to all the objects in Set B, and then again to all the objects in Set A.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Further specifies the trial structure of the scenario; subordinate to [35].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "We call these the A, B, and C trials.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names a terminological construct (A, B, C trials) used as analytical machinery throughout the paper.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "For simplicity's sake, we refer to the director as female and the matcher as male in examples.",
+      "tag": "new_tag_needed",
+      "tier": "unknown",
+      "parent_id": null,
+      "note": "Establishes a presentational convention for the paper.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "The issue is how the director will refer to the loafer.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Frames the open question that the A/B/C scenario is designed to address.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "M2->M3 cycling: returns to gap/question language within M3 paradigm presentation"
+    },
+    {
+      "id": 42,
+      "text": "In the A trials (with Card Set A), she will probably refer to it as the shoe, using the highly available basic-level term.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Offers a prediction about behavior in A trials derived from the ahistorical account; subordinate to [41].",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "In the B trials (with Card Set B), she should be more specific, using a phrase such as the loafer, to distinguish it from the other two shoes.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Continues predictions about trial behavior based on informativeness principles; subordinate to [41].",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "What will she do in the C trials (with Card Set A again)?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Poses the key unresolved question that motivates the paper's investigation.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "In ahistorical models such as Cruse's (1977), she should use the shoe because it is both informative enough and highly available.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the prediction of the ahistorical model for C trials.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "But in historical models, the director might retain the loafer even though it is overinformative.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the contrasting prediction of historical models against [45].",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Interlaced M1/M2: counter-claim against ahistorical model prediction"
+    },
+    {
+      "id": 47,
+      "text": "To explain why she might do that, let us consider four factors that define increasingly specific models: recency, frequency of use, provisionality, and partner specificity.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Structural announcement of the four-factor framework to be developed; does not assert an independent claim beyond naming the topics.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Returns to M3: announces the paper's own theoretical framework"
+    },
+    {
+      "id": 48,
+      "text": "With the first factor, recency, people in conversation expect to conceptualize an object the same way they conceptualized it on their last successful reference.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines \"recency\" as a named theoretical factor in the paper's framework.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "This factor is embodied in Garrod and Anderson's (1987) output/input coordination principle, which holds that people formulate their current utterance according to the same model and semantic rules used to interpret their partner's most recent utterance.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports Garrod and Anderson's theoretical principle as prior work instantiating the recency factor.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 50,
+      "text": "This accounts for how they come to use the same terms and share an underlying conceptualization (Garrod & Anderson, 1987).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports what the output/input coordination principle explains, per prior literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "The output/input coordination principle has several a priori advantages.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Announces that advantages will follow; the substantive content is in [52] and [54].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 52,
+      "text": "First, because it is strictly local, all speakers have to do is keep track of the last description.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an advantage of Garrod and Anderson's principle as characterized in prior work.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 53,
+      "text": "That should simplify their job in forming a reference.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Extends the locality claim into an inference about cognitive simplification; subordinate to [52].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 54,
+      "text": "Second, the principle does not assume that speakers and their partners necessarily form complicated models of each other or beliefs about their shared knowledge—their mutual beliefs—and that also should simplify the process of referring.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a second advantage of the output/input coordination principle from prior literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 55,
+      "text": "Recency, however, does not tell the whole story.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of the recency-based account.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: gap identified in the existing recency account"
+    },
+    {
+      "id": 56,
+      "text": "It does not account for how people choose their terms for a brand-new referent.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies a first limitation of the recency account.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 57,
+      "text": "If their initial choice is based on informativeness, availability, and salience, then recency is a plausible basis only for re-referring.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 56,
+      "note": "Derives an inference about recency's scope from [56]; subordinate to [56].",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 58,
+      "text": "Second, in a historical account based on recency alone, repeated references to an object would seem to result in rigid conformity, for \"once co-ordination has been achieved, no modification can be introduced without violating the principle of local consistency\" (Garrod & Anderson, 1987, p. 209).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a second limitation of pure recency-based accounts, citing Garrod and Anderson's own acknowledgment.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 59,
+      "text": "But as Garrod and his colleagues noted (Garrod & Anderson, 1987; Garrod & Clark, 1993; Garrod & Doherty, 1994), description schemes often continue to evolve, which prompted them to offer several modifications to the output/input coordination principle.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports that prior authors acknowledged the limitation and proposed modifications.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 60,
+      "text": "The first modification assumed that \"one participant, the leader, [is] the arbiter over the established scheme, while the other participant, the follower, [has] to abide rigidly by the output/input principle\" (Garrod & Anderson, 1987, p. 209).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the first modification to the output/input coordination principle from prior work.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 61,
+      "text": "The second assumed that speakers override the principle when they need to repair a referring expression that has been misunderstood (Garrod & Clark, 1993).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the second modification from prior work.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 62,
+      "text": "And the third assumed that the principle can be overridden by situational salience (Garrod & Doherty, 1994).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the third modification from prior work.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 63,
+      "text": "Even with these modifications, the output/input coordination principle predicts that directors in our C trials should retain the most recent successful reference to an object.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a residual limitation — even modified recency makes a prediction inconsistent with what the authors will demonstrate.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Interlaced M1/M2: residual gap in prior literature even after modifications"
+    },
+    {
+      "id": 64,
+      "text": "It should not matter how they conceptualized the object before that.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Unpacks the implication of the recency prediction stated in [63]; subordinate to [63].",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 65,
+      "text": "Lexical choices should also be affected by speakers' memory for a conceptualization.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and relevance of a memory-based factor in lexical choice, opening the frequency-of-use discussion.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Returns to M3: begins articulating the paper's own theoretical contribution"
+    },
+    {
+      "id": 66,
+      "text": "The more often people appeal to a particular conceptualization, the more durable its memory representation should be, as Garrod and Doherty (1994) pointed out.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a claim from prior literature about frequency and memory durability.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 67,
+      "text": "We call this frequency of use.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names the construct that the paper will use as a factor in its model.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 68,
+      "text": "A model based on both frequency of use and recency predicts one additional phenomenon over a model based on recency alone.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of combining frequency of use with recency.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 69,
+      "text": "Consider the situation described earlier in which a director and a matcher discuss a set of B cards in which the loafer is not the only shoe and then, in C trials, discuss a set of cards in which it is the only shoe.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Refers back to the scenario to illustrate the frequency-of-use prediction; subordinate to [68].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 70,
+      "text": "The more often the director has referred to the loafer in Set B, the more firmly that conceptualization has been established, so the more likely she should be to retain the loafer in the C trials.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 68,
+      "note": "Derives the frequency-of-use prediction from [68]; no new evidence.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 71,
+      "text": "Likewise, if they had discussed the unique A cards several times before discussing the nonunique B cards, then upon returning to the unique cards in the C trials they should be more likely to return to using the shoe than if they had never discussed the unique cards before.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 68,
+      "note": "Extends the frequency-of-use prediction to A-trial history effects.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 72,
+      "text": "Frequency of use takes into account how strongly and easily activated a conceptualization is, whereas recency considers only the conceptualization used on the last reference.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes an independent comparative claim distinguishing frequency of use from recency.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 73,
+      "text": "Recency and frequency of use are not the only factors in re-referring; if they were, speakers should use the same terms in talking to responsive partners as in talking into a tape recorder, and they do not.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of recency and frequency-of-use accounts together, using evidence that interactive partners matter.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "M2->M3 cycling: gap identified in combined recency + frequency account"
+    },
+    {
+      "id": 74,
+      "text": "With partners, but not with tape recorders, repeated references tend to become shorter and more efficient (Krauss & Weinheimer, 1964, 1966; Kraut, Lewis, & Swezey, 1982; Schober, 1993).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports empirical findings showing partner-specific shortening of references.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 75,
+      "text": "In a more complete historical model, then, references are not only based on precedent but are also adapted to changing circumstances.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts what a complete historical model must include — establishes adaptability as a real and necessary property.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Returns to M3: announces what the paper's model must and will include"
+    },
+    {
+      "id": 76,
+      "text": "They are modified in response to a partner's feedback and shortened as precedents become more firmly established.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Unpacks what \"adapted to changing circumstances\" means in [75]; subordinate to [75].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 77,
+      "text": "We consider this adaptability with the next two factors—provisionality and partner specificity.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Structural announcement of the next subsections; no independent rhetorical claim.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 78,
+      "text": "According to the collaborative view of language use (Brennan, 1990; H. H. Clark & Schaefer, 1987, 1989; H. H. Clark & Wilkes-Gibbs, 1986; Schober & Clark, 1989), establishing a precedent in conversation requires interaction.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the collaborative view of language use from prior literature as the theoretical basis for provisionality.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 79,
+      "text": "When speakers present a reference, they do so only provisionally, and they then work with their addressees to establish that it has been understood.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the provisionality claim as established in prior collaborative view literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 80,
+      "text": "When speakers first refer to an object as the loafer, they are proposing to their addressees that it be conceptualized as a loafer.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates the provisional nature of reference with a concrete example; subordinate to [79].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

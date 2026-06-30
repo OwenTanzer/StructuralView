@@ -1,0 +1,419 @@
+{
+  "paper": {
+    "id": "lee_2024",
+    "title": "lee 2024",
+    "authors": [
+      "Lee"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction uses an interlaced M1→M3→M2→M3→M1→M3 arc, unusual in that the **research question appears before the gap is named**. This early M3 move anchors the paper's empirical agenda, while the M2 block (sentences 9–11) retrospectively legitimizes it by identifying conflicting findings and an unexplored real-world comparison. A second M1 block (sentences 13–19) then grounds the study in creativity theory, before **pilot survey data (sentence 20) bridges back into the final, sustained M3 close**. The paper's rhetorical strength lies in deploying its own pre-study data twice — once to motivate the question, once to justify the Web-search comparison — rather than relying solely on prior literature.",
+  "structured_arc": "M1 -> M3 -> M2 -> M3 -> M1 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        5
+      ],
+      "role": "Establishes the societal significance and rapid adoption of generative AI across domains, priming the reader to accept the research question as timely and consequential."
+    },
+    {
+      "move": "M3",
+      "span": [
+        6,
+        8
+      ],
+      "role": "Introduces the central research question ahead of formal gap-identification, then immediately grounds it in pilot survey data showing lay scepticism about AI's creative utility — an unusually early commitment to the paper's empirical agenda."
+    },
+    {
+      "move": "M2",
+      "span": [
+        9,
+        11
+      ],
+      "role": "Retrospectively legitimizes the research question by citing the field's immaturity, conflicting findings, and a specific gap: no real-world comparison of AI against conventional creative tools."
+    },
+    {
+      "move": "M3",
+      "span": [
+        12,
+        12
+      ],
+      "role": "Delivers a concise aim statement that directly answers the gap identified in sentences 9–11, completing the first M2→M3 cycle and focusing the study on the ChatGPT-versus-web-search comparison."
+    },
+    {
+      "move": "M1",
+      "span": [
+        13,
+        19
+      ],
+      "role": "Provides the theoretical grounding the paper will rely on: the dual originality/appropriateness definition of creativity and the associative mechanisms that underlie it, plus an inventory of conventional creative tools — all needed to frame the hypothesis and design rationale that follow."
+    },
+    {
+      "move": "M3",
+      "span": [
+        20,
+        32
+      ],
+      "role": "Delivers the paper's full programmatic statement: purpose, comparative design rationale (anchored by the second pilot data point), the central hypothesis about ChatGPT enhancing associative thinking, and a detailed account of methodological choices and scope delimitation."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "The recent advancement in generative artificial intelligence (AI) technology has captured worldwide interest.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and reach of generative AI as a phenomenon worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "One notable AI, ChatGPT, developed by OpenAI, attracted more than 100 million users within just 2 months of its launch.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the scale and significance of ChatGPT's adoption; primary function is establishing prominence of the phenomenon.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Generative AI has shown remarkable performance in objective knowledge assessments, such as the bar exam and US medical licensing exams, and its use has broadened to encompass a variety of fields, including coding, language translation and now creative tasks.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established findings about AI performance across domains with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "For example, Copy.ai, an AI-powered copywriting service, claims to assist in writing blog and social media content, as well as aiding in email marketing.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides a concrete example of AI use in creative tasks; parent is [3] (tempstat). ✓",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Whether in design, writing or engineering, the role of generative AI as a support tool to enhance human creativity continues to expand.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the growing significance of generative AI as a creativity support tool across domains.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Given this societal shift, we investigated the following question: can AI chatbots such as ChatGPT improve human response to problems that require creative thinking?",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the research question motivating the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "M2->M3 cycling: first M3 statement before returning to gap language at sentence 9."
+    },
+    {
+      "id": 7,
+      "text": "To explore this question, we surveyed lay individuals (n = 100) and discovered that they remain somewhat sceptical about the effectiveness of AI chatbots in creative tasks (Supplementary Note A).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a pilot study conducted as part of the current research program to motivate the main investigation.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "Specifically, although many acknowledge the utility of chatbots in translating languages (74%), programming (46%) and professional writing (24.2%), only a small fraction (7%) see value in their use for generating creative ideas.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 7,
+      "note": "Unpacks the specific findings from the pilot survey mentioned in [7] (contribution); parent is primary. ✓",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "As this scepticism persists, the empirical study of generative AI's role in creative tasks is still in its early stages.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a gap — the field is underdeveloped despite practical relevance.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Return to gap language after initial M3; part of M2->M3 cycling pattern."
+    },
+    {
+      "id": 10,
+      "text": "Research findings on its performance are varied, with some studies suggesting that it is limited and others finding it to be remarkable, resulting in a wide range of opinions about AI's potential in creativity tasks.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension and disagreement in the existing literature on AI creativity.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "However, research has yet to fully explore the application of AI chatbots in daily life, where the technology is often compared to other conventional approaches to creative problem-solving.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a specific gap — lack of ecological/real-world comparison studies.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "This research therefore aims to examine whether using ChatGPT can enhance creativity beyond what is achievable without it, or when using traditional tools such as standard Web search engines.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the aim and scope of the present research directly.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Second M3 statement following the M2 gap block; M2->M3 cycling continues."
+    },
+    {
+      "id": 13,
+      "text": "Creativity is commonly viewed as the generation of original and appropriate ideas.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established definitional consensus in the creativity literature.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Return to M1 territory review — extended definitional and conceptual background block after first M3 close."
+    },
+    {
+      "id": 14,
+      "text": "Originality refers to a new idea's deviation from common ideas, combining existing knowledge in novel ways through analogical thinking; when the idea is original, it is deemed novel, surprising and uncommon.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 13,
+      "note": "Unpacks the first component (originality) of the creativity definition introduced in [13] (tempstat). ✓",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Meanwhile, appropriateness relates to the feasibility and practicality of the generated idea; when an idea is appropriate, it can be used to solve a problem and to improve the given context.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 13,
+      "note": "Unpacks the second component (appropriateness) of the creativity definition introduced in [13] (tempstat). Re-parents to [13] directly, skipping [14]. ✓",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Either of these two—originality or appropriateness—is an outcome of creative thinking.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 13,
+      "note": "Synthesizes the three-sentence definitional block on creativity components ([13]–[15]); re-parents to [13] (tempstat). Corrected from extension:definitional to avoid secondary-parents-secondary violation. ✓",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Regardless of whether it focuses on originality or appropriateness, creative problem-solving commonly involves connecting associative elements to create new combinations of concepts.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established finding about the associative mechanism underlying creative problem-solving, with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "Creative ideas thus often result from the cohesive association of two seemingly unrelated pieces of knowledge.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 17,
+      "note": "Provides a more concrete restatement/illustration of the associative combination mechanism from [17] (tempstat). Corrected from extension:definitional; the sentence illustrates rather than defines. ✓",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "To achieve this, individuals rely on techniques such as brainstorming, sketching and storyboarding or digital tools such as Web services and interactive whiteboards.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established knowledge about tools and techniques used to support creative problem-solving, with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "In fact, our pilot survey revealed that, when faced with a problem requiring creative thinking, a vast majority (68%) of lay consumers seek assistance from online resources such as Google (Supplementary Note B).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the authors' own pilot data generated as part of the current research program to establish the empirical basis for the Web-search comparison. Corrected from tempstat — this is not prior literature but the authors' own pre-study data. ✓",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Pilot data used as justification/context for design; bridges M1 territory review into final M3 block."
+    },
+    {
+      "id": 21,
+      "text": "With a specific focus on ChatGPT, this paper examines whether AI chatbots can substantially enhance creative problem-solving beyond what is achievable without them.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose and focus of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "Specifically, we compare ChatGPT with a commonly used resource—namely, traditional Web search engines without AI chatbot functionality.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the comparative design of the study, elaborating on [21].",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "While traditional Web search engines such as Google have made accessing information easier, enabling users to find information with just a few keystrokes, the tasks of navigating through search results and synthesizing information from multiple sources still largely require human effort.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of existing tools (Web search) to set up the case for ChatGPT's advantage.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Contrast used as justification for the study design rather than as a niche-carving move; rhetorical function is 3B within the sustained M3 block."
+    },
+    {
+      "id": 24,
+      "text": "Designed to generate text on the basis of the context, ChatGPT goes beyond traditional Web searches by integrating disparate pieces of knowledge into coherent, articulate verbal responses, rather than merely presenting a list of relevant pages.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the distinctive capability of ChatGPT relative to Web search, establishing its relevance for creative tasks.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "For example, recent studies examining ChatGPT's performance without human intervention have found that ChatGPT demonstrates substantial creative capabilities.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior empirical findings on ChatGPT's standalone creative performance, with citation support.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Prior literature cited as justification for the study's focus and hypothesis; functioning as 3B within the M3 block."
+    },
+    {
+      "id": 26,
+      "text": "Consequently, we argue that ChatGPT can substantially help users solve creative problems by improving the associative process involved in creative problem-solving.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the paper's central theoretical argument/hypothesis derived from prior evidence.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Our experiments focus on incentive-compatible idea contests that require verbal output, considering ChatGPT's capabilities as a large language model.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the methodological design choice for the experimental paradigm.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "To avoid any potential biases from ChatGPT's prior exposure to the tasks, we avoided publicly available tests of creativity such as the Alternative Uses Test or Torrance Test.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explains a methodological decision and its rationale.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "Instead, we designed problem-solving tasks, based on the paradigm adapted from creativity literature.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the alternative methodological approach taken.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "In all experiments, participants were randomly assigned to either use or not use ChatGPT assistance.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes a core feature of the experimental design.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "Their submitted ideas were later rated by external judges on originality and appropriateness sub-dimensions, which were averaged to compute the overall creativity score.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the measurement procedure used across experiments.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "It is important to note that our focus in this paper is the impact of ChatGPT's assistance on the creativity of an idea, rather than on task efficiency and productivity, which concern the ratio between input and output in a performance task.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Delimits the scope of the paper, distinguishing it from adjacent research questions.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

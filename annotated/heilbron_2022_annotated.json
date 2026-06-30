@@ -1,0 +1,222 @@
+{
+  "paper": {
+    "id": "heilbron_2022",
+    "title": "heilbron 2022",
+    "authors": [
+      "Heilbron"
+    ],
+    "year": 2022,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction builds its niche through **sustained interlacing of prior-work review and immediate limitation**, rather than a clean M1-then-M2 sequence. A compact M1 (S1–5) establishes predictive language processing as a well-evidenced territory, then **a single pivot sentence (S6)** names two unresolved questions and opens M2. The niche is then deepened across twelve sentences via alternating tempstat/contrast pairs — each citing a prior finding only to constrain it — culminating in two explicit **nostat gap statements (S16–17)** that frame the study's motivation. The introduction ends entirely in M2 with no M3 present.",
+  "structured_arc": "M1 -> M2",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        5
+      ],
+      "role": "Establishes predictive language processing as a legitimate, well-evidenced research territory by asserting the phenomenon's existence, citing broad scholarly consensus, extending evidence cross-domain (AI and motor/perceptual systems), and accumulating behavioral and neural examples — building sufficient credibility to motivate the pivot to a gap."
+    },
+    {
+      "move": "M2",
+      "span": [
+        6,
+        17
+      ],
+      "role": "Carves the niche by first naming two open questions (ubiquity and representational level), then deepening the gap through an interlaced pattern of reviewing prior ERP and naturalistic studies only to immediately limit each — cycling through counter-claim and limitation pairs — before closing with two explicit gap statements about multi-level interaction and the nature of predictability effects."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Understanding spoken language requires transforming ambiguous stimulus streams into a hierarchy of increasingly abstract representations, ranging from speech sounds to meaning.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and nature of a real phenomenon (the hierarchical transformation required for language comprehension) to establish relevance — not reporting a specific finding.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "It is often argued that during this process, the brain relies on prediction to guide the interpretation of incoming information (1, 2).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes a position held in the prior literature with citations.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Such a 'predictive processing' strategy has not only proven effective for artificial systems processing language (3, 4) but has also been found to occur in neural systems in related domains such as perception and motor control, and might constitute a canonical neural computation (5, 6).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports cross-domain findings from prior work with citations supporting the generality of predictive processing.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "There is a considerable amount of evidence that appears in line with predictive language processing.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes the general state of evidence in the field.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "For instance, behavioral and brain responses are highly sensitive to violations of linguistic regularities (7, 8) and to deviations from linguistic expectations more broadly (9–13).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Provides specific cited examples of the evidence summarized in [4] (primary tempstat parent). Citation present but sentence functions as illustration of [4]'s claim rather than asserting an independent cross-domain generalization.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "While such effects are well documented, two important questions about the role of prediction in language processing remain unresolved (14).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Concedes prior work but pivots to identify unresolved issues — classic tension-introducing move.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "The first question concerns the ubiquity of prediction.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Sole job is structural announcement introducing the first sub-topic; all substantive content is delivered in [8].",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "While some models cast prediction as a routine, integral part of language processing (1, 15, 16), others view it as relatively rare, pointing out that apparent widespread prediction effects might, instead, reflect other processes like semantic integration difficulty (17, 18), or that such prediction effects might be exaggerated by the use of artificial, prediction-encouraging experiments focusing on highly predictable 'target' words (17, 19).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces disagreement in the literature between two positions on prediction ubiquity. [7] is link:opening (secondary) so [8] re-parents to [6] (contrast, primary) as its nearest primary ancestor — subordination rule satisfied.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "The second question concerns the representational nature of predictions: Does linguistic prediction occur primarily at the level of syntax (15, 20–22) or rather at the lexical (16, 23), semantic (24, 25), or the phonological level (13, 26–29)?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies an open, unresolved question about the representational level of linguistic prediction.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "And is prediction limited to incremental, anticipatory processing within a given level, or does it extend to top-down prediction across levels (30)?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a second unresolved question — whether prediction operates within or across levels.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Event-related potential (ERP) studies have described brain responses to violations of, and deviations from, both high- and low-level expectations, suggesting prediction might occur at all levels simultaneously (1, 31) (but see refs. 19 and 32).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior ERP findings with citations.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: prior research is reviewed here not to establish territory but to set up the immediately following limitation, deepening the niche."
+    },
+    {
+      "id": 12,
+      "text": "However, it has been disputed whether these findings would generalize to natural language, where violations are rare or absent and with few highly predictable words.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of prior ERP work regarding generalizability to naturalistic settings.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "In these cases, prediction may be less relevant or might, perhaps, be limited to the most abstract levels (17, 19, 32).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:speculative. Although hedged in phrasing, this sentence cites refs (17, 19, 32), making it a citation-backed report of a position held in the literature. Per the citation = primary rule, it is tempstat.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: reports a cited position that elaborates the scope of the limitation identified in [12], functioning to widen the gap rather than to establish territory."
+    },
+    {
+      "id": 14,
+      "text": "Studies on naturalistic comprehension, on the other hand, have found neural sensitivity to various metrics of linguistic unexpectedness, suggesting prediction does, in fact, generalize to natural language (10, 11, 13, 22, 27, 28, 33, 34).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports findings from naturalistic studies as a counterpoint, with citations.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Interlaced M1/M2: reviews prior work as a counter-claim to [12–13], but the subsequent sentence immediately limits it, maintaining the niche-building function."
+    },
+    {
+      "id": 15,
+      "text": "However, these studies often focused on just one [or two (35)] levels of analysis—for example, speech sounds, words, or grammar.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a limitation of prior naturalistic studies.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "This leaves open whether metrics at different levels provide different vantage points onto a single underlying process or whether prediction happens at multiple levels simultaneously—and, if so, whether predictions at different levels may interact.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the gap left open by the limitation named in [15].",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Moreover, it is unclear whether such overall predictability effects actually reflect continuous prediction, or might be driven by a subset of (highly predictable) events in naturalistic stimuli.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies an additional unresolved question about the nature of predictability effects in naturalistic paradigms.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

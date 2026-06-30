@@ -1,0 +1,413 @@
+{
+  "paper": {
+    "id": "chen_2023",
+    "title": "chen 2023",
+    "authors": [
+      "Chen"
+    ],
+    "year": 2023,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction builds its case through two full **M1→M2→M3** cycles before landing on a clean contributions list. The first cycle is compact (S1–S10), using the creativity-intelligence nexus and the 'curse of recursion' to motivate a brief purpose statement. The second, longer cycle (S11–S30) does the heavier lifting: an extended M1 block establishes dual-process theory and prior evidence of machine creativity, then a sustained **M2 block hammers decoding-strategy limitations** until the 'it is unclear' pivot at S25. The double-cycle structure signals that the paper's contribution is best understood as resolving *two* distinct problems — whether LLMs are creative at all, and whether decoding strategy matters.",
+  "structured_arc": "M1 -> M2 -> M3 -> M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        5
+      ],
+      "role": "Establishes the research territory by asserting LLMs' broad language mastery, emergent cognitive abilities, and the growing interest in creativity — framing creativity as a legitimate and important dimension of LLM capability."
+    },
+    {
+      "move": "M2",
+      "span": [
+        6,
+        6
+      ],
+      "role": "Introduces the first tension in the territory: GPT-4's claimed humor ability versus demonstrated limitations in the literature, signalling that LLM creativity is contested."
+    },
+    {
+      "move": "M1",
+      "span": [
+        7,
+        8
+      ],
+      "role": "Reinforces the stakes of the creativity question by citing its centrality to human life and by introducing the 'curse of recursion' problem, which makes creative generation practically urgent."
+    },
+    {
+      "move": "M2",
+      "span": [
+        9,
+        9
+      ],
+      "role": "Sharpens the conceptual paradox: if LLMs only predict probable next words, genuine novelty appears impossible — crystallising the puzzle the paper will investigate."
+    },
+    {
+      "move": "M3",
+      "span": [
+        10,
+        10
+      ],
+      "role": "Delivers a first, brief purpose announcement — empirical investigation of LLM creativity via divergent concept generation — before the paper cycles back into extended background."
+    },
+    {
+      "move": "M1",
+      "span": [
+        11,
+        18
+      ],
+      "role": "Lays the theoretical and empirical foundation for the second cycle: the dual-process theory of creativity, the prevailing assumption that creativity is uniquely human, and evidence challenging that assumption across art, algorithms, and language models."
+    },
+    {
+      "move": "M2",
+      "span": [
+        19,
+        25
+      ],
+      "role": "Builds the core gap argument around decoding strategies: deterministic decoding is dull, stochastic decoding is better but still fundamentally unlike human cognitive control, and no strategy cleanly separates creative from nonsense output — culminating in the explicit 'it is unclear' niche statement."
+    },
+    {
+      "move": "M3",
+      "span": [
+        26,
+        30
+      ],
+      "role": "Occupies the niche with a purpose statement, methodological specification (the DAT measure), and a two-item contributions list — directly answering both questions raised in the preceding M2 block."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Large language models (LLMs) have exhibited unparalleled mastery of natural language (Bubeck et al., 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "The primary capacity of producing the most probable next word is broadly generalizable to many language tasks, suggesting underlying cognitive abilities beyond specialized linguistic rules and patterns.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "There is observation that LLMs may possess reasoning abilities which is a core aspect of intelligence, including decision-making (Binz and Schulz, 2023) and theory of mind (Moghaddam and Honey, 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "Meanwhile, there is also increasing interest in exploring LLMs' creativity, which is closely related to intelligence (Frith et al., 2021).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Creative use of language, such as metaphor and humor, is important during communication.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance/relevance of creative language use; not reporting a specific finding but establishing that the phenomenon matters.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "OpenAI (2023) has reported GPT-4's ability to understand jokes, while subsequent works show limited capacity for LLMs to generate or explain humor (Jentzsch and Kersting, 2023; Hessel et al., 2023).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Sets up a tension between claimed ability and demonstrated limitations in the literature.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "As creativity is essential to the development of art, science, and everyday life for human (Gabora and Kaufman, 2010), it is non-trivial if models could produce creative content.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and relevance of creativity as a topic worth investigating for LLMs.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Brief return to territory-establishing centrality claim after M2 contrast; interlaced M1/M2 structure"
+    },
+    {
+      "id": 8,
+      "text": "Regarding to the curse of recursion for LLMs that training on generated data makes models collapse, one promising solution might be the novel language distribution through creative generation (Shumailov et al., 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific finding/problem from prior work and a proposed solution tied to it.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "But since LLMs represent word meaning and predict the next word in context, it seems paradoxical that such models could create ideas not seen in training.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a tension or puzzle against the prior claim — if LLMs only predict likely next words, how could they be creative?",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Here, we empirically investigate the creativity of LLMs by examining models' ability to generate divergent concepts.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose and approach of the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "First M3 announcement; paper cycles back to M1 before a final M3 block"
+    },
+    {
+      "id": 11,
+      "text": "A general definition of creativity is the ability to create something both novel and valuable (Runco and Jaeger, 2012).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established definition from the literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "M2->M3 cycle: return to M1 territory after first M3 announcement"
+    },
+    {
+      "id": 12,
+      "text": "According to the dual-process theory of creativity (Beaty et al., 2014), creative thinking relies on remote association while inhibiting common ideas (Figure 1).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the dual-process theory as the theoretical construct/framework the paper will use analytically.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Because of the intrinsic complexity, creativity is universally accepted to be unique to human beings, while models are regarded as great predictors to master the existing distribution but not qualified creators to generate new distribution.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the prevailing view in the field about creativity being uniquely human and models being limited to distribution prediction.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "However, there have been evidences of models possessing creativity in different domains.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a counter-position against the prevailing view just stated.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Counter-claim within M1 territory; contrasts prevailing view to broaden the territory rather than carving a niche"
+    },
+    {
+      "id": 15,
+      "text": "For artistic creation, deep generative models reveals exquisite painting skills (Ramesh et al., 2022).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 14,
+      "note": "Provides a citation-backed named example of model creativity supporting [14]. Per the rule, a named case used as example with a primary parent stays illustrative; parent [14] is primary (contrast). Legal chain.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "For algorithms, models are able to generate original and superhuman strategies in board game (Silver et al., 2016).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Second illustrative example supporting [14]. Parent is [14] (primary), not [15] (secondary) — re-parented to nearest primary above, satisfying the subordination rule.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "As for language models, creativity is an emerging concern.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Opens a new sub-topic sequence focused specifically on language models and creativity; makes no independent assertion beyond naming the topic.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "Since GPT-2 (Radford et al., 2019), language models are able to naturally produce answers given a prompt, even for open-ended and creative generation tasks (Kaddour et al., 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "However, when generating texts from these probabilistic models, decoding strategy has a prominent effect on the quality of result.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a complication/limitation against the prior positive characterization.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Return to M2 gap language after extended M1 cycle"
+    },
+    {
+      "id": 20,
+      "text": "Decoding strategies that search for the highest-probability words tend to produce texts that is dull and repetitive (Zhang et al., 2021), while stochastic strategies, which randomly sample from models, generate texts with better human preference (DeLucia et al., 2021; Holtzman et al., 2020).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established findings contrasting deterministic and stochastic decoding strategies.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "These texts have human-like information distribution, which are viewed as informative and interesting (Meister et al., 2022).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Citation-backed reported finding about the quality of stochastic outputs; per the rule, citation-backed cross-domain claims are tempstat.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "Despite this, stochastic strategies are distinct from human.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation/tension against the positive characterization of stochastic strategies.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "The decoding process is probabilistic and independent, while humans produce language under elaborated cognitive control, especially for creative generation.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a substantive claim about a real and significant distinction between machine and human language production; goes beyond merely unpacking a term, so emph is more accurate than extension:definitional.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Creative and nonsense contents are both infrequent during next word prediction that cannot be simply distinguished via sampling strategies (Figure 1).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Sharpens the limitation — sampling cannot reliably separate creative from nonsense outputs.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "Thus, it is unclear whether LLMs genuinely have creativity during modeling, and whether decoding strategies help.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the open/unresolved question that motivates the current study.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "To answer both of these questions, we evaluate the creativity of LLMs.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose of the current work in response to the identified gap.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Specifically, we use an objective semantic measurement, the divergent association task (DAT), which asks models to generate unrelated nouns and compute the pairwise semantic distance between them (Olson et al., 2021).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the method used in the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "In summary, we make the following contributions:",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Announces what follows (the bullet list of contributions); structural transition with no independent content claim.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "Investigate the creativity of LLMs and compare the results with human.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Lists the first stated contribution of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "Explore the effect of decoding strategies on the creative generation of LLMs.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Lists the second stated contribution of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

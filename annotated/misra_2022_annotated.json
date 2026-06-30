@@ -1,0 +1,156 @@
+{
+  "paper": {
+    "id": "misra_2022",
+    "title": "misra 2022",
+    "authors": [
+      "Misra"
+    ],
+    "year": 2022,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction is structurally lean: three sentences of territory, then an immediate pivot to contribution with **no explicit gap or niche claim**. The **absence of M2** is the defining feature — the paper treats the need for minicons as self-evident given the territory, not something requiring argument. M3 then does double duty, both announcing and elaborating the library before closing with a paper roadmap. The result is a tool-paper rhetoric that prioritizes description of the artifact over justification of its necessity.",
+  "structured_arc": "M1 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        3
+      ],
+      "role": "Establishes the dual landscape of LM accessibility and BlackboxNLP analysis methods, naming the field the library is designed to serve and framing the context into which minicons will be inserted."
+    },
+    {
+      "move": "M3",
+      "span": [
+        4,
+        11
+      ],
+      "role": "Announces, describes, and roadmaps the minicons library — opening with the contribution claim, specifying its two analytical levels and technical basis, then previewing two case studies that demonstrate its use."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Accessing and using pre-trained language models (LMs)—now a mainstay in modern NLP research—has become ever so convenient due to the advent of high-quality open source libraries such as transformers (Wolf et al., 2020), jiant (Pruksachatkun et al., 2020), etc.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Parallel to the proliferation of newer pre-training methods and LM architectures is that of the development of analyses methods and diagnostic datasets which we collectively refer to here as the field of 'BlackboxNLP' (Alishahi et al., 2019).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "The primary rhetorical work is introducing and naming 'BlackboxNLP' as a collective label the paper will use — \"which we collectively refer to here as.\"",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "One of the foundational goals of this field is to develop and understanding of exactly what is learned by these complex LM architectures as a result of pre-training, as well as how pre-trained models operate.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Unpacks the content and goals of the BlackboxNLP field named in [2]; parent [2] is primary (framedef). ✓",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "In this paper, we provide an implementation-level solution to conduct such analyses in the form of an open-source python library called minicons.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty by announcing the library for the first time.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "M2 absent — paper transitions directly from territory (M1) to announcing the contribution without an explicit gap statement."
+    },
+    {
+      "id": 5,
+      "text": "minicons builds on top of the transformers library (Wolf et al., 2020), and provides a standard API to perform behavioral and representational analyses of transformer (Vaswani et al., 2017) language models.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the technical basis and scope of the current paper's contribution.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "In particular, it contains methods that collectively support analyses at two levels, both of which are well established in current LM analysis and evaluation literature: (1) at the prediction level, by using LM's word prediction abilities to perform a range of analyses that target specific linguistic or reasoning ability without performing any supervised training/fine-tuning; and (2) at the representational level, where the goal is to characterize the information made available in the internal activations of a given model.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the two analytical levels the library supports, elaborating the paper's scope and method.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Together, these methods make standard model analyses methods accessible to a wider audience.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 6,
+      "note": "Synthesizes the two-level description in [6]; parent [6] is primary (contribution). ✓",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "In what follows, we first provide an overview of minicons and its core modules.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure/organization of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "We then apply it in two motivating case studies.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues the organizational roadmap of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "First, we analyze the learning dynamics of the BERT architecture with respect to 67 different grammatical phenomena related to syntax, semantics, and morphology.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the first case study — scope and method of the current paper.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Second, we use minicons to measure the extent to which the patterns in LMs' sequence probabilities align with human-like abductive commonsense reasoning, the task of providing the most plausible explanation given partial observations – shedding light on their capacity to make abductive inferences in a 'zero-shot' manner.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the second case study — scope and method of the current paper.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

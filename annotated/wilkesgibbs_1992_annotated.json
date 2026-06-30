@@ -1,0 +1,972 @@
+{
+  "paper": {
+    "id": "wilkesgibbs_1992",
+    "title": "wilkesgibbs 1992",
+    "authors": [
+      "Wilkesgibbs"
+    ],
+    "year": 1992,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction is dominated by an unusually long **M1** that does double duty: it reviews collaborative reference theory *and* walks through a detailed worked example, building the evidentiary base the M2 gap will depend on. The **M2** pivot is strikingly compressed — just three sentences — pivoting on the question of what happens when collaboration is indirect or cross-partner. The bulk of the introduction is then an extended **M3** that is itself structured as a mini-argument: each of the four conditions is introduced, theoretically grounded, and assigned competing predictions before a final summary restatement. An early M3 flash at sentence 9, followed by a return to M1, signals the paper's habit of interleaving announcement and context-building.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        8
+      ],
+      "role": "Establishes the collaborative theory of reference as the research territory, summarizing its core mechanism and the breadth of empirical support it has accumulated across a range of prior studies."
+    },
+    {
+      "move": "M3",
+      "span": [
+        9,
+        9
+      ],
+      "role": "Flashes the paper's contribution early — comparing ways people coordinate mutual understanding of references — before the full M1 context has been laid out, signaling the paper's orienting question without yet justifying it."
+    },
+    {
+      "move": "M1",
+      "span": [
+        10,
+        35
+      ],
+      "role": "Returns to territory-building with a sustained account of common ground accumulation and a worked dialogue example from Clark & Wilkes-Gibbs (1986), supplying the empirical baseline against which the present study's manipulations will be measured."
+    },
+    {
+      "move": "M2",
+      "span": [
+        36,
+        38
+      ],
+      "role": "Opens the gap with a focused question about the evidence people use to coordinate common ground, then narrows it to the case the collaborative theory has not addressed: coordination without direct collaboration between partners."
+    },
+    {
+      "move": "M3",
+      "span": [
+        39,
+        83
+      ],
+      "role": "Announces the study's purpose and methodological design, then walks through each of the four experimental conditions in sequence, supplying theoretical grounding and competing behavioral predictions for each before closing with a summary restatement of the study's scope."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "In conversation, speakers collaborate with their partners in making references.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "In an earlier paper (Clark & Wilkes-Gibbs, 1986), we proposed that when a speaker wants to refer to an object, it is not enough for her to utter a noun phrase such as the Allen wrench.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "She and her partner are also responsible for establishing that he has understood her as intended.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Unpacks the theoretical claim introduced in [2].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "What they do, therefore, is try to reach the mutual belief that he has understood her reference well enough for current purposes.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Continues unpacking the mechanism proposed in [2]; re-parents to [2] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "They collaborate to reach this belief; she looks for reliable evidence of his understanding and he tries to provide it.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Further elaborates the collaborative mechanism; re-parents to [2] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "In the process, he may offer alternative phrasing and ask for repeats or repairs (you mean the small metal thing shaped like an L?); she may offer more information and ask for confirmation.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Provides concrete examples of the process described in [2]–[5]; re-parents to [2] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Predictions of the collaborative theory, as we will call it, have been confirmed for repeated references to objects (Clark & Wilkes-Gibbs, 1986), for partners with disparate goals (Wilkes-Gibbs, 1986), and disparate expertise (Isaacs & Clark, 1987), for understanding by partners versus overhearers (Schober & Clark, 1989), for partners trying to conceal their references from overhearers (Clark & Schaefer, 1987b), and for partners with continuous evidence of understanding (Brennan, 1990).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "The theory has been extended to tasks such as giving directions (Wilkes-Gibbs, 1986) and to general contributions to discourse (Clark & Schaefer, 1987a, 1989).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "In this paper, we compare several ways in which people might coordinate beliefs about their mutual understanding of references.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Early M3 announcement before returning to extended M1 context-setting; M2->M3 cycling begins here."
+    },
+    {
+      "id": 10,
+      "text": "Past work has looked mainly at the process when people talk to one another.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Characterizes the scope of prior work, setting up the gap.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to M1 territory after early M3 announcement — part of M2->M3 cycling."
+    },
+    {
+      "id": 11,
+      "text": "When one person speaks to another, she is trying to add what she says to their common ground—to the information they believe they share (Clark, 1985; Clark & Marshall, 1981; Cohen, 1978; Gazdar, 1979; Stalnaker, 1978).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "She accomplishes this by choosing her wording based on their common ground so far, and by collaborating with her partner to reach the mutual belief that he has understood her.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 11,
+      "note": "Elaborates the mechanism described in [11].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Throughout this process, the partner tries to interpret what she says based on his beliefs about their common ground.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 11,
+      "note": "Continues elaborating [11]; re-parents to [11] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "When they accept that he has understood appropriately, that understanding is added to their shared knowledge.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 11,
+      "note": "Describes the outcome of the process in [11]; re-parents to [11] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "So common ground in a discourse is continually growing.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from link:closing. Asserts an established theoretical property of discourse — an independent claim about how common ground works, not merely a wrap-up formula.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "In making a reference, the speaker must design what she says against the current common ground with her partner.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 15,
+      "note": "Draws out a design implication of the growing-common-ground claim in [15].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "His beliefs about their common ground should be coordinated with hers if they are to understand one another efficiently, and collaboration helps them solve this coordination problem.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the theoretical prediction about coordination; grounded in the established framework.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "Accumulating common ground has predictable effects on the referential process, as an example from a previous study illustrates (Clark & Wilkes-Gibbs, 1986).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "In that study, a director (D) was asked to get a matcher (A) to put 12 so-called tangram figures (see Fig. 1) one-by-one into a particular order.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Begins describing the prior study to illustrate the claim in [18].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "(For convenience, we will consider the directors female and the matchers male, even though this was not always the case.)",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Defines a notational convention; re-parents to [18] as nearest primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "The director and matcher could not see each other's arrangements, but they could talk as much as they needed.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Continues describing the prior study setup; re-parents to [18] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "They matched different arrangements of the same figures six times, which we will call Trials Al through A6.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Continues describing the prior study procedure; re-parents to [18] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "On the very first trial (Al), D got A to identify one tangram figure (labeled A in Fig. 1) this way: [dialogue excerpt]",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Provides the concrete dialogue example; re-parents to [18] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "According to the collaborative theory, once D and A reached the mutual belief that A had understood, they incremented their common ground with descriptions of the figure as (1) 'someone that looks like they're trying to climb stairs,' (2) as having 'two feet, one way above the other,' and (3) as having 'a diamond on the right side, on a slant' that 'kind of looks like it's off the back.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Applies the theory to interpret the dialogue excerpt; re-parents to [18] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "Later when D wanted to refer to the same figure, she could presuppose this information and form a simpler description based on it, as she did in this example from Trial A3: [dialogue excerpt]",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Continues illustrating efficiency gains; re-parents to [18] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "After this exchange she could presuppose the new description and be even briefer, as on Trial A6: [dialogue excerpt]",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Extends the illustration to show further compression; re-parents to [18] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Accumulating common ground affected two main features of the referential process: type of reference and efficiency of reference.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the key empirical finding from the prior study.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "First, in our study, D almost always introduced the figures on Trial Al with indefinite references (e.g., 'someone that looks like . . .') or descriptions ('is climbing some stairs').",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific finding from prior work about initial reference type.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "But from Trial A2 on, she switched to definite references ('the person climbing the stairs') or nominals without articles ('stair climber').",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the contrasting finding about reference type in subsequent trials.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "For simplicity, let us call this a change from indefinite to definite references.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a terminological shorthand the paper will use.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "Second, D and A made great gains in efficiency over repeated references to the same figures on Trials A2 through A6.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the efficiency finding from prior work.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "On Trial Al, the two partners we cited took 54 words and six turns before going to the next figure.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Provides specific quantitative illustration of inefficiency at Trial A1; parents to [31].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "By Trial A3, they were down to 11 words and two turns, and by Trial A6, four words and two turns.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 31,
+      "note": "Continues the quantitative illustration; re-parents to [31] as primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "In our study, D and A's increasing efficiency was shown in words, turns, and elapsed time.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes the measures by which efficiency gains were observed.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "This pattern has been replicated in many other studies (e.g., Krauss & Weinheimer, 1964, 1966; Isaacs & Clark, 1987; Schober & Clark, 1989; Wilkes-Gibbs, 1986).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "What evidence, then, do people use for coordinating their beliefs about the buildup of common ground in order to design and interpret references?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Poses the open question motivating the present study.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "The collaborative theory proposes that people rely on the verdicts of mutual understanding they collaborate to reach.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the established theoretical answer, which is then shown as incomplete.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "Contextual M1-style content deployed in M2 to frame the gap — states what IS known in order to set up what is NOT known in [38]."
+    },
+    {
+      "id": 38,
+      "text": "But how do people coordinate when they have not been collaborating with one another directly?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the gap not addressed by prior theory.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "The issue we consider here is how speakers judge whether to rely on common ground built in collaboration with one person as also being common ground with someone else.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the specific question the present paper addresses.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "To study this, we looked at how a speaker who had been collaborating on references with one partner would refer to the same things for a different addressee.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the methodological approach.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "Many kinds of information could conceivably affect people's beliefs about their common ground.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and breadth of the factor space being investigated.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "Here, we examined three combinations of evidence available to the speaker: (1) whether the new addressee had heard the speaker's previous conversation, (2) whether he knew, in addition, exactly what the speaker intended to refer to with each of her references in that conversation, and (3) whether he had also been a sanctioned (though silent) participant in the speaker's prior conversation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the three manipulations examined in the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "Concretely, we asked a director to perform six trials (Al-A6) in our matching task with one partner (Matcher A), and then to carry out six more trials (Bl-B6) with a second partner (Matcher B), using the same 12 tangram figures.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the concrete experimental design.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "The crucial trial, really, is Trial Bl, when D first began speaking directly to B.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the focal moment in the design.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "How will the type and efficiency of her references be affected by the change of addressee?",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Frames the specific empirical question the design addresses.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "That should depend on D's beliefs about her common ground with B.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:speculative. This is a theoretical deduction grounded in the established collaborative theory framework, not open speculation — it reports what the theory predicts about the determining factor.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "To look at some possible influences on D's beliefs about common ground, we placed B in one of four circumstances while D was discussing the figures with her first partner.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the four-condition manipulation structure.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "We varied both the amount of information from the first six trials that B had access to, as well as his status in the first conversation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Specifies the two dimensions along which conditions were varied.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "In one condition, matcher B sat next to D as a silent side participant in the session with matcher A.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the first experimental condition.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 50,
+      "text": "Side participants are what Goffman (1979) called 'unaddressed recipients' of talk.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines the theoretical construct of \"side participant\" via citation.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "Even though they are not addressed directly, they are nonetheless ratified parties in a conversation (Clark & Carlson, 1982).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established theoretical claim about side participants' status.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 52,
+      "text": "According to the collaborative theory, all participants in a conversation assume responsibilities for their mutual understanding, and therefore can be taken to accumulate common ground along with the speaker and addressee(s).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the collaborative theory's prediction about participant roles.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 53,
+      "text": "If D considered matcher B a side participant in her conversation with A, she should assume the same common ground with him on Trial Bl as she had with A after their last trial.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Derives a specific prediction from the theory stated in [52]; parent is [52] (primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 54,
+      "text": "This means she should use definite references, and the only loss of efficiency on Trial Bl should come from B's lack of practice in working with the figures.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 52,
+      "note": "Extends and specifies the prediction in [53]; re-parents to [52] as primary to avoid secondary-secondary chain.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 55,
+      "text": "In a second condition, matcher B had been what we will call an omniscient bystander during D's conversation with A.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the second experimental condition and names it.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 56,
+      "text": "Bystanders are observers of a conversation without being participants in it (Clark & Carlson, 1982; Goffman, 1979).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Defines the \"bystander\" construct used in the paper.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 57,
+      "text": "They do not always have full knowledge of what a speaker intends to refer to, or of her common ground with the participants.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 56,
+      "note": "Elaborates the defining properties of bystanders introduced in [56].",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 58,
+      "text": "But since the side participants had such information, in this condition we wanted to give the same knowledge to nonparticipants.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explains the rationale for the omniscient bystander condition design.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 59,
+      "text": "During Trials Al-A6, we placed B in another room where he could hear and see all of D's actions on a video monitor.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the specific implementation of the omniscient bystander condition.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 60,
+      "text": "Since D knew about B's access to all this information, what should she presuppose in making her references on Trial Bl?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Poses the open empirical/theoretical question the condition is designed to answer.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Question-raising in service of M3 design justification, not a new M2 gap."
+    },
+    {
+      "id": 61,
+      "text": "If she considered him equivalent to a silent side participant, then these two conditions should look the same.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "States one possible predicted outcome; parent is [60] (primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 62,
+      "text": "But if she were less certain about their common ground, then she should initially use fewer definite references and more elaborate phrasing.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 60,
+      "note": "States the alternative predicted outcome; re-parents to [60] as primary to avoid secondary-secondary chain.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 63,
+      "text": "Information about omniscient bystanders, then, is crucial.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance of this condition for the theoretical question.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 64,
+      "text": "Do speakers build up common ground with these listeners as confidently as they do with side participants?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Restates the open empirical question posed by the omniscient bystander condition.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Question framing is in service of M3 study design rationale."
+    },
+    {
+      "id": 65,
+      "text": "On informational grounds, they should.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:speculative. Reports what the established theoretical framework (informational equivalence in common-ground theory) predicts — a theory-derived claim, not open speculation.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 66,
+      "text": "The side participant and the omniscient bystander see and hear the same information on Trials Al through A6, and D knows this.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 65,
+      "note": "Corrected from extension:definitional. Grounds the claim in [65] by specifying the concrete empirical basis for equivalence — this is illustrative support for the theoretical prediction, not a definition. Parent is [65] (primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 67,
+      "text": "Yet, for other reasons, speakers may not hold such firm beliefs.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension against the informational-equivalence prediction in [65].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Contrast within M3 prediction elaboration — not a new M2 gap but a nuanced prediction."
+    },
+    {
+      "id": 68,
+      "text": "First, speakers do not normally need to represent the information being accumulated by people who are not parties to a conversation in order to converse sensibly.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Provides a theory-grounded reason why speakers might not treat bystanders as equivalent to participants.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 69,
+      "text": "Even when they intend to keep track of nonparticipants, how certain can they be that the nonparticipants know this, are paying attention, and actually are accumulating the proper information?",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:speculative. A rhetorical question asserting the genuine epistemic difficulty faced by speakers — establishes the significance of the uncertainty problem rather than speculating from a prior claim.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 70,
+      "text": "Because of this, speakers and nonparticipants may face difficulty in coordinating their beliefs about what information they share.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Speculatively extends [69] into a predicted consequence; parent is [69] (now primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 71,
+      "text": "For these reasons, then, the omniscient bystander and side participant conditions may differ.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 68,
+      "note": "Wraps up the argument starting at [68]; re-parents to [68] (nearest primary) to avoid secondary-secondary chain from [70].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 72,
+      "text": "In the third condition, matcher B was meant to be considered a simple bystander during D's first conversation—a bystander who was not given privileged information about D's figures as they were being discussed.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and describes the third experimental condition.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 73,
+      "text": "These bystanders were in the same room with D and A and could hear everything that was said.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Elaborates the access characteristics of the simple bystander condition; parent is [72] (primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 74,
+      "text": "However, they sat farther from D than the side participants, and could not see the figures.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 72,
+      "note": "Specifies the limitation differentiating simple bystanders; re-parents to [72] as primary.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 75,
+      "text": "This allows us to see what assumptions D will make from knowing B has overheard her conversation with A.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the rationale/purpose of the simple bystander condition.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 76,
+      "text": "On informational grounds, D should be less confident in this simple bystander's understanding than for the omniscient bystander or side participant.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Derives a prediction for the simple bystander condition; parent is [75] (primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 77,
+      "text": "If so, she may use more indefinite references, and the collaborative process between D and B should be less efficient.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 75,
+      "note": "Specifies the behavioral prediction following from [76]; re-parents to [75] as primary to avoid secondary-secondary chain.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 78,
+      "text": "In the final condition, matcher B was a fully naive partner, completely unfamiliar with D's first conversation.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the fourth experimental condition.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 79,
+      "text": "With no shared information, D should make a fresh start and treat matcher B much as she initially did matcher A.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Derives the prediction for the naive partner condition; parent is [78] (primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 80,
+      "text": "This condition should tell us how D's own practice with one partner affects her references for a second person.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the additional inferential purpose served by the naive partner condition.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 81,
+      "text": "To the extent that changes in type and efficiency of references depend on common ground between partners, D should still use indirect references and lengthy collaboration on the Bl trial.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Elaborates the theoretical prediction for the naive partner condition; parent is [80] (primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 82,
+      "text": "In summary, this study looks at how three levels of evidence for common ground affect references for a person with whom the speaker has not directly collaborated.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes the overall purpose of the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 83,
+      "text": "These are: (1) whether or not the addressee has heard the speaker refer to the same figures in the past; (2) whether he knows, in addition, what those figures are; and (3) whether he might also have been considered a silent participant in the speaker's previous conversation.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Enumerates the three levels summarized in [82]; parent is [82] (primary ✓).",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

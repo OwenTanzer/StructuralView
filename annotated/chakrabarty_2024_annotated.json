@@ -1,0 +1,218 @@
+{
+  "paper": {
+    "id": "chakrabarty_2024",
+    "title": "chakrabarty 2024",
+    "authors": [
+      "Chakrabarty"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction stakes its territory minimally — one sentence on LLMs in creative writing — before immediately announcing the paper's investigative purpose, a strikingly early **M3 move** that signals confidence over gap-building. A brief **M2 contrast** (evaluation is hard) and a mid-arc return to M1 background (TTCT origins) both serve as rhetorical scaffolding for the paper's core contribution: the **TTCW framework**. The dominant pattern is **M2→M3 cycling** with M1 segments deployed instrumentally to justify design choices rather than to establish broad territory.",
+  "structured_arc": "M1 -> M3 -> M2 -> M3 -> M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        1
+      ],
+      "role": "Establishes the research territory of LLMs in creative writing with a single sentence and citation cluster, providing just enough context to situate the paper before pivoting immediately to purpose."
+    },
+    {
+      "move": "M3",
+      "span": [
+        2,
+        2
+      ],
+      "role": "Announces the paper's investigative scope and ultimate goal (informing interaction design) unusually early, before any gap has been fully established — a confident rhetorical move that frames the entire introduction."
+    },
+    {
+      "move": "M2",
+      "span": [
+        3,
+        3
+      ],
+      "role": "Introduces the core difficulty (objectively evaluating creativity) that motivates the paper's methodological contribution, retroactively justifying the M3 purpose statement that preceded it."
+    },
+    {
+      "move": "M3",
+      "span": [
+        4,
+        4
+      ],
+      "role": "Proposes TTCW as the paper's central protocol and grounds it in TTCT, naming the contribution and anchoring the methodological solution to the gap just identified."
+    },
+    {
+      "move": "M1",
+      "span": [
+        5,
+        6
+      ],
+      "role": "Inserts background territory on TTCT and its four dimensions to legitimize the framework choice; this M1 is deployed instrumentally within M3 development rather than as an opening scene-setter."
+    },
+    {
+      "move": "M2",
+      "span": [
+        7,
+        7
+      ],
+      "role": "Acknowledges a limitation of direct TTCT application across creative domains, creating a targeted gap that the paper's adapted TTCW design directly answers — tightening the M2→M3 cycling logic."
+    },
+    {
+      "move": "M3",
+      "span": [
+        8,
+        13
+      ],
+      "role": "Defines TTCW, justifies it via CAT, and unfolds the full study design in sequential detail — formative expert study, 14 binary tests, benchmark construction, and expert evaluation — occupying the bulk of the introduction as the extended contribution announcement."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Recent work has explored the potential of using large language models (LLMs) as assistants in creative writing tasks, from stories to screenplays [17, 34, 41, 47, 73].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "An important aspect of this research is to investigate LLMs' capabilities in terms of their ability to both generate creative content and assess whether a piece of writing is creative, with the ultimate goal of informing interaction design.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Frames the paper's investigative purpose and scope; \"informing interaction design\" signals the paper's goal, making this a contribution statement rather than an emph claim about significance.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Early M3 purpose announcement before the gap is fully established; part of M2->M3 cycling pattern."
+    },
+    {
+      "id": 3,
+      "text": "However, evaluating objectively the creativity of a piece of writing is challenging.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Returns to gap language after initial M3 announcement; M2->M3 cycling."
+    },
+    {
+      "id": 4,
+      "text": "We propose a protocol to evaluate creativity as product grounded in a widely accepted protocol that evaluates creativity as process — the Torrance Tests of Creative Thinking (TTCT) [64].",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "Based on Guilford's work on divergent thinking [31], TTCT measures creativity as a process by testing participants' abilities in dealing with unusual uses of objects, specific situations, or impossibilities.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Background territory-review inserted within M3 to justify the chosen framework; temporarily returns to M1."
+    },
+    {
+      "id": 6,
+      "text": "TTCT is centered around evaluating four dimensions of creativity: fluency (the sheer volume of meaningful ideas produced in reaction to a given stimulus), flexibility (the diversity of categories within the responses), originality (the uniqueness or novelty of answers) and elaboration (the depth or granularity of details within the responses).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 5,
+      "note": "Unpacks the TTCT framework introduced in [5]; parent is [5] tempstat ✓.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Secondary sentence inherits M1/1C from parent sentence 5."
+    },
+    {
+      "id": 7,
+      "text": "While the direct application of TTCT might not be possible across diverse creative domains [3, 6], its four fundamental dimensions have proven adaptable [11, 46, 65].",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opens with a limitation against TTCT's direct applicability; the rhetorical move is to introduce tension before the pivot to the current paper's design. The citations support the limiting condition and the adaptability claim, but the dominant function is contrast against straightforward application of TTCT.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Returns to gap/limitation language; continuation of M2->M3 cycling pattern."
+    },
+    {
+      "id": 8,
+      "text": "Thus, based on TTCT and using the Consensual Assessment Technique (CAT) [3] we design the Torrance Tests for Creative Writing (TTCW) to evaluate creativity as product (Section 3 Design Principle 1 and 2; Figure 1 Step 1).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and names TTCW as the conceptual/methodological instrument the paper will deploy throughout; the naming act is the primary rhetorical function.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "The Consensual Assessment Technique states that the most valid assessment of the creativity of an idea or creation in any field is the collective judgment of experts in that field.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Background principle cited to justify the CAT-based design choice; functions as justification within M3."
+    },
+    {
+      "id": 10,
+      "text": "Thus, to design TTCW, we asked 8 creative writing experts in a formative study (Section 4) to propose creativity measures for the evaluation of short fictional stories aligned with the four Torrance dimensions.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "This resulted in 14 binary tests organized across the four original Torrance dimensions of fluency, flexibility, originality and elaboration (Section 4.2).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "To empirically validate TTCW as an evaluation protocol for creativity as product (fictional short stories), we build a benchmark consisting of 48 short stories: 12 stories written by professionals, and 36 by three top performing LLMs (ChatGPT [52], GPT4 [53] and Claude 1.3 [4]) with 1400 words on average per story (Section 5; Figure 1 Step 2).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "We recruit a new set of 10 experts, again adhering to CAT, to administer the 14 tests of TTCW on each story, collecting 3 evaluations per story.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

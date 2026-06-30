@@ -1,0 +1,312 @@
+{
+  "paper": {
+    "id": "bergs_2019",
+    "title": "bergs 2019",
+    "authors": [
+      "Bergs"
+    ],
+    "year": 2019,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction uses an unusually long M1 block — etymology, historical restriction, Simonton's definition, and three worked examples — to establish a rich conceptual baseline before the gap emerges. **M2 is interlaced within M1** (sentences 4–9) rather than held until the end, signaling that the definitional problem is inherent to the term itself. A single M3 sentence (15) briefly stakes the paper's territory, but the introduction **immediately cycles back into M2**, building a paradox (rule-based language vs. observable creativity) that is left unresolved. The section closes on open questions with no purpose statement, findings preview, or structural roadmap — a deliberately open-ended arc.",
+  "structured_arc": "M1 -> M3 -> M2",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        3
+      ],
+      "role": "Establishes the etymological and historical grounding of 'creativity,' positioning it as a term with ancient roots but recent human application — framing the conceptual territory before complications arise."
+    },
+    {
+      "move": "M2",
+      "span": [
+        4,
+        9
+      ],
+      "role": "Interrupts the historical narrative to assert the term's current definitional instability, then enumerates competing candidate meanings through a series of rhetorical questions — embedding the gap within M1 rather than deferring it."
+    },
+    {
+      "move": "M1",
+      "span": [
+        10,
+        14
+      ],
+      "role": "Returns to established knowledge by presenting Simonton's formula as an anchor definition, then deploys three worked examples (birthday song, deathbed song, Norma) to give the definition concrete, testable shape."
+    },
+    {
+      "move": "M3",
+      "span": [
+        15,
+        15
+      ],
+      "role": "Briefly names the paper's scope — creativity in language and linguistics — but functions as a pivot rather than a full claim, immediately giving way to renewed question-raising."
+    },
+    {
+      "move": "M2",
+      "span": [
+        16,
+        23
+      ],
+      "role": "Constructs a paradox: language is rule-governed (like computers) yet speakers demonstrably create novel words, metaphors, and literary works. Closes on two unanswered questions about production and comprehension, leaving the gap explicitly open with no M3 resolution."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "The term 'creativity' comes from Latin, and means 'give birth to' or 'bring into existence' (cf. Cicero Omnes res, quas et creat natura, et tuetur 'All things, which nature makes as well as protects').",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports etymological/historical fact about the term's origin, functioning as established knowledge.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "However, the act of creation was not available to humans; only gods and nature could create something or someone.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the classical historical conception of creation as restricted to gods and nature.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "The idea that man can be creative is a fairly recent one, and probably not much older than a thousand years.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a historical claim about when the human concept of creativity emerged.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "Yet, the term is now both widespread and ill-defined.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension: despite currency, the term lacks definitional clarity.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: gap-indicating sentence embedded within the otherwise M1 territory block"
+    },
+    {
+      "id": 5,
+      "text": "Does it refer to the creation of something new, valuable, or worthwhile?",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Rather than identifying a research gap, this asserts the genuine reality of the definitional problem by enumerating competing candidate meanings — rhetorical emphasis on the term's ill-defined nature.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "The combination of hitherto unconnected elements?",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 5,
+      "note": "Another candidate meaning illustrating the definitional plurality asserted in [5]; legally secondary to primary [5].",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "The filling or using of already existing patterns in skillful ways?",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Continues the illustrative enumeration of candidate meanings from primary [5].",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "Is there creation out of nothing, ex nihilo, as the romanticist would have it?",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Another illustrative candidate definition, legally secondary to primary [5].",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "What did Ezra Pound mean with his smashing 1934 slogan: Make it new?",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 5,
+      "note": "A final illustrative instance of the definitional problem asserted in [5]; legally secondary to primary [5].",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "In a very influential study, Dean Simonton (2012) defined creativity as originality times appropriateness (cf. Thomas Hoffmann, 2018).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior definition from the literature with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Return to M1 after M2 gap-raising; interlaced M1/M2 structure"
+    },
+    {
+      "id": 11,
+      "text": "So, ideas need to be both new (original) and appropriate in a given situation to be truly 'creative'.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Unpacks the Simonton definition introduced in [10]; legally secondary to primary [10].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Singing 'Happy Birthday' at somebody's birthday party is highly appropriate, but hardly original, and therefore not creative.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Concrete example illustrating the definition from [10]–[11]; re-parents to primary [10].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Singing Pharell Williams's song 'Happy' at the dying bed of a beloved person is highly original, but hardly appropriate, and so it is not creative either, according to this definition.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Second illustrative example of the same definition; re-parents to primary [10].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "When Vincenzo Bellini and Felice Romani created Norma as their masterpiece in the novel combination of 'gothic romanticism' with elements of classic tragedy, this innovation was both highly original and very appropriate, and so can be considered an act of creativity, according to Simonton.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Third illustrative example showing a positive case under Simonton's definition; re-parents to primary [10].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "The present paper is concerned with creativity in language and linguistics.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's scope and topic.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Can language users be creative, and if so, how?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Poses the central open question the paper addresses.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": "M2->M3 cycling: after the M3 announcement in [15], the introduction returns to open question-raising"
+    },
+    {
+      "id": 17,
+      "text": "How do we model linguistic creativity in our theoretical models?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "A further open question about the theoretical challenge of representing linguistic creativity.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "At first sight, language as a rule-based system should not allow for any innovations, for any creativity in the common sense.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension between language's rule-governed nature and the possibility of creativity.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "After all, computers and their programs cannot be creative either.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes a substantive independent assertion — that rule-following systems are by nature non-creative — which establishes a real-world analogy as a claim, not merely as an illustration.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "Yet, we see what can only be termed 'acts of creation in speakers', in both everyday and poetic language.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Counters [18]–[19] by asserting that creative acts empirically occur, deepening the tension.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "Speakers produce new words and new metaphors apparently without thinking, and poets create works such as Finegan's Wake.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and significance of spontaneous creative linguistic acts, including extreme literary cases.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "How is this possible?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Poses the core explanatory gap — how to account for the phenomena just described.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "How do hearers and readers deal with the unexpected and surprising input?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Poses a related open question about the comprehension side of linguistic creativity.",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

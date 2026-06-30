@@ -1,0 +1,635 @@
+{
+  "paper": {
+    "id": "orwig_2024",
+    "title": "orwig 2024",
+    "authors": [
+      "Orwig"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction cycles through M1 territory three times, each time establishing a distinct sub-territory (creativity assessment/AUT, episodic memory, LLMs) before pivoting to gap-and-purpose moves. **Two embedded M2 moments** — one contesting traditional DT metrics, one naming the unexamined role of perceptual details — are each quickly absorbed into M3 purpose statements rather than sustained as independent critiques. The **final M3 block** (sentences 36–48) is unusually long and dense, sequentially announcing methods, constructs, dual hypotheses, a comparison aim, and a replication — effectively doing the work of a methods preview. The overall structure reveals a paper positioning itself at three intersecting frontiers simultaneously, using repeated M1 cycling to legitimate each before claiming contribution.",
+  "structured_arc": "M1 -> M2 -> M3 -> M1 -> M2 -> M3 -> M1 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        3
+      ],
+      "role": "Establishes the core research territory — creativity assessment, divergent thinking, and the AUT — citing foundational work to anchor the paper in an established field."
+    },
+    {
+      "move": "M2",
+      "span": [
+        4,
+        5
+      ],
+      "role": "Identifies the dual weaknesses of traditional DT metrics (low discriminability, inter-rater unreliability), creating the problem space the paper will fill."
+    },
+    {
+      "move": "M1",
+      "span": [
+        6,
+        7
+      ],
+      "role": "Reviews the computational/semantic distance response to those weaknesses, situating the paper's approach within an existing methodological tradition."
+    },
+    {
+      "move": "M3",
+      "span": [
+        8,
+        9
+      ],
+      "role": "Announces the paper's novel semantic diversity measure and its extension of prior semantic distance work — the first, partial statement of contribution."
+    },
+    {
+      "move": "M1",
+      "span": [
+        10,
+        16
+      ],
+      "role": "Opens a second sub-territory on episodic memory contributions to DT, reviewing ESI effects, neuroimaging findings, and perceptual detail in memory research to build the evidential base for the next gap."
+    },
+    {
+      "move": "M2",
+      "span": [
+        17,
+        17
+      ],
+      "role": "Names the specific gap that the episodic memory review has made visible: perceptual details have not been systematically examined in creative cognition."
+    },
+    {
+      "move": "M3",
+      "span": [
+        18,
+        18
+      ],
+      "role": "Pivots immediately from the gap to assert the paper's positional claim — that perceptual details are particularly relevant to creative writing — motivating the study's focus."
+    },
+    {
+      "move": "M1",
+      "span": [
+        19,
+        24
+      ],
+      "role": "Returns briefly to territory-building, providing theoretical grounding (semantic + episodic memory theories) and one key empirical precedent (van Genugten et al.) before reinterpreting its null result as a methodological limitation."
+    },
+    {
+      "move": "M3",
+      "span": [
+        25,
+        27
+      ],
+      "role": "Asserts the significance of perceptual details for narrative creativity and formally announces the episodic memory/perceptual detail aim of the present study."
+    },
+    {
+      "move": "M1",
+      "span": [
+        28,
+        35
+      ],
+      "role": "Opens a third sub-territory on LLM creativity research, surveying GPT-3 studies, poetry comparisons, and automated DT scoring to legitimize AI data as a new comparison source."
+    },
+    {
+      "move": "M3",
+      "span": [
+        36,
+        48
+      ],
+      "role": "Delivers the full, sustained statement of contribution: methodological choices (story task, DSI, LLMs), dual hypotheses about human vs. GPT-3/4 creativity, a human–AI comparison aim, a GPT-4 replication, and broader implications — functioning as a compressed methods preview."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "The question of how to reliably assess the creative quality of ideas is a longstanding topic in creativity research (Amabile, 1982; Reiter-Palmon, Forthmann, & Barbot, 2019).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Divergent thinking (DT) refers to the ability to generate creative ideas by combining diverse types of information.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces DT as a named construct the paper will use as analytical machinery throughout.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "The alternative uses task (AUT) is the most common measure of DT (Guilford, 1967), in which participants are presented with an object and asked to generate unusual and creative uses for it.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "Studies using the AUT have traditionally relied on metrics such as fluency, counting the number of responses produced, or flexibility, the number of different categories of responses, to assess AUT performance; however, these measures are highly correlated with each other and fall short in capturing the full scope of creative ideation (Acar, Ogurlu, & Zorychta, 2022; Acar & Runco, 2015).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports traditional metrics and then introduces their limitation within the same sentence; the contrast/limitation against prior methods is the dominant rhetorical function.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "While subjective scoring methods for originality, the creative quality of ideas produced on the AUT, have shown evidence of convergent validity (Forthmann, Oyebade, Ojo, Günther, & Holling, 2019; Jauk, Benedek, & Neubauer, 2014), inter-rater agreement is not always high, raising issues of reliability (Barbot, 2018).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Concedes validity of subjective methods but pivots to the limitation of unreliability.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Researchers in creativity assessment have sought to standardize DT performance with computational measures of semantic distance to address the subjectivity of traditional scoring methods (Beaty & Johnson, 2021; Dumas, Doherty, & Organisciak, 2020).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to M1 after M2 to review the computational response to the gap"
+    },
+    {
+      "id": 7,
+      "text": "The application of semantic distance to DT assessment is based on the associative theory of creativity (Kenett & Faust, 2019; Mednick, 1962), which characterizes creative thought as a novel and useful recombination of semantic knowledge; thus, the combination of more remotely associated concepts is considered more creative.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the theoretical grounding for the semantic distance approach with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "In light of recent evidence showing that semantic distance scores of AUT responses are correlated with human ratings of creativity (Orwig, Diez, Vannini, Beaty, & Sepulcre, 2021), the present study implements a novel semantic diversity measure (Johnson et al., 2023) to overcome the limits of traditional DT assessments and characterize the degree to which creative stories connect semantically divergent concepts.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Uses prior evidence as springboard to announce the novel methodological contribution of the present study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "Extending past work, we define semantic diversity in narrative texts and examine its relation to human judgments of creativity.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the scope and purpose of the present study's extension.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Complementary research has highlighted the contributions of episodic memory to DT.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from link:opening. The sentence makes a substantive claim about a body of literature — asserting that research has demonstrated episodic memory contributes to DT — rather than merely naming a topic. That is a domain-level summary fitting tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "M2->M3 cycle: returns to M1 to establish a new sub-territory on episodic memory"
+    },
+    {
+      "id": 11,
+      "text": "After receiving a brief Episodic Specificity Induction (ESI) – a procedure that enhances the contribution of episodic retrieval processes to a subsequent task (for review, see Schacter & Madore, 2016) – participants reliably generate more novel uses for objects on the AUT compared with a control induction (Madore, Addis, & Schacter, 2015; Madore, Jing, & Schacter, 2016).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Furthermore, neuroimaging results show increased activity in memory-related brain regions, such as the hippocampus, when participants perform the AUT following the ESI, compared to following a control induction (Madore, Thakral, Beaty, Addis, & Schacter, 2019).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "Related studies indicate that participants generated fewer episodic details when imagining a future event and fewer ideas on a DT task, after receiving inhibitory transcranial magnetic stimulation to the angular gyrus, which led to reduced activity in connected regions including hippocampus (Thakral, Madore, Kalinowski, & Schacter, 2020).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "Together these findings suggest that DT may be facilitated by similar hippocampus-mediated episodic processes as autobiographical memory and imagination of future events.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from link:closing. Although integrative, the sentence makes a substantive cross-domain empirical generalization — the kind of citation-backed domain-level claim that tempstat covers. It must also be primary to serve as parent for [15].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "Perceptual details, such as sights, sounds and smells, are a central feature of episodic memory (e.g., Brunel, Labeye, Lesourd, & Versace, 2009; Conway, 2001; Saive, Royet, & Plainly, 2014; Wheeler, Petersen, & Buckner, 2000).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Recent studies have shown impairment of perceptual memory retrieval following hippocampal damage (St-Laurent, Moscovitch, Jadd, & McAndrews, 2014; St-Laurent, Moscovitch, & McAndrews, 2016).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Despite the growing literature on episodic contributions to creativity, the role of perceptual details in creative cognition has not yet been systematically examined.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies the specific gap the paper addresses.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "We contend that perceptual details are particularly relevant to creative writing, and may serve to illustrate the role of imagination in the construction of creative narratives.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and relevance of perceptual details for creative writing; motivates the study's focus rather than reporting a finding.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "Current theories suggest that both semantic and episodic memory processes contribute to the emergence of creative ideas (Benedek, Beaty, Schacter, & Kenett, 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Brief return to M1 to provide theoretical grounding before the next M3 contribution"
+    },
+    {
+      "id": 20,
+      "text": "If future imagination and creative thinking are mutually supported by episodic processes, a logical extension is that creative stories will contain a high degree of episodic details.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 19,
+      "note": "Derives a hypothesis from [19] without new evidence. Parent is [19] (tempstat). Subordination rule satisfied.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "Indeed, one recent study showed that participants who received an ESI prior to a creative writing task produced more episodic details in their stories compared to participants in a control induction, although originality ratings of the stories were comparable following ESI and control inductions (van Genugten, Beaty, Madore, & Schacter, 2022).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "Episodic detail is typically quantified in memory research by tallying the 'who, what, where' of a memory, as well as information that conveys the perceptual quality, or range of sensory experience, recalled.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports standard measurement practice in the field.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "Sheldon, Gurguryan, Madore, and Schacter (2019) found that emphasizing spatial information with a modified ESI procedure prior to autobiographical memory recollection and future simulation promoted the use of episodic processes to specifically access perceptual details of that event.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "It may be that stories written after ESI were not rated as more original than those from a control condition (van Genugten, Beaty, Madore, & Schacter, 2022) because the induction was geared toward the more general category of episodic, as opposed to perceptual, details.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:speculative. The sentence critically reframes a prior null finding by arguing the study's null result stems from a methodological limitation (wrong category of induction). This is a reinterpretive critique of prior work — the defining function of contrast — not a simple speculative extension of a parent claim.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "We suggest that the presence of perceptual details is a salient feature of creative narratives, serving to construct a rich scene and transport the reader to an alternative time and place.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and defining character of perceptual details in creative narratives, motivating the study's focus.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "Provoking sensory details with descriptions of smells, tastes, sights, and sounds may allow readers to more deeply engage with a narrative.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 25,
+      "note": "Corrected from extension:illustrative. The sentence unpacks the mechanism of \"transport\" introduced in [25] by specifying which sensory modalities are involved — this is definitional elaboration, not an example or case. Parent is [25] (emph). Subordination rule satisfied.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Thus, in the present study we examine contributions of episodic memory processes to creativity, looking at the specific role of perceptual details in creative short stories.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the purpose of the present study with respect to the episodic memory/perceptual detail thread.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "With groundbreaking progress in natural language processing, generative language models have experienced a global surge in attention over the past year and a growing number of studies have sought to test their creative abilities.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and timeliness of LLMs as a phenomenon worthy of attention; does not report a specific finding.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Opens a new M1 sub-territory on LLMs/AI creativity; M2->M3 cycle returns to M1"
+    },
+    {
+      "id": 29,
+      "text": "Computer science and psychology researchers alike have set out to test the limits of these sophisticated language models, by identifying tasks on which the models succeed and those on which they fail (Brown et al., 2020; Suzgun et al., 2022; Taecharungroj, 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "A study by Stevenson, Smal, Baas, Grasman, and van der Maas (2022) tested the ability of GPT-3, an autoregressive language model from OpenAI, to generate responses on the AUT, comparing its performance to human responses in terms of fluency, flexibility, and semantic distance.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "Their findings indicate that humans currently outperform GPT-3 on traditional measures of creativity, though authors suggest that AI may soon achieve human-level performance.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "Other studies have demonstrated that in the context of poetry, GPT-3 generated text is indistinguishable from human poems (Köbis & Mossink, 2021; Liao, Wang, Liu, & Jiang, 2019).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "These findings have led some to explore the possibility of AI-human collaboration leading to more creative art (Hitsuwari, Ueda, Yun, & Nomura, 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "In a related line of research, Organisciak, Acar, Dumas, and Berthiaume (2023) have demonstrated how large language models can be fine-tuned for the automated scoring of divergent thinking tasks, enabling a more nuanced evaluation of creativity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "This advancement surpasses earlier computational approaches, including those based solely on semantic distance, highlighting the multifaceted utility of large language models in both generating and evaluating creative content.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 34,
+      "note": "Corrected from extension:illustrative. The sentence elaborates and characterizes the significance and scope of the advancement described in [34] — no example or case is provided; it unpacks what the advancement amounts to and why it matters. Parent is [34] (tempstat). Subordination rule satisfied.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "Given that the primary aim of this project is to identify characteristic features of creative text, we leverage large language models, in addition to human stories, as a new source of data.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a methodological choice and its rationale for the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "We explore the use of generative large language models, such as GPT-3 and GPT-4, to supplement human data collection and examine the extent to which machine-generated stories can mimic human creativity.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Elaborates the scope of the LLM-related aims of the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "We extend prior work comparing output from GPT-3 and human participants in the context of short stories.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Claims novelty/extension relative to prior work, situating the contribution in the short story domain.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "Here, we further define the features of creativity using computational linguistic tools.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the overall purpose of the current work.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "To overcome the limitations of conventional DT assessments such as the AUT, we assess the creative quality of short stories with an established story-writing task (Johnson et al., 2022; Prabhakaran, Green, & Gray, 2014).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the methodological approach and its rationale.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "To assess the degree to which stories connect semantically divergent ideas, we compute divergent semantic integration (DSI) scores, leveraging creativity theory and distributional semantics (Johnson et al., 2022).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces \"divergent semantic integration (DSI)\" as the named computational construct the paper will use as analytical machinery.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "We hypothesize that, in addition to combining semantically distant concepts, the degree to which a story incorporates perceptual details will be predictive of creativity.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a formal hypothesis of the present study.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "Additionally, developments in artificial intelligence have raised questions about the capacity of machines to be creative.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of the AI creativity question as motivation for a portion of the study.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "Given the findings from Stevenson et al. (2022) one might expect human-written stories to be rated as more creative than those from GPT-3.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:speculative. The sentence articulates one of the study's working hypotheses/predictions that the study explicitly tests — this is contribution work (hypothesis statement), not mere speculative extension of a prior sentence.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "Alternatively, based on findings from studies of poetry, human and GPT-3 stories might be indistinguishable in their creativity.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Corrected from extension:speculative. Presents the alternative hypothesis the paper explicitly tests — independent rhetorical work framing a testable prediction, not a speculative extension of a single parent sentence.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "To determine whether or not there are any substantive differences in the creative quality of text written by human participants and that of recently developed large language models, we compare the subjective creativity ratings between human and computer-generated stories.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a specific research aim and method of the present study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "Lastly, given the appearance of GPT-4 after we initiated our study, we replicate these findings in an independent sample of stories generated by GPT-4 and examine whether current language models achieve human-level performance on this creative writing task.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the replication component of the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "The findings from this study have implications for the assessment of verbal creativity and shed light on the potential role of large language models in augmenting human data collection for creative tasks.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the broader significance and implications of the study's findings.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

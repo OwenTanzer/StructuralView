@@ -1,0 +1,295 @@
+{
+  "paper": {
+    "id": "krauss_1969",
+    "title": "krauss 1969",
+    "authors": [
+      "Krauss"
+    ],
+    "year": 1969,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction builds territory almost entirely through M1, using a **counterfactual-to-reality pivot** (S1–S6) to establish communicative complexity, then a **two-part theoretical framework** (S7) anchoring the empirical review that follows (S8–S18). The **gap is never explicitly named**: S19 smuggles M2 inside a prior-findings sentence by juxtaposing adult success against child failure — a fully interlaced M1/M2 move. M3 is a single sentence announcing Experiment I, with no methodological preview or contribution claim beyond scope.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        2
+      ],
+      "role": "Opens territory via counterfactual hypothetical — a simplified world where communication is trivial — setting up the real complexity to follow."
+    },
+    {
+      "move": "M1",
+      "span": [
+        3,
+        6
+      ],
+      "role": "Pivots from the hypothetical to the real world, asserting context-dependence in reference with two concrete examples that ground the territory in observable phenomena."
+    },
+    {
+      "move": "M1",
+      "span": [
+        7,
+        7
+      ],
+      "role": "Introduces the paper's core theoretical framework — speakers must analyze both stimulus arrays and listeners — giving the territory a conceptual structure to organize the empirical review."
+    },
+    {
+      "move": "M1",
+      "span": [
+        8,
+        11
+      ],
+      "role": "Marshals three cited adult studies to demonstrate that the framework is empirically supported, consolidating the research territory around a specific line of prior work."
+    },
+    {
+      "move": "M1",
+      "span": [
+        12,
+        18
+      ],
+      "role": "Narrows territory to the specific paradigm and prior findings — method, measures, and adult performance results — that directly precede and motivate the current study."
+    },
+    {
+      "move": "M2",
+      "span": [
+        19,
+        19
+      ],
+      "role": "Implicitly names the gap by contrasting young children's failure with adults' near-perfect performance, embedding the developmental problem within what appears to be a continuation of prior-findings reporting."
+    },
+    {
+      "move": "M3",
+      "span": [
+        20,
+        20
+      ],
+      "role": "Occupies the niche minimally by announcing the purpose of Experiment I — filling the developmental gap — with no further elaboration of method, predictions, or contribution."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "If language were simply a code in which every referent was denoted by one and only one reference and every reference was uniquely associated with a single referent, the problem of learning to communicate would be relatively simple.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Counterfactual hypothetical used to assert the real complexity and significance of communicative competence as a phenomenon worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Centrality claim via counterfactual; broad 'X matters' framing that opens the territory."
+    },
+    {
+      "id": 2,
+      "text": "Speakers and listeners would have only to learn the correct names for those referents that concern them; failures in communication could be attributed to the inability of the speaker and/or the listener to associate an object with its name.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 1,
+      "note": "Extends the counterfactual scenario from [1], spelling out what the simplified world would look like. Parent: [1] emph.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Clearly, in real life, matters are not so simple.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Pivots from the counterfactual to real complexity, signaling the tension that motivates the paper.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Surface contrast tag, but rhetorically this completes the territory-establishment by asserting the real phenomenon; still within M1."
+    },
+    {
+      "id": 4,
+      "text": "A name which is perfectly adequate to denote a referent in one situation may be entirely inappropriate in another.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and significance of context-dependence in reference as a real phenomenon worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "The term Streptopelia risoria may be appropriately used to identify a particular bird in a conversation between two ornithologists, but the same term would convey no information when used by an ornithologist talking to a child.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Concrete example of context-dependence claimed in [4]. Parent: [4] emph.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Similarly, the reference milk may be appropriate when a speaker wishes to refer to a glass of liquid, unless there happens to be more than one glass of milk.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Second illustrative example of the same phenomenon established in [4]. Re-parents to [4] emph, skipping [5] secondary.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "This view of speaker-listener interaction suggests that in constructing a message a speaker must perform two rather subtle informational analyses: (1) of the stimulus array, in order that his message will take into account those attributes of the referent which distinguish it from nonreferents; and (2) of this listener, in order that a message may be formulated which is compatible with the listener's knowledge and capabilities.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the two-part analytical framework (stimulus array analysis + listener analysis) that the paper uses as its theoretical machinery for understanding communicative competence.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "There is evidence to indicate that adults perform such analyses and that their performance as speakers is affected by it.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the field — empirical evidence exists supporting the framework just introduced.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "For example, Krauss and Weinheimer (1967) found that speakers in a communication task encoded color names differently depending on whether they were elements of arrays of similar or dissimilar colors.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Per Rule 3, citation-backed domain-level findings are tempstat. Though framed as an example of [8]'s claim, the citation makes this an independent primary sentence. Corrected from extension:illustrative.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Ratner and Rice (1963) report variations in a speaker's encoding as a function of the degree of knowledge attributed to his listener.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Independent cited finding supporting adult performance of listener analysis. Parent chain: independent primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "And Krauss, Vivekananthan, and Weinheimer (1968) found systematic differences in encoding depending upon whether the recipient of the message was the speaker himself or some other person.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Third independent cited finding supporting the adult encoding framework.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "A method has been developed for studying referential communication behavior in children (Glucksberg, Krauss, & Weisberg, 1966), patterned after a communication task employed by Krauss and Weinheimer (1964).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the existence of a prior methodological development relevant to the current work.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "The experimental task requires that pairs of visually separated subjects communicate about novel graphic forms.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Unpacks the method introduced in [12]. Parent: [12] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "Two classes of measurement may be employed.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Continues elaborating the methodological framework from [12]. Re-parents to [12] tempstat, skipping [13] secondary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "The first reflects the pair's adequacy in communicating: how well they succeed in transmitting information, as measured by their success in matching the novel forms on the basis of verbal interchange.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Defines the first class of measurement introduced in [14]. Re-parents to [12] tempstat (nearest primary), skipping intermediate secondaries.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "The second class of measures involves the analysis of characteristics of the verbal behavior itself (e.g., lexical characteristics of the speakers' messages, the nature and amount of feedback supplied by the listener, and the response of the speaker to such feedback).",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 12,
+      "note": "Defines the second class of measurement. Re-parents to [12] tempstat (nearest primary), skipping intermediate secondaries.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "With respect to adequacy of communication, adults are able to perform the task with near-perfect accuracy.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior empirical finding about adult performance on the task.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "In several studies, they were able to develop standarized nomenclatures, although the particular nomenclatures differed from pair to pair; that is, the names used by one pair of Ss were not necessarily the same as those used by any other pair of Ss (Krauss & Weinheimer, 1964).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports more detailed prior findings about adult behavior in the task, with citation support.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "Nursery school children, age 52-63 months, were unable to communicate effectively about these novel graphic forms, although they were able to perform the communication task with familiar forms for which common names were available (Glucksberg et al., 1966).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior empirical finding about young children's performance, establishing the developmental contrast motivating the current study.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Interlaced M1/M2: this sentence reads as prior-research reporting (tempstat tag) but its rhetorical function is to name the gap — children cannot do what adults can — thereby implicitly indicating what remains unknown about the developmental trajectory. Assigned M2/2B."
+    },
+    {
+      "id": 20,
+      "text": "Experiment I examined the relation between age and communication skills, as evaluated in the experimental paradigm previously employed with adults and young children.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose and scope of the first experiment.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

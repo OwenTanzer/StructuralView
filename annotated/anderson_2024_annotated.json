@@ -1,0 +1,274 @@
+{
+  "paper": {
+    "id": "anderson_2024",
+    "title": "anderson 2024",
+    "authors": [
+      "Anderson"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction deploys a textbook **M1 → M2 → M3** arc, but its distinctiveness lies in the economy of the M2 pivot and the density of the M3 block. Six sentences build the territory by anchoring creative ideation in Boden's canonical definition, tracing the LLM turn in CST research, and cataloguing prior researchers' homogenization concerns—all without overstating what is known. **Sentence 7's single-sentence gap claim** (\"Despite these earlier discussions\") does heavy lifting, converting accumulated concern into an empirical absence. The M3 block is unusually front-loaded with pre-announced RQ answers and an explicit novelty claim, signaling a paper confident enough in its contributions to summarize findings in the introduction itself.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        6
+      ],
+      "role": "Builds the territory in three layers: anchoring creative ideation as high-stakes with a canonical definition (Boden), tracing the LLM wave as a discontinuous enabling event in CST history, and accumulating prior researchers' expressed concerns about homogenization—positioning the field as already worried but not yet empirically investigating."
+    },
+    {
+      "move": "M2",
+      "span": [
+        7,
+        7
+      ],
+      "role": "Converts the accumulated concern into a precise empirical gap: direct study of homogenization has only just begun, making the research both timely and unoccupied. The single sentence does maximum gap work via the explicit contrast marker 'Despite'."
+    },
+    {
+      "move": "M3",
+      "span": [
+        8,
+        21
+      ],
+      "role": "Occupies the niche across three sub-phases: announcing the study design and scope (8–11), presenting all four RQs with pre-announced answers (12–15), outlining paper structure (16–18), and stacking novelty claims and synthesized findings (19–21) to foreclose any remaining uncertainty about what the paper delivers."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Success in creative contexts (such as creative writing and product design) often hinges on the ability to come up with ideas that are—in line with prominent creativity researcher Margaret Boden's definition of creativity—simultaneously 'new, surprising, and valuable' to some extent.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and centrality of creative ideation, anchored to a canonical definition. Establishes that the phenomenon is real and worth attending to rather than reporting a finding.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "Though research in creativity support tools (CSTs) has long aimed to produce software systems that can support parts of human creative processes, it was largely not until the recent wave of developments in large language models (LLMs) that software tools capable of directly generating potentially creative ideas in arbitrary domains began to seem feasible.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes the trajectory of CST research and situates LLMs as a recent enabling development.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Especially since the release of ChatGPT in November 2022, large numbers of people have begun to use LLM-based systems as CSTs, consulting LLMs for ideas in creative contexts as wide-ranging as recipe creation, tabletop roleplaying game scenario design, and marketing slogan generation.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of LLM adoption in creative contexts with citations; cross-domain examples are citation-backed and thus tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "The adoption of LLMs in creative contexts has raised questions about the extent to which these models can assist in the production of genuinely creative outputs.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and relevance of the research problem. Frames the concern without identifying a specific gap or reporting a finding.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "In particular, some researchers have expressed concern that the widespread use of a small number of highly centralized, data-driven AI systems (such as ChatGPT) may lead to decreased diversity in the outputs of creative processes that incorporate these tools.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior researchers' expressed concerns with citations; this is a claim about the state of the field's worry, not the paper's own assertion.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "These concerns resonate with earlier work that has proposed diversity of output as a potential evaluation criterion for AI-based CSTs in general and LLM-based CSTs in particular.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior work proposing diversity as an evaluation criterion, linking it to the concerns raised in [5].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Despite these earlier discussions, however, it is only very recently that researchers have begun to directly study the question of whether the use of AI-based CSTs leads to homogenization of human creative output.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies a gap — the lack of direct empirical study of homogenization — with an explicit contrast marker (\"Despite\").",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "To advance understanding of homogenization effects in human-AI co-creative contexts, we conducted a 36-participant comparative user study of ChatGPT and an alternative, non-AI CST.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose and scope of the current study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "Participants completed four divergent ideation tasks based on a subset of the Torrance Tests of Creative Thinking (TTCT); each participant completed half of these tasks with ChatGPT and half with the non-AI CST.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the study design — part of the contribution announcement.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Participants produced 1271 ideas in total.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a key parameter of study scope, still within the contribution framing.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "Based on the resulting data, we investigate four research questions:",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the investigative agenda of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "RQ1 With which CST do participants produce more semantically similar ideas at the group level? (A: ChatGPT)",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a specific research question and pre-announced result.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "RQ2 With which CST do participants produce more semantically similar ideas at the individual level? (A: no difference)",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a second research question and result.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "RQ3 Do ChatGPT users feel more or less responsible for the ideas they produce? (A: less responsible)",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a third research question and result.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "RQ4 Beyond originality, do ChatGPT and non-ChatGPT users differ in terms of other facets of creativity, such as fluency, flexibility, and elaboration? (A: ChatGPT → higher fluency, flexibility, and elaboration)",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the fourth research question and result.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "In the remainder of this paper, we first summarize prior work on the creative homogenization effects of AI-based CSTs, reasons we might expect LLM-based CSTs to result in creative homogenization, and approaches to the evaluation of CSTs in general.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces paper structure/organization.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "We then describe our experimental procedure and results.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues paper structure announcement.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "Finally, we discuss potential implications of our findings for users, designers, and developers of LLM-based CSTs.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues paper structure announcement.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "Uniquely among recent studies, we compare the homogenization effects of LLMs to those of a potential alternative CST; tease apart individual user-level from group-level homogenization effects; and extend the study of LLM-driven homogenization effects outside the domain of writing.",
+      "tag": "novstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explicitly claims novelty relative to prior work on three specific dimensions.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "Collectively, our results suggest that LLM-driven homogenization stems from the LLM providing different users with similar ideas, rather than by increasing individual user-level fixation; that low inferential distance between LLM outputs and apparently finished creative products may contribute to homogenization; and that users may be able to resist homogenization effects if they are given a sense of what the model tends to suggest in similar contexts.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes the paper's key findings and conclusions — announces what the study establishes.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "These conclusions imply potential mitigations for homogenization effects at the CST design level and clear research directions for follow-up work.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts what the paper's conclusions contribute in terms of design implications and future research directions; this is a contribution-framing act rather than open-ended speculation, as it announces the scope of the paper's impact.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

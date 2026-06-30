@@ -1,0 +1,511 @@
+{
+  "paper": {
+    "id": "mahowald_2024",
+    "title": "mahowald 2024",
+    "authors": [
+      "Mahowald"
+    ],
+    "year": 2024,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction invests heavily in M1 territory (S1–13), building a layered case that language and thought are tightly coupled in everyday cognition and LLM discourse before any gap is named. **The M2 pivot at S14** is unusually conceptually dense: rather than simply pointing to a gap in knowledge, it dismantles two named fallacies and diagnoses their shared root, making the niche argumentative rather than empirical. **M3 opens with the formal/functional competence framework** as the direct remedy to those fallacies, then closes with principal findings, theoretical qualifications, and a full four-section roadmap. The arc is linear but the M2 does double duty — both correcting a field-wide confusion and creating the very conceptual space the M3 framework is designed to fill.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        3
+      ],
+      "role": "Anchors the paper in a universal human phenomenon — that language use is assumed to reflect cognition — establishing the intuitive basis for why language–thought conflation occurs at all."
+    },
+    {
+      "move": "M1",
+      "span": [
+        4,
+        6
+      ],
+      "role": "Historicizes the conflation through the Turing test, showing that the language-as-cognition heuristic has deep institutional roots in AI discourse."
+    },
+    {
+      "move": "M1",
+      "span": [
+        7,
+        10
+      ],
+      "role": "Names and formally labels the first fallacy ('good at language → good at thought'), converting a diffuse cultural tendency into a tractable conceptual object the paper can argue against."
+    },
+    {
+      "move": "M1",
+      "span": [
+        11,
+        13
+      ],
+      "role": "Grounds the fallacy in the contemporary moment by surveying LLM capabilities and the 'sparks of AGI' discourse, giving the problem immediate stakes."
+    },
+    {
+      "move": "M2",
+      "span": [
+        14,
+        15
+      ],
+      "role": "Delivers the contrastive pivot: flags the importance of distinguishing linguistic from cognitive ability and illustrates how the first fallacy has historically misled even expert observers (Eliza example)."
+    },
+    {
+      "move": "M2",
+      "span": [
+        16,
+        17
+      ],
+      "role": "Introduces and names the second fallacy ('bad at thought → bad at language'), widening the niche from one error to a symmetrical pair of errors."
+    },
+    {
+      "move": "M2",
+      "span": [
+        18,
+        19
+      ],
+      "role": "Instantiates the second fallacy by reporting real LLM criticisms in the literature, showing the error is not hypothetical but actively shaping field judgments."
+    },
+    {
+      "move": "M2",
+      "span": [
+        20,
+        22
+      ],
+      "role": "Diagnoses both fallacies as having a shared root in language–thought conflation, then closes the niche by framing this as a breakdown of human heuristics — positioning the problem as cognitive and structural, not merely empirical."
+    },
+    {
+      "move": "M3",
+      "span": [
+        23,
+        23
+      ],
+      "role": "Announces the formal/functional competence framework as the paper's direct remedy to the fallacies, introducing the two-part distinction that organizes all subsequent analysis."
+    },
+    {
+      "move": "M3",
+      "span": [
+        24,
+        25
+      ],
+      "role": "Grounds the framework in human neuroscience and asserts the necessity of both competence types, pre-empting the objection that the distinction is merely analytical rather than empirically motivated."
+    },
+    {
+      "move": "M3",
+      "span": [
+        26,
+        31
+      ],
+      "role": "States the principal finding — a formal/functional gap in LLMs — and elaborates it with scaling evidence, the training-objective hypothesis, and open theoretical questions about the ceiling of functional competence."
+    },
+    {
+      "move": "M3",
+      "span": [
+        32,
+        36
+      ],
+      "role": "Maps the paper's four-section structure onto the framework, giving each section a distinct role and signaling to readers the full scope of the planned argument."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "When we hear a sentence, we typically assume that it was produced by a rational, thinking agent (another person).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a phenomenon about human cognition as real and worth attending to — sets up the language-thought conflation argument.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "The sentences that people generate in day-to-day conversations are based on their world knowledge ('Not all birds can fly.'), their reasoning abilities ('You're 15, you can't go to a bar.'), and their goals ('Would you give me a ride, please?').",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 1,
+      "note": "Illustrates the claim in [1] with concrete examples of how thought underlies language production.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Thus, we often use other people's statements as a window into their minds.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a significant phenomenon — that language reveals cognition — which is the foundational observation motivating the paper's entire argument. Previously tagged link:closing, but this sentence makes an independent claim that is worth attending to in its own right.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "In 1950, Alan Turing leveraged this tight relationship between language and thought to propose his famous test.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a prior historical event/claim in the literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "The Turing test uses language as an interface to cognition, allowing a human participant to probe the knowledge and reasoning capacities of two conversation partners to determine which of them is a human and which is a machine.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 4,
+      "note": "Unpacks what the Turing test is; defines the concept introduced in [4].",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Although the utility of the Turing test has since been questioned, it has undoubtedly shaped the way society today thinks of machine intelligence.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the field's assessment of the Turing test's legacy and influence.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "The popularity of the Turing test, combined with language–thought coupling in everyday life, has led to several common fallacies related to the language–thought relationship.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and significance of a problem (fallacies) in how we think about language and thought.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Transitional sentence bridging M1 territory to the niche; still establishes the phenomenon rather than naming what is unknown."
+    },
+    {
+      "id": 8,
+      "text": "One fallacy is that an entity (be it a human or a machine) that is good at language must also be good at thinking.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names and introduces the first fallacy as a conceptual object the paper will analyze.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "If an entity generates coherent stretches of text, it must possess rich knowledge and reasoning capacities.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 8,
+      "note": "Unpacks/elaborates the content of the fallacy introduced in [8].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Let's call this the 'good at language -> good at thought' fallacy.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Formally names the construct introduced in [8]–[9], creating a labeled conceptual object for the paper's argument.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "This fallacy has come to the forefront due to the recent rise of large language models (LLMs), including OpenAI's GPT models, Anthropic's Claude, and more open alternatives like Meta's LLaMa models and EleutherAI's GPT-J.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the field — the rise of LLMs as a contemporary development.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "LLMs today can produce text that is difficult to distinguish from human output, outperform humans at some text comprehension tasks, and show superhuman performance on next-word prediction.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Summarizes established findings about LLM capabilities.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "As a result, claims have emerged, both in the popular press and in the academic literature, that LLMs are not only a major advance in language processing, but are also showing 'sparks of artificial general intelligence'.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of claims in the literature and popular discourse about LLMs.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "However, when evaluating LLMs' capabilities, it is important to distinguish between their ability to think and their linguistic ability.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a tension against the conflation described in prior sentences; pivots to the paper's corrective stance.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "The 'good at language -> good at thought' fallacy makes it easy to confuse the two, leading people to mistakenly attribute intelligence and intentionality to even the most basic dialog systems (e.g., the chatbot Eliza from the 1960s).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Illustrates the consequence of the fallacy named in [10]; Eliza serves as a concrete historical example. Parents to [14] (contrast), a primary tag — valid.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "The contrapositive of this fallacy is that a model that is bad at thinking must also be a bad model of language.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the second fallacy as a new conceptual object derived from the first.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Let's call this the 'bad at thought -> bad at language' fallacy.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Formally names the second fallacy construct.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "LLMs are commonly criticized for their lack of consistent, generalizable world knowledge, lack of commonsense reasoning abilities, and failure to understand what an utterance is really about.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports existing criticisms of LLMs in the literature.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Instantiates the second fallacy's premise — reports critiques that implicitly invoke the bad-at-thought gap."
+    },
+    {
+      "id": 19,
+      "text": "Based on this evidence, some critics suggest that the models' failure to produce linguistic output that fully captures the richness and sophistication of human thought means that they are not good models of human language.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a position held by critics in the field — the 'bad at thought -> bad at language' inference in practice.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "Counter-claims an erroneous inference in the literature; complements the gap identified in [18]."
+    },
+    {
+      "id": 20,
+      "text": "Both the 'good at language -> good at thought' and the 'bad at thought -> bad at language' fallacies stem from the conflation of language and thought.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts that the conflation of language and thought is real and is the common root of both fallacies — an independent claim establishing the significance of the problem. Previously tagged link:closing, but it makes an independent claim and must parent [21] (extension:speculative), requiring primary status.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "This conflation is unsurprising: it is still novel, and thus uncanny, to encounter an entity that generates fluent sentences despite lacking a human identity.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Offers an explanatory speculation for why the conflation occurs, without new evidence. Parents to [20] (emph), a primary — valid.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "Thus, our heuristics for understanding what a language model is doing, heuristics that emerged from our language experience with other humans, are broken.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a critical limitation — our intuitive heuristics fail when applied to LLMs. This is a contrast move marking a rupture against expectation, not merely a synthesis. Previously tagged link:closing; corrected because it makes an independent critical claim and must parent [23] (contribution), requiring primary status.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Closing statement of niche; frames the problem as a breakdown in human heuristics before the M3 pivot."
+    },
+    {
+      "id": 23,
+      "text": "To mitigate the language–thought conflation fallacies, we propose to systematically distinguish between two kinds of linguistic competence: formal linguistic competence, the knowledge of rules and statistical regularities of language, and functional linguistic competence, the ability to use language in real-world situations.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's core proposal and introduces the formal/functional distinction as the paper's analytical framework.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Our motivation for the formal/functional distinction comes from the human brain, where these skills are robustly dissociable.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the grounding rationale for the framework proposed in [23]; specifies the evidentiary basis.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "Both formal and functional linguistic competence are essential components of human language use: an effective communicator needs to both generate grammatical, meaningful utterances and strategically use those utterances to achieve diverse, context-dependent goals.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and necessity of both competence types for human language use.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "Armed with this distinction, we evaluate the capabilities of contemporary LLMs and argue that LLMs exhibit a gap between formal and functional competence skills: for modern LLMs, formal competence in English is near human-level, whereas their functional competence remains patchy, with results depending on specific functional competence domains and on tasks within those domains.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's central empirical argument and scope of evaluation.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Moreover, whereas formal linguistic competence in LLMs improves drastically with the amount of training data, functional linguistic competence improvements with scale are less consistent, such that LLM developers have now shifted away from simple scaling-up of the language prediction task to more specialized methods targeting behaviors of interest [e.g., reinforcement learning from human feedback (RLHF)] or coupling an LLM with external specialized modules (leading to so-called 'augmented language models').",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports current state of the field regarding scaling behavior and developer practices.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Field-state report that supports and extends the principal finding announced in [26]."
+    },
+    {
+      "id": 28,
+      "text": "Therefore, we posit that the next-word prediction objective allows a model to master formal but not necessarily functional linguistic competence.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States a core theoretical claim/hypothesis of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "What is required for mastery of functional competence is harder to pin down, in part because so much of human cognition (commonsense reasoning, scientific knowledge, cultural knowledge) can be conveyed through language and thus learned from language, even if the underlying cognitive capacities are not themselves inherently linguistic.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies an unresolved issue — what functional competence requires is not well understood.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Qualifies the principal finding; acknowledges remaining open questions without reopening M2."
+    },
+    {
+      "id": 30,
+      "text": "As a result, language models acquire a variety of non-linguistic capacities.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established observation about what language models do as a consequence of learning from language. Previously tagged extension:speculative, but this is a domain-level factual claim, not a speculation — and it must parent [31] (nostat), requiring primary status.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "But the ultimate ceiling for functional competence depends on important open questions about the information contained in the linguistic signal and the mechanisms used to leverage that information.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Identifies open questions that bound what can be known about functional competence limits.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "In the rest of the paper, we develop a framework for evaluating the competence of modern language models from a cognitive science perspective.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the paper's overall organizational structure and purpose.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "In the first section, we elaborate on the constructs of formal and functional linguistic competence and motivate this distinction based on evidence from human neuroscience.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the structure/content of the first section of the paper.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "In the second section, we discuss the successes of LLMs in achieving formal linguistic competence, showing that models trained on word-in-context prediction capture numerous complex linguistic phenomena.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the structure/content of the second section.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "In the third section, we consider several domains required for functional linguistic competence, formal reasoning, world knowledge, situation modeling, and social cognition, on which today's LLMs often fail, or at least perform worse than humans.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the structure/content of the third section.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "In the fourth section, we discuss the implications of our framework for building and evaluating future models of language and thought before summarizing our key conclusions in the final section.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Describes the structure/content of the fourth and final sections.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

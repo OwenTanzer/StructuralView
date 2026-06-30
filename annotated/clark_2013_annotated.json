@@ -1,0 +1,1115 @@
+{
+  "paper": {
+    "id": "clark_2013",
+    "title": "clark 2013",
+    "authors": [
+      "Clark"
+    ],
+    "year": 2013,
+    "section": "Introduction"
+  },
+  "arc_summary": "This introduction is almost entirely M1: Clark builds a deep historical and conceptual territory before announcing the paper's focus. **Two brief M3 islands** (S26, S37, S42) punctuate the M1 exposition without ever resolving into a true gap-and-niche sequence. The absence of M2 means the paper positions itself as a **synthesizing exposition** of an established tradition rather than as a corrective intervention. The rhetorical weight falls on accumulating definitional and historical authority — Ashby to Helmholtz to the Helmholtz Machine to Rao & Ballard — so that the framework arrives fully legitimized before the paper's own argument begins.",
+  "structured_arc": "M1 -> M3 -> M1 -> M3 -> M1",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        25
+      ],
+      "role": "Constructs the research territory by tracing the intellectual lineage from Ashby and Helmholtz through the Helmholtz Machine to hierarchical predictive coding, defining key technical constructs (generative model, prediction error, surprisal, hierarchical predictive processing) and establishing the field's current state with dense citation."
+    },
+    {
+      "move": "M3",
+      "span": [
+        26,
+        26
+      ],
+      "role": "First announcement of the paper's scope: names the specific models (predictive coding extended to action) that will form the paper's focus, staking out what the present treatment covers."
+    },
+    {
+      "move": "M1",
+      "span": [
+        27,
+        36
+      ],
+      "role": "Resumes territory-building by elaborating the 'explain-away' prediction-error mechanism and tracing the historical origin of predictive coding in signal processing and data compression, grounding the neural framework in an established engineering tradition."
+    },
+    {
+      "move": "M3",
+      "span": [
+        37,
+        37
+      ],
+      "role": "Forward-reference to a later section of the paper (information theory and entropy), briefly flagging that surprisal will be revisited — structural signposting embedded within the ongoing exposition rather than a full paper-structure announcement."
+    },
+    {
+      "move": "M1",
+      "span": [
+        38,
+        96
+      ],
+      "role": "Extends the territory through defining key terms (surprisal, hierarchical predictive processing), expounding the Rao & Ballard model in detail, presenting the black-box epistemic framing of perception, and concluding with the Hosoya et al. retina example — all consolidating the conceptual and empirical ground on which the paper's subsequent argument will stand."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "'\"The whole function of the brain is summed up in: error correction.\"'",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Opening quotation attributed to Ashby; reports a prior claim from the literature.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "So wrote W. Ross Ashby, the British psychiatrist and cyberneticist, some half a century ago.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Contextualizes the prior quotation historically.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "Computational neuroscience has come a very long way since then.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the field relative to that historical starting point.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "There is now increasing reason to believe that Ashby's (admittedly somewhat vague) statement is correct, and that it captures something crucial about the way that spending metabolic money to build complex brains pays dividends in the search for adaptive success.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of evidence/belief in the field.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "In particular, one of the brain's key tricks, it now seems, is to implement dumb processes that correct a certain kind of error: error in the multi-layered prediction of input.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an emerging consensus finding about brain function.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "In mammalian brains, such errors look to be corrected within a cascade of cortical processing events in which higher-level systems attempt to predict the inputs to lower-level ones on the basis of their own emerging models of the causal structure of the world (i.e., the signal source).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports current scientific understanding of cortical error-correction mechanisms.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Errors in predicting lower level inputs cause the higher-level models to adapt so as to reduce the discrepancy.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established mechanism of predictive model adaptation.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "Such a process, operating over multiple linked higher-level models, yields a brain that encodes a rich body of information about the source of the signals that regularly perturb it.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the functional outcome of the described process.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "Such models follow Helmholtz (1860) in depicting perception as a process of probabilistic, knowledge-driven inference.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the historical lineage of the theoretical framework.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "From Helmholz comes the key idea that sensory systems are in the tricky business of inferring sensory causes from their bodily effects.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a specific historical theoretical contribution.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "This in turn involves computing multiple probability distributions, since a single such effect will be consistent with many different sets of causes distinguished only by their relative (and context dependent) probability of occurrence.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Unpacks the computational implication of the claim in [10]; parent [10] is tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "Helmholz's insight informed influential work by MacKay (1956), Neisser (1967), and Gregory (1980), as part of the cognitive psychological tradition that became known as 'analysis-by-synthesis' (for a review, see Yuille & Kersten 2006).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the historical influence and lineage of Helmholtz's ideas.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "In this paradigm, the brain does not build its current model of distal causes (its model of how the world is) simply by accumulating, from the bottom-up, a mass of low-level cues such as edge-maps and so forth.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports what the analysis-by-synthesis paradigm holds about brain function.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "Instead (see Hohwy 2007), the brain tries to predict the current suite of cues from its best models of the possible causes.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the contrasting positive claim of the analysis-by-synthesis paradigm.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "In this way: The mapping from low- to high-level representation (e.g. from acoustic to word-level) is computed using the reverse mapping, from high- to low-level representation. (Chater & Manning 2006, p. 340, their emphasis)",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Cites prior work to characterize the computational principle.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Helmholz's insight was also pursued in an important body of computational and neuroscientific work.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a broader lineage of work building on Helmholtz.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Crucial to this lineage were seminal advances in machine learning that began with pioneering connectionist work on backpropagation learning (McClelland et al. 1986; Rumelhart et al. 1986) and continued with work on the aptly named 'Helmholz Machine' (Dayan et al. 1995; Dayan & Hinton 1996; see also Hinton & Zemel 1994).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the key prior work in the historical lineage.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "The Helmholtz Machine sought to learn new representations in a multilevel system (thus capturing increasingly deep regularities within a domain) without requiring the provision of copious pre-classified samples of the desired input-output mapping.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports what the Helmholtz Machine aimed to do.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "In this respect, it aimed to improve (see Hinton 2010) upon standard back-propagation driven learning.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the specific improvement the Helmholtz Machine targeted.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "It did this by using its own top-down connections to provide the desired states for the hidden units, thus (in effect) self-supervising the development of its perceptual 'recognition model' using a generative model that tried to create the sensory patterns for itself (in 'fantasy,' as it was sometimes said).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the mechanism by which the Helmholtz Machine operated.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "(For a useful review of this crucial innovation and a survey of many subsequent developments, see Hinton 2007a).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Points to prior review literature on the topic.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "A generative model, in this quite specific sense, aims to capture the statistical structure of some set of observed inputs by tracking (one might say, by schematically recapitulating) the causal matrix responsible for that very structure.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines the technical construct \"generative model\" as it will be used throughout the paper.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "A good generative model for vision would thus seek to capture the ways in which observed lower-level visual responses are generated by an interacting web of causes – for example, the various aspects of a visually presented scene.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 22,
+      "note": "Illustrates the definition of generative model given in [22]; parent [22] is framedef (primary).",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "In practice, this means that top-down connections within a multilevel (hierarchical and bidirectional) system come to encode a probabilistic model of the activities of units and groups of units within lower levels, thus tracking (as we shall shortly see in more detail) interacting causes in the signal source, which might be the body or the external world – see, for example, Kawato et al. (1993), Hinton and Zemel (1994), Mumford (1994), Hinton et al. (1995), Dayan et al. (1995), Olshausen and Field (1996), Dayan (1997), and Hinton and Ghahramani (1997).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established computational implementation of generative models in hierarchical systems, with extensive citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "It is this twist – the strategy of using top-down connections to try to generate, using high-level knowledge, a kind of 'virtual version' of the sensory data via a deep multilevel cascade – that lies at the heart of 'hierarchical predictive coding' approaches to perception; for example, Rao and Ballard (1999), Lee and Mumford (2003), Friston (2005).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Names and defines \"hierarchical predictive coding\" as the central analytical framework for the paper.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "Such approaches, along with their recent extensions to action – as exemplified in Friston and Stephan (2007), Friston et al. (2009), Friston (2010), Brown et al. (2011) – form the main focus of the present treatment.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the scope and focus of the present paper.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "These approaches combine the use of top-down probabilistic generative models with a specific vision of one way such downward influence might operate.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a general characterization of the approach being reviewed.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Return to M1 territory-setting after brief M3 announcement; part of M1->M3->M1 cycling."
+    },
+    {
+      "id": 28,
+      "text": "That way (borrowing from work in linear predictive coding – see below) depicts the top-down flow as attempting to predict and fully 'explain away' the driving sensory signal, leaving only any residual 'prediction errors' to propagate information forward within the system – see Rao and Ballard (1999), Lee and Mumford (2003), Friston (2005), Hohwy et al. (2008), Jehee and Ballard (2009), Friston (2010), Brown et al. (2011); and, for a recent review, see Huang and Rao (2011).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the specific mechanism posited by the predictive coding approaches, with extensive citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "Predictive coding itself was first developed as a data compression strategy in signal processing (for a history, see Shi & Sun 1999).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the historical origin of predictive coding in signal processing.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "Thus, consider a basic task such as image transmission: In most images, the value of one pixel regularly predicts the value of its nearest neighbors, with differences marking important features such as the boundaries between objects.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Provides an illustrative example of predictive coding in signal processing; parent [29] is tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "That means that the code for a rich image can be compressed (for a properly informed receiver) by encoding only the 'unexpected' variation: the cases where the actual value departs from the predicted one.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Continues the illustration of how predictive coding achieves compression; re-parents to [29] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "What needs to be transmitted is therefore just the difference (a.k.a. the 'prediction error') between the actual current signal and the predicted one.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines \"prediction error\" as a key technical construct; stands independently as a definitional act.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "This affords major savings on bandwidth, an economy that was the driving force behind the development of the techniques by James Flanagan and others at Bell Labs during the 1950s (for a review, see Musmann 1979).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the historical motivation and development of the technique.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "Descendents of this kind of compression technique are currently used in JPEGs, in various forms of lossless audio compression, and in motion-compressed coding for video.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current applications of the compression technique.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "The information that needs to be communicated 'upward' under all these regimes is just the prediction error: the divergence from the expected signal.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports what is transmitted in predictive coding compression schemes.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "Transposed (in ways we are about to explore) to the neural domain, this makes prediction error into a kind of proxy (Feldman & Friston 2010) for sensory information itself.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the transposition of the compression principle to the neural domain, with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "Later, when we consider predictive processing in the larger setting of information theory and entropy, we will see that prediction error reports the 'surprise' induced by a mismatch between the sensory signals encountered and those predicted.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces a forthcoming argument/discussion in the paper — structural forward-reference to paper's own content.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": "Forward-reference to paper structure; functions as a structural announcement embedded within M1 territory exposition."
+    },
+    {
+      "id": 38,
+      "text": "More formally – and to distinguish it from surprise in the normal, experientially loaded sense – this is known as surprisal (Tribus 1961).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines \"surprisal\" as a technical term to be used in the paper.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "Hierarchical predictive processing combines the use, within a multilevel bidirectional cascade, of 'top-down' probabilistic generative models with the core predictive coding strategy of efficient encoding and transmission.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Defines/names \"hierarchical predictive processing\" as the paper's central analytical construct, consolidating earlier components into one named framework.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "Such approaches, originally developed in the domain of perception, have been extended (by Friston and others – see sect. 1.5) to encompass action, and to offer an attractive, unifying perspective on the brain's capacities for learning, inference, and the control of plasticity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the extension of the approach to action and its claimed scope.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 41,
+      "text": "Perception and action, if these unifying models are correct, are intimately related and work together to reduce prediction error by sculpting and selecting sensory inputs.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the theoretical claim of the models under discussion.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 42,
+      "text": "In the remainder of this section, I rehearse some of the main features of these models before highlighting (in sects. 2–5 following) some of their most conceptually important and challenging aspects.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the structure and scope of what follows in the paper.",
+      "cars_move": "M3",
+      "cars_step": "3D",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "A good place to start (following Rieke 1999) is with what might be thought of as the 'view from inside the black box.'",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Opens sub-section 1.2 by announcing a starting point; the phrase \"a good place to start\" is purely structural, making no independent claim about the world.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Structural transition sentence; inherits M1 as it introduces further territory exposition."
+    },
+    {
+      "id": 44,
+      "text": "For, the task of the brain, when viewed from a certain distance, can seem impossible: it must discover information about the likely causes of impinging signals without any form of direct access to their source.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and difficulty of the brain's computational problem — establishes that this is a real and important phenomenon worth attending to.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "Thus, consider a black box taking inputs from a complex external world.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 44,
+      "note": "Opens an illustrative analogy to convey the brain's epistemic situation; parent [44] is emph (primary).",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "The box has input and output channels along which signals flow.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 44,
+      "note": "Continues the black box illustration; re-parents to [44] emph.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "But all that it 'knows', in any direct sense, are the ways its own states (e.g., spike trains) flow and alter.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 44,
+      "note": "Continues the black box illustration, specifying the epistemic constraint; re-parents to [44] emph.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 48,
+      "text": "In that (restricted) sense, all the system has direct access to is its own states.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 44,
+      "note": "Continues the illustration, restating the epistemic restriction; re-parents to [44] emph.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "The world itself is thus off-limits (though the box can, importantly, issue motor commands and await developments).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 44,
+      "note": "Continues the black box illustration; re-parents to [44] emph.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 50,
+      "text": "The brain is one such black box.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 44,
+      "note": "Applies the black box analogy to the brain, closing the illustrative frame; re-parents to [44] emph.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "How, simply on the basis of patterns of changes in its own internal states, is it to alter and adapt its responses so as to tune itself to act as a useful node (one that merits its relatively huge metabolic expense) for the origination of adaptive responses?",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the depth and significance of the brain's epistemic problem — establishes the puzzle as real and pressing.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 52,
+      "text": "Notice how different this conception is to ones in which the problem is posed as one of establishing a mapping relation between environmental and inner states.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension with an alternative framing of the brain's problem.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Contrast used to sharpen field-level framing rather than to establish a gap; rhetorical work is territory-definition, not niche-carving."
+    },
+    {
+      "id": 53,
+      "text": "The task is not to find such a mapping but to infer the nature of the signal source (the world) from just the varying input signal itself.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reframes the core computational problem as the paper will treat it — defines the analytical framing the paper adopts.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 54,
+      "text": "Hierarchical approaches in which top-down generative models are trying to predict the flow of sensory data provide a powerful means for making progress under such apparently unpromising conditions.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established claim about hierarchical approaches as a solution to the problem.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 55,
+      "text": "One key task performed by the brain, according to these models, is that of guessing the next states of its own neural economy.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports what the hierarchical models claim about brain function.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 56,
+      "text": "Such guessing improves when you use a good model of the signal source.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the functional logic of the model-based approach.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 57,
+      "text": "Cast in the Bayesian mode, good guesses thus increase the posterior probability of your model.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports how the guessing process maps onto Bayesian inference.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 58,
+      "text": "Various forms of gradient descent learning can progressively improve your first guesses.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the learning mechanism used in these models.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 59,
+      "text": "Applied within a hierarchical predictive processing regime, this will – if you survive long enough – tend to yield useful generative models of the signal source (ultimately, the world).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the long-term outcome of the learning process within the framework.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 60,
+      "text": "The beauty of the bidirectional hierarchical structure is that it allows the system to infer its own priors (the prior beliefs essential to the guessing routines) as it goes along.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and elegance of a particular feature of the hierarchical structure — establishes its importance.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 61,
+      "text": "It does this by using its best current model – at one level – as the source of the priors for the level below, engaging in a process of 'iterative estimation' (see Dempster et al. 1977; Neal & Hinton 1998) that allows priors and models to co-evolve across multiple linked layers of processing so as to account for the sensory data.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the mechanism of iterative estimation with citations; parent [60] emph is primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 62,
+      "text": "The presence of bidirectional hierarchical structure thus induces 'empirical priors' in the form of the constraints that one level in the hierarchy places on the level below, and these constraints are progressively tuned by the sensory input itself.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the emergent property of empirical priors from the hierarchical structure.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 63,
+      "text": "This kind of procedure (which implements a version of 'empirical Bayes'; Robbins 1956) has an appealing mapping to known facts about the hierarchical and reciprocally connected structure and wiring of cortex (Friston 2005; Lee & Mumford 2003).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the connection between the computational procedure and neuroanatomical facts.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 64,
+      "text": "A classic early example, combining this kind of hierarchical learning with the basic predictive coding strategy described in section 1.1, is Rao and Ballard's (1999) model of predictive coding in the visual cortex.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a classic prior model as an exemplar of the approach.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 65,
+      "text": "At the lowest level, there is some pattern of energetic stimulation, transduced (let's suppose) by sensory receptors from ambient light patterns produced by the current visual scene.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 64,
+      "note": "Begins description of the Rao and Ballard model for illustration; parent [64] tempstat is primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 66,
+      "text": "These signals are then processed via a multilevel cascade in which each level attempts to predict the activity at the level below it via backward connections.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 64,
+      "note": "Continues description of the Rao and Ballard model; re-parents to [64] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 67,
+      "text": "The backward connections allow the activity at one stage of the processing to return as another input at the previous stage.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 64,
+      "note": "Continues description of the model mechanism; re-parents to [64] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 68,
+      "text": "So long as this successfully predicts the lower level activity, all is well, and no further action needs to ensue.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 64,
+      "note": "Continues description of the model's operation under successful prediction; re-parents to [64] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 69,
+      "text": "But where there is a mismatch, 'prediction error' occurs and the ensuing (error-indicating) activity is propagated to the higher level.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 64,
+      "note": "Continues description of what happens under prediction failure; re-parents to [64] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 70,
+      "text": "This automatically adjusts probabilistic representations at the higher level so that top-down predictions cancel prediction errors at the lower level (yielding rapid perceptual inference).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 64,
+      "note": "Continues the model description, explaining the inference mechanism; re-parents to [64] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 71,
+      "text": "At the same time, prediction error is used to adjust the structure of the model so as to reduce any discrepancy next time around (yielding slower timescale perceptual learning).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 64,
+      "note": "Continues the model description, explaining the learning mechanism; re-parents to [64] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 72,
+      "text": "Forward connections between levels thus carry the 'residual errors' (Rao & Ballard 1999, p. 79) separating the predictions from the actual lower level activity, while backward connections (which do most of the 'heavy lifting' in these models) carry the predictions themselves.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the directional information flow in Rao and Ballard's model with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 73,
+      "text": "Changing predictions corresponds to changing or tuning your hypothesis about the hidden causes of the lower level activity.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 72,
+      "note": "Explains what changing predictions means conceptually; parent [72] tempstat is primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 74,
+      "text": "The concurrent running of this kind of prediction error calculation within a loose bidirectional hierarchy of cortical areas allows information pertaining to regularities at different spatial and temporal scales to settle into a mutually consistent whole in which each 'hypothesis' is used to help tune the rest.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the functional outcome of running prediction error calculations across the hierarchy.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 75,
+      "text": "As the authors put it: Prediction and error-correction cycles occur concurrently throughout the hierarchy, so top-down information influences lower-level estimates, and bottom-up information influences higher-level estimates of the input signal. (Rao & Ballard 1999, p. 80)",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Direct quotation from prior work summarizing its key finding.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 76,
+      "text": "In the visual cortex, such a scheme suggests that backward connections from V2 to V1 would carry a prediction of expected activity in V1, while forward connections from V1 to V2 would carry forward the error signal indicating residual (unpredicted) activity.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the neuroanatomical implication of the model for the visual cortex.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 77,
+      "text": "To test these ideas, Rao and Ballard implemented a simple bidirectional hierarchical network of such 'predictive estimators' and trained it on image patches derived from five natural scenes.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the simulation study conducted by Rao and Ballard.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 78,
+      "text": "Using learning algorithms that progressively reduce prediction error across the linked cascade and after exposure to thousands of image patches, the system learnt to use responses in the first level network to extract features such as oriented edges and bars, while the second level network came to capture combinations of such features corresponding to patterns involving larger spatial configurations.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the empirical findings of the Rao and Ballard simulation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 79,
+      "text": "The model also displayed (see sect. 3.1) a number of interesting 'extra-classical receptive field' effects, suggesting that such non-classical surround effects (and, as we'll later see, context effects more generally) may be a rather direct consequence of the use of hierarchical predictive coding.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports additional findings of the model and their implication.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 80,
+      "text": "For immediate purposes, however, what matters is that the predictive coding approach, given only the statistical properties of the signals derived from the natural images, was able to induce a kind of generative model of the structure of the input data: It learned about the presence and importance of features such as lines, edges, and bars, and about combinations of such features, in ways that enable better predictions concerning what to expect next, in space or in time.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the key result of the Rao and Ballard study relevant to the present argument.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 81,
+      "text": "The cascade of processing induced by the progressive reduction of prediction error in the hierarchy reveals the world outside the black box.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of the predictive coding result — that it achieves the fundamental goal of connecting inner processing to the outer world.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 82,
+      "text": "It maximizes the posterior probability of generating the observed states (the sensory inputs), and, in so doing, induces a kind of internal model of the source of the signals: the world hidden behind the veil of perception.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the computational interpretation of what the model achieves; parent [81] emph is primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 83,
+      "text": "As an example of the power (and potential ubiquity) of the basic predictive coding strategy itself, and one that now moves context center stage, consider Hosoya et al.'s (2005) account of dynamic predictive coding by the retina.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the power and potential ubiquity of predictive coding — establishes the significance of the phenomenon — while introducing the next example. The significance claim is the primary rhetorical work; the example introduction is subordinate to it.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 84,
+      "text": "The starting point of this account is the well-established sense in which retinal ganglion cells take part in some form of predictive coding, insofar as their receptive fields display center-surround spatial antagonism, as well as a kind of temporal antagonism.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established empirical foundation for the Hosoya et al. account; parent [83] emph is primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 85,
+      "text": "What this means, in each case, is that neural circuits predict, on the basis of local image characteristics, the likely image characteristics of nearby spots in space and time (basically, assuming that nearby spots will display similar image intensities) and subtract this predicted value from the actual value.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 84,
+      "note": "Unpacks what center-surround antagonism means computationally; parent [84] tempstat is primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 86,
+      "text": "What gets encoded is thus not the raw value but the differences between raw values and predicted values.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 84,
+      "note": "Continues the definitional elaboration of the retinal predictive coding mechanism; re-parents to [84] tempstat.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 87,
+      "text": "In this way, 'Ganglion cells signal not the raw visual image but the departures from the predictable structure, under the assumption of spatial and temporal uniformity' (Hosoya et al. 2005, p. 71).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the finding of Hosoya et al. in their words, with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 88,
+      "text": "This saves on bandwidth, and also flags what is (to use Hosoya et al.'s own phrase) most 'newsworthy' in the incoming signal.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the functional significance of the retinal predictive coding mechanism.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 89,
+      "text": "These computations of predicted salience might be made solely on the basis of average image statistics.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 88,
+      "note": "Raises a hypothetical alternative mechanism without citation or evidence; parent [88] tempstat is primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 90,
+      "text": "Such an approach would, however, lead to trouble in many ecologically realistic situations.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces a limitation of the simpler alternative mechanism; primary tag, no violation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Contrast used to set up Hosoya et al.'s insight within ongoing territory-establishment; not a gap-carving move."
+    },
+    {
+      "id": 91,
+      "text": "To take some of the more dramatic examples, consider an animal that frequently moves between a watery environment and dry land, or between a desert landscape and a verdant oasis.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 90,
+      "note": "Illustrates the ecological problem with the average-statistics-only approach; parent [90] contrast is primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 92,
+      "text": "The spatial scales at which nearby points in space and time are typically similar in image intensity vary markedly between such cases, because the statistical properties of the different types of scene vary.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 90,
+      "note": "Continues the illustrative example, explaining why fixed statistics fail; re-parents to [90] contrast.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 93,
+      "text": "This is true in less dramatic cases too, such as when we move from inside a building to a garden or lake.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 90,
+      "note": "Extends the illustration to more mundane cases; re-parents to [90] contrast.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 94,
+      "text": "Hosoya et al. thus predicted that, in the interests of efficient, adaptively potent, encoding, the behavior of the retinal ganglion cells (specifically, their receptive field properties) should vary as a result of adaptation to the current scene or context, exhibiting what they term 'dynamic predictive coding.'",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the hypothesis derived by Hosoya et al. from these considerations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 95,
+      "text": "Putting salamanders and rabbits into varying environments, and recording from their retinal ganglion cells, Hosoya et al. confirmed their hypothesis: Within a space of several seconds, about 50% of the ganglion cells altered their behaviors to keep step with the changing image statistics of the varying environments.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the empirical findings confirming the Hosoya et al. hypothesis.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 96,
+      "text": "A mechanism was then proposed and tested using a simple feedforward neural network that performs a form of anti-Hebbian learning.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the proposed and tested mechanism for the observed phenomenon.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

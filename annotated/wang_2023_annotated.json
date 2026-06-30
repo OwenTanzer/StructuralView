@@ -1,0 +1,178 @@
+{
+  "paper": {
+    "id": "wang_2023",
+    "title": "wang 2023",
+    "authors": [
+      "Wang"
+    ],
+    "year": 2023,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction is almost entirely M1, with **eleven consecutive sentences building territory** before a two-sentence M3 closes the piece — M2 is never invoked. The M1 block itself is internally layered: centrality claims (S1–2) give way to definitional framing of alignment (S3–5), empirical prior findings (S6), domain-scoped importance claims (S7–9), and a contextualizing pivot to LLMs (S10–11). **The absence of a stated gap or counter-claim** means the justification for the study rests entirely on accumulated significance rather than an identified problem. The M3 (S12–13) then lands as a direct purpose-contribution announcement, with no preceding niche-carving to frame it.",
+  "structured_arc": "M1 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        11
+      ],
+      "role": "Builds the entire research territory through layered significance claims: opening with the societal importance of conversational agents, introducing and defining linguistic/lexical alignment, reviewing empirical findings on alignment's effects, reasserting domain-specific importance for human-agent interaction, and contextualizing GPT models as the state-of-the-art subject of study — all without identifying a gap."
+    },
+    {
+      "move": "M3",
+      "span": [
+        12,
+        13
+      ],
+      "role": "Announces the study's purpose and broader contributions directly, occupying a niche that was implied by accumulated territory rather than explicitly carved out by a gap claim."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "The growing significance of conversational agents in daily life, supported by their ongoing evolution, has led to a wide range of applications, including but not limited to agents functioning as healthcare helpers, customer service assistants, learning guides, and emotional companions [3,9,11,13].",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the real-world significance and broad applicability of conversational agents.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Centrality claim: asserts the growing significance of the domain to motivate the territory."
+    },
+    {
+      "id": 2,
+      "text": "Due to this increasing involvement of agents in human life, there is an increasing need to not only advance AI technologies but also gain a profound understanding of the factors contributing to successful human-computer interactions.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and urgency of the research domain.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Continues centrality/importance framing before moving to field-level topic generalizations."
+    },
+    {
+      "id": 3,
+      "text": "Linguistic alignment, a notion first systematically accounted for by Pickering and Garrod [14], refers to the process where two speakers in a conversation adjust to each other's linguistic behaviors to be more aligned in the representations of what is being communicated.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces and defines the theoretical construct of linguistic alignment that the paper will use as its analytical framework.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Field-level topic generalization: introduces the phenomenon under study with a definitional framing."
+    },
+    {
+      "id": 4,
+      "text": "This phenomenon, according to Pickering and Garrod [14,15], can be activated on multiple levels, including phonological, lexical, syntactic, and semantic alignment.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established finding from prior work about the multi-level nature of alignment.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Reports a specific finding attributed to prior researchers; subject is the researcher/study."
+    },
+    {
+      "id": 5,
+      "text": "Among these, lexical alignment, pertaining to the adoption of the same lexical items [14], has piqued broad research interest.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance and research attention given to lexical alignment specifically.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Field-level generalization narrowing the territory to lexical alignment specifically."
+    },
+    {
+      "id": 6,
+      "text": "Studies have demonstrated that lexical alignment can result in heightened engagement and rapport, as well as successful accomplishment of tasks among human-human interlocutors [2,16].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior empirical findings on the consequences of lexical alignment.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Reviews prior research: subject is 'Studies'; reports specific empirical findings."
+    },
+    {
+      "id": 7,
+      "text": "In the scope of human-agent interaction, investigating lexical alignment is essential in understanding its influence on both human users and conversational agents.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the importance and relevance of studying lexical alignment specifically in the human-agent context.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Centrality claim scoped to the human-agent subdomain; bridges general alignment literature to the specific focus."
+    },
+    {
+      "id": 8,
+      "text": "Insights can be derived regarding how agents can better adapt to users linguistically and provide more engaging and efficient conversations, resulting in more satisfied interactions for the users [7,17].",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Citation-backed assertion of the value and significance of this research area; disqualified from extension:speculative by the presence of citations. Functions as an importance claim extending the significance of the domain.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Field-level generalization about what can be gained from this line of research; continues territory establishment."
+    },
+    {
+      "id": 9,
+      "text": "Furthermore, examining the metrics and patterns of alignment enables the identification and assessment of the areas where agents excel or fall short in aligning with users, which in turn can aid the design, development, and optimization of agents.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Continues asserting practical significance of the research area for applied agent design.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Continues field-level importance claim about the applied value of alignment research."
+    },
+    {
+      "id": 10,
+      "text": "Recent months have witnessed a breakthrough in highly sophisticated large language models, among which GPT models, developed by OpenAI, have demonstrated state-of-the-art competencies in natural language generation and comprehension.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the field regarding recent LLM developments.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Reviews recent prior developments in the field (LLMs/GPT); subject is the model/field."
+    },
+    {
+      "id": 11,
+      "text": "Specifically, GPT-3.5 and GPT-4, as the latest versions of the GPT model, have showcased significant technological progress in terms of handling complex language tasks and engaging with users.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the established performance capabilities of the specific models under study.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Reviews prior/current knowledge about specific models that will be studied; completes the territory before M3."
+    },
+    {
+      "id": 12,
+      "text": "The current study aims to examine lexical alignment in human-agent conversations by concentrating on GPT-3.5 and GPT-4 models.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the purpose and scope of the present study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "M2 is absent/implicit; paper moves directly from extended M1 territory to occupying the niche."
+    },
+    {
+      "id": 13,
+      "text": "By delving into the lexical alignment patterns and comparing their performances, the study seeks to contribute to the understanding of the implications of advancements of large language models on human-agent communication and provide information on the development of more engaging and effective conversational agents.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Elaborates the broader goals and anticipated contributions of the study.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Continues the purpose announcement with elaboration of broader contribution goals."
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

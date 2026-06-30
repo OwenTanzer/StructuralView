@@ -1,0 +1,320 @@
+{
+  "paper": {
+    "id": "brownschmidt_2015",
+    "title": "brownschmidt 2015",
+    "authors": [
+      "Brownschmidt"
+    ],
+    "year": 2015,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction builds an unusually wide M1 base — spanning perception, decision-making, memory, and physical-context language effects — before pivoting twice to M3 scope announcements (sentences 8 and 16), making the **niche implicit rather than stated**. The final arc compresses **M2 into a single contrast sentence** (21), sandwiched between M3 thesis claims, so gap-carving and occupation are nearly simultaneous. The structural effect is that the paper's originality emerges from reframing (people as contexts) rather than from identifying a research void. **People-as-contexts outcompeting physical context** is the pivot the whole M1 survey was scaffolding toward.",
+  "structured_arc": "M1 -> M3 -> M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        7
+      ],
+      "role": "Establishes the cross-domain universality of context-dependence in cognition — spanning perception, decision-making, and memory — to license the chapter's eventual claim that the conversational partner is just another (but superior) contextual cue."
+    },
+    {
+      "move": "M3",
+      "span": [
+        8,
+        8
+      ],
+      "role": "Pivots from general cognition to language use, narrowing the territory and signaling the chapter's domain before returning to extend the M1 review within that domain."
+    },
+    {
+      "move": "M1",
+      "span": [
+        9,
+        15
+      ],
+      "role": "Surveys established physical-context effects in language processing — referential domains, modifier use — building the specific sub-territory against which the conversational-partner focus will be contrasted."
+    },
+    {
+      "move": "M3",
+      "span": [
+        16,
+        20
+      ],
+      "role": "Announces the chapter's specific focus (conversational partner as contextual cue), introduces the conceptual framework, and states the central thesis — occupying the implicit niche opened by the physical-context survey without formally naming a gap."
+    },
+    {
+      "move": "M2",
+      "span": [
+        21,
+        21
+      ],
+      "role": "Carves the niche retroactively by conceding the established status of physical-context effects and asserting that people-as-contexts are a more potent source of constraint — compressing the entire gap-identification into a single contrast move."
+    },
+    {
+      "move": "M3",
+      "span": [
+        22,
+        23
+      ],
+      "role": "Closes the arc by elaborating why conversational partners outperform physical context (unique perspective, knowledge, goals) and asserting the broad reach of these representations across language, interaction, and memory."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "A constant feature across many, if not all, domains of cognition is that cognitive processes are contextually dependent.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and broad significance of context-dependence in cognition; sets up the entire chapter's framing claim.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Extended M1 opening; broad 'X matters' framing for context-dependence across cognition."
+    },
+    {
+      "id": 2,
+      "text": "This includes processes in the moment, such as basic perceptual processes, as well as longer term memorial representations (see Yeh & Barsalou, 2006 for discussion).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Makes a citation-backed empirical claim about the scope of context-dependence across process types; Rule 3 requires tempstat for citation-supported domain claims.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "For example, the perceived size of an object varies as a function of the size of the nearby objects (i.e., the Ebbinghaus illusion, see Massaro & Anderson, 1971).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 2,
+      "note": "Provides a concrete cited example of the context-dependence claim in [2]; parent [2] is tempstat (primary). A named example with citation under primary parent remains illustrative per the rules.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move from parent sentence 2; specific study cited."
+    },
+    {
+      "id": 4,
+      "text": "Likewise, judgments about the brightness of an object vary with the brightness of the nearby objects and their geometrical organization (Adelson, 1993).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a second independently cited finding supporting context-dependence in perception; parallel to [3] but independently primary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 5,
+      "text": "In decision making, preferences for one selection over another are influenced by the set of options available and the framing of the problem or choice (Huber, Payne, & Puto, 1982; Tversky & Kahneman, 1981; see Mellers, Schwartz, & Cooke, 1998 for a review).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established citation-backed findings on context-dependence in decision making, extending the cross-domain survey.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Memory is context bound as well; learners form source-item bindings, such as whom a piece of information was heard from (Johnson, Hashtroudi, & Lindsay, 1993), as well as destination-item bindings, such as whom you told a piece of information to (Gopie & MacLeod, 2009).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established findings on context-dependence in memory, including person-linked bindings directly relevant to the chapter's thesis.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Similarly, arbitrary environmental context affects retrieval of items from memory such that recall is improved when the learning and retrieval occur in the same location (Godden & Baddeley, 1975).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the classic environmental context effect in memory; this finding is used as a direct analogy throughout the chapter.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "The focus of this chapter is the domain of language use and the way in which context shapes how we communicate in conversational settings.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the scope and subject matter of the chapter.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "First M3 pivot: announces chapter scope before returning to M1 territory review of language context."
+    },
+    {
+      "id": 9,
+      "text": "Well established in the language literature are findings that the physical context of language use guides language processing (Olson, 1970; Osgood, 1971; Tanenhaus, Spivey-Knowlton, Eberhard, & Sedivy, 1995).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established findings on physical context effects in language processing.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Return to M1 after brief M3 pivot in sentence 8; part of M2->M3 cycling variant."
+    },
+    {
+      "id": 10,
+      "text": "When describing a specific object, speakers typically distinguish the intended referent from other referents in the local context or referential domain (see Chambers, Tanenhaus, Eberhard, Carlson, & Filip, 2002).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports an established finding about referential domain effects on language production.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "For example, consider a situation in which a customer is deciding which of two shirts to purchase, a checkered shirt or a striped shirt.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Opens an illustrative scenario to concretize the claim in [10]; parent [10] is tempstat (primary).",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move from parent sentence 10."
+    },
+    {
+      "id": 12,
+      "text": "If the customer said to the salesperson, I'll take 'the shirt,' that referring expression would be ambiguous.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Continues the illustrative scenario from [11]; re-parents to [10] (primary) per the subordination rule since [11] is secondary.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move from parent sentence 10."
+    },
+    {
+      "id": 13,
+      "text": "Instead, the customer must distinguish the intended referent from other potential referents in the local context, for example, by saying 'I'll take the striped shirt.'",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 10,
+      "note": "Completes the illustration; re-parents to [10] (primary) per the subordination rule.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Inherits move from parent sentence 10."
+    },
+    {
+      "id": 14,
+      "text": "When using language, speakers use modifiers like striped not only to characterize or describe the intended referent (attributive uses of modifiers) but also to distinguish the intended referent from other potential referents in the referential domain (Brennan & Clark, 1996; Osgood, 1971; Pechmann, 1989).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established citation-backed findings on the dual function of modifiers in referential language; generalizes beyond the example.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "In these examples, the language user must take note of constraints imposed by the physical environment in order to communicate effectively with others.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 14,
+      "note": "Wraps up the physical-context example sequence by drawing a functional conclusion; parent [14] is tempstat (primary), so secondary parenting is valid.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Inherits move from parent sentence 14; functions as a field-level generalizing close of the M1 block."
+    },
+    {
+      "id": 16,
+      "text": "In the present chapter, we focus on a different aspect of the context of language use, specifically the ways in which the conversational partner herself is an important source of contextual constraint.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces the specific focus of the chapter, distinguishing it from prior work on physical context.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Second M3 pivot; the implicit niche (gap from physical-context focus) is bridged here rather than stated as nostat."
+    },
+    {
+      "id": 17,
+      "text": "In some cases, the partner constrains the relevant physical context, for example, in situations where two conversational partners have a different perspective in the physical world.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 16,
+      "note": "Provides a qualifying example of how partner-as-context overlaps with physical context; parent [16] is contribution (primary).",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Inherits move from parent sentence 16."
+    },
+    {
+      "id": 18,
+      "text": "The central goal of the present chapter is to draw parallels between context dependency in cognition broadly, and the partner specificity of language use.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Explicitly restates the chapter's central goal at the opening of subsection 1.1.",
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "Restates purpose; part of extended M3 occupation block."
+    },
+    {
+      "id": 19,
+      "text": "Here we conceptualize the conversational partner as a contextual cue in language use (also see Horton & Gerrig, 2005a) and draw parallels between the conversational partner and other types of context in language, such as objects in the visual world, in order to gain insights into how the partner shapes the use of language.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces the conceptual framework that drives the chapter's analysis — the conversational partner as a contextual cue — naming it explicitly and linking to prior work.",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "Presents the conceptual framework justifying the study's approach; 3B (justification/framing)."
+    },
+    {
+      "id": 20,
+      "text": "In doing so, we argue that people are a particularly potent source of contextual constraint that structures and shapes the representations that underlie language processing.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "States the paper's central argument/thesis claim.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Pre-announces the central finding/thesis of the chapter."
+    },
+    {
+      "id": 21,
+      "text": "Although the significance of the physical context (e.g., the physical environment and the objects therein) is well established in both memory and language (e.g., Godden & Baddeley, 1975; Osgood, 1971), here we argue that people as contexts offer a potentially more important and influential source of contextual constraint.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Concedes the established status of physical context effects, then asserts that people-as-contexts are more important — a contrast move setting up the chapter's specific contribution.",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "M2->M3 cycling: returns to niche-carving via counter-claim after initial M3 statements; directly challenges the sufficiency of prior work on physical context."
+    },
+    {
+      "id": 22,
+      "text": "Unlike a place or a scent, a conversational partner provides a context enriched with his or her unique perspective, knowledge, beliefs, and goals.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the distinctive and superior nature of conversational partners as contextual cues; elaborates the contrast in [21].",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "Returns to M3 after the M2 counter-claim in sentence 21; supports the thesis claim with elaboration of the principal finding/argument."
+    },
+    {
+      "id": 23,
+      "text": "These perspective representations and these goals guide our language, our interactions, and our memory of those interactions.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the broad significance and reach of perspective representations and goals — not hedged speculation but a positive claim about their role; parent [22] is emph (primary), and this sentence makes its own independent assertion of significance.",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

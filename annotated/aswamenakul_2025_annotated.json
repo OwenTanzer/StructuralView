@@ -1,0 +1,461 @@
+{
+  "paper": {
+    "id": "aswamenakul_2025",
+    "title": "Foraging dynamics of Picasso's lifelong artistic creativity",
+    "authors": [
+      "Aswamenakul, C.",
+      "Mallen, E.",
+      "Marghetis, T."
+    ],
+    "year": 2025,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction bets early on the foraging metaphor as a unifying frame, establishing territory by linking hypercreative careers to resource-search dynamics before any gap is named. **M2 does the heaviest lifting**: it both surfaces the gap (long-timescale creativity is understudied) and constructs three candidate foraging strategies — **Area-Restricted Search, Constrictive Search, and Expansive Search** — through a sustained literature-building sequence. A brief M3 intrusion at sentence 23 previews Constrictive Search via Pollock before M2 resumes, revealing that the theory-building is inseparable from the gap-filling. **M3 then closes the introduction** with a methodological announcement: Picasso's 5,008 paintings embedded in style space, analyzed as a foraging trajectory.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        5
+      ],
+      "role": "Establishes the territory by framing lifelong hypercreative output as a foraging process, introducing the core metaphor that will organize the entire paper and anchoring it in prior short-timescale foraging research."
+    },
+    {
+      "move": "M2",
+      "span": [
+        6,
+        22
+      ],
+      "role": "Opens the gap (long-timescale hypercreative dynamics are understudied), then pivots to construct the theoretical landscape: Area-Restricted Search is reviewed through converging evidence across timescales, and Constrictive Search is introduced and grounded in prior work on hot streaks and optimization, building the conceptual toolkit needed to motivate the study."
+    },
+    {
+      "move": "M3",
+      "span": [
+        23,
+        24
+      ],
+      "role": "Briefly occupies the announcement slot to preview Constrictive Search as a career-level phenomenon via Jackson Pollock, serving as a transitional proof-of-concept before the theoretical framing is complete."
+    },
+    {
+      "move": "M2",
+      "span": [
+        25,
+        30
+      ],
+      "role": "Returns to gap-filling theory-building to introduce and justify Expansive Search as a third foraging strategy, completing the candidate framework before the formal study announcement."
+    },
+    {
+      "move": "M3",
+      "span": [
+        31,
+        40
+      ],
+      "role": "Announces the study proper: names Picasso as the case, justifies the choice with his prolificacy and innovation, positions the work against multi-artist computational analyses, and details the methodology — catalogue, style-space embedding, trajectory analysis — as a sustained occupying of the niche."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "In extreme cases, individuals dedicate their entire lives to continuous creative output.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B"
+    },
+    {
+      "id": 2,
+      "text": "Scientists, artists, writers, and other \"hypercreative\" individuals can spend decades in the sustained pursuit of creative breakthrough.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 1,
+      "note": "Inherits move from parent [1].",
+      "cars_move": "M1",
+      "cars_step": "1B"
+    },
+    {
+      "id": 3,
+      "text": "This long-timescale creativity can be likened to a process of foraging, a strategic search for resources — in this case, creative ideas — in an uncertain landscape of possibility.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B"
+    },
+    {
+      "id": 4,
+      "text": "Scientists, for instance, forage through a space of potential theories or mechanisms, while visual artists forage through a space of styles, themes, or techniques.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 3,
+      "note": "Inherits move from parent [3].",
+      "cars_move": "M1",
+      "cars_step": "1B"
+    },
+    {
+      "id": 5,
+      "text": "Indeed, human creativity on a much shorter timescale — for instance, solving a puzzle over the course of seconds or minutes — has been characterized as a foraging process [1–4].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C"
+    },
+    {
+      "id": 6,
+      "text": "Much less is known about the dynamics of creativity over the long sweep of an entire career, particularly among those extreme, hypercreative individuals who devote their entire lives to a creative endeavor [5–7].",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B"
+    },
+    {
+      "id": 7,
+      "text": "What strategies might characterize the long-timescale foraging dynamics of lifelong creativity?",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2C"
+    },
+    {
+      "id": 8,
+      "text": "A number of foraging strategies are likely candidates.",
+      "tag": "link:opening",
+      "tier": "secondary",
+      "parent_id": 7,
+      "note": "Inherits move from parent [7].",
+      "cars_move": "M2",
+      "cars_step": "2C"
+    },
+    {
+      "id": 9,
+      "text": "One that is widespread across living organisms is Area-Restricted Search [9], in which the foraging individual alternates between periods of widespread, global 'exploration' and periods of intensive, local 'exploitation' of the resources within a particularly resource-dense patch (e.g., seabirds foraging for fish [10]).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 10,
+      "text": "This alternation between exploration and exploitation has analogs in more abstract forms of search [11].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 11,
+      "text": "On the timescale of seconds and minutes, for instance, searching in semantic memory (e.g., for names of animals) often resembles Area-Restricted Search, with repeated cycles of exploitation (e.g., retrieving as many barnyard animals as possible) and exploration (i.e., searching for a new subtype of animal, e.g., pets) [2, 3].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 12,
+      "text": "Similarly, when musicians improvise, they may trade off repeatedly between exploring widely in the space of possible sounds and exploiting a particular acoustic texture [12].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 13,
+      "text": "On the longer timescale of months and years, individual reading habits may follow an Area-Restricted Search strategy; indeed, computational analyses of Charles Darwin's reading habits found repeated alternations between exploitation (reading thematically related books) and exploration (switching to new topics) [13].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 14,
+      "text": "Thus, when humans are foraging for insights or information — whether internally in their memory or externally in books — they sometimes adopt a strategy of Area-Restricted Search.",
+      "tag": "link:closing",
+      "tier": "secondary",
+      "parent_id": 13,
+      "note": "Inherits move from parent [13].",
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 15,
+      "text": "While Area-Restricted Search involves cyclical shifts between exploration and exploitation, long-timescale creativity might follow more directional patterns of change.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2A"
+    },
+    {
+      "id": 16,
+      "text": "Long-timescale creativity, for instance, can involve progressive specialization.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 17,
+      "text": "Individuals might start with a vast exploration of diverse possibilities (e.g., random trial-and-error exploration of a large range of possibilities) before gradually honing in on a particular style, approach, practice, or idea.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 16,
+      "note": "Inherits move from parent [16].",
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 18,
+      "text": "We refer to this process of specialization as Constrictive Search.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 19,
+      "text": "Constrictive Search might be especially common in domains where experts specialize in a narrow subset of all possible techniques or strategies.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Inherits move from parent [18].",
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 20,
+      "text": "Some scientists and artists, for instance, may begin their careers by searching widely across a large range of topics or styles before constricting to a particular area of expertise.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 18,
+      "note": "Inherits move from parent [18].",
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 21,
+      "text": "Among scientists and artists who experience a 'hot streak' of sustained success [7], for instance, the hot streak is typically preceded by a period of widespread intellectual or stylistic exploration, followed by a constricted focus on the more narrow set of styles, themes, or topics that dominate their hot streak.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 22,
+      "text": "More generally, constrictive search is the basis of simulated annealing in optimization [14] or transient diversity in collective problem solving [15, 16].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 23,
+      "text": "Here we consider whether Constrictive Search may even characterize entire careers.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A"
+    },
+    {
+      "id": 24,
+      "text": "The American painter Jackson Pollock, for instance, experimented with a variety of styles early in his career [17] before narrowing his output to his signature style of fractal 'drip' paintings [18].",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 23,
+      "note": "Inherits move from parent [23].",
+      "cars_move": "M3",
+      "cars_step": "3A"
+    },
+    {
+      "id": 25,
+      "text": "A third potential foraging strategy in high-level creativity involves starting small — focusing on a limited set of styles, themes, or ideas — and expanding over time as a result of ongoing learning and adaptation.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 26,
+      "text": "We refer to this as Expansive Search.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 27,
+      "text": "Formal models in ecology, for instance, have shown that organisms should increase their home-range — the region in which they forage — when resources become more scarce or random [19].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 28,
+      "text": "This notion of an expanded home-range has analogs in creative domains.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 29,
+      "text": "Mathematical discoveries, for instance, are scarce and difficult to foresee; mathematical experts gradually expand their toolbox, cultivating procedural flexibility that allows them to deploy a variety of strategies and techniques [20].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 30,
+      "text": "Visual artists, similarly, may incorporate new styles, themes, or techniques into their artistic practice, thus unlock new dimensions of possibility and qualitatively expanding the nature of the explored space itself.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 29,
+      "note": "Inherits move from parent [29].",
+      "cars_move": "M2",
+      "cars_step": "2D"
+    },
+    {
+      "id": 31,
+      "text": "Here, we investigate the foraging dynamics of artistic creativity of an especially prolific visual artist, Pablo Picasso.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A"
+    },
+    {
+      "id": 32,
+      "text": "Picasso is widely considered one of the most influential artists of the 20th century [21–23].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B"
+    },
+    {
+      "id": 33,
+      "text": "Picasso was so prolific that, between his first painting when he was 8 years old until he died at the age of 91, he produced on the order of 50000 works of art [23], averaging more than one new artwork every day of his entire life.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 32,
+      "note": "Inherits move from parent [32].",
+      "cars_move": "M3",
+      "cars_step": "3B"
+    },
+    {
+      "id": 34,
+      "text": "Moreover, he's credited with contributing to a number of 20th century artistic developments, including Cubism and Surrealism [21–23].",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B"
+    },
+    {
+      "id": 35,
+      "text": "As a complement to computational analyses that have zoomed out to identify visual or aesthetic patterns across many artists [24–28], we zoomed in on Picasso's prodigious output — hypercreative in both quantity and innovation — as an opportunity to investigate the dynamics of day-to-day creative foraging over the long sweep of an exceptionally creative career.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A"
+    },
+    {
+      "id": 36,
+      "text": "We leveraged a digital catalogue of Picasso's prodigious output to characterize his long-timescale creative process.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B"
+    },
+    {
+      "id": 37,
+      "text": "We embedded images of every painting (N = 5008) into a high-dimensional 'style space' that captures both low-level and high-level stylistic features.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B"
+    },
+    {
+      "id": 38,
+      "text": "We then analyzed the trajectory within this style space of Picasso's day-to-day stylistic output over the course of his eight-decade career.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B"
+    },
+    {
+      "id": 39,
+      "text": "To characterize this trajectory, we calculated the magnitude of day-to-day stylistic movements (i.e., how much his style changed from day to day) and changes in the direction of this movement (i.e., the cosine similarity of successive movements).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B"
+    },
+    {
+      "id": 40,
+      "text": "We then investigate the long-timescale dynamics that emerge from this day-to-day stylistic foraging, including changes over his career in the scope of his stylistic output.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B"
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

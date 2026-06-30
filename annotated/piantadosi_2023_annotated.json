@@ -1,0 +1,483 @@
+{
+  "paper": {
+    "id": "piantadosi_2023",
+    "title": "piantadosi 2023",
+    "authors": [
+      "Piantadosi"
+    ],
+    "year": 2023,
+    "section": "Introduction"
+  },
+  "arc_summary": "The introduction is almost entirely **territory-building (M1)**, with a single early **M2 niche signal** at sentence 3 before retreating into an extended empirical showcase. The **M2 at sentence 3** is structurally isolated — it flags the gap (computational advances undermining Chomsky's framework) but is immediately swallowed by 37 sentences of capability demonstration. There is **no M3**: no purpose statement, no announcement of findings or structure. The rhetorical strategy is accumulation — the sheer weight of the M1 block is itself the argument for why the niche matters.",
+  "structured_arc": "M1 -> M2 -> M1",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        2
+      ],
+      "role": "Frames the downfall of Chomsky's approach as a historically significant and broadly cautionary phenomenon, establishing the stakes before any specifics are introduced."
+    },
+    {
+      "move": "M2",
+      "span": [
+        3,
+        3
+      ],
+      "role": "Acknowledges that prior critiques of Chomsky exist but flags the specific, under-recognized gap: how computational advances have undermined his framework — the paper's central niche."
+    },
+    {
+      "move": "M1",
+      "span": [
+        4,
+        40
+      ],
+      "role": "Builds an extended evidentiary territory demonstrating the power of neural language models through citations, illustrative ChatGPT examples, historical benchmarks, and counter-dismissals — the cumulative weight of which justifies why the niche identified in sentence 3 is consequential."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "After decades of privilege and prominence in linguistics, Noam Chomsky's approach to the science of language is experiencing a remarkable downfall.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the existence and significance of a phenomenon (the downfall of Chomsky's approach) as a framing claim.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Centrality claim framing the phenomenon as remarkable and historically significant."
+    },
+    {
+      "id": 2,
+      "text": "The story is, in part, a cautionary tale about what happens when an academic field isolates itself from what should be complementary endeavours.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the broader significance of the situation as a cautionary tale.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Continues centrality framing by asserting broad disciplinary significance."
+    },
+    {
+      "id": 3,
+      "text": "Chomsky's approach and methods are often argued to be problematic (e.g. Harris 1993, Pullum 1989, Behme 2012, Postal 2012, Behme 2014), but it is yet to be widely recognized just how the underlying ideas have been undermined by recent computational advances.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Acknowledges prior critique but identifies a remaining gap in recognition of how computational advances undermine the framework.",
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "Gap indication: prior critiques exist but the specific undermining by computational advances is not yet widely recognized. Early interlaced M2 niche signal before the extended M1 block."
+    },
+    {
+      "id": 4,
+      "text": "The state of the art in virtually all computational language tasks makes use of deep neural networks (LeCun et al. 2015), often neural networks called transformers (Vaswani et al. 2017, Brown et al. 2020, Bommasani et al. 2021).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports the current state of the field with citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "Returns to territory establishment after the M2 niche signal; reports what specific prior work has established."
+    },
+    {
+      "id": 5,
+      "text": "These are models of text that are trained on huge datasets of internet-based text to predict upcoming linguistic material (often at a sub-word but supra-character encoding).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports established facts about how these models work — a domain-level factual claim, not merely unpacking a term.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Field-level generalization about how the dominant class of models operates."
+    },
+    {
+      "id": 6,
+      "text": "Several advances have allowed these models to become wildly successful.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of the models' success; introduces the explanation that follows.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Centrality/significance assertion about the success of the models."
+    },
+    {
+      "id": 7,
+      "text": "First, we have become able to train them on massive data sets.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 6,
+      "note": "Elaborates the first of the advances asserted in [6] (emph, primary parent). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "This is in part due to advances in computing (e.g. computing derivatives in arbitrary models) and in part the availability of huge collections of text from the internet.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previously extension:definitional with secondary parent [7] — secondary-parenting-secondary violation. Reassigned to tempstat: reports factual causal claims about computing advances and data availability. Now a primary parent for [9].",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "A typical language model might be trained on hundreds of billions of tokens, estimated to cost millions of dollars in energy alone.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 8,
+      "note": "Illustrates the scale of training described in [8] (tempstat, primary parent). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "Second, the model architecture flexibly deals with nonlocal dependencies and allows the prediction of a word to potentially depend on material that is far away.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Previously extension:definitional with secondary parent [9] — secondary-parenting-secondary violation. Reassigned to tempstat: reports an architectural property of the models as an established fact.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 11,
+      "text": "The key consequence is that leading models are able to generate not only grammatical sentences, but entire discourses, scripts, explanations, poems, etc.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of the consequence of these architectural properties.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 12,
+      "text": "This pursuit has been led in recent years by AI companies (Ahmed et al. 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a factual state of affairs about who has driven the development, with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "A nice example can be provided by the following, produced by ChatGPT when prompted with only the text in bold.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Introduces an illustrative example of the models' capabilities. Parent is [11] (emph, primary). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "All examples in this paper show the first response generated by ChatGPT to these queries by the author in early 2023.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Announces a methodological scope for the examples used throughout the paper.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Though tagged contribution, this sentence describes the evidentiary territory (ChatGPT examples) rather than announcing a research purpose; it functions as a field-level methodological framing within M1."
+    },
+    {
+      "id": 15,
+      "text": "Good queries often focus on weird or unusual requests in order to ensure that the output is well outside of the training set.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 14,
+      "note": "Explains the rationale for the query design described in [14] (contribution, primary parent). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 16,
+      "text": "Ignore whatever theoretical persuasions you have for a moment and just recognize how remarkable that response is.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Direct rhetorical appeal asserting the significance of the ChatGPT output just shown.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "A coherent and grammatical story unfolds from a simple prompt, even though the requested scenario strains plausibility and probability.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Previously emph. Elaborates the specific example output in support of [16] (emph, primary parent) rather than asserting an independent significance claim. Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "The response tackles the core essence of the question to provide a compelling story about how an ant might sink an aircraft carrier.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Further illustrates the quality of the example. Parent re-anchored to [16] (emph, primary), skipping [17] (secondary). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "The answer is outside of the training set.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a significant independent property of the output — genuine generalization, not memorization.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "In fact, after 'Once upon a time, in a far-off land, there lived a colony of ants,' a Google search returns no matching strings on the entire internet.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 19,
+      "note": "Provides empirical illustration of the claim in [19] (emph, primary parent). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "Anyone who has dealt in simpler language models like n-grams or context-free grammars will be impressed that this model is capable of incorporating not just longer dependencies within sentences, but across sentences.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of LLM capabilities by contrast with simpler prior systems.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "It also creates complex structures, with e.g. multiple embedded clauses, prepositional phrases, conjunctions, etc; it uses pronouns, determiners, quantifiers, adjectives, etc. in realistic ways; this and similar models have few apparent problems with agreement or pronoun reference (Gulordava et al. 2018, Goldberg 2019).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports specific empirical findings about model capabilities with citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "Any one of these abilities has been the topic of countless dissertations in linguistics.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of these capabilities by reference to the vast scholarly attention they have attracted.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Beyond that, such models succeed on tasks that formal linguistic theories haven't yet dreamed of—like interpreting the semantics of the words in question and maintaining not just coherent sentences but entire coherent discourses.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension — models exceed what formal theories have even attempted.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Contrast tag, but rhetorically this sentence extends the territory by generalizing model capabilities beyond what formal theories cover — still M1 territory-building rather than gap-indicating."
+    },
+    {
+      "id": 25,
+      "text": "Such models exhibit over 90% accuracy in Winograd-style questions (Kocijan et al. 2020, 2022), which require interpreting language in world contexts (e.g. 'The trophy doesn't fit in the brown suitcase because it is too large. What is too large?').",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports specific empirical findings about model performance with citations.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "What is clear is that these models use language in a way that is remarkably human (Mahowald & Ivanova et al. 2023).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports a finding from prior work with citation.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "This kind of example hearkens back to Turing 1950, who considered asking an artificial intelligence to write a sonnet on the topic of 'The Forth Bridge', and suggested that success in solving such tasks would demonstrate many key aspects of humanlike intelligence.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Reports prior work (Turing 1950) and its claims, providing historical context.",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "Contemporary language models can do much more—they can write raps, explain things, imagine conversations, create a mashup script of Seinfeld and Star Trek, etc.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Contrasts current capabilities against the Turing benchmark, asserting models exceed that historic standard.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "Contrast with Turing benchmark functions as field-level generalization extending the territory rather than indicating a gap."
+    },
+    {
+      "id": 29,
+      "text": "They are aware of even sub-word properties like rhymes:",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 28,
+      "note": "Previously emph. Introduces a specific illustrative capability subordinate to the broader significance claim in [28] (contrast, primary parent). Does not assert an independent significance claim. Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "And they are aware of style:",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Previously emph. Introduces another specific illustrative example, subordinate to [28] (contrast, primary parent — skipping [29] secondary). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "Note that this specific example was not in the model's training set—there is no possibility that Trump understands prime numbers.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts an independent significant property (genuine generalization, not memorization). Parent re-anchored to [28] (contrast, primary), independent of the secondary chain in [29]–[30].",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 32,
+      "text": "However information about the fundamental theorem of arithmetic was, as was the speech style of Donald Trump.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 31,
+      "note": "Clarifies what was in the training set, elaborating on the generalization claim in [31] (emph, primary parent). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "'Believe me, I know a lot about prime numbers' is probably not something Trump has actually said, but certainly something he would say.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Illustrates the generalization point. Parent is [31] (emph, primary — skipping [32] secondary). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "Examples like these show why dismissals from cognitive scientists like Gary Marcus that the models are just the same as 'autocomplete' systems on your phone are far too shallow.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Introduces tension against a specific dismissive critique of LLMs.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "Counter-dismissal functions to assert centrality and significance of the territory, not to identify a research gap; remains M1."
+    },
+    {
+      "id": 35,
+      "text": "The model is able to put together things in its training in new ways that maintain a considerable amount of linguistic and conceptual coherence.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts a positive property of the models, countering the autocomplete dismissal in [34].",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "That requires more than merely guessing things it has seen before—it requires modeling the dynamics of language.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Elaborates what the capability in [35] (emph, primary parent) actually entails. Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "If models only repeated what they had seen before, they would not be able to generate anything new, particularly complex sentence structures that are grammatical and coherent.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": 35,
+      "note": "Previously had secondary parent [36] — secondary-parenting-secondary violation. Re-parented to [35] (emph, primary). Develops the logical implication as a conditional without new evidence. Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "It is somewhat difficult to convey how remarkable the models are currently.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the extraordinary nature of current models.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 39,
+      "text": "You just have to interact with them.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "Parent is [38] (emph, primary). Legal secondary.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 40,
+      "text": "They are imperfect, to be sure, but my qualitative experience interacting with them is like talking to a child, who happened to have memorized much of the internet.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "Asserts the significance of the models through an analogical characterization while briefly acknowledging limitation.",
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}
