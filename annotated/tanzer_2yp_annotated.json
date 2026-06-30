@@ -1,0 +1,741 @@
+{
+  "paper": {
+    "id": "tanzer_2yp",
+    "title": "tanzer 2yp",
+    "authors": [
+      "Tanzer"
+    ],
+    "year": 0,
+    "section": "Introduction"
+  },
+  "arc_summary": "The structure is **interlaced rather than blocked**: the first purpose statement (s10) lands early, immediately gets justified by a returning gap (s11), and from there the introduction **cycles repeatedly through M1 -> M2 -> M3**. Each cycle pairs a territory review (LLM vs. human language, foraging, entrainment) with a contrast that distinguishes **dyadic word generation**, then announces a corresponding aim, framework, or measure. Multiple M3 segments accumulate — the explore/exploit lens, the similarity measure, the **individuation effect** — so the contribution is built incrementally rather than declared once. The recurring rhetorical engine is the same move each time: review what's known, mark how this task differs, derive a study construct from the difference.",
+  "structured_arc": "M1 -> M2 -> M3 -> M2 -> M1 -> M2 -> M3 -> M1 -> M2 -> M3 -> M1 -> M2 -> M3 -> M1 -> M2",
+  "move_roles": [
+    {
+      "move": "M1",
+      "span": [
+        1,
+        9
+      ],
+      "role": "Establishes the territory: AI-human creative collaboration as a real phenomenon, then reviews the contrast between LLMs' narrow associative output and humans' multi-timescale, flat-hierarchy creativity. Names the 'flat associative hierarchy' construct the paper will draw on."
+    },
+    {
+      "move": "M3",
+      "span": [
+        10,
+        10
+      ],
+      "role": "Early purpose statement — declares the study targets the hybrid human-LLM dyad — placed before the gap is even spelled out."
+    },
+    {
+      "move": "M2",
+      "span": [
+        11,
+        11
+      ],
+      "role": "Retroactively justifies the just-stated aim: prior work covered fully-human and fully-LLM dyads but never the hybrid case."
+    },
+    {
+      "move": "M1",
+      "span": [
+        12,
+        12
+      ],
+      "role": "Adds context that human-AI collaboration's net value is unsettled, motivating the inquiry."
+    },
+    {
+      "move": "M2",
+      "span": [
+        13,
+        15
+      ],
+      "role": "Sharpens the gap into a concrete deficiency: LLM creative output is consistently less semantically diverse, evidenced across essays and creative writing, with social stakes."
+    },
+    {
+      "move": "M1",
+      "span": [
+        16,
+        19
+      ],
+      "role": "Reviews the collective-foraging literature on how individual search style shapes group diffusion, supplying the explore/exploit grounding."
+    },
+    {
+      "move": "M3",
+      "span": [
+        20,
+        21
+      ],
+      "role": "Positions dyadic word generation as an extension of foraging work to a two-agent case, framing the hybrid condition as the means to probe search-style diversity."
+    },
+    {
+      "move": "M1",
+      "span": [
+        22,
+        22
+      ],
+      "role": "Returns to territory: meaning arises from interactive interplay between minds, grounding the task in interactive-language theory."
+    },
+    {
+      "move": "M3",
+      "span": [
+        23,
+        26
+      ],
+      "role": "Defines the central task construct — the alternating single-word co-creative game — and asserts its value as a real-time trace of two minds through lexical space, with a worked example."
+    },
+    {
+      "move": "M1",
+      "span": [
+        27,
+        27
+      ],
+      "role": "Cites prior work in this exact paradigm showing AI word generation diverges systematically from the human baseline."
+    },
+    {
+      "move": "M2",
+      "span": [
+        28,
+        29
+      ],
+      "role": "Marks the residual gap: even steered LLMs miss the human balance of coherence and volatility, posing the open question the study addresses."
+    },
+    {
+      "move": "M3",
+      "span": [
+        30,
+        41
+      ],
+      "role": "Introduces the explore/exploit analytical framework, distinguishes the task from foraging/category-recall paradigms, and operationalizes exploration vs. exploitation via cosine-similarity runs and drops — the methodological core."
+    },
+    {
+      "move": "M1",
+      "span": [
+        42,
+        45
+      ],
+      "role": "Reviews the entrainment literature: speakers bring distinct lexical identities that align only gradually through communicative negotiation."
+    },
+    {
+      "move": "M2",
+      "span": [
+        46,
+        47
+      ],
+      "role": "Distinguishes the task from communicative collaboration — no convergence pressure means individual lexical identities can persist rather than being negotiated away."
+    },
+    {
+      "move": "M3",
+      "span": [
+        48,
+        50
+      ],
+      "role": "Derives the study's prediction from that distinction and names a new construct, the 'individuation effect,' as the measurable signature."
+    },
+    {
+      "move": "M1",
+      "span": [
+        51,
+        54
+      ],
+      "role": "Closes by reviewing the contrasting LLM case — a single statistical model with no independent lexical identity and a tendency to anchor to surface context — setting up why the individuation effect should be absent in pure-LLM dyads."
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Human creativity is a collective achievement, and even conventionally solitary creative acts increasingly involve the participation of one or many AI (often LLM-based) partner(s).",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": null
+    },
+    {
+      "id": 2,
+      "text": "LLMs are driven by high-probability associations derived from common patterns in the training corpora.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 3,
+      "text": "As a result their words tend to concentrate within a relatively tight range of locally similar responses, steepening their 'associative hierarchy' (Mednick, 1962) and producing a narrower range of creative responses than humans (Chen & Ding, 2023; Mahowald et al., 2024).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 4,
+      "text": "Human language production, by contrast, operates hierarchically across multiple timescales (Caucheteux et al., 2023).",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": "contrast tag here contrasts known properties, still reviewing territory"
+    },
+    {
+      "id": 5,
+      "text": "Human creativity in general, meanwhile, has been shown to alternate dynamically between convergent and divergent solution-generating strategies (Malaie et al., 2024; Nijstad et al., 2010).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 6,
+      "text": "Predictive weight in human language judgments is distributed across multiple levels of abstraction rather than concentrated only at the local level (Heilbron et al., 2022).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 7,
+      "text": "Human creativity in language use is therefore characterized by a probability distribution in which no single response dominates.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "asserts a substantive characterization with independent content, not bare synthesis",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 8,
+      "text": "In Mednick's terms, this is the 'flat associative hierarchy,' in which remote associations become more accessible.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "names/introduces the construct the paper will use",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 9,
+      "text": "Through joint interaction, pairs and groups navigate shared conceptual terrain and explore a common space of possible expressions without explicit instruction or reward (Williams et al., 2025).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 10,
+      "text": "The present study aims to investigate not how the collaborative creative dynamic of human and LLM-powered participants change in a hybrid context where both work together to generate words in sequence.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": "early purpose statement, intro then cycles back to M2/M1"
+    },
+    {
+      "id": 11,
+      "text": "Prior work has characterized word generation in fully human and fully LLM dyads, but the hybrid case, in which a human and an LLM work together, has not yet been examined.",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2B",
+      "move_note": "return to gap after early M3 statement; M2->M3 cycling"
+    },
+    {
+      "id": 12,
+      "text": "Evidence for whether human-AI collaboration is a net positive remains mixed (Anderson et al., 2024; Vaccaro et al., 2024).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 13,
+      "text": "However, LLM-generated creative content consistently shows less semantic diversity than human-generated content.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 14,
+      "text": "This gap emerges quantitatively across human vs. LLM-generated college admissions essays (Moon et al., 2025), and human expert evaluation confirms a parallel quality gap in creative writing (Chakrabarty et al., 2024).",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 13,
+      "note": "provides evidence/examples of the gap asserted in [13]",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 15,
+      "text": "The downstream consequences of this creativity gap between human and AI-generated content have the potential to pose significant social challenges.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1A",
+      "move_note": "centrality framing of the gap's importance"
+    },
+    {
+      "id": 16,
+      "text": "In collective foraging, individual search style determines how well groups diffuse across new territory.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 17,
+      "text": "Garg, Kello & Smaldino (2022) modeled this directly, simulating agents who balanced individual exploration against the exploitation of social information.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 18,
+      "text": "Exploratory individuals spread out with minimal overlap, covered ground quickly, and kept the collective from converging on patches that were already depleted.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 19,
+      "text": "When individual search was exploitative, groups snowballed onto the same locations, exhausted them, and lost the diversity of coverage on which productive collective search depends.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 20,
+      "text": "Dyadic word generation extends this work by enabling us to investigate a two-agent case in which partners may differ substantially in their individual tendency to diffuse.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 21,
+      "text": "A hybrid condition enables us to ask how that diversity in search style shapes the collective's dynamics.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3A",
+      "move_note": null
+    },
+    {
+      "id": 22,
+      "text": "Meaning in language, also, does not emerge from individual minds working in isolation, but from the dynamic interplay between them (Clark & Brennan, 1991; Pickering & Garrod, 2004).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 23,
+      "text": "Dyadic word generation is a co-creative task in which pairs take strictly alternating turns producing single words.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "defines the central task construct of the paper",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 24,
+      "text": "Each individual is prompted by their partner's most recent response, and the task functions as a minimal co-creative language game.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 23,
+      "note": "unpacks the task introduced in [23]",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 25,
+      "text": "Every word in the context of this task is a real-time measure of where two minds are in a wide-ranging trajectory through lexical space.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "asserts the significance/relevance of the task measure",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 26,
+      "text": "In one session, for example, a pair produced: Plane, flight, Bird, sky, Clouds, rain, Water, ocean, Fish, marine, Biology, ecosystem, Nature, forest, Trees, roots, mountain, trail —eighteen words arcing through a single sustained region of very lush and green lexical space— before the sequence broke abruptly into a double-meaning and, from there, a category shift — mix, blend.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": 25,
+      "note": "illustrative example of the task described in [25]",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 27,
+      "text": "Prior work comparing human and LLM dyads in this paradigm has found that AI word generation behavior differs systematically from the human baseline (Tanzer, 2024).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 28,
+      "text": "While LLMs could, in fact, be steered toward greater divergence, even then, they failed to replicate the dynamic balance of local coherence and semantic volatility that characterizes human-produced word sequences.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 29,
+      "text": "What, then, drives these differences, and what happens when a human and an LLM work collaboratively as a single dyad?",
+      "tag": "nostat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "poses the open question the study addresses",
+      "cars_move": "M2",
+      "cars_step": "2C",
+      "move_note": null
+    },
+    {
+      "id": 30,
+      "text": "Dyadic word generation can be understood through the lens of explore/exploit dynamics — a framework that has been shown to organize behavior across foraging, decision-making, learning, and creativity (Hills et al., 2015; Mehlhorn et al., 2015).",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "introduces the analytical framework of the paper",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 31,
+      "text": "In lexical space, partners alternate between exploitation — concentrated sampling within a local region of related meanings — and exploration — departure toward new, more distant areas of the space.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "defines explore/exploit as applied to the task",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "parent inferred as [30]"
+    },
+    {
+      "id": 32,
+      "text": "This profile of behavior resembles category recall, long studied as a foraging task (Hills et al., 2012, 2015), but dyadic word generation is less restrictive, with no fixed category requirement and no time or performance pressure.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "distinguishes the task from prior foraging paradigms",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 33,
+      "text": "Our task therefore allows pairs to roam the lexical space more freely.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "makes a substantive comparative claim continuing the distinction in [32], not a bare synthesis",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 34,
+      "text": "Moreover, responses are partner-cued rather than internally driven.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "asserts a distinguishing feature of the task",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 35,
+      "text": "Unlike paradigms where foraging yields an explicit score, the reward structure here is intrinsic.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 36,
+      "text": "Experiences of insight and semantic resolution engage neural reward circuitry (Oh et al., 2020), analogous to the dopaminergic responses that accompany harmonic resolution in music (Belfi & Loui, 2019; Williams et al., 2025).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "cross-domain claim with citation support",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 37,
+      "text": "The semantic similarity between words at different times in the series functions as our quantitative measurement of participants' movement through the lexical space (Johnson et al., 2023; Mikolov et al., 2013; OpenAI, 2022).",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "describes the measurement approach of the present study",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 38,
+      "text": "Bouts of exploitation appear in the sequence as continuous runs of high cosine similarity.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "operationalizes exploitation in terms of the measure in [37]",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "parent inferred as [37]"
+    },
+    {
+      "id": 39,
+      "text": "These arise from clustered series of words drawn from the same area of lexical space.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "continues unpacking the measure; parent is [37]",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "parent inferred as [37]"
+    },
+    {
+      "id": 40,
+      "text": "Exploratory transitions are the drops in similarity that punctuate them when a move away from the local cluster is made.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "operationalizes exploration; parent is [37]",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "parent inferred as [37]"
+    },
+    {
+      "id": 41,
+      "text": "The sustained arc through sky, water, and forest in our opening example is one such cluster; mix, blend was the transition out.",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "illustrative example tied to the measurement; parent is [37]",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": "parent inferred as [37]"
+    },
+    {
+      "id": 42,
+      "text": "Human language production is deeply personal.",
+      "tag": "emph",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 43,
+      "text": "Each speaker brings a distinct lexical identity to any exchange as a result of their particular life experience (Brennan & Clark, 1996; Brown-Schmidt et al., 2015; Isaacs & Clark, 1987).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 44,
+      "text": "When human pairs begin communicative collaboration, they enter with distinct cognitive models and idiosyncratic description schemes that do not immediately align (Garrod & Anderson, 1987).",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 45,
+      "text": "The process of entrainment is progressive, emerging only across many exchanges as partners negotiate a shared framework.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 46,
+      "text": "In dyadic word generation there is no such pressure to converge because there is no communicative demand that forces alignment.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "distinguishes this task from communicative collaboration in [44]-[45]",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": null
+    },
+    {
+      "id": 47,
+      "text": "Individual lexical identities are free to persist throughout the sequence rather than being negotiated away.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "unpacks the consequence of the contrast in [46]; parent is [46]",
+      "cars_move": "M2",
+      "cars_step": "2A",
+      "move_note": "parent inferred as [46]"
+    },
+    {
+      "id": 48,
+      "text": "If partners respond by drawing from overlapping but distinct lexical spaces, we predict that each person's words should be more semantically similar to their own prior words than to their partner's.",
+      "tag": "contribution",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "states a prediction/hypothesis of the study",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": null
+    },
+    {
+      "id": 49,
+      "text": "This asymmetry is detectable in the structure of the shared sequence.",
+      "tag": "extension:speculative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "extends the prediction in [48]",
+      "cars_move": "M3",
+      "cars_step": "3C",
+      "move_note": "parent inferred as [48]"
+    },
+    {
+      "id": 50,
+      "text": "We term this the individuation effect — a measurable signature of distinct cognitive identity within a jointly navigated lexical space.",
+      "tag": "framedef",
+      "tier": "primary",
+      "parent_id": null,
+      "note": "names a new construct the paper introduces",
+      "cars_move": "M3",
+      "cars_step": "3B",
+      "move_note": null
+    },
+    {
+      "id": 51,
+      "text": "An LLM generating both sides of a dyad, by contrast, draws from the same statistical model with no independent lexical identity to contribute.",
+      "tag": "contrast",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 52,
+      "text": "Both 'partners' respond from the same internal distribution, with no variation in available vocabulary.",
+      "tag": "extension:definitional",
+      "tier": "secondary",
+      "parent_id": 51,
+      "note": "unpacks the claim in [51]",
+      "cars_move": "M1",
+      "cars_step": "1B",
+      "move_note": null
+    },
+    {
+      "id": 53,
+      "text": "Moreover, previous work has also revealed a tendency on the part of LLMs to anchor tightly to user behavior and immediate surface context.",
+      "tag": "tempstat",
+      "tier": "primary",
+      "parent_id": null,
+      "note": null,
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": null
+    },
+    {
+      "id": 54,
+      "text": "This is evidenced in audience",
+      "tag": "extension:illustrative",
+      "tier": "secondary",
+      "parent_id": null,
+      "note": "sentence truncated; appears to begin an illustrative example of [53]",
+      "cars_move": "M1",
+      "cars_step": "1C",
+      "move_note": "parent inferred as [53]; sentence truncated"
+    }
+  ],
+  "prompt_version": "v0.5",
+  "gloss_version": "v0.3"
+}

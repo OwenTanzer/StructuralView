@@ -61,6 +61,9 @@ PRIMARY_TAGS   = ['tempstat','emph','contrast','nostat','novstat','contribution'
 SECONDARY_TAGS = ['extension:speculative','extension:definitional',
                   'extension:illustrative','link:opening','link:closing']
 
+# Paper IDs that are own drafts (shown in Drafts dropdown, not Corpus)
+DRAFT_STEMS = {'tanzer_2yp'}
+
 
 def build(open_browser: bool = True):
     data_dir      = Path(__file__).parent / 'data'
@@ -82,7 +85,8 @@ def build(open_browser: bool = True):
         pid = p['paper']['id']
         papers.append(annotated.get(pid, p))
 
-    html = render_html(papers)
+    draft_ids = {p['paper']['id'] for p in papers if p['paper']['id'] in DRAFT_STEMS}
+    html = render_html(papers, draft_ids)
     out_path.write_text(html, encoding='utf-8')
 
     annotated_count = sum(
@@ -96,15 +100,16 @@ def build(open_browser: bool = True):
         webbrowser.open(out_path.resolve().as_uri())
 
 
-def render_html(papers: list) -> str:
-    papers_js      = json.dumps(papers,       ensure_ascii=False, separators=(',', ':'))
-    colors_js      = json.dumps(TAG_COLORS,   ensure_ascii=False)
-    labels_js      = json.dumps(TAG_LABELS,   ensure_ascii=False)
+def render_html(papers: list, draft_ids: set) -> str:
+    papers_js      = json.dumps(papers,          ensure_ascii=False, separators=(',', ':'))
+    draft_ids_js   = json.dumps(list(draft_ids), ensure_ascii=False)
+    colors_js      = json.dumps(TAG_COLORS,      ensure_ascii=False)
+    labels_js      = json.dumps(TAG_LABELS,      ensure_ascii=False)
     primary_js     = json.dumps(PRIMARY_TAGS)
     secondary_js   = json.dumps(SECONDARY_TAGS)
-    move_colors_js = json.dumps(MOVE_COLORS,  ensure_ascii=False)
-    move_labels_js = json.dumps(MOVE_LABELS,  ensure_ascii=False)
-    step_colors_js = json.dumps(STEP_COLORS,  ensure_ascii=False)
+    move_colors_js = json.dumps(MOVE_COLORS,     ensure_ascii=False)
+    move_labels_js = json.dumps(MOVE_LABELS,     ensure_ascii=False)
+    step_colors_js = json.dumps(STEP_COLORS,     ensure_ascii=False)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -144,27 +149,46 @@ body {{
   white-space: nowrap;
 }}
 
-.paper-tabs {{
+.paper-selectors {{
   display: flex;
-  gap: 2px;
-  overflow-x: auto;
+  gap: 10px;
   flex: 1;
+  align-items: center;
 }}
 
-.tab {{
-  padding: 6px 14px;
-  border: none;
-  background: transparent;
+.select-group {{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}}
+
+.select-label {{
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #999;
+  white-space: nowrap;
+}}
+
+.paper-select {{
+  padding: 5px 28px 5px 10px;
+  border: 1px solid #CCC;
   border-radius: 6px;
+  background: #fff;
   font-size: 12px;
   font-weight: 500;
-  color: #666;
+  color: #333;
   cursor: pointer;
-  white-space: nowrap;
-  transition: background .12s, color .12s;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23999'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+  max-width: 220px;
 }}
-.tab:hover {{ background: #F0EDE8; color: #333; }}
-.tab.active {{ background: #222; color: #fff; }}
+.paper-select:focus {{ outline: none; border-color: #888; }}
+.paper-select.has-selection {{ border-color: #888; color: #111; font-weight: 600; }}
 
 .mode-toggle {{
   display: flex;
@@ -492,7 +516,20 @@ body {{
 
 <header class="app-header">
   <div class="app-title">StructuralView</div>
-  <nav class="paper-tabs" id="tabs"></nav>
+  <div class="paper-selectors">
+    <div class="select-group">
+      <span class="select-label">Drafts</span>
+      <select class="paper-select" id="draftSelect" onchange="selectFromDraft(this.value)">
+        <option value="">— select —</option>
+      </select>
+    </div>
+    <div class="select-group">
+      <span class="select-label">Corpus</span>
+      <select class="paper-select" id="corpusSelect" onchange="selectFromCorpus(this.value)">
+        <option value="">— select —</option>
+      </select>
+    </div>
+  </div>
   <div class="mode-toggle">
     <button class="mode-btn active" id="modeTag"  onclick="setMode('tag')">Tag</button>
     <button class="mode-btn"        id="modeMove" onclick="setMode('move')">Move</button>
@@ -510,6 +547,7 @@ body {{
 
 <script>
 const PAPERS      = {papers_js};
+const DRAFT_IDS   = new Set({draft_ids_js});
 const COLORS      = {colors_js};
 const LABELS      = {labels_js};
 const PRIMARY     = {primary_js};
@@ -519,20 +557,31 @@ const MOVE_LABELS = {move_labels_js};
 const STEP_COLORS = {step_colors_js};
 
 // ── State ──────────────────────────────────────────────────
-let activePaper = 0;
+let activePaper = null;
 let legendOpen  = false;
 let activeMode  = 'tag';
 
 // ── Init ───────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {{
   buildLegend();
-  buildTabs();
-  renderPaper(0);
+  buildSelectors();
 
   document.getElementById('legendToggle').addEventListener('click', () => {{
     legendOpen = !legendOpen;
     document.getElementById('legend').classList.toggle('visible', legendOpen);
   }});
+
+  // Default: first draft if any, else first corpus paper
+  const firstDraft = PAPERS.findIndex(p => DRAFT_IDS.has(p.paper.id));
+  if (firstDraft !== -1) {{
+    document.getElementById('draftSelect').value = firstDraft;
+    document.getElementById('draftSelect').classList.add('has-selection');
+    selectPaper(firstDraft);
+  }} else if (PAPERS.length > 0) {{
+    document.getElementById('corpusSelect').value = 0;
+    document.getElementById('corpusSelect').classList.add('has-selection');
+    selectPaper(0);
+  }}
 }});
 
 // ── Mode ───────────────────────────────────────────────────
@@ -564,25 +613,45 @@ function legendItem(tag) {{
   </div>`;
 }}
 
-// ── Tabs ───────────────────────────────────────────────────
-function buildTabs() {{
-  const nav = document.getElementById('tabs');
-  nav.innerHTML = PAPERS.map((p, i) => {{
-    const label = shortTitle(p.paper);
-    return `<button class="tab${{i === 0 ? ' active' : ''}}"
-              onclick="selectPaper(${{i}})">${{label}}</button>`;
-  }}).join('');
+// ── Selectors ──────────────────────────────────────────────
+function buildSelectors() {{
+  const draftSel  = document.getElementById('draftSelect');
+  const corpusSel = document.getElementById('corpusSelect');
+  PAPERS.forEach((p, i) => {{
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = shortTitle(p.paper);
+    if (DRAFT_IDS.has(p.paper.id)) draftSel.appendChild(opt);
+    else                            corpusSel.appendChild(opt);
+  }});
 }}
 
 function shortTitle(meta) {{
   const author = meta.authors ? meta.authors[0].split(',')[0] : meta.id;
-  return `${{author}} (${{meta.year}})`;
+  const year   = meta.year   ? ` (${{meta.year}})` : '';
+  return `${{author}}${{year}}`;
+}}
+
+function selectFromDraft(val) {{
+  if (val === '') return;
+  const corpusSel = document.getElementById('corpusSelect');
+  corpusSel.value = '';
+  corpusSel.classList.remove('has-selection');
+  document.getElementById('draftSelect').classList.add('has-selection');
+  selectPaper(parseInt(val, 10));
+}}
+
+function selectFromCorpus(val) {{
+  if (val === '') return;
+  const draftSel = document.getElementById('draftSelect');
+  draftSel.value = '';
+  draftSel.classList.remove('has-selection');
+  document.getElementById('corpusSelect').classList.add('has-selection');
+  selectPaper(parseInt(val, 10));
 }}
 
 function selectPaper(i) {{
   activePaper = i;
-  document.querySelectorAll('.tab').forEach((t, j) =>
-    t.classList.toggle('active', i === j));
   renderPaper(i);
 }}
 
