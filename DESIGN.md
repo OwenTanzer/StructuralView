@@ -2,34 +2,44 @@
 
 ## Goal
 
-StructuralView is an argument ribbon viewer for rhetorical tag annotations produced by The Vehicle's two-pass annotation system. It makes the deep structure of cognitive science paper Introductions visible — using color, space, and shape to give a cognitive foothold on rhetorical patterns that are otherwise only readable as flat text.
+StructuralView is an argument structure viewer for rhetorical annotations produced by The Vehicle's annotation pipeline. It makes the deep structure of cognitive science paper Introductions visible — using color, space, and shape to give a cognitive foothold on rhetorical patterns that are otherwise only readable as flat text.
 
-The primary display unit is the **argument ribbon**: sentences laid out sequentially in reading order, each rendered as a colored block labeled with its tag. Secondary-tagged sentences are indented under their primary parent. The viewer emphasizes **linear sequence over tree structure** — reading order is argument flow, and that is the primary thing to see.
+Two primary display modes:
+
+- **Tag Mode** — sentences laid out in reading order, each rendered as a colored chip labeled with its rhetorical tag. Secondary-tagged sentences are indented under their primary parent. Emphasizes linear sequence over tree structure: reading order is argument flow.
+- **Move Mode** — CARS move-level view showing the arc formula (M1→M2→M3 sequence), a proportional arc strip, step-tick strip, per-segment role tooltips on hover, a rendered arc summary, and move stat cards. Emphasizes argument shape over sentence-level detail.
 
 ## What It Displays
 
-Each sentence block shows:
+### Tag Mode
 - Tag name and color (primary tags in full saturation; secondary tags desaturated/indented)
-- Sentence text (full, readable inline)
-- Note field on hover or expansion
-- Parent relationship implied by indentation depth
+- Sentence text inline
+- Note field (reviewer annotation visible inline)
+- Parent relationship implied by indentation
 
-Future layers (data fields already present in the schema, currently null):
-- CARS move assignment (`cars_move`: M1 / M2 / M3)
-- CARS step (`cars_step`: e.g. 1A, 2B, 3C)
-- Toggle between papers for cross-paper comparison
+### Move Mode
+- **Arc summary** — 3–4 sentence markdown description of the introduction's rhetorical shape
+- **Formula pills** — M1/M2/M3 pills in sequence with tooltips showing span and role description on hover
+- **Arc strip** — proportional colored bar per move block; hover reveals segment role
+- **Step-tick strip** — one tick per sentence, colored by CARS step (1A–3C)
+- **Stat cards** — per-move sentence count, percentage, and step breakdown
+
+### Paper selector
+Two dropdowns in the header — **Drafts** (own papers under analysis) and **Corpus** (citation papers). Categorized by `DRAFT_STEMS` set in `build.py`. Selecting from one dropdown resets the other.
 
 ## Resources
 
 | Resource | Location |
 |---|---|
-| Annotation JSON files | `data/` (4 papers) |
-| Parser (annotation .txt → JSON) | `../vehicle_annotation/parser.py` |
-| Annotation source files (.txt) | `../vehicle_annotation/annotations/` |
-| Tag vocabulary + prompt docs | Notion: Claude Project Setup — Tag Annotator (subpage of ONT-64) |
+| Annotated JSON files (with CARS data) | `annotated/` (42 papers) |
+| Raw tag JSON files | `data/` (42 papers) |
+| Build script | `build.py` |
+| Annotation pipeline | `../vehicle_annotation/annotate.py` |
+| GitHub | https://github.com/OwenTanzer/StructuralView |
 
-### JSON Schema (per sentence)
+### JSON Schema
 
+**Per-sentence fields:**
 ```json
 {
   "id": 1,
@@ -38,8 +48,20 @@ Future layers (data fields already present in the schema, currently null):
   "tier": "primary",
   "parent_id": null,
   "note": null,
-  "cars_move": null,
-  "cars_step": null
+  "cars_move": "M1",
+  "cars_step": "1A"
+}
+```
+
+**Paper-level fields (in annotated/ JSONs):**
+```json
+{
+  "arc_summary": "Markdown prose description of the introduction's rhetorical shape.",
+  "structured_arc": "M1 -> M2 -> M3",
+  "move_roles": [
+    { "move": "M1", "span": [1, 9], "role": "Establishes territory..." }
+  ],
+  "gloss_version": "v0.3"
 }
 ```
 
@@ -49,23 +71,37 @@ Future layers (data fields already present in the schema, currently null):
 
 **Secondary** (desaturated, indented): `extension:speculative` · `extension:definitional` · `extension:illustrative` · `link:opening` · `link:closing`
 
+### CARS Moves
+
+| Move | Label | Color |
+|------|-------|-------|
+| M1 | Establishing Territory | Orange |
+| M2 | Establishing Niche | Purple |
+| M3 | Occupying the Niche | Green |
+
 ## Tech Approach
 
-Self-contained HTML/JS — no build tooling, no server, no dependencies beyond the browser. Open `src/index.html` directly. JSON data loaded from `../data/` via fetch or inline. Viewer should work offline.
+Self-contained HTML/JS — no build tooling, no server, no dependencies beyond the browser. `build.py` inlines all paper data and generates `src/index.html`. Open directly in any browser; works offline.
 
-Color palette, layout, and interactivity handled in vanilla JS + CSS. No framework. Keep it simple enough that the rendering logic is easy to read and modify.
+Color palette, layout, and interactivity in vanilla JS + CSS. No framework. The rendering logic is intentionally readable and easy to modify.
+
+`build.py` reads from `data/` (raw tag JSONs) and `annotated/` (CARS-annotated JSONs), preferring the annotated version when available. Rebuild takes under 1 second for 42 papers.
 
 ## Workflow
 
-**Prototype first.** Get a working ribbon view of one paper on screen as fast as possible. It doesn't have to be pretty — it has to be informative. The primary milestone is: open index.html, see the Aswamenakul annotation as a color-coded ribbon, understand the argument structure at a glance.
+1. Run annotation pipeline: `python ../vehicle_annotation/annotate.py paper.pdf --cars --gloss`
+2. Output lands in `annotated/<stem>_annotated.json`
+3. Run `python build.py` to rebuild `src/index.html`
+4. Open `src/index.html` in browser
 
-**Lazy iteration after that.** Major changes (paper switcher, CARS move overlay, cross-paper comparison, better typography, export) come back to when the data layer is richer and the use cases are clearer. Don't over-engineer the prototype.
+To add a draft paper to the Drafts dropdown: add its stem to `DRAFT_STEMS` in `build.py`.
 
 ## Current Data
 
-| Paper | Sentences | Status |
-|---|---|---|
-| Aswamenakul et al. (2025) | 40 | Tags complete · CARS pending |
-| Ryskin et al. (2025) | 18 | Tags complete · CARS pending |
-| Kello & Bruna (2023) | 23 | Tags complete · CARS pending |
-| Hart et al. (2017) | 47 | Tags complete · CARS pending |
+| Corpus | Papers | Sentences | Status |
+|--------|--------|-----------|--------|
+| CogSci corpus | 41 | 1,663 | All 4 passes complete |
+| Own drafts | 1 (tanzer_2yp) | 54 | All 4 passes complete |
+| **Total** | **42** | **1,717** | |
+
+Arc formula survey (corpus only): 22 unique arc patterns; 76% of papers have all 3 moves; dominant pattern M1→M2→M3 (×12).
