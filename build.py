@@ -305,6 +305,21 @@ body {{
 }}
 
 /* ── Tag mode ────────────────────────────────────────────── */
+.paragraph-divider {{
+  margin: 14px 0 4px;
+  padding-top: 10px;
+  border-top: 1px dashed #DDD;
+  font-size: 10px;
+  font-weight: 700;
+  color: #BBB;
+  letter-spacing: .05em;
+}}
+.paragraph-divider:first-child {{
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}}
+
 .sentence-row {{
   display: flex;
   align-items: flex-start;
@@ -770,13 +785,28 @@ function renderPaper(i) {{
   if (activeMode === 'move' || isOutlineData(paper)) {{
     html += renderMoveMode(paper);
   }} else {{
-    for (const s of paper.sentences) html += renderRow(s);
+    html += renderSentences(paper.sentences);
   }}
 
   el.innerHTML = html;
 }}
 
 // ── Tag mode ───────────────────────────────────────────────
+function renderSentences(sentences) {{
+  // Paragraph numbers are optional (only tracked for some drafts) — when
+  // present, render a divider each time the paragraph number changes.
+  let html = '';
+  let lastParagraph = null;
+  for (const s of sentences) {{
+    if (s.paragraph != null && s.paragraph !== lastParagraph) {{
+      html += `<div class="paragraph-divider">&para; ${{s.paragraph}}</div>`;
+      lastParagraph = s.paragraph;
+    }}
+    html += renderRow(s);
+  }}
+  return html;
+}}
+
 function renderRow(s) {{
   const tag     = s.tag || 'unknown';
   const tier    = s.tier || (PRIMARY.includes(tag) ? 'primary' : 'secondary');
