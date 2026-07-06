@@ -150,7 +150,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1A",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 1
     },
     {
       "id": 2,
@@ -161,7 +162,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 1
     },
     {
       "id": 3,
@@ -172,7 +174,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 1
     },
     {
       "id": 4,
@@ -183,7 +186,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": "contrast tag here contrasts known properties, still reviewing territory"
+      "move_note": "contrast tag here contrasts known properties, still reviewing territory",
+      "paragraph": 2
     },
     {
       "id": 5,
@@ -194,7 +198,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 2
     },
     {
       "id": 6,
@@ -205,7 +210,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 2
     },
     {
       "id": 7,
@@ -216,7 +222,8 @@
       "note": "asserts a substantive characterization with independent content, not bare synthesis",
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 2
     },
     {
       "id": 8,
@@ -227,7 +234,8 @@
       "note": "names/introduces the construct the paper will use",
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 2
     },
     {
       "id": 9,
@@ -238,7 +246,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 2
     },
     {
       "id": 10,
@@ -249,7 +258,8 @@
       "note": null,
       "cars_move": "M3",
       "cars_step": "3A",
-      "move_note": "early purpose statement, intro then cycles back to M2/M1"
+      "move_note": "early purpose statement, intro then cycles back to M2/M1",
+      "paragraph": 2
     },
     {
       "id": 11,
@@ -260,7 +270,8 @@
       "note": null,
       "cars_move": "M2",
       "cars_step": "2B",
-      "move_note": "return to gap after early M3 statement; M2->M3 cycling"
+      "move_note": "return to gap after early M3 statement; M2->M3 cycling",
+      "paragraph": 3
     },
     {
       "id": 12,
@@ -271,7 +282,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 13,
@@ -282,7 +294,8 @@
       "note": null,
       "cars_move": "M2",
       "cars_step": "2A",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 14,
@@ -293,7 +306,8 @@
       "note": "provides evidence/examples of the gap asserted in [13]",
       "cars_move": "M2",
       "cars_step": "2A",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 15,
@@ -304,7 +318,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1A",
-      "move_note": "centrality framing of the gap's importance"
+      "move_note": "centrality framing of the gap's importance",
+      "paragraph": 3
     },
     {
       "id": 16,
@@ -315,7 +330,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 17,
@@ -326,7 +342,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 18,
@@ -337,7 +354,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 19,
@@ -348,7 +366,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 20,
@@ -359,7 +378,8 @@
       "note": null,
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 21,
@@ -370,7 +390,8 @@
       "note": null,
       "cars_move": "M3",
       "cars_step": "3A",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 3
     },
     {
       "id": 22,
@@ -381,7 +402,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 4
     },
     {
       "id": 23,
@@ -392,7 +414,8 @@
       "note": "defines the central task construct of the paper",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 4
     },
     {
       "id": 24,
@@ -403,7 +426,8 @@
       "note": "unpacks the task introduced in [23]",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 4
     },
     {
       "id": 25,
@@ -414,7 +438,8 @@
       "note": "asserts the significance/relevance of the task measure",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 4
     },
     {
       "id": 26,
@@ -425,7 +450,8 @@
       "note": "illustrative example of the task described in [25]",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 4
     },
     {
       "id": 27,
@@ -436,7 +462,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 5
     },
     {
       "id": 28,
@@ -447,7 +474,8 @@
       "note": null,
       "cars_move": "M2",
       "cars_step": "2A",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 5
     },
     {
       "id": 29,
@@ -458,7 +486,8 @@
       "note": "poses the open question the study addresses",
       "cars_move": "M2",
       "cars_step": "2C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 5
     },
     {
       "id": 30,
@@ -469,7 +498,8 @@
       "note": "introduces the analytical framework of the paper",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 6
     },
     {
       "id": 31,
@@ -480,7 +510,8 @@
       "note": "defines explore/exploit as applied to the task",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": "parent inferred as [30]"
+      "move_note": "parent inferred as [30]",
+      "paragraph": 6
     },
     {
       "id": 32,
@@ -491,7 +522,8 @@
       "note": "distinguishes the task from prior foraging paradigms",
       "cars_move": "M2",
       "cars_step": "2A",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 7
     },
     {
       "id": 33,
@@ -502,7 +534,8 @@
       "note": "makes a substantive comparative claim continuing the distinction in [32], not a bare synthesis",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 7
     },
     {
       "id": 34,
@@ -513,7 +546,8 @@
       "note": "asserts a distinguishing feature of the task",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 7
     },
     {
       "id": 35,
@@ -524,7 +558,8 @@
       "note": null,
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 7
     },
     {
       "id": 36,
@@ -535,7 +570,8 @@
       "note": "cross-domain claim with citation support",
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 7
     },
     {
       "id": 37,
@@ -546,7 +582,8 @@
       "note": "describes the measurement approach of the present study",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 8
     },
     {
       "id": 38,
@@ -557,7 +594,8 @@
       "note": "operationalizes exploitation in terms of the measure in [37]",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": "parent inferred as [37]"
+      "move_note": "parent inferred as [37]",
+      "paragraph": 8
     },
     {
       "id": 39,
@@ -568,7 +606,8 @@
       "note": "continues unpacking the measure; parent is [37]",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": "parent inferred as [37]"
+      "move_note": "parent inferred as [37]",
+      "paragraph": 8
     },
     {
       "id": 40,
@@ -579,7 +618,8 @@
       "note": "operationalizes exploration; parent is [37]",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": "parent inferred as [37]"
+      "move_note": "parent inferred as [37]",
+      "paragraph": 8
     },
     {
       "id": 41,
@@ -590,7 +630,8 @@
       "note": "illustrative example tied to the measurement; parent is [37]",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": "parent inferred as [37]"
+      "move_note": "parent inferred as [37]",
+      "paragraph": 8
     },
     {
       "id": 42,
@@ -601,7 +642,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 9
     },
     {
       "id": 43,
@@ -612,7 +654,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 9
     },
     {
       "id": 44,
@@ -623,7 +666,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 9
     },
     {
       "id": 45,
@@ -634,7 +678,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 9
     },
     {
       "id": 46,
@@ -645,7 +690,8 @@
       "note": "distinguishes this task from communicative collaboration in [44]-[45]",
       "cars_move": "M2",
       "cars_step": "2A",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 10
     },
     {
       "id": 47,
@@ -656,7 +702,8 @@
       "note": "unpacks the consequence of the contrast in [46]; parent is [46]",
       "cars_move": "M2",
       "cars_step": "2A",
-      "move_note": "parent inferred as [46]"
+      "move_note": "parent inferred as [46]",
+      "paragraph": 10
     },
     {
       "id": 48,
@@ -667,7 +714,8 @@
       "note": "states a prediction/hypothesis of the study",
       "cars_move": "M3",
       "cars_step": "3C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 10
     },
     {
       "id": 49,
@@ -678,7 +726,8 @@
       "note": "extends the prediction in [48]",
       "cars_move": "M3",
       "cars_step": "3C",
-      "move_note": "parent inferred as [48]"
+      "move_note": "parent inferred as [48]",
+      "paragraph": 10
     },
     {
       "id": 50,
@@ -689,7 +738,8 @@
       "note": "names a new construct the paper introduces",
       "cars_move": "M3",
       "cars_step": "3B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 10
     },
     {
       "id": 51,
@@ -700,7 +750,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 11
     },
     {
       "id": 52,
@@ -711,7 +762,8 @@
       "note": "unpacks the claim in [51]",
       "cars_move": "M1",
       "cars_step": "1B",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 11
     },
     {
       "id": 53,
@@ -722,7 +774,8 @@
       "note": null,
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": null
+      "move_note": null,
+      "paragraph": 11
     },
     {
       "id": 54,
@@ -733,7 +786,8 @@
       "note": "sentence truncated; appears to begin an illustrative example of [53]",
       "cars_move": "M1",
       "cars_step": "1C",
-      "move_note": "parent inferred as [53]; sentence truncated"
+      "move_note": "parent inferred as [53]; sentence truncated",
+      "paragraph": 11
     }
   ],
   "prompt_version": "v0.5",

@@ -49,9 +49,16 @@ Two dropdowns in the header — **Drafts** (own papers under analysis) and **Cor
   "parent_id": null,
   "note": null,
   "cars_move": "M1",
-  "cars_step": "1A"
+  "cars_step": "1A",
+  "paragraph": null
 }
 ```
+
+`paragraph` (optional, int or null) — 1-indexed source paragraph number. Most
+papers don't track this; it's mainly useful for our own drafts under revision,
+where paragraph-level structure matters. When present, Tag Mode renders a
+divider each time the paragraph number changes. Populate it by running
+`annotate.py` with `--track-paragraphs`.
 
 **Paper-level fields (in annotated/ JSONs):**
 ```json
