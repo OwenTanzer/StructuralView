@@ -62,7 +62,7 @@ SECONDARY_TAGS = ['extension:speculative','extension:definitional',
                   'extension:illustrative','link:opening','link:closing']
 
 # Paper IDs that are own drafts (shown in Drafts dropdown, not Corpus)
-DRAFT_STEMS = {'tanzer_2yp'}
+DRAFT_STEMS = {'tanzer_2yp', 'tanzer_2yp_ideal'}
 
 
 def build(open_browser: bool = True):
@@ -85,15 +85,23 @@ def build(open_browser: bool = True):
         pid = p['paper']['id']
         papers.append(annotated.get(pid, p))
 
+    # Load outline files (ideal arc structures — paragraph-level blocks, no sentences)
+    outlines_dir = Path(__file__).parent / 'outlines'
+    if outlines_dir.exists():
+        for f in sorted(outlines_dir.glob('*.json')):
+            p = json.loads(f.read_text(encoding='utf-8'))
+            papers.append(p)
+
     draft_ids = {p['paper']['id'] for p in papers if p['paper']['id'] in DRAFT_STEMS}
     html = render_html(papers, draft_ids)
     out_path.write_text(html, encoding='utf-8')
 
     annotated_count = sum(
-        1 for p in papers if any(s.get('cars_move') for s in p['sentences'])
+        1 for p in papers
+        if p.get('sentences') and any(s.get('cars_move') for s in p['sentences'])
     )
     print(f'Built {out_path}  ({len(papers)} papers, '
-          f'{sum(len(p["sentences"]) for p in papers)} sentences, '
+          f'{sum(len(p.get("sentences", [])) for p in papers)} sentences, '
           f'{annotated_count} with CARS data)')
 
     if open_browser:
@@ -485,6 +493,79 @@ body {{
   font-style: italic;
 }}
 
+/* ── Outline mode ────────────────────────────────────────── */
+.outline-blocks {{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}}
+
+.outline-block {{
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  border-left: 4px solid #CCC;
+}}
+
+.outline-block-header {{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}}
+
+.outline-block-move {{
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .05em;
+  flex-shrink: 0;
+}}
+
+.outline-block-id {{
+  font-size: 11px;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}}
+
+.outline-block-label {{
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+  flex: 1;
+}}
+
+.outline-block-span {{
+  font-size: 10px;
+  color: #AAA;
+  font-style: italic;
+  flex-shrink: 0;
+}}
+
+.outline-block-role {{
+  font-size: 13px;
+  line-height: 1.65;
+  color: #444;
+  margin-bottom: 4px;
+}}
+
+.outline-block-sources {{
+  font-size: 11px;
+  color: #AAA;
+  font-style: italic;
+  border-top: 1px solid #F0EDE8;
+  padding-top: 6px;
+  margin-top: 6px;
+}}
+
 /* ── Empty state ─────────────────────────────────────────── */
 .empty {{
   color: #AAA;
@@ -571,6 +652,22 @@ document.addEventListener('DOMContentLoaded', () => {{
     document.getElementById('legend').classList.toggle('visible', legendOpen);
   }});
 
+  // Deep link: ?paper=<id>[&mode=move]
+  const params    = new URLSearchParams(location.search);
+  const wantId    = params.get('paper');
+  const wantMode  = params.get('mode');
+  const wantIndex = wantId ? PAPERS.findIndex(p => p.paper.id === wantId) : -1;
+
+  if (wantMode === 'move' || wantMode === 'tag') setMode(wantMode);
+
+  if (wantIndex !== -1) {{
+    const sel = DRAFT_IDS.has(PAPERS[wantIndex].paper.id) ? 'draftSelect' : 'corpusSelect';
+    document.getElementById(sel).value = wantIndex;
+    document.getElementById(sel).classList.add('has-selection');
+    selectPaper(wantIndex);
+    return;
+  }}
+
   // Default: first draft if any, else first corpus paper
   const firstDraft = PAPERS.findIndex(p => DRAFT_IDS.has(p.paper.id));
   if (firstDraft !== -1) {{
@@ -629,7 +726,8 @@ function buildSelectors() {{
 function shortTitle(meta) {{
   const author = meta.authors ? meta.authors[0].split(',')[0] : meta.id;
   const year   = meta.year   ? ` (${{meta.year}})` : '';
-  return `${{author}}${{year}}`;
+  const tag    = meta.version ? ' · ideal' : '';
+  return `${{author}}${{year}}${{tag}}`;
 }}
 
 function selectFromDraft(val) {{
@@ -669,7 +767,7 @@ function renderPaper(i) {{
     <div class="authors">${{esc(authStr)}} &middot; ${{meta.year}}</div>
   </div>`;
 
-  if (activeMode === 'move') {{
+  if (activeMode === 'move' || isOutlineData(paper)) {{
     html += renderMoveMode(paper);
   }} else {{
     for (const s of paper.sentences) html += renderRow(s);
@@ -700,9 +798,13 @@ function renderRow(s) {{
   </div>`;
 }}
 
-// ── Move mode ──────────────────────────────────────────────
+// ── Move / Outline mode ────────────────────────────────────
+function isOutlineData(paper) {{
+  return !paper.sentences || paper.sentences.length === 0;
+}}
+
 function hasCarsData(paper) {{
-  return paper.sentences.some(s => s.cars_move);
+  return paper.sentences && paper.sentences.some(s => s.cars_move);
 }}
 
 function computeArcSegments(sentences) {{
@@ -721,6 +823,9 @@ function computeArcSegments(sentences) {{
 }}
 
 function renderMoveMode(paper) {{
+  if (isOutlineData(paper)) {{
+    return renderOutlineMode(paper);
+  }}
   if (!hasCarsData(paper)) {{
     return `<div class="move-pending">CARS annotation not yet available for this paper.</div>`;
   }}
@@ -751,9 +856,12 @@ function renderArcFormula(paper) {{
   if (roles && roles.length) {{
     const html = roles.map((r, i) => {{
       const color = MOVE_COLORS[r.move] || '#CCC';
-      const tip   = `${{r.move}} · S${{r.span[0]}}–${{r.span[1]}}\n${{r.role}}`;
+      const tip   = r.span
+        ? `${{r.move}} · S${{r.span[0]}}–${{r.span[1]}}\n${{r.role || ''}}`
+        : `${{r.move}} · ${{r.id || ''}} · ${{r.label || ''}}\n${{r.span_note || ''}}\n${{r.role || ''}}`;
+      const label = r.id || r.move;
       const arrow = i < roles.length - 1 ? `<span class="arc-arrow">&#8594;</span>` : '';
-      return `<span class="arc-pill" style="background:${{color}}" data-tip="${{esc(tip)}}">${{esc(r.move)}}</span>${{arrow}}`;
+      return `<span class="arc-pill" style="background:${{color}}" data-tip="${{esc(tip)}}">${{esc(label)}}</span>${{arrow}}`;
     }}).join('');
     return `<div class="arc-formula">${{html}}</div>`;
   }}
@@ -829,6 +937,51 @@ function renderMoveStats(segs, total) {{
   }}).join('');
 
   return `<div class="move-stats">${{cards}}</div>`;
+}}
+
+// ── Outline mode ───────────────────────────────────────────
+function renderOutlineMode(paper) {{
+  const roles = paper.move_roles || [];
+  return [
+    renderArcSummary(paper.arc_summary),
+    renderArcFormula(paper),
+    renderOutlineStrip(roles),
+    renderOutlineBlocks(roles),
+  ].join('');
+}}
+
+function renderOutlineStrip(roles) {{
+  if (!roles.length) return '';
+  const n = roles.length;
+  const segments = roles.map(r => {{
+    const w     = (100 / n).toFixed(2);
+    const color = MOVE_COLORS[r.move] || '#CCC';
+    const tip   = `${{r.move}} · ${{r.id || ''}}\n${{r.label || ''}} · ${{r.span_note || ''}}`;
+    return `<div class="move-segment" style="width:${{w}}%;background:${{color}}" data-tip="${{esc(tip)}}">
+              <span class="move-segment-label">${{esc(r.id || r.move)}}</span>
+            </div>`;
+  }}).join('');
+  return `<div class="arc-strips"><div class="move-strip">${{segments}}</div></div>`;
+}}
+
+function renderOutlineBlocks(roles) {{
+  const blocks = roles.map(r => {{
+    const color  = MOVE_COLORS[r.move] || '#CCC';
+    const srcHtml = r.sources_from_draft && r.sources_from_draft.length
+      ? `<div class="outline-block-sources">Sources from draft: ${{esc(r.sources_from_draft.join(' · '))}}</div>`
+      : '';
+    return `<div class="outline-block" style="border-left-color:${{color}}">
+      <div class="outline-block-header">
+        <span class="outline-block-move" style="background:${{color}}">${{esc(r.move)}}</span>
+        <span class="outline-block-id">${{esc(r.id || '')}}</span>
+        <span class="outline-block-label">${{esc(r.label || '')}}</span>
+        <span class="outline-block-span">${{esc(r.span_note || '')}}</span>
+      </div>
+      <div class="outline-block-role">${{esc(r.role || '')}}</div>
+      ${{srcHtml}}
+    </div>`;
+  }}).join('');
+  return `<div class="outline-blocks">${{blocks}}</div>`;
 }}
 
 function esc(str) {{

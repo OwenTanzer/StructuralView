@@ -1,0 +1,72 @@
+{
+  "paper": {
+    "id": "tanzer_2yp_ideal",
+    "title": "tanzer 2yp — ideal introduction arc",
+    "authors": ["Tanzer"],
+    "year": 0,
+    "section": "Introduction",
+    "version": "pass1_skeleton",
+    "based_on": "FB-TM-04 (Tyler Marghetis prescriptive template)",
+    "generated": "2026-06-30"
+  },
+  "arc_summary": "A clean M1 -> M2 -> M1 -> M1 -> M2 -> M3 -> M3 arc that consolidates the current draft's four scattered M1 passes into two blocked territories, collapses the four fragmented M2 passes into one sustained gap argument, and unifies the three incremental M3 blocks into a single contribution landing followed by predictions. The introduction closes on stakes rather than trailing off into LLM background framing. The foraging/explore-exploit frame is established in P1 rather than deferred to mid-introduction. The steered-LLM individuation finding is rehabilitated as M1 territory. The contentious meaning-in-language claim is cut; the entrainment argument stands on its empirical literature alone. A predictions paragraph (P6) built from existing sentences closes the arc on M3.",
+  "structured_arc": "M1 -> M2 -> M1 -> M1 -> M2 -> M3 -> M3",
+  "move_roles": [
+    {
+      "id": "P1",
+      "move": "M1",
+      "label": "hook",
+      "span_note": "~1 paragraph; may absorb P2 if hook runs long",
+      "role": "Establishes the theoretical lens and core contrast. Foraging and explore/exploit dynamics introduced as the organizing frame for co-creative behavior. Dyadic word generation introduced as the paradigm. Human/LLM contrast on explore/exploit established: human creativity characterized by flat associative hierarchy and broad exploration; LLMs biased toward steep associative hierarchies and local exploitation. CogSci register throughout.",
+      "sources_from_draft": ["S1-S3", "S7-S8", "S30-S31"]
+    },
+    {
+      "id": "P2",
+      "move": "M2",
+      "label": "precise-topic",
+      "span_note": "1-3 sentences; may merge into P1",
+      "role": "Narrows from big picture to the specific phenomenon. Prior work characterized the poles — fully-human and fully-LLM dyads — and found systematic differences. The hybrid case has not been examined in this paradigm. Topic-narrowing only, not the full gap argument.",
+      "sources_from_draft": ["S11 (first clause only)"]
+    },
+    {
+      "id": "P3a",
+      "move": "M1",
+      "label": "human-dyads",
+      "span_note": "~1 paragraph",
+      "role": "Establishes what we know about the human side. Lexical identity: each speaker brings a distinct associative style shaped by personal history. In dyadic word generation, without communicative pressure to converge, those identities persist throughout the sequence. Individuation effect defined at first mention. Entrainment literature grounds the claim that partners enter with distinct cognitive models.",
+      "sources_from_draft": ["S42-S45", "S46-S47", "S50"]
+    },
+    {
+      "id": "P3b",
+      "move": "M1",
+      "label": "llm-dyads",
+      "span_note": "~1 paragraph",
+      "role": "Establishes what we know about the LLM side including the mechanism. LLMs draw from the same statistical model — no independent lexical identity. Tight anchoring to partner behavior evidenced in prior work. Individuation effect absent by default. Prior finding: when LLMs are explicitly steered toward distinct vocabularies, individuation emerges — establishing lexical variance as the mechanism. Steered-LLM finding reframed as established territory, not contribution claim.",
+      "sources_from_draft": ["S51-S53", "S27-S28", "P12 of draft (steered-LLM finding, reframed)"]
+    },
+    {
+      "id": "P4",
+      "move": "M2",
+      "label": "gap",
+      "span_note": "1-2 paragraphs",
+      "role": "Argues the gap rather than asserting it. The hybrid condition is specifically uncharted within the dyadic word generation paradigm — not a claim about LLM-assisted writing broadly. Mechanistically motivated: we know lexical variance drives individuation, but whether a human partner's natural lexical identity is sufficient without explicit instruction is genuinely open. Outcome not predictable from the poles alone.",
+      "sources_from_draft": ["S11", "S29"]
+    },
+    {
+      "id": "P5",
+      "move": "M3",
+      "label": "study",
+      "span_note": "~1 paragraph",
+      "role": "States what the paper does. Three-condition comparison: human-human, hybrid (deceptive LLM substitution), LLM-LLM. Key measure: individuation effect and explore/exploit dynamics via cosine similarity. Plane-flight-bird example lands here as concrete illustration of what the measure captures. Optional one-sentence HCI/real-world relevance nod.",
+      "sources_from_draft": ["P13 of draft (design, conditions, deception)", "S37-S41 (measure)", "S26 (example, moved from P4)"]
+    },
+    {
+      "id": "P6",
+      "move": "M3",
+      "label": "predictions",
+      "span_note": "~1 paragraph",
+      "role": "Closes the introduction on stakes. If LLM homogenization dominates, hybrid pairs should converge toward LLM dynamics. If human lexical identity is sufficient, hybrid pairs should preserve human-like exploration and individuation. Either outcome is theoretically interpretable. Arc closes on M3 with no return to territory.",
+      "sources_from_draft": ["P13 of draft ('can just one human partner shift hybrid dynamics... or does LLM anchoring drive the dyad') — reshaped into if/then prediction structure"]
+    }
+  ]
+}
