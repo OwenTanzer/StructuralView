@@ -62,7 +62,7 @@ SECONDARY_TAGS = ['extension:speculative','extension:definitional',
                   'extension:illustrative','link:opening','link:closing']
 
 # Paper IDs that are own drafts (shown in Drafts dropdown, not Corpus)
-DRAFT_STEMS = {'tanzer_2yp', 'tanzer_2yp_ideal'}
+DRAFT_STEMS = {'tanzer_2yp', 'tanzer_2yp_ideal', 'tanzer_2yp_discussion_ideal'}
 
 
 def build(open_browser: bool = True):
