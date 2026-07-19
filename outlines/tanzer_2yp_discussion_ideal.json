@@ -1,40 +1,50 @@
 {
-  "paper": {
-    "id": "tanzer_2yp_discussion_ideal",
-    "title": "tanzer 2yp — ideal discussion arc",
-    "authors": ["Tanzer"],
-    "year": 0,
-    "section": "Discussion",
-    "version": "three_block_review_aligned",
-    "based_on": "ONT-58 and committee discussion feedback",
-    "generated": "2026-07-19"
-  },
-  "arc_summary": "A three-block Discussion that interprets the findings against the Introduction's competing hybrid-outcome frame, develops bounded mechanisms for the hybrid pattern, and closes by specifying the study's limits and the next empirical tests. The sequence keeps result recap brief; it treats individuation, distributional difference, category shifts, and neural harmony as interpretations with appropriately different evidential status; and it distinguishes a controlled experimental task from naturalistic human-AI collaboration.",
-  "structured_arc": "M1 -> M2 -> M3",
-  "move_roles": [
-    {
-      "id": "D1",
-      "move": "M1",
-      "label": "findings against the hybrid frame",
-      "span_note": "1–2 structural blocks",
-      "role": "Return directly to the Introduction's three alternatives: a hybrid might become LLM-like, remain human-like, or fall between the homogeneous baselines. Interpret the observed non-intermediate profile—elevated exploitation alongside human-like exploration—as the core contribution. Situate the collective-exploration implication with Garg et al., while keeping the conclusion about creative collaboration proportionate to this controlled task.",
-      "sources_from_draft": ["DISC-1-1 through DISC-4-6"]
-    },
-    {
-      "id": "D2",
-      "move": "M2",
-      "label": "mechanisms and theoretical implications",
-      "span_note": "2–3 structural blocks",
-      "role": "Develop the individuation result as evidence of distinguishable participant trajectories in a shared sequence, grounding it in prior work on lexical identity and entrainment. Present distributed exploratory sampling, category-shifting moves, and individual lexical history as competing or complementary mechanisms—not established causal explanations. Describe human and LLM associations as differently distributed rather than claiming that people are not probability-driven; qualify any homogenization inference by model and prompting conditions. Restore the neural harmony / rightness account with Mangan as a clearly marked speculative interpretation, rather than a neural result of this study.",
-      "sources_from_draft": ["DISC-5-1 through DISC-10-4", "Mangan citation to add", "lexical identity / entrainment citations to add", "GPT-4.5-PERSONA qualifier to add"]
-    },
-    {
-      "id": "D3",
-      "move": "M3",
-      "label": "boundary conditions and next tests",
-      "span_note": "1–2 structural blocks",
-      "role": "State the study's boundaries: small samples, a deliberately controlled alternating-word task rather than naturalistic collaboration, and static word embeddings that omit polysemy, syntax, pragmatics, and discourse context. Frame the task's control as useful for isolating explore/exploit dynamics while making ecological validity a future empirical question. Close with the next tests: replication at a larger sample, contextual embeddings, and naturalistic human-AI collaboration designs that can discriminate the proposed mechanisms.",
-      "sources_from_draft": ["DISC-11-1 through DISC-11-7", "ecological-validity response from Chris 7/1"]
-    }
-  ]
+    "paper":  {
+                  "id":  "tanzer_2yp_discussion_ideal",
+                  "title":  "tanzer 2yp — ideal discussion arc",
+                  "authors":  [
+                                  "Tanzer"
+                              ],
+                  "year":  0,
+                  "section":  "Discussion",
+                  "version":  "three_block_review_aligned",
+                  "based_on":  "ONT-58 and committee discussion feedback",
+                  "generated":  "2026-07-19"
+              },
+    "arc_summary":  "A three-block Discussion that interprets the findings against the Introduction\u0027s competing hybrid-outcome frame, develops bounded mechanisms for the hybrid pattern, and closes by specifying the study\u0027s limits and the next empirical tests. The sequence keeps result recap brief; it treats individuation, distributional difference, category shifts, and neural harmony as interpretations with appropriately different evidential status; and it distinguishes a controlled experimental task from naturalistic human-AI collaboration.",
+    "structured_arc":  "M1 -\u003e M2 -\u003e M3",
+    "move_roles":  [
+                       {
+                           "id":  "D1",
+                           "move":  "M1",
+                           "label":  "findings against the hybrid frame",
+                           "span_note":  "1–2 structural blocks",
+                           "role":  "Return directly to the Introduction\u0027s three alternatives: a hybrid might become LLM-like, remain human-like, or fall between the homogeneous baselines. Interpret the observed non-intermediate profile—elevated exploitation alongside human-like exploration—as the core contribution. Situate the collective-exploration implication with Garg et al., while keeping the conclusion about creative collaboration proportionate to this controlled task.",
+                           "sources_from_draft":  [
+                                                      "DISC-1-1 through DISC-4-6"
+                                                  ]
+                       },
+                       {
+                           "id":  "D2",
+                           "move":  "M2",
+                           "label":  "mechanisms and theoretical implications",
+                           "span_note":  "2–3 structural blocks",
+                           "role":  "Treat the individuation result as an observation, not a mechanism. Present distributed exploratory sampling, category-shifting moves, and diversity in associative strategies as distinct accounts of the hybrid pattern, while making clear that the study does not establish any of them causally. Note that the accounts are not mutually exclusive and identify intervention points that may support more human-like behavior in LLM-powered agentic systems. Restore the neural harmony / rightness account with Mangan as a clearly marked speculative interpretation, rather than a neural result of this study.",
+                           "sources_from_draft":  [
+                                                      "DISC-5-1 through DISC-10-4",
+                                                      "Mangan citation to add"
+                                                  ]
+                       },
+                       {
+                           "id":  "D3",
+                           "move":  "M3",
+                           "label":  "boundary conditions and next tests",
+                           "span_note":  "1–2 structural blocks",
+                           "role":  "State the study\u0027s boundaries: small samples, a deliberately controlled alternating-word task rather than naturalistic collaboration, and static word embeddings that omit polysemy, syntax, pragmatics, and discourse context. Frame the task\u0027s control as useful for isolating explore/exploit dynamics while making ecological validity a future empirical question. Close with the next tests: replication at a larger sample, contextual embeddings, and naturalistic human-AI collaboration designs that can discriminate the proposed mechanisms.",
+                           "sources_from_draft":  [
+                                                      "DISC-11-1 through DISC-11-7",
+                                                      "ecological-validity response from Chris 7/1"
+                                                  ]
+                       }
+                   ]
 }
